@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,19 +11,100 @@
   --text-main: #0f172a;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
+  --accent-blue: #0ea5e9;
+  --accent-red: #ef4444;
+  --hover-bg: #e2e8f0;
+  --active-bg: #e0f2fe;
 }
 
-.dark {
+[data-theme="dark"] {
   --bg-main: #0f172a;
   --bg-pane: #1e293b;
   --bg-card: #334155;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --border-color: #334155;
+  --accent-blue: #38bdf8;
+  --accent-red: #f87171;
+  --hover-bg: #334155;
+  --active-bg: #0c4a6e;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
   transition: background-color 0.3s, color 0.3s;
+}
+
+.display-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.active-item {
+  background-color: var(--active-bg);
+  border-left: 4px solid var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.resource-card {
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  background-color: var(--bg-main);
+}
+
+.resource-card:hover {
+  border-color: var(--border-color);
+  background-color: var(--bg-card);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+.quiz-option {
+  transition: all 0.2s ease;
+  border: 2px solid var(--border-color);
+}
+
+.quiz-option.selected {
+  border-color: var(--accent-blue);
+  background-color: var(--active-bg);
+}
+
+.quiz-option.correct {
+  border-color: #10b981;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.quiz-option.wrong {
+  border-color: var(--accent-red);
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+[data-theme="dark"] .quiz-option.correct {
+  background-color: #064e3b;
+  color: #a7f3d0;
+}
+
+[data-theme="dark"] .quiz-option.wrong {
+  background-color: #7f1d1d;
+  color: #fecaca;
 }
