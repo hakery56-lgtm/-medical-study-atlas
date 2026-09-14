@@ -1,14 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 import { supabase } from "@/lib/supabase";
 
 export default function Admin() {
   const [form, setForm] = useState({ title: "", cleanTitle: "", type: "lecture", topic: "", summary: "", subjectId: "" });
   const [uploading, setUploading] = useState(false);
 
-  async function handleUpload(e) {
+  async function handleUpload(e: ChangeEvent<HTMLInputElement>) {
     e.preventDefault();
-    const file = e.target.files[0];
+    const file = e.target.files?.[0];
     if(!file) return;
 
     setUploading(true);
