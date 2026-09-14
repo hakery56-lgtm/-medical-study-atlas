@@ -1,4 +1,0 @@
-﻿@tailwind base; @tailwind components; @tailwind utilities;
-:root { --bg-main: #f8fafc; --bg-pane: #f1f5f9; --bg-card: #ffffff; --text-main: #0f172a; --text-muted: #64748b; --border-color: #e2e8f0; }
-.dark { --bg-main: #0f172a; --bg-pane: #1e293b; --bg-card: #334155; --text-main: #f8fafc; --text-muted: #94a3b8; --border-color: #334155; }
-body { background-color: var(--bg-main); color: var(--text-main); transition: all 0.3s ease; }
