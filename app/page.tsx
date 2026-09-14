@@ -4,10 +4,10 @@ import { supabase } from "@/lib/supabase";
 import { Moon, Sun } from "lucide-react";
 
 export default function Atlas() {
-  const [subjects, setSubjects] = useState([]);
-  const [currentSub, setCurrentSub] = useState(null);
-  const [resources, setResources] = useState([]);
-  const [selectedRes, setSelectedRes] = useState(null);
+  const [subjects, setSubjects] = useState<any[]>([]);
+  const [currentSub, setCurrentSub] = useState<string | null>(null);
+  const [resources, setResources] = useState<any[]>([]);
+  const [selectedRes, setSelectedRes] = useState<any | null>(null);
   const [filter, setFilter] = useState("all");
   const [dark, setDark] = useState(false);
 
@@ -19,7 +19,7 @@ export default function Atlas() {
     load();
   }, []);
 
-  async function selectSubject(id) {
+  async function selectSubject(id: string) {
     setCurrentSub(id);
     const { data } = await supabase.from("resources").select("*").eq("subject_id", id);
     setResources(data || []);
@@ -42,7 +42,9 @@ export default function Atlas() {
           </div>
           <nav className="space-y-2">
             {subjects.map(s => (
-              <button key={s.id} onClick={() => selectSubject(s.id)} className={`w-full text-left px-3 py-2 rounded-md text-sm font-medium transition-colors ${currentSub === s.id ? "bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-200" : "hover:bg-slate-200 dark:hover:bg-slate-700"}`}>{s.name}</button>
+              <button key={s.id} onClick={() => selectSubject(s.id)} className={`w-full text-left px-3 py-2 rounded-md text-sm font-medium transition-colors ${currentSub === s.id ? "bg-blue-100 text-blue-900 dark:bg-blue-900 dark:text-blue-100" : "hover:bg-slate-100 dark:hover:bg-slate-700"}`}>
+                {s.name}
+              </button>
             ))}
           </nav>
         </aside>
@@ -50,7 +52,9 @@ export default function Atlas() {
           <h2 className="font-serif text-xl font-bold mb-4">Resources</h2>
           <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
             {["all", "lecture", "lab", "note", "exam"].map(f => (
-              <button key={f} onClick={() => setFilter(f)} className={`px-3 py-1 text-xs font-medium rounded-full transition-all ${filter === f ? "bg-slate-900 text-white dark:bg-sky-600" : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400"}`}>{f}</button>
+              <button key={f} onClick={() => setFilter(f)} className={`px-3 py-1 text-xs font-medium rounded-full transition-all ${filter === f ? "bg-slate-900 text-white dark:bg-sky-600" : "bg-slate-200 dark:bg-slate-700"}`}>
+                {f.charAt(0).toUpperCase() + f.slice(1)}
+              </button>
             ))}
           </div>
           <div className="space-y-3">
@@ -73,7 +77,9 @@ export default function Atlas() {
               </div>
               <div className="p-8 bg-card border rounded-3xl shadow-sm space-y-6">
                 <p className="text-lg leading-relaxed opacity-80">{selectedRes.summary}</p>
-                <a href={selectedRes.file_url} target="_blank" className="block w-full text-center py-4 bg-slate-900 dark:bg-sky-600 text-white font-bold rounded-2xl hover:opacity-90 transition-all">Open Original PDF</a>
+                <a href={selectedRes.file_url} target="_blank" className="block w-full text-center py-4 bg-slate-900 dark:bg-sky-600 text-white font-bold rounded-2xl hover:opacity-90 transition-all">
+                  View Resource
+                </a>
               </div>
             </div>
           ) : <div className="h-full flex items-center justify-center text-slate-400 italic">Select a resource from the list to begin studying...</div>}
