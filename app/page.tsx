@@ -3,18 +3,33 @@ import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import { Moon, Sun } from "lucide-react";
 
+interface Subject {
+  id: string;
+  name: string;
+}
+
+interface Resource {
+  id: string;
+  clean_title: string;
+  resource_type: string;
+  topic: string;
+  summary: string;
+  file_url: string;
+  subject_id: string;
+}
+
 export default function Atlas() {
-  const [subjects, setSubjects] = useState<any[]>([]);
+  const [subjects, setSubjects] = useState<Subject[]>([]);
   const [currentSub, setCurrentSub] = useState<string | null>(null);
-  const [resources, setResources] = useState<any[]>([]);
-  const [selectedRes, setSelectedRes] = useState<any | null>(null);
+  const [resources, setResources] = useState<Resource[]>([]);
+  const [selectedRes, setSelectedRes] = useState<Resource | null>(null);
   const [filter, setFilter] = useState("all");
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
     async function load() {
       const { data } = await supabase.from("subjects").select("*");
-      setSubjects(data || []);
+      setSubjects((data as Subject[]) || []);
     }
     load();
   }, []);
@@ -22,7 +37,7 @@ export default function Atlas() {
   async function selectSubject(id: string) {
     setCurrentSub(id);
     const { data } = await supabase.from("resources").select("*").eq("subject_id", id);
-    setResources(data || []);
+    setResources((data as Resource[]) || []);
   }
 
   const filtered = resources.filter(r => filter === "all" || r.resource_type === filter);
@@ -77,7 +92,7 @@ export default function Atlas() {
               </div>
               <div className="p-8 bg-card border rounded-3xl shadow-sm space-y-6">
                 <p className="text-lg leading-relaxed opacity-80">{selectedRes.summary}</p>
-                <a href={selectedRes.file_url} target="_blank" className="block w-full text-center py-4 bg-slate-900 dark:bg-sky-600 text-white font-bold rounded-2xl hover:opacity-90 transition-all">
+                <a href={selectedRes.file_url} target="_blank" rel="noopener noreferrer" className="block w-full text-center py-4 bg-slate-900 dark:bg-sky-600 text-white font-bold rounded-2xl hover:opacity-90 transition-all">
                   View Resource
                 </a>
               </div>
