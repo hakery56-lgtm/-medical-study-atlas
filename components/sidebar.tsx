@@ -1,8 +1,9 @@
 "use client"
 
-import { Moon, Sun, Stethoscope, CalendarDays, ListTree, Settings } from "lucide-react"
+import { Moon, Sun, Stethoscope, CalendarDays, ListTree, Settings, FileText } from "lucide-react"
 import type { Subject } from "@/data/subjects"
 import { subjectIcons } from "@/lib/resource-ui"
+import Link from "next/link"
 
 interface SidebarProps {
   subjects: Subject[]
@@ -15,9 +16,10 @@ interface SidebarProps {
 }
 
 const quickAccess = [
-  { label: "Exam Calendar", icon: CalendarDays },
-  { label: "Master Index", icon: ListTree },
-  { label: "Settings", icon: Settings },
+  { label: "Exam Calendar", icon: CalendarDays, href: "/calendar" },
+  { label: "Master Index", icon: ListTree, href: "/index" },
+  { label: "Resources", icon: FileText, href: "/resources" },
+  { label: "Settings", icon: Settings, href: "/settings" },
 ]
 
 export default function Sidebar({
@@ -102,16 +104,16 @@ export default function Sidebar({
             Quick Access
           </h2>
           <ul className="flex flex-col gap-1">
-            {quickAccess.map(({ label, icon: Icon }) => (
+            {quickAccess.map(({ label, icon: Icon, href }) => (
               <li key={label}>
-                <button
-                  onClick={() => alert(`${label}: coming soon.`)}
+                <Link
+                  href={href}
                   className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
                   style={{ color: "var(--text-muted)" }}
                 >
                   <Icon size={16} className="shrink-0" />
                   {label}
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
