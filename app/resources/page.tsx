@@ -2,7 +2,7 @@ import { supabase } from '@/lib/supabase';
 import Link from 'next/link';
 
 export default async function ResourcesPage() {
-  // Use the existing client from lib/supabase
+  // Fetch files and their categories from the database
   const { data: files, error } = await supabase
     .from('files')
     .select('file_name, storage_path, categories(name)')
@@ -14,8 +14,19 @@ export default async function ResourcesPage() {
 
   // Group files by category
   const categoriesMap: Record<string, any[]> = {};
+  
   files?.forEach(file => {
-    const catName = file.categories?.name || 'Uncategorized';
+    // Supabase join returns an object or an array of objects
+    let catName = 'Uncategorized';
+    
+    if (file.categories) {
+      if (Array.isArray(file.categories)) {
+        catName = file.categories[0]?.name || 'Uncategorized';
+      } else if (typeof file.categories === 'object') {
+        catName = file.categories.name || 'Uncategorized';
+      }
+    }
+    
     if (!categoriesMap[catName]) categoriesMap[catName] = [];
     categoriesMap[catName].push(file);
   });
