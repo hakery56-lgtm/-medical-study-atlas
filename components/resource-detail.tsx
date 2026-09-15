@@ -28,8 +28,8 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
               Pick a lecture, lab, note, or quiz from the list to see its summary and related study materials.
             </p>
-          </div
-        </div
+          </div>
+        </div>
       </section>
     )
   }
@@ -61,7 +61,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             >
               {resource.topic}
             </span>
-          </div
+          </div>
           <h2 className="display-serif text-3xl font-bold leading-tight lg:text-4xl">{resource.cleanTitle}</h2>
           <div className="flex flex-wrap items-center gap-4 text-sm" style={{ color: "var(--text-muted)" }}>
             <span className="flex items-center gap-1.5">
@@ -70,7 +70,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             <span className="flex items-center gap-1.5">
               <FileText size={15} /> {isExam ? "Interactive quiz" : "PDF document"}
             </span>
-          </div
+          </div>
         </header>
 
         <div
@@ -139,11 +139,11 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                         style={{ ...typeBadgeStyle(r.type) }}
                       >
                         <RIcon size={15} />
-                      </div
+                      </div>
                       <span className="truncate text-xs font-medium" style={{ color: "var(--text-main)" }}>
                         {r.cleanTitle}
                       </span>
-                    </div
+                    </div>
                     <ChevronRight size={15} className="shrink-0 opacity-40 transition-transform group-hover:translate-x-0.5" style={{ color: "var(--text-muted)" }} />
                   </button>
                 )
