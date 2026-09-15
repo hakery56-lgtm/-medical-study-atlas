@@ -1,10 +1,8 @@
-import { createClient } from '@/utils/supabase/server';
+import { supabase } from '@/lib/supabase';
 import Link from 'next/link';
 
 export default async function ResourcesPage() {
-  const supabase = createClient();
-
-  // Fetch files and their categories from the database
+  // Use the existing client from lib/supabase
   const { data: files, error } = await supabase
     .from('files')
     .select('file_name, storage_path, categories(name)')
