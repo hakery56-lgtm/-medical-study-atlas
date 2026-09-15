@@ -4,14 +4,10 @@ import Link from 'next/link';
 export default async function ResourcesPage() {
   const supabase = createClient();
 
-  // Fetch files and their categories from the database I created
+  // Fetch files and their categories from the database
   const { data: files, error } = await supabase
     .from('files')
-    .select(\`
-      file_name, 
-      storage_path, 
-      categories (name)
-    \`)
+    .select('file_name, storage_path, categories(name)')
     .order('file_name', { ascending: true });
 
   if (error) {
@@ -41,7 +37,7 @@ export default async function ResourcesPage() {
               {items.map((file, idx) => (
                 <a 
                   key={idx}
-                  href={\`https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/\${file.storage_path}\`}
+                  href={`https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${file.storage_path}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-3 rounded-lg border border-slate-100 hover:border-blue-500 hover:bg-blue-50 transition-all group"
