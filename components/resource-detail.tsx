@@ -22,14 +22,14 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             style={{ backgroundColor: "var(--bg-pane)", color: "var(--accent)" }}
           >
             <BookOpenCheck size={30} />
-          </div>
+          </div
           <div>
             <h3 className="display-serif text-xl font-bold">Nothing selected yet</h3>
             <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
               Pick a lecture, lab, note, or quiz from the list to see its summary and related study materials.
             </p>
-          </div>
-        </div>
+          </div
+        </div
       </section>
     )
   }
@@ -48,29 +48,29 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             >
               <Icon size={12} />
               {typeLabels[resource.type]}
-            </span>
+            </span
             <span
               className="rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest"
               style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-muted)" }}
             >
               {subjectName}
-            </span>
+            </span
             <span
               className="rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest"
               style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-muted)" }}
             >
               {resource.topic}
-            </span>
-          </div>
+            </span
+          </div
           <h2 className="display-serif text-3xl font-bold leading-tight lg:text-4xl">{resource.cleanTitle}</h2>
           <div className="flex flex-wrap items-center gap-4 text-sm" style={{ color: "var(--text-muted)" }}>
             <span className="flex items-center gap-1.5">
               <CalendarDays size={15} /> Academic Year 2025–26
-            </span>
+            </span
             <span className="flex items-center gap-1.5">
               <FileText size={15} /> {isExam ? "Interactive quiz" : "PDF document"}
-            </span>
-          </div>
+            </span
+          </div
         </header>
 
         <div
@@ -80,10 +80,10 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
           <h4 className="flex items-center gap-2 text-sm font-semibold">
             <Info size={16} style={{ color: "var(--accent)" }} />
             Summary
-          </h4>
+          </h4
           <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
             {resource.summary}
-          </p>
+          </p
           {isExam ? (
             <button
               onClick={() => onOpenQuiz(resource)}
@@ -92,31 +92,36 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             >
               <BookOpenCheck size={16} />
               Start Quiz
-            </button>
+            </button
           ) : (
             <button
-              onClick={() => (resource.file_url ? window.open(resource.file_url, "_blank") : alert("Original file is not linked yet."))}
+              onClick={() => {
+                const storageUrl = resource.file_url 
+                  ? resource.file_url 
+                  : \`https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/\${encodeURIComponent(resource.title)}\`;
+                window.open(storageUrl, "_blank");
+              }}
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
               style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
             >
               <ExternalLink size={16} />
               Open Original File
-            </button>
+            </button
           )}
           <p className="truncate text-center text-[11px]" style={{ color: "var(--text-muted)" }}>
             {resource.title}
           </p>
-        </div>
+        </div
 
         <div className="space-y-3">
           <h4 className="flex items-center gap-2 px-1 text-sm font-semibold">
             <Layers size={16} style={{ color: "var(--accent)" }} />
             Related Materials
-          </h4>
+          </h4
           {related.length === 0 ? (
             <p className="px-1 text-xs italic" style={{ color: "var(--text-muted)" }}>
               No directly related materials found for this topic.
-            </p>
+            </p
           ) : (
             <div className="grid grid-cols-1 gap-2.5">
               {related.map((r) => {
@@ -134,19 +139,19 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                         style={{ ...typeBadgeStyle(r.type) }}
                       >
                         <RIcon size={15} />
-                      </div>
+                      </div
                       <span className="truncate text-xs font-medium" style={{ color: "var(--text-main)" }}>
                         {r.cleanTitle}
-                      </span>
-                    </div>
+                      </span
+                    </div
                     <ChevronRight size={15} className="shrink-0 opacity-40 transition-transform group-hover:translate-x-0.5" style={{ color: "var(--text-muted)" }} />
-                  </button>
+                  </button
                 )
               })}
-            </div>
+            </div
           )}
-        </div>
-      </div>
+        </div
+      </div
     </section>
   )
 }
