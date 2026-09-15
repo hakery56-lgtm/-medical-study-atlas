@@ -16,14 +16,15 @@ export default async function ResourcesPage() {
   const categoriesMap: Record<string, any[]> = {};
   
   files?.forEach(file => {
-    // Supabase join returns an object or an array of objects
     let catName = 'Uncategorized';
     
     if (file.categories) {
       if (Array.isArray(file.categories)) {
         catName = file.categories[0]?.name || 'Uncategorized';
-      } else if (typeof file.categories === 'object') {
-        catName = file.categories.name || 'Uncategorized';
+      } else {
+        // Use type casting to avoid 'never' type error in TypeScript
+        const cat = file.categories as any;
+        catName = cat.name || 'Uncategorized';
       }
     }
     
