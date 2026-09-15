@@ -76,10 +76,71 @@ export default function Sidebar({
                 <li key={subject.id}>
                   <button
                     onClick={() => onSelectSubject(subject.id)}
-                    className={`subject-btn flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${\n                      active ? "is-active" : "hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"\n                    }`}
+                    className={`subject-btn flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                      active ? "is-active" : "hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+                    }`}
                     style={{ color: active ? "var(--accent)" : "var(--text-main)" }}
-                  >\n                    <Icon size={17} className="shrink-0" style={{ color: active ? "var(--accent)" : "var(--text-muted)" }} />\n                    <span className="flex-1 text-left">{subject.name}</span>\n                    <span\n                      className="rounded-full px-2 py-0.5 text-[10px] font-semibold tabular-nums"\n                      style={{\n                        backgroundColor: active ? "var(--accent)" : "var(--bg-card)",\n                        color: active ? "var(--accent-contrast)" : "var(--text-muted)",\n                      }}\n                    >\n                      {subject.resources.length}\n                    </span>\n                  </button>\n                </li>\n              )\n            })}\n          </ul>\n        </div>
+                  >
+                    <Icon size={17} className="shrink-0" style={{ color: active ? "var(--accent)" : "var(--text-muted)" }} />
+                    <span className="flex-1 text-left">{subject.name}</span>
+                    <span
+                      className="rounded-full px-2 py-0.5 text-[10px] font-semibold tabular-nums"
+                      style={{
+                        backgroundColor: active ? "var(--accent)" : "var(--bg-card)",
+                        color: active ? "var(--accent-contrast)" : "var(--text-muted)",
+                      }}
+                    >
+                      {subject.resources.length}
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
 
-        <div>\n          <h2 className="mb-3 px-1 text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: "var(--text-muted)" }}>\n            Quick Access\n          </h2>\n          <ul className="flex flex-col gap-1">\n            {quickAccess.map(({ label, icon: Icon, href }) => (\n              <li key={label}>\n                <Link\n                  href={href}\n                  className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-black/[0.04] dark:hover:bg-white/[0.04]\"\n                  style={{ color: \"var(--text-muted)\" }}\n                >\n                  <Icon size={16} className=\"shrink-0\" />\n                  {label}\n                </Link>\n              </li>\n            ))}\n          </ul>\n        </div>\n      </nav>
+        <div>
+          <h2 className="mb-3 px-1 text-[10px] font-bold uppercase tracking-[0.16em]" style={{ color: "var(--text-muted)" }}>
+            Quick Access
+          </h2>
+          <ul className="flex flex-col gap-1">
+            {quickAccess.map(({ label, icon: Icon, href }) => (
+              <li key={label}>
+                <Link
+                  href={href}
+                  className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors hover:bg-black/[0.04] dark:hover:bg-white/[0.04]"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  <Icon size={16} className="shrink-0" />
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
 
-      <div className="mt-auto">\n        <div\n          className=\"rounded-xl border p-4\"\n          style={{ backgroundColor: \"var(--bg-card)\", borderColor: \"var(--border-color)\", boxShadow: \"var(--shadow-card)\" }}\n        >\n          <div className=\"mb-2 flex items-center justify-between\">\n            <p className=\"text-xs font-semibold\" style={{ color: \"var(--text-main)\" }}>\n              Library Coverage\n            </p>\n            <span className=\"text-xs font-bold tabular-nums\" style={{ color: \"var(--accent)\" }}>\n              {progress}%\n            </span>\n          </div>\n          <div className=\"h-1.5 w-full overflow-hidden rounded-full\" style={{ backgroundColor: \"var(--border-color)\" }}>\n            <div className=\"h-full rounded-full transition-all\" style={{ width: `${progress}%`, backgroundColor: \"var(--accent)\" }} />\n          </div>\n          <p className=\"mt-2 text-[10px]\" style={{ color: \"var(--text-muted)\" }}>\n            {mappedResources} of {totalResources} resources catalogued\n          </p>\n        </div>\n      </div>\n    </aside>\n  )\n}\n
+      <div className="mt-auto">
+        <div
+          className="rounded-xl border p-4"
+          style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", boxShadow: "var(--shadow-card)" }}
+        >
+          <div className="mb-2 flex items-center justify-between">
+            <p className="text-xs font-semibold" style={{ color: "var(--text-main)" }}>
+              Library Coverage
+            </p>
+            <span className="text-xs font-bold tabular-nums" style={{ color: "var(--accent)" }}>
+              {progress}%
+            </span>
+          </div>
+          <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: "var(--border-color)" }}>
+            <div className="h-full rounded-full transition-all" style={{ width: `${progress}%`, backgroundColor: "var(--accent)" }} />
+          </div>
+          <p className="mt-2 text-[10px]" style={{ color: "var(--text-muted)" }}>
+            {mappedResources} of {totalResources} resources catalogued
+          </p>
+        </div>
+      </div>
+    </aside>
+  )
+}
