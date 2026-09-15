@@ -95,7 +95,12 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             </button>
           ) : (
             <button
-              onClick={() => (resource.file_url ? window.open(resource.file_url, "_blank") : alert("Original file is not linked yet."))}
+              onClick={() => {
+                const storageUrl = resource.file_url 
+                  ? resource.file_url 
+                  : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`;
+                window.open(storageUrl, "_blank");
+              }}
               className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
               style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
             >
