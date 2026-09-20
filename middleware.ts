@@ -3,30 +3,41 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export async function middleware(req: NextRequest) {
-  // Protect all routes except login, signup, and redeem
   const { pathname } = req.nextUrl;
+  
+  // 1. Allow static files, API routes, and public pages
+  if (
+    pathname.startsWith('/_next') || 
+    pathname.startsWith('/api') || 
+    pathname === '/' || 
+    pathname === '/favicon.ico'
+  ) {
+    return NextResponse.next();
+  }
+
+  // 2. Identify Auth pages
   const isAuthPage = pathname === '/login' || 
                      pathname === '/signup' || 
                      pathname === '/redeem';
-  
-  const isPublicPage = pathname === '/'; 
 
-  if (!isAuthPage && !isPublicPage) {
-    // Get session from cookies manually
-    const sessionCookie = req.cookies.get('sb-access-token')?.value || 
-                           req.cookies.get('sb-auth-token')?.value;
+  if (isAuthPage) {
+    return NextResponse.next();
+  }
 
-    if (!sessionCookie) {
-      return NextResponse.redirect(new URL('/login', req.url));
-    }
+  // 3. Protect all other routes
+  const sessionCookie = req.cookies.get('sb-access-token')?.value || 
+                       req.cookies.get('sb-auth-token')?.value;
 
-    // Initialize client inside the guard to avoid unnecessary instantiation
+  if (!sessionCookie) {
+    return NextResponse.redirect(new URL('/login', req.url));
+  }
+
+  try {
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     );
 
-    // Validate the session and check access expiry
     const { data: { user }, error: authError } = await supabase.auth.getUser(sessionCookie);
 
     if (authError || !user) {
@@ -42,6 +53,9 @@ export async function middleware(req: NextRequest) {
     if (!profile || !profile.access_until || new Date(profile.access_until) < new Date()) {
       return NextResponse.redirect(new URL('/redeem', req.url));
     }
+  } catch (e) {
+    console.error('Middleware error:', e);
+    return NextResponse.redirect(new URL('/login', req.url));
   }
 
   return NextResponse.next();
