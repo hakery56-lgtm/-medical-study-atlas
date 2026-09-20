@@ -129,4 +129,5 @@ export default function LoginPage() {
         </form>
       </div>
     </div>
-  )\n}\n
+  )
+}
