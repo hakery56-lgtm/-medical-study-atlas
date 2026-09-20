@@ -3,29 +3,28 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export async function middleware(req: NextRequest) {
-  const res = NextResponse.next();
-  
-  // Initialize standard client
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
-
-  // Get session from cookies manually
-  const sessionCookie = req.cookies.get('sb-access-token')?.value || 
-                       req.cookies.get('sb-auth-token')?.value;
-
   // Protect all routes except login, signup, and redeem
-  const isAuthPage = req.nextUrl.pathname === '/login' || 
-                     req.nextUrl.pathname === '/signup' || 
-                     req.nextUrl.pathname === '/redeem';
+  const { pathname } = req.nextUrl;
+  const isAuthPage = pathname === '/login' || 
+                     pathname === '/signup' || 
+                     pathname === '/redeem';
   
-  const isPublicPage = req.nextUrl.pathname === '/'; 
+  const isPublicPage = pathname === '/'; 
 
   if (!isAuthPage && !isPublicPage) {
+    // Get session from cookies manually
+    const sessionCookie = req.cookies.get('sb-access-token')?.value || 
+                           req.cookies.get('sb-auth-token')?.value;
+
     if (!sessionCookie) {
       return NextResponse.redirect(new URL('/login', req.url));
     }
+
+    // Initialize client inside the guard to avoid unnecessary instantiation
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
 
     // Validate the session and check access expiry
     const { data: { user }, error: authError } = await supabase.auth.getUser(sessionCookie);
@@ -40,10 +39,10 @@ export async function middleware(req: NextRequest) {
       .eq('id', user.id)
       .single();
 
-    if (!profile || new Date(profile.access_until) < new Date()) {
+    if (!profile || !profile.access_until || new Date(profile.access_until) < new Date()) {
       return NextResponse.redirect(new URL('/redeem', req.url));
     }
   }
 
-  return res;
+  return NextResponse.next();
 }
