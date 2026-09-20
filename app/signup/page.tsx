@@ -37,23 +37,33 @@ export default function SignupPage() {
     setLoading(true)
     setError(null)
 
-    const { data, error: authError } = await supabase.auth.signUp({
-      email,
-      password,
-    })
-
-    if (authError) {
-      setError(authError.message)
-      setLoading(false)
-      return
-    }
-
     try {
+      const { data, error: authError } = await supabase.auth.signUp({
+        email,
+        password,
+      })
+
+      if (authError) {
+        setError(authError.message)
+        setLoading(false)
+        return
+      }
+
+      // IMPORTANT: For some Supabase configs, user is not immediately available in session
+      // We need a valid token to call /api/redeem
+      const session = data.session || (await supabase.auth.getSession()).data.session;
+      
+      if (!session?.access_token) {
+        setError("Account created! Please check your email to confirm your account before redeeming the code.")
+        setLoading(false)
+        return
+      }
+
       const response = await fetch("/api/redeem", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${data.session?.access_token}`
+          "Authorization": `Bearer ${session.access_token}`
         },
         body: JSON.stringify({ code: accessCode }),
       })
@@ -64,8 +74,8 @@ export default function SignupPage() {
       } else {
         router.push("/")
       }
-    } catch (err) {
-      setError("Account created, but failed to verify code.")
+    } catch (err: any) {
+      setError(err.message || "Account created, but failed to verify code.")
     } finally {
       setLoading(false)
     }
