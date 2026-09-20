@@ -44,9 +44,12 @@ export default function SignupPage() {
       })
 
       if (authError) {
-        // Handle rate limiting specifically
-        if (authError.message.toLowerCase().includes("rate limit")) {
-          setError("Too many attempts. Please wait a few minutes before trying again.")
+        // Handle Supabase specific error messages
+        const msg = authError.message.toLowerCase();
+        if (msg.includes("rate limit")) {
+          setError("Too many sign-up attempts. Please wait a few minutes and try again.")
+        } else if (msg.includes("already registered")) {
+          setError("This email is already registered. Please sign in instead.")
         } else {
           setError(authError.message)
         }
@@ -55,11 +58,11 @@ export default function SignupPage() {
       }
 
       // Attempt to get the session immediately
+      // If 'Confirm Email' is ON in Supabase, session will be null
       const session = data.session || (await supabase.auth.getSession()).data.session;
       
       if (!session?.access_token) {
-        // This happens if "Confirm Email" is ON in Supabase Dashboard
-        setError("Account created! Please check your email to confirm your account before you can enter your access code.")
+        setError("Account created! Please check your email to confirm your account before you can redeem your access code.")
         setLoading(false)
         return
       }
