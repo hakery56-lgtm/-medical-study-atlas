@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
-import { Loader2, Key, CheckCircle2, AlertCircle } from "lucide-react"
+import { Loader2, Key, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react"
 
 export default function RedeemPage() {
   const router = useRouter()
