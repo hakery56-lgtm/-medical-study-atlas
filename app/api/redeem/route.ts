@@ -5,17 +5,19 @@ export async function POST(req: Request) {
   try {
     const { code } = await req.json();
     
-    // Use the standard client
+    // Use a client with the Service Role Key to allow admin updates (bypassing RLS)
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.SUPABASE_SERVICE_ROLE_KEY! // Use Service Role to bypass RLS for admin updates
+      process.env.SUPABASE_SERVICE_ROLE_KEY! 
     );
 
-    // Get the user from the request header (passed from frontend)
+    // Get the user token from headers
     const authHeader = req.headers.get('Authorization');
     if (!authHeader) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
-    const { data: { user }, error: authError } = await supabase.auth.getUser(authHeader.replace('Bearer ', ''));
+    const token = authHeader.replace('Bearer ', '');
+    const { data: { user }, error: authError } = await supabase.auth.getUser(token);
+    
     if (authError || !user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
     const { data: codeData, error: codeError } = await supabase
@@ -28,11 +30,13 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Invalid or already used code' }, { status: 400 });
     }
 
+    // 1. Mark code as used
     await supabase
       .from('access_codes')
       .update({ is_used: true, used_by: user.id, used_at: new Date().toISOString() })
       .eq('code', code);
 
+    // 2. Extend access by 30 days
     const expiryDate = new Date();
     expiryDate.setDate(expiryDate.getDate() + 30);
 
