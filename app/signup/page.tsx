@@ -37,7 +37,27 @@ export default function SignupPage() {
     setLoading(true)
     setError(null)
 
-    // Map username to internal email format for Supabase
+    // 1. First verify the access code exists and is not used
+    try {
+      const verifyRes = await fetch("/api/verify-code", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code: accessCode }),
+      })
+
+      const verifyResult = await verifyRes.json()
+      if (!verifyRes.ok) {
+        setError(verifyResult.error || "Invalid access code")
+        setLoading(false)
+        return
+      }
+    } catch (err: any) {
+      setError("Verification failed. Please try again.")
+      setLoading(false)
+      return
+    }
+
+    // 2. Only if code is valid, create the account
     const internalEmail = `${username.toLowerCase().trim()}@atlas.com`;
 
     try {
@@ -60,16 +80,17 @@ export default function SignupPage() {
       }
 
       const session = data.session || (await supabase.auth.getSession()).data.session;
-      
+
       if (!session?.access_token) {
-        setError("Account created! Please check your email (if configured) or sign in to redeem your access code.")
+        setError("Account created! Please sign in to complete your access.")
         setLoading(false)
         return
       }
 
+      // 3. Now redeem the code for the newly created account
       const response = await fetch("/api/redeem", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${session.access_token}`
         },
@@ -78,7 +99,7 @@ export default function SignupPage() {
 
       const result = await response.json()
       if (!response.ok) {
-        setError(`Account created, but code invalid: ${result.error}`)
+        setError(`Account created, but redemption failed: ${result.error}`)
       } else {
         router.push("/")
       }
