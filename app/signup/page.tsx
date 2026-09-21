@@ -38,7 +38,7 @@ export default function SignupPage() {
     setError(null)
 
     // Map username to internal email format for Supabase
-    const internalEmail = `${username.toLowerCase().trim()}@atlas.internal`;
+    const internalEmail = `${username.toLowerCase().trim()}@atlas.com`;
 
     try {
       const { data, error: authError } = await supabase.auth.signUp({
