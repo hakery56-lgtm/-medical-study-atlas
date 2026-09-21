@@ -5,63 +5,52 @@ import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 import { Loader2, Lock, User, ArrowRight } from "lucide-react"
 
-export default function LoginPage() {
+export default function LoginPopup() {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
-  const [dark, setDark] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    if (localStorage.getItem("atlas-theme") === "dark") {
-      setDark(true)
-      document.documentElement.classList.add("dark")
+    async function checkAuth() {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (session) {
+        setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
     }
+    checkAuth()
   }, [])
-
-  const toggleTheme = () => {
-    setDark(!dark)
-    if (!dark) {
-      document.documentElement.classList.add("dark")
-      localStorage.setItem("atlas-theme", "dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-      localStorage.setItem("atlas-theme", "light")
-    }
-  }
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
     setError(null)
 
-    // Map username to internal email format for Supabase
     const internalEmail = `${username.toLowerCase().trim()}@atlas.com`;
 
-    const { error: authError } = await supabase.auth.signInWithPassword({ 
-      email: internalEmail, 
-      password 
+    const { error: authError } = await supabase.auth.signInWithPassword({
+      email: internalEmail,
+      password
     })
-    
+
     if (authError) {
       setError(authError.message)
     } else {
-      router.push("/")
+      setIsVisible(false)
+      router.refresh()
     }
     setLoading(false)
   }
 
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 transition-colors duration-300">
-      <button
-        onClick={toggleTheme}
-        className="absolute top-6 right-6 p-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm"
-      >
-        {dark ? "☀️" : "🌙"}
-      </button>
+  if (!isVisible) return null
 
-      <div className="w-full max-w-md space-y-8">
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4 transition-all">
+      <div className="w-full max-w-md bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 space-y-6 animate-in fade-in zoom-in duration-300">
         <div className="text-center space-y-2">
           <div className="flex justify-center mb-4">
             <div className="p-3 bg-blue-600 rounded-2xl shadow-lg shadow-blue-500/20">
@@ -76,7 +65,7 @@ export default function LoginPage() {
           </p>
         </div>
 
-        <form onSubmit={handleLogin} className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-800 space-y-6">
+        <form onSubmit={handleLogin} className="space-y-6">
           <div className="space-y-4">
             <div className="space-y-2">
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Account Name</label>

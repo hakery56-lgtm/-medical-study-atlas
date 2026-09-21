@@ -8,7 +8,7 @@ import { Loader2, Mail, Lock, Key, UserPlus, ArrowRight } from "lucide-react"
 export default function SignupPage() {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
-  const [email, setEmail] = useState("")
+  const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [accessCode, setAccessCode] = useState("")
   const [error, setError] = useState<string | null>(null)
@@ -37,35 +37,74 @@ export default function SignupPage() {
     setLoading(true)
     setError(null)
 
-    const { data, error: authError } = await supabase.auth.signUp({
-      email,
-      password,
-    })
+    // 1. First verify the access code exists and is not used
+    try {
+      const verifyRes = await fetch("/api/verify-code", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code: accessCode }),
+      })
 
-    if (authError) {
-      setError(authError.message)
+      const verifyResult = await verifyRes.json()
+      if (!verifyRes.ok) {
+        setError(verifyResult.error || "Invalid access code")
+        setLoading(false)
+        return
+      }
+    } catch (err: any) {
+      setError("Verification failed. Please try again.")
       setLoading(false)
       return
     }
 
+    // 2. Only if code is valid, create the account
+    const internalEmail = `${username.toLowerCase().trim()}@atlas.com`;
+
     try {
+      const { data, error: authError } = await supabase.auth.signUp({
+        email: internalEmail,
+        password,
+      })
+
+      if (authError) {
+        const msg = authError.message.toLowerCase();
+        if (msg.includes("rate limit")) {
+          setError("Too many sign-up attempts. Please wait a few minutes and try again.")
+        } else if (msg.includes("already registered")) {
+          setError("This account name is already taken. Please choose another or sign in.")
+        } else {
+          setError(authError.message)
+        }
+        setLoading(false)
+        return
+      }
+
+      const session = data.session || (await supabase.auth.getSession()).data.session;
+
+      if (!session?.access_token) {
+        setError("Account created! Please sign in to complete your access.")
+        setLoading(false)
+        return
+      }
+
+      // 3. Now redeem the code for the newly created account
       const response = await fetch("/api/redeem", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${data.session?.access_token}`
+          "Authorization": `Bearer ${session.access_token}`
         },
         body: JSON.stringify({ code: accessCode }),
       })
 
       const result = await response.json()
       if (!response.ok) {
-        setError(`Account created, but code invalid: ${result.error}`)
+        setError(`Account created, but redemption failed: ${result.error}`)
       } else {
         router.push("/")
       }
-    } catch (err) {
-      setError("Account created, but failed to verify code.")
+    } catch (err: any) {
+      setError(err.message || "An unexpected error occurred. Please try again.")
     } finally {
       setLoading(false)
     }
@@ -73,7 +112,7 @@ export default function SignupPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 transition-colors duration-300">
-      <button 
+      <button
         onClick={toggleTheme}
         className="absolute top-6 right-6 p-2 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm"
       >
@@ -98,16 +137,16 @@ export default function SignupPage() {
         <form onSubmit={handleSignup} className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-800 space-y-6">
           <div className="space-y-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Email</label>
+              <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Account Name</label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input 
-                  type="email" 
+                <UserPlus className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <input
+                  type="text"
                   required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                  placeholder="name@university.edu"
+                  placeholder="Choose a unique account name"
                 />
               </div>
             </div>
@@ -116,8 +155,8 @@ export default function SignupPage() {
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Password</label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input 
-                  type="password" 
+                <input
+                  type="password"
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -131,8 +170,8 @@ export default function SignupPage() {
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Access Code</label>
               <div className="relative">
                 <Key className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   required
                   value={accessCode}
                   onChange={(e) => setAccessCode(e.target.value)}
@@ -149,7 +188,7 @@ export default function SignupPage() {
             </div>
           )}
 
-          <button 
+          <button
             disabled={loading}
             className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 group active:scale-[0.98]"
           >
