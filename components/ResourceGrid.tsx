@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { FlashcardModal } from "./FlashcardModal"
-import { QuizModal } from "./QuizModal"
+import FlashcardModal from "./FlashcardModal"
+import QuizModal from "./QuizModal"
 import { flashcardBank } from "@/data/flashcards"
 import { quizBank } from "@/data/quizzes"
 import { BookOpen, BrainCircuit } from "lucide-react"
