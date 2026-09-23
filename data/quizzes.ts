@@ -6,261 +6,33 @@ export interface QuizQuestion {
 }
 
 export const quizBank: Record<string, QuizQuestion[]> = {
-  General: [
-    {
-      id: '1',
-      question: 'What is the primary function of the study atlas?',
-      options: [
-        'To organize medical educational resources',
-        'To replace textbooks',
-        'To track exam scores only',
-        'To provide live consultations'
-      ],
-      correctAnswer: 0
-    },
-    {
-      id: '2',
-      question: 'How many subjects are included in the medical study atlas?',
-      options: [
-        '2 subjects',
-        '3 subjects',
-        '5 subjects',
-        '10 subjects'
-      ],
-      correctAnswer: 1
-    },
-    {
-      id: '3',
-      question: 'Which of the following is NOT a resource type?',
-      options: [
-        'Lectures',
-        'Laboratory sessions',
-        'Video conferences',
-        'Study notes'
-      ],
-      correctAnswer: 2
-    }
+  "Cell Injury": [
+    { id: 'ci1', question: 'Which of the following is a hallmark of irreversible cell injury?', options: ['Cellular swelling', 'Fatty change', 'Membrane rupture', 'Ribosomal detachment'], correctAnswer: 2 },
+    { id: 'ci2', question: 'What is the primary mechanism of coagulative necrosis?', options: ['Enzymatic digestion', 'Protein denaturation', 'Liquefaction', 'Caseous change'], correctAnswer: 1 },
+    { id: 'ci3', question: 'Apoptosis is characterized by:', options: ['Inflammation', 'Cell swelling', 'Programmed cell death', 'Rupture of plasma membrane'], correctAnswer: 2 },
+    { id: 'ci4', question: 'Atrophy is defined as:', options: ['Increase in cell size', 'Decrease in cell size', 'Change in cell type', 'Increase in cell number'], correctAnswer: 1 },
+    { id: 'ci5', question: 'Which organelle is primarily involved in the intrinsic pathway of apoptosis?', options: ['Lysosome', 'Mitochondria', 'Golgi apparatus', 'Endoplasmic reticulum'], correctAnswer: 1 },
   ],
-  Shoulder: [
-    {
-      id: 's1',
-      question: 'What is the glenohumeral joint commonly known as?',
-      options: [
-        'Shoulder joint',
-        'Hip joint',
-        'Knee joint',
-        'Elbow joint'
-      ],
-      correctAnswer: 0
-    },
-    {
-      id: 's2',
-      question: 'Which muscle group stabilizes the shoulder joint?',
-      options: [
-        'Rotator cuff muscles',
-        'Hamstring muscles',
-        'Quadriceps muscles',
-        'Calf muscles'
-      ],
-      correctAnswer: 0
-    },
-    {
-      id: 's3',
-      question: 'Shoulder impingement syndrome involves compression of which structure?',
-      options: [
-        'Supraspinatus tendon',
-        'Biceps tendon',
-        'Deltoid muscle',
-        'Axillary nerve'
-      ],
-      correctAnswer: 0
-    }
+  "Inflammation": [
+    { id: 'inf1', question: 'Which of the following is a cardinal sign of acute inflammation?', options: [' Pallor', 'Coldness', 'Rubor (Redness)', 'Hypesthesia'], correctAnswer: 2 },
+    { id: 'inf2', question: 'What is the primary cell type in acute inflammation?', options: ['Lymphocyte', 'Plasma cell', 'Neutrophil', 'Macrophage'], correctAnswer: 2 },
+    { id: 'inf3', question: 'Which mediator is primarily responsible for increasing vascular permeability?', options: ['Histamine', 'Interleukin-10', 'Tryptase', 'Cortisol'], correctAnswer: 0 },
+    { id: 'inf4', question: 'Chronic inflammation is characterized by the presence of:', options: ['Neutrophils only', 'Macrophages and Lymphocytes', 'Platelets only', 'Edema only'], correctAnswer: 1 },
+    { id: 'inf5', question: 'What is the main function of prostaglandins in inflammation?', options: ['Vasoconstriction', 'Pain and Fever induction', 'Reducing permeability', 'Suppressing leukocytes'], correctAnswer: 1 },
   ],
-  Anatomy: [
-    {
-      id: 'a1',
-      question: 'The heart is divided into how many chambers?',
-      options: [
-        '2 chambers',
-        '3 chambers',
-        '4 chambers',
-        '5 chambers'
-      ],
-      correctAnswer: 2
-    },
-    {
-      id: 'a2',
-      question: 'Which artery supplies the heart muscle itself?',
-      options: [
-        'Coronary artery',
-        'Aorta',
-        'Pulmonary artery',
-        'Carotid artery'
-      ],
-      correctAnswer: 0
-    }
+  "Shoulder": [
+    { id: 'sh1', question: 'Which direction is the most common for shoulder dislocation?', options: ['Posterior', 'Superior', 'Anterior', 'Inferior'], correctAnswer: 2 },
+    { id: 'sh2', question: 'Which nerve is most at risk during a shoulder dislocation?', options: ['Radial nerve', 'Axillary nerve', 'Ulnar nerve', 'Median nerve'], correctAnswer: 1 },
+    { id: 'sh3', question: 'What is the "lightbulb sign" associated with on X-ray?', options: ['Anterior dislocation', 'Posterior dislocation', 'Fracture', 'Arthritis'], correctAnswer: 1 },
+    { id: 'sh4', question: 'The glenohumeral joint is categorized as what type of joint?', options: ['Hinge', 'Pivot', 'Ball and Socket', 'Saddle'], correctAnswer: 2 },
+    { id: 'sh5', question: 'Which muscle is the primary initiator of shoulder abduction?', options: ['Deltoid', 'Supraspinatus', 'Infraspinatus', 'Teres minor'], correctAnswer: 1 },
   ],
-  Physiology: [
-    {
-      id: 'p1',
-      question: 'What is the normal resting heart rate for an adult?',
-      options: [
-        '30-50 bpm',
-        '60-100 bpm',
-        '120-140 bpm',
-        '150-180 bpm'
-      ],
-      correctAnswer: 1
-    },
-    {
-      id: 'p2',
-      question: 'The cardiac cycle consists of which two main phases?',
-      options: [
-        'Systole and diastole',
-        'Inspiration and expiration',
-        'Contraction and relaxation only',
-        'Blood flow and pressure changes'
-      ],
-      correctAnswer: 0
-    }
+  "Lab": [
+    { id: 'lb1', question: 'What is the primary goal of a skill lab in medical education?', options: ['Reading textbooks', 'Hands-on practical application', 'Watching videos', 'Writing essays'], correctAnswer: 1 },
+    { id: 'lb2', question: 'Which tool is essential for palpating bony landmarks of the shoulder?', options: ['Stethoscope', 'Reflex hammer', 'Hands/Fingers', 'Sphygmomanometer'], correctAnswer: 2 },
+    { id: 'lb3', question: 'Proper positioning of the patient is critical for:', options: [' reducing lab cost', ' Accurate assessment', ' Increasing speed', ' Documentation'], correctAnswer: 1 },
   ],
-  Clinical: [
-    {
-      id: 'c1',
-      question: 'What does ECG stand for?',
-      options: [
-        'Electrocardiogram',
-        'Electron circulation gauge',
-        'Electric cardiac generator',
-        'Electro-chemical grid'
-      ],
-      correctAnswer: 0
-    },
-    {
-      id: 'c2',
-      question: 'Atrial fibrillation is characterized by what?',
-      options: [
-        'Irregular heart rhythm',
-        'Slow heart rate',
-        'High blood pressure',
-        'Chest pain only'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  Pharmacology: [
-    {
-      id: 'ph1',
-      question: 'What is the primary action of antihypertensive drugs?',
-      options: [
-        'Lower blood pressure',
-        'Increase heart rate',
-        'Reduce blood glucose',
-        'Prevent blood clots'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  'Upper Limb': [
-    {
-      id: 'ul1',
-      question: 'How many bones are in the human hand?',
-      options: [
-        '19 bones',
-        '27 bones',
-        '32 bones',
-        '42 bones'
-      ],
-      correctAnswer: 1
-    }
-  ],
-  'Lower Limb': [
-    {
-      id: 'll1',
-      question: 'The femur is commonly known as which bone?',
-      options: [
-        'Thigh bone',
-        'Shin bone',
-        'Fibula',
-        'Pelvis'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  Joints: [
-    {
-      id: 'j1',
-      question: 'Osteoarthritis is primarily a disease of what?',
-      options: [
-        'Cartilage degradation',
-        'Muscle inflammation',
-        'Nerve damage',
-        'Blood vessel narrowing'
-      ],
-      correctAnswer: 0
-    },
-    {
-      id: 'j2',
-      question: 'What is the main characteristic of rheumatoid arthritis?',
-      options: [
-        'Autoimmune joint inflammation',
-        'Mechanical wear and tear',
-        'Infection of the joint',
-        'Nerve compression'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  Spine: [
-    {
-      id: 'sp1',
-      question: 'How many vertebrae does the cervical spine have?',
-      options: [
-        '5 vertebrae',
-        '7 vertebrae',
-        '12 vertebrae',
-        '5 lumbar + 5 sacral'
-      ],
-      correctAnswer: 1
-    }
-  ],
-  Histology: [
-    {
-      id: 'h1',
-      question: 'What is the functional unit of the lung?',
-      options: [
-        'Alveolus',
-        'Bronchus',
-        'Trachea',
-        'Larynx'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  Pathology: [
-    {
-      id: 'pa1',
-      question: 'Hydatid cysts in the lung are caused by what?',
-      options: [
-        'Parasitic infection',
-        'Bacterial infection',
-        'Viral infection',
-        'Fungal infection'
-      ],
-      correctAnswer: 0
-    }
-  ],
-  Immunology: [
-    {
-      id: 'im1',
-      question: 'What is the primary immune response to tuberculosis?',
-      options: [
-        'Cell-mediated immunity',
-        'Antibody production',
-        'Complement activation',
-        'Histamine release'
-      ],
-      correctAnswer: 0
-    }
+  "General": [
+    { id: 'g1', question: 'What does MSS stand for in the context of this course?', options: ['Medical Study System', 'Musculoskeletal System', 'Medical Science Society', 'Muscle Study Section'], correctAnswer: 1 },
   ]
-};
+}
