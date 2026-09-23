@@ -110,7 +110,11 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 <div className="space-y-2">
                   <div className="h-[600px] w-full rounded-xl overflow-hidden border" style={{ borderColor: "var(--border-color)" }}>
                     <iframe
-                      src={`${resource.file_url ? resource.file_url : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`}#toolbar=0`}
+                      src={`https://docs.google.com/viewer?url=${encodeURIComponent(
+                        resource.file_url
+                          ? resource.file_url
+                          : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`
+                      )}&embedded=true`}
                       className="h-full w-full"
                       frameBorder="0"
                     />
