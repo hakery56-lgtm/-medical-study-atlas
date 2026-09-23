@@ -43,7 +43,8 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
   const isExam = resource.type === "exam"
 
   return (
-    <section className="h-full overflow-y-auto p-6 lg:p-10" style={{ backgroundColor: "var(--bg-main)" }}>
+    <>
+      <section className="h-full overflow-y-auto p-6 lg:p-10" style={{ backgroundColor: "var(--bg-main)" }}>
       <div key={resource.id} className="animate-fade-in mx-auto max-w-3xl space-y-8">
         <header className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
@@ -175,5 +176,6 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
       cards={flashcardBank[resource.topic] || []}
       topic={resource.topic}
     />
+    </>
   )
 }
