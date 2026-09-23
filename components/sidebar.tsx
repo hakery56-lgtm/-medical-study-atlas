@@ -1,6 +1,6 @@
 "use client"
 
-import { Moon, Sun, Stethoscope, CalendarDays, ListTree, Settings, FileText } from "lucide-react"
+import { Moon, Sun, Stethoscope, Mail } from "lucide-react"
 import type { Subject } from "@/data/subjects"
 import { subjectIcons } from "@/lib/resource-ui"
 import Link from "next/link"
@@ -16,10 +16,7 @@ interface SidebarProps {
 }
 
 const quickAccess = [
-  { label: "Exam Calendar", icon: CalendarDays, href: "/calendar" },
-  { label: "Master Index", icon: ListTree, href: "/index" },
-  { label: "Resources", icon: FileText, href: "/resources" },
-  { label: "Settings", icon: Settings, href: "/settings" },
+  { label: "Contact Us", icon: Mail, href: "mailto:hasan.falah.ai261@kus.edu.iq" },
 ]
 
 export default function Sidebar({
