@@ -88,13 +88,19 @@ export default function ResourceGrid({ categoriesMap }: ResourceGridProps) {
         <>
           <FlashcardModal
             isOpen={isFlashcardOpen}
-            onClose={() => setIsFlashcardOpen(false)}
+            onClose={() => {
+              setIsFlashcardOpen(false);
+              setActiveTopic(null);
+            }}
             cards={flashcardBank[activeTopic] || []}
             topic={activeTopic}
           />
           <QuizModal
             isOpen={isQuizOpen}
-            onClose={() => setIsQuizOpen(false)}
+            onClose={() => {
+              setIsQuizOpen(false);
+              setActiveTopic(null);
+            }}
             quiz={quizBank[activeTopic] ? {
               title: `Quiz: ${activeTopic}`,
               topic: activeTopic,
