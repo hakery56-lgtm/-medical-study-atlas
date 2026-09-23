@@ -1,9 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight } from "lucide-react"
+import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain } from "lucide-react"
 import type { Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
+import FlashcardModal from "./FlashcardModal"
+import { flashcardBank } from "@/data/flashcards"
 
 interface ResourceDetailProps {
   resource: Resource | null
@@ -15,6 +17,7 @@ interface ResourceDetailProps {
 
 export default function ResourceDetail({ resource, subjectName, related, onSelectRelated, onOpenQuiz }: ResourceDetailProps) {
   const [showViewer, setShowViewer] = useState(false)
+  const [showFlashcards, setShowFlashcards] = useState(false)
   if (!resource) {
     return (
       <section className="flex h-full items-center justify-center overflow-y-auto p-8" style={{ backgroundColor: "var(--bg-main)" }}>
@@ -40,7 +43,8 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
   const isExam = resource.type === "exam"
 
   return (
-    <section className="h-full overflow-y-auto p-6 lg:p-10" style={{ backgroundColor: "var(--bg-main)" }}>
+    <>
+      <section className="h-full overflow-y-auto p-6 lg:p-10" style={{ backgroundColor: "var(--bg-main)" }}>
       <div key={resource.id} className="animate-fade-in mx-auto max-w-3xl space-y-8">
         <header className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
@@ -102,13 +106,22 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                   const storageUrl = resource.file_url
                     ? resource.file_url
                     : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`;
-                  window.open(storageUrl, "_blank");
+                  const proxyUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(storageUrl)}&embedded=true`;
+                  window.open(proxyUrl, "_blank");
                 }}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
                 style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
               >
                 <ExternalLink size={16} />
                 View Document
+              </button>
+              <button
+                onClick={() => setShowFlashcards(true)}
+                className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
+                style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+              >
+                <Brain size={16} />
+                Flash Cards
               </button>
             </div>
           )}
@@ -157,5 +170,12 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
         </div>
       </div>
     </section>
+    <FlashcardModal
+      isOpen={showFlashcards}
+      onClose={() => setShowFlashcards(false)}
+      cards={flashcardBank[resource.topic] || []}
+      topic={resource.topic}
+    />
+    </>
   )
 }
