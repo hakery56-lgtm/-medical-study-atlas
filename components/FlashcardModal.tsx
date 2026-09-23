@@ -15,7 +15,7 @@ export default function FlashcardModal({ isOpen, onClose, cards, topic }: Flashc
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showAnswer, setShowAnswer] = useState(false)
 
-  if (!isOpen) return null
+  if (!isOpen || !cards || cards.length === 0) return null
 
   const handleNext = () => {
     setShowAnswer(false)
