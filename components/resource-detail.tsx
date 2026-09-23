@@ -169,11 +169,11 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
         </div>
       </div>
     </section>
-      <FlashcardModal
-        isOpen={showFlashcards}
-        onClose={() => setShowFlashcards(false)}
-        cards={flashcardBank[resource.topic] || []}
-        topic={resource.topic}
-      />
+    <FlashcardModal
+      isOpen={showFlashcards}
+      onClose={() => setShowFlashcards(false)}
+      cards={flashcardBank[resource.topic] || []}
+      topic={resource.topic}
+    />
   )
 }
