@@ -115,6 +115,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 <ExternalLink size={16} />
                 View Document
               </button>
+            {resource.topic === "Shoulder" && (
               <button
                 onClick={() => setShowFlashcards(true)}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
@@ -123,6 +124,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 <Brain size={16} />
                 Flash Cards
               </button>
+            )}
             </div>
           )}
           <p className="truncate text-center text-[11px]" style={{ color: "var(--text-muted)" }}>
