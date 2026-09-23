@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight } from "lucide-react"
 import type { Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
@@ -13,6 +14,7 @@ interface ResourceDetailProps {
 }
 
 export default function ResourceDetail({ resource, subjectName, related, onSelectRelated, onOpenQuiz }: ResourceDetailProps) {
+  const [showViewer, setShowViewer] = useState(false)
   if (!resource) {
     return (
       <section className="flex h-full items-center justify-center overflow-y-auto p-8" style={{ backgroundColor: "var(--bg-main)" }}>
@@ -94,19 +96,35 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
               Start Quiz
             </button>
           ) : (
-            <button
-              onClick={() => {
-                const storageUrl = resource.file_url 
-                  ? resource.file_url 
-                  : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`;
-                window.open(storageUrl, "_blank");
-              }}
-              className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
-            >
-              <ExternalLink size={16} />
-              Open Original File
-            </button>
+            <div className="space-y-4">
+              {!showViewer ? (
+                <button
+                  onClick={() => setShowViewer(true)}
+                  className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
+                >
+                  <ExternalLink size={16} />
+                  View Document
+                </button>
+              ) : (
+                <div className="space-y-2">
+                  <div className="h-[600px] w-full rounded-xl overflow-hidden border" style={{ borderColor: "var(--border-color)" }}>
+                    <iframe
+                      src={`${resource.file_url ? resource.file_url : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`}#toolbar=0`}
+                      className="h-full w-full"
+                      frameBorder="0"
+                    />
+                  </div>
+                  <button
+                    onClick={() => setShowViewer(false)}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl py-2 text-xs font-medium transition-opacity hover:opacity-90"
+                    style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-main)" }}
+                  >
+                    Close Viewer
+                  </button>
+                </div>
+              )}
+            </div>
           )}
           <p className="truncate text-center text-[11px]" style={{ color: "var(--text-muted)" }}>
             {resource.title}
