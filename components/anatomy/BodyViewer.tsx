@@ -136,6 +136,10 @@ export default function BodyViewer() {
         meshOwner.current.set(mesh.uuid, node.uuid)
       })
       if (!materials.length) return
+      // useGLTF caches the scene across visits, so a part may still be exploded from last time:
+      // keep its original position on the node itself and put it back before measuring
+      const rest = (node.userData.restPosition ??= node.position.clone()) as THREE.Vector3
+      node.position.copy(rest)
       const box = new THREE.Box3().setFromObject(node)
       const center = box.getCenter(new THREE.Vector3())
       // spread sideways and front/back more than up/down so the body opens like an exploded diagram
@@ -144,7 +148,7 @@ export default function BodyViewer() {
       parts.current.set(node.uuid, {
         node, materials, system: sys, center, dir,
         name: (node.userData.name as string) || node.name,
-        rest: node.position.clone(),
+        rest,
         radius: box.getSize(new THREE.Vector3()).length() / 2,
       })
     })
