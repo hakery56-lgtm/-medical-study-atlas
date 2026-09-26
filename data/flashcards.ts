@@ -306,7 +306,7 @@ export const flashcardBank: Record<string, Flashcard[]> = {
     { id: 59, question: "How does significant clavicular shortening impact upper limb biomechanics?", answer: "It alters shoulder girdle geometry, potentially leading to persistent functional deficits." },
     { id: 60, question: "Under what circumstance would advanced imaging like CT be indicated for a clavicle fracture?", answer: "To evaluate complex intra-articular extension or sternoclavicular joint involvement." },
   ],
-  "Shoulder Joint": [
+  "Shoulder Dislocation": [
     { id: 1, question: "What structure forms the ball-and-socket articulation of the glenohumeral joint?", answer: "The humeral head articulates with the glenoid cavity." },
     { id: 2, question: "Which anatomical structures serve as static stabilizers of the glenohumeral joint?", answer: "The labrum, joint capsule, and glenohumeral ligaments act as static stabilizers." },
     { id: 3, question: "Which muscle groups function as dynamic stabilizers of the shoulder joint?", answer: "The rotator cuff muscles and scapular muscles act as dynamic stabilizers." },
@@ -360,7 +360,7 @@ export const flashcardBank: Record<string, Flashcard[]> = {
     { id: 51, question: "To assess axillary nerve sensory integrity, sensation should be tested over the _____ shoulder area.", answer: "lateral" },
     { id: 52, question: "A patient presenting after an electric shock with an internally rotated, adducted arm most likely has a _____ shoulder dislocation.", answer: "posterior" },
   ],
-  "Shoulder Dislocation": [
+  "Shoulder Muscles": [
     { id: 1, question: "Which nerve provides motor innervation to the trapezius muscle?", answer: "Spinal accessory nerve." },
     { id: 2, question: "Where does the trapezius muscle insert on the clavicle?", answer: "Posterior border of the lateral one-third of the clavicle." },
     { id: 3, question: "Which fibers of the trapezius muscle are responsible for scapular retraction?", answer: "Middle fibers." },
@@ -420,7 +420,7 @@ export const flashcardBank: Record<string, Flashcard[]> = {
     { id: 57, question: "The sternocostal head of the pectoralis major originates from the front of the sternum, upper 6 costal cartilages, and the aponeurosis of the _____.", answer: "external abdominal oblique" },
     { id: 58, question: "Besides the latissimus dorsi, which scapular region muscle plays an important role in swimming by adducting, extending, and medially rotating the shoulder?", answer: "Teres major." },
   ],
-  "Shoulder Muscles": [
+  "Shoulder Joint": [
     { id: 1, question: "What type and structural variety of joint is the glenohumeral joint?", answer: "It is a multiaxial, ball-and-socket synovial joint." },
     { id: 2, question: "What primary functional tradeoff results from the extensive mobility of the shoulder joint?", answer: "It has lower structural stability, making it highly prone to dislocation." },
     { id: 3, question: "Which two bony surfaces articulate to form the shoulder joint?", answer: "The rounded head of the humerus and the glenoid cavity of the scapula." },
