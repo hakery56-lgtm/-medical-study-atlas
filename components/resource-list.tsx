@@ -1,19 +1,13 @@
 "use client"
 
 import { Search } from "lucide-react"
-import type { Resource, ResourceType } from "@/data/subjects"
+import type { Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
-
-const filters: { key: "all" | ResourceType; label: string }[] = [
-  { key: "all", label: "All" },
-  { key: "lecture", label: "Lectures" },
-  { key: "lab", label: "Labs" },
-  { key: "note", label: "Notes" },
-  { key: "exam", label: "Quizzes" },
-]
 
 interface ResourceListProps {
   subjectName: string
+  // sub-subjects of the unit, shown as filter chips after "All"
+  disciplines: string[]
   resources: Resource[]
   filter: string
   onFilter: (f: string) => void
@@ -25,6 +19,7 @@ interface ResourceListProps {
 
 export default function ResourceList({
   subjectName,
+  disciplines,
   resources,
   filter,
   onFilter,
@@ -65,7 +60,7 @@ export default function ResourceList({
         </div>
 
         <div className="flex gap-1.5 overflow-x-auto pb-0.5">
-          {filters.map((f) => {
+          {[{ key: "all", label: "All" }, ...disciplines.map((d) => ({ key: d, label: d }))].map((f) => {
             const active = filter === f.key
             return (
               <button

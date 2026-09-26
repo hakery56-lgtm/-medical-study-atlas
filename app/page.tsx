@@ -10,23 +10,26 @@ import QuizModal from "@/components/QuizModal"
 
 const COVERAGE_TARGET = 300
 
+// each lecture is followed by its quiz, in the same discipline
 function withGeneratedQuizzes(subject: Subject): Resource[] {
-  const list: Resource[] = [...subject.resources]
-  subject.resources.forEach((r) => {
-    if (r.type === "lecture") {
-      list.push({
-        id: `quiz-${r.id}`,
-        title: `Quiz for ${r.title}`,
-        cleanTitle: `Quiz: ${r.cleanTitle}`,
-        type: "exam",
-        topic: r.topic,
-        summary: "Test your understanding of this lecture with a short interactive quiz.",
-        isQuiz: true,
-        lectureId: r.id,
-      })
-    }
-  })
-  return list
+  return subject.resources.flatMap((r): Resource[] =>
+    r.type !== "lecture"
+      ? [r]
+      : [
+          r,
+          {
+            id: `quiz-${r.id}`,
+            title: `Quiz for ${r.title}`,
+            cleanTitle: `Quiz: ${r.cleanTitle}`,
+            type: "exam",
+            discipline: r.discipline,
+            topic: r.topic,
+            summary: "Test your understanding of this lecture with a short interactive quiz.",
+            isQuiz: true,
+            lectureId: r.id,
+          },
+        ]
+  )
 }
 
 export default function AtlasPage() {
@@ -65,11 +68,12 @@ export default function AtlasPage() {
 
   const subjectData = useMemo(() => subjects.find((s) => s.id === currentSubject)!, [currentSubject])
   const allResources = useMemo(() => withGeneratedQuizzes(subjectData), [subjectData])
+  const disciplines = useMemo(() => Array.from(new Set(subjectData.resources.map((r) => r.discipline))), [subjectData])
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     return allResources.filter((r) => {
-      const matchesFilter = filter === "all" || r.type === filter
+      const matchesFilter = filter === "all" || r.discipline === filter
       const matchesSearch =
         q === "" ||
         r.cleanTitle.toLowerCase().includes(q) ||
@@ -117,6 +121,7 @@ export default function AtlasPage() {
       />
       <ResourceList
         subjectName={subjectData.name}
+        disciplines={disciplines}
         resources={filtered}
         filter={filter}
         onFilter={setFilter}
@@ -127,7 +132,6 @@ export default function AtlasPage() {
       />
       <ResourceDetail
         resource={selected}
-        subjectName={subjectData.name}
         related={related}
         onSelectRelated={handleSelect}
         onOpenQuiz={openQuiz}
