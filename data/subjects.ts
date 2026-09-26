@@ -30,7 +30,7 @@ export const subjects: Subject[] = [
       {
         id: 1,
         title: "lecture_2_inflammation_and_chemical_mediators_2d5bff50804563987f10cff7400a38f4.pdf",
-        cleanTitle: "Inflammation & Chemical Mediators",
+        cleanTitle: "lecture_2_inflammation_and_chemical_mediators_2d5bff50804563987f10cff7400a38f4",
         type: "lecture",
         topic: "Inflammation",
         summary: "Study of acute and chronic inflammation and the mediators involved.",
@@ -39,7 +39,7 @@ export const subjects: Subject[] = [
       {
         id: 2,
         title: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e9112c4.pdf",
-        cleanTitle: "Cell Injury and Adaptation",
+        cleanTitle: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e9112c4",
         type: "lecture",
         topic: "Cell Injury",
         summary: "Foundational study of cellular responses to stress and injury.",
@@ -48,7 +48,7 @@ export const subjects: Subject[] = [
       {
         id: 3,
         title: "lecture_4_eicosanoids_and_lipid_mediators.pdf",
-        cleanTitle: "Eicosanoids & Lipid Mediators",
+        cleanTitle: "lecture_4_eicosanoids_and_lipid_mediators",
         type: "lecture",
         topic: "Eicosanoids",
         summary: "Detailed look at lipid mediators of inflammation.",
@@ -64,7 +64,7 @@ export const subjects: Subject[] = [
       {
         id: 4,
         title: "impenging shoulder.pdf",
-        cleanTitle: "Shoulder Impingement",
+        cleanTitle: "impenging shoulder",
         type: "lecture",
         topic: "Shoulder Impingement",
         summary: "Clinical approach to shoulder impingement syndrome.",
@@ -73,7 +73,7 @@ export const subjects: Subject[] = [
       {
         id: 5,
         title: "(Ortho 2) Anatomy_and_Fractures_of_the_Clavicle.pdf",
-        cleanTitle: "Anatomy and Fractures of the Clavicle",
+        cleanTitle: "(Ortho 2) Anatomy_and_Fractures_of_the_Clavicle",
         type: "lecture",
         topic: "Clavicle",
         summary: "Comprehensive review of clavicle anatomy and fracture management.",
@@ -82,7 +82,7 @@ export const subjects: Subject[] = [
       {
         id: 6,
         title: "Shoulder joint - 27.pdf",
-        cleanTitle: "The Shoulder Joint",
+        cleanTitle: "Shoulder joint - 27",
         type: "lecture",
         topic: "Shoulder Joint",
         summary: "Anatomical and functional study of the shoulder joint.",
@@ -91,7 +91,7 @@ export const subjects: Subject[] = [
       {
         id: 7,
         title: "(Ortho 1) Shoulder_Dislocation_Lecture.pdf",
-        cleanTitle: "Shoulder Dislocation",
+        cleanTitle: "(Ortho 1) Shoulder_Dislocation_Lecture",
         type: "lecture",
         topic: "Shoulder Dislocation",
         summary: "Mechanisms and management of shoulder dislocations.",
@@ -100,7 +100,7 @@ export const subjects: Subject[] = [
       {
         id: 8,
         title: "muscles of shoulder rigion...pdf",
-        cleanTitle: "Muscles of the Shoulder Region",
+        cleanTitle: "muscles of shoulder rigion..",
         type: "lecture",
         topic: "Shoulder Muscles",
         summary: "Detailed study of muscles acting on the shoulder girdle.",
