@@ -25,12 +25,11 @@ export interface Subject {
   resources: Resource[]
 }
 
-const BASE_URL = "https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources"
-
-// public URL of a file in the "resources" bucket; accepts a bare name or a full local path
+// link to a file in the private "resources" bucket: app/api/file hands a short-lived signed URL
+// to users with access (checked by middleware). Accepts a bare name or a full local path.
 export function storageUrl(path: string) {
   const name = path.split(/[\\/]/).pop() ?? path
-  return `${BASE_URL}/${encodeURIComponent(name)}`
+  return `/api/file/${encodeURIComponent(name)}`
 }
 
 export const subjects: Subject[] = [

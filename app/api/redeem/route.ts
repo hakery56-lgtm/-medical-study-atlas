@@ -59,7 +59,8 @@ export async function POST(req: Request) {
       expiresAt: expiryDate.toISOString(),
       message: 'Access granted for 30 days!' 
     });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message || 'Internal Server Error' }, { status: 500 });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
