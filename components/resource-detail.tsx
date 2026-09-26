@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages } from "lucide-react"
-import type { Resource } from "@/data/subjects"
+import { storageUrl, type Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
 import FlashcardModal from "./FlashcardModal"
 import { flashcardBank } from "@/data/flashcards"
@@ -101,20 +101,17 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
             </button>
           ) : (
             <div className="space-y-4">
-              <button
-                onClick={() => {
-                  const storageUrl = resource.file_url
-                    ? resource.file_url
-                    : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`;
-                  const proxyUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(storageUrl)}&embedded=true`;
-                  window.open(proxyUrl, "_blank");
-                }}
+              {/* open the PDF directly: the Google Docs viewer proxy often failed ("No preview available") */}
+              <a
+                href={resource.file_url ?? storageUrl(resource.title)}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
                 style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
               >
                 <ExternalLink size={16} />
                 View Document
-              </button>
+              </a>
             {flashcardBank[resource.topic] && (
               <button
                 onClick={() => setShowFlashcards(true)}

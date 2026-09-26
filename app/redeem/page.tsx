@@ -59,7 +59,7 @@ export default function RedeemPage() {
         setMessage(result.error || "Something went wrong")
         setStatus("error")
       } else {
-        setMessage("Access granted! You now have 30 days of access.")
+        setMessage("Access granted! 30 days have been added to your account.")
         setStatus("success")
         setTimeout(() => router.push("/"), 3000)
       }
@@ -134,7 +134,7 @@ export default function RedeemPage() {
 
           <div className="text-center text-sm text-slate-500 dark:text-slate-400">
             Don't have a code?{" "}
-            <a href="/contact" className="text-blue-600 hover:underline font-medium">Contact support</a>
+            <a href="mailto:hasan.falah.ai261@kus.edu.iq" className="text-blue-600 hover:underline font-medium">Contact support</a>
           </div>
         </form>
       </div>
