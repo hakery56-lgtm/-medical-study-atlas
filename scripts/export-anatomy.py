@@ -9,7 +9,7 @@ Sources and licenses:
 Z-Anatomy's inner ear (CC-BY-NC-SA) and kidney (CC-BY-NC) are non-commercial, so they are removed
 and the kidneys are replaced with BodyParts3D meshes (see public/models/LICENSE.txt).
 
-Then simplify + compress each GLB into public/models (ratio per system: skin 0.9, muscular 0.25,
+Then simplify + compress each GLB into public/models (ratio per system: muscular 0.25,
 skeletal/joints 0.35, nervous/urinary 0.3, respiratory/digestive 0.4, cardiovascular/lymphatic 0.5,
 reproductive/endocrine 0.6):
   npx @gltf-transform/cli@4 optimize <out_dir>/<id>.glb public/models/<id>.glb --compress meshopt \
@@ -28,7 +28,6 @@ os.makedirs(out_dir, exist_ok=True)
 # system id -> top-level collections, or ("8: Visceral systems", sub-collection)
 VISCERAL = "8: Visceral systems"
 SYSTEMS = {
-    "skin": ["9: Regions of human body"],
     "muscular": ["4: Muscular system"],
     "skeletal": ["1: Skeletal system"],
     "joints": ["3: Joints"],
