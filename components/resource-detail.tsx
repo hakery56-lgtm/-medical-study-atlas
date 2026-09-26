@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain } from "lucide-react"
+import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages } from "lucide-react"
 import type { Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
 import FlashcardModal from "./FlashcardModal"
@@ -68,7 +68,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
               {resource.topic}
             </span>
           </div>
-          <h2 className="display-serif text-3xl font-bold leading-tight lg:text-4xl">{resource.cleanTitle}</h2>
+          <h2 className="display-serif text-3xl font-bold leading-tight [overflow-wrap:anywhere] lg:text-4xl">{resource.cleanTitle}</h2>
           <div className="flex flex-wrap items-center gap-4 text-sm" style={{ color: "var(--text-muted)" }}>
             <span className="flex items-center gap-1.5">
               <CalendarDays size={15} /> Academic Year 2025–26
@@ -124,6 +124,18 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 <Brain size={16} />
                 Flash Cards
               </button>
+            )}
+            {resource.bilingual_url && (
+              <a
+                href={resource.bilingual_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
+                style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+              >
+                <Languages size={16} />
+                Arabic Version
+              </a>
             )}
             </div>
           )}

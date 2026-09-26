@@ -8,6 +8,7 @@ export interface Resource {
   topic: string
   summary: string
   file_url?: string
+  bilingual_url?: string
   isQuiz?: boolean
   lectureId?: string | number
 }
@@ -34,7 +35,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Inflammation",
         summary: "Study of acute and chronic inflammation and the mediators involved.",
-        file_url: `${BASE_URL}/lecture_2_inflammation_and_chemical_mediators_2d5bff50804563987f10cff7400a38f4.pdf`
+        file_url: `${BASE_URL}/lecture_2_inflammation_and_chemical_mediators_2d5bff50804563987f10cff7400a38f4.pdf`,
+        bilingual_url: "/bilingual/Lecture2_Acute_Inflammation_and_Chemical_Mediators_Bilingual.pdf"
       },
       {
         id: 2,
@@ -43,7 +45,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Cell Injury",
         summary: "Foundational study of cellular responses to stress and injury.",
-        file_url: `${BASE_URL}/lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e9112c4.pdf`
+        file_url: `${BASE_URL}/lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e9112c4.pdf`,
+        bilingual_url: "/bilingual/Lecture1_Cell_Injury_and_Adaptation_Bilingual.pdf"
       },
       {
         id: 3,
@@ -52,7 +55,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Eicosanoids",
         summary: "Detailed look at lipid mediators of inflammation.",
-        file_url: `${BASE_URL}/lecture_4_eicosanoids_and_lipid_mediators.pdf`
+        file_url: `${BASE_URL}/lecture_4_eicosanoids_and_lipid_mediators.pdf`,
+        bilingual_url: "/bilingual/MSS1_NSAIDs_Bilingual.pdf"
       },
     ],
   },
@@ -68,7 +72,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Shoulder Impingement",
         summary: "Clinical approach to shoulder impingement syndrome.",
-        file_url: `${BASE_URL}/impenging shoulder.pdf`
+        file_url: `${BASE_URL}/impenging shoulder.pdf`,
+        bilingual_url: "/bilingual/Shoulder_Impingement_Syndrome_Bilingual.pdf"
       },
       {
         id: 5,
@@ -77,7 +82,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Clavicle",
         summary: "Comprehensive review of clavicle anatomy and fracture management.",
-        file_url: `${BASE_URL}/(Ortho 2) Anatomy_and_Fractures_of_the_Clavicle.pdf`
+        file_url: `${BASE_URL}/(Ortho 2) Anatomy_and_Fractures_of_the_Clavicle.pdf`,
+        bilingual_url: "/bilingual/Ortho2_Clavicle_Anatomy_and_Fractures_Bilingual.pdf"
       },
       {
         id: 6,
@@ -86,7 +92,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Shoulder Joint",
         summary: "Anatomical and functional study of the shoulder joint.",
-        file_url: `${BASE_URL}/Shoulder joint - 27.pdf`
+        file_url: `${BASE_URL}/Shoulder joint - 27.pdf`,
+        bilingual_url: "/bilingual/Shoulder_Joint_27_Bilingual.pdf"
       },
       {
         id: 7,
@@ -95,7 +102,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Shoulder Dislocation",
         summary: "Mechanisms and management of shoulder dislocations.",
-        file_url: `${BASE_URL}/(Ortho 1) Shoulder_Dislocation_Lecture.pdf`
+        file_url: `${BASE_URL}/(Ortho 1) Shoulder_Dislocation_Lecture.pdf`,
+        bilingual_url: "/bilingual/Ortho1_Shoulder_Dislocation_Bilingual.pdf"
       },
       {
         id: 8,
@@ -104,7 +112,8 @@ export const subjects: Subject[] = [
         type: "lecture",
         topic: "Shoulder Muscles",
         summary: "Detailed study of muscles acting on the shoulder girdle.",
-        file_url: `${BASE_URL}/muscles of shoulder rigion...pdf`
+        file_url: `${BASE_URL}/muscles of shoulder rigion...pdf`,
+        bilingual_url: "/bilingual/Muscles_of_Shoulder_Region_Bilingual.pdf"
       },
       {
         id: 9,
