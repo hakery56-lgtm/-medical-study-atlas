@@ -30,8 +30,9 @@ export default function QuizModal({ isOpen, quiz, onClose }: QuizModalProps) {
 
   const total = quiz.questions.length
   const correctCount = quiz.questions.filter((q) => answers[q.id] === q.correctAnswer).length
-  const score = Math.round((correctCount / total) * 100)
-  const allAnswered = Object.keys(answers).length === total
+  // quizzes are long, so answers can be checked at any point; score only what was answered
+  const answered = Object.keys(answers).length
+  const score = answered ? Math.round((correctCount / answered) * 100) : 0
 
   const select = (id: string, idx: number) => {
     if (!submitted) setAnswers((p) => ({ ...p, [id]: idx }))
@@ -90,7 +91,8 @@ export default function QuizModal({ isOpen, quiz, onClose }: QuizModalProps) {
               <div>
                 <h4 className="text-lg font-bold">{score >= 70 ? "Great work!" : "Keep practicing!"}</h4>
                 <p className="text-sm font-semibold">
-                  {correctCount}/{total} correct · {score}%
+                  {correctCount}/{answered} correct · {score}%
+                  {answered < total && ` · ${total - answered} skipped`}
                 </p>
               </div>
             </div>
@@ -168,15 +170,15 @@ export default function QuizModal({ isOpen, quiz, onClose }: QuizModalProps) {
           ) : (
             <button
               onClick={() => setSubmitted(true)}
-              disabled={!allAnswered}
+              disabled={answered === 0}
               className="rounded-xl px-6 py-2.5 text-sm font-semibold transition-opacity"
               style={{
-                backgroundColor: allAnswered ? "var(--accent)" : "var(--border-strong)",
-                color: allAnswered ? "var(--accent-contrast)" : "var(--text-muted)",
-                cursor: allAnswered ? "pointer" : "not-allowed",
+                backgroundColor: answered ? "var(--accent)" : "var(--border-strong)",
+                color: answered ? "var(--accent-contrast)" : "var(--text-muted)",
+                cursor: answered ? "pointer" : "not-allowed",
               }}
             >
-              Check Answers
+              Check Answers ({answered}/{total})
             </button>
           )}
         </div>
