@@ -105,8 +105,8 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 onClick={() => {
                   const storageUrl = resource.file_url
                     ? resource.file_url
-                    : \`https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/\${encodeURIComponent(resource.title)}\`;
-                  const proxyUrl = \`https://docs.google.com/viewer?url=\${encodeURIComponent(storageUrl)}&embedded=true\`;
+                    : `https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${encodeURIComponent(resource.title)}`;
+                  const proxyUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(storageUrl)}&embedded=true`;
                   window.open(proxyUrl, "_blank");
                 }}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
@@ -115,16 +115,16 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
                 <ExternalLink size={16} />
                 View Document
               </button>
-            {resource.topic === "Shoulder" && (
-              <button
-                onClick={() => setShowFlashcards(true)}
-                className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
-                style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
-              >
-                <Brain size={16} />
-                Flash Cards
-              </button>
-            )}
+              {flashcardBank[resource.topic] && (
+                <button
+                  onClick={() => setShowFlashcards(true)}
+                  className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
+                  style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+                >
+                  <Brain size={16} />
+                  Flash Cards
+                </button>
+              )}
             </div>
           )}
           <p className="truncate text-center text-[11px]" style={{ color: "var(--text-muted)" }}>
