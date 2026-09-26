@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages } from "lucide-react"
+import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages, GraduationCap } from "lucide-react"
 import { storageUrl, type Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
 import FlashcardModal from "./FlashcardModal"
@@ -132,6 +132,18 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
               >
                 <Languages size={16} />
                 Arabic Version
+              </a>
+            )}
+            {resource.summary_url && (
+              <a
+                href={resource.summary_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
+                style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+              >
+                <GraduationCap size={16} />
+                Exam Summary
               </a>
             )}
             </div>

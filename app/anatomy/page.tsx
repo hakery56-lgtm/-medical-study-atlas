@@ -1,9 +1,9 @@
 "use client"
 
-import { useEffect } from "react"
 import dynamic from "next/dynamic"
 import Link from "next/link"
 import { ArrowLeft, PersonStanding } from "lucide-react"
+import ApplyStoredTheme from "@/components/ApplyStoredTheme"
 
 // WebGL only runs in the browser
 const BodyViewer = dynamic(() => import("@/components/anatomy/BodyViewer"), {
@@ -16,15 +16,9 @@ const BodyViewer = dynamic(() => import("@/components/anatomy/BodyViewer"), {
 })
 
 export default function AnatomyPage() {
-  useEffect(() => {
-    if (localStorage.getItem("atlas-theme") === "dark") {
-      document.documentElement.setAttribute("data-theme", "dark")
-      document.documentElement.classList.add("dark")
-    }
-  }, [])
-
   return (
     <main className="flex h-[100dvh] flex-col" style={{ backgroundColor: "var(--bg-main)", color: "var(--text-main)" }}>
+      <ApplyStoredTheme />
       <header className="flex items-center gap-3 border-b px-4 py-3" style={{ backgroundColor: "var(--bg-pane)", borderColor: "var(--border-color)" }}>
         <Link href="/" aria-label="Back to library" className="flex h-9 w-9 items-center justify-center rounded-lg border" style={{ borderColor: "var(--border-color)", backgroundColor: "var(--bg-card)" }}>
           <ArrowLeft size={17} />

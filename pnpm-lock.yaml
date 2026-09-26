@@ -29,6 +29,9 @@ importers:
       lucide-react:
         specifier: ^0.300.0
         version: 0.300.0(react@18.3.1)
+      marked:
+        specifier: ^14.1.4
+        version: 14.1.4
       next:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -623,6 +626,11 @@ packages:
     peerDependencies:
       '@types/three': '>=0.134.0'
       three: '>=0.134.0'
+
+  marked@14.1.4:
+    resolution: {integrity: sha512-vkVZ8ONmUdPnjCKc5uTRvmkRbx4EAi2OkTOXmfTDhZz3OFqMNBM1oTTWwTr4HY4uAEojhzPf+Fy8F1DWa3Sndg==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1486,6 +1494,8 @@ snapshots:
     dependencies:
       '@types/three': 0.169.0
       three: 0.169.0
+
+  marked@14.1.4: {}
 
   merge2@1.4.1: {}
 
