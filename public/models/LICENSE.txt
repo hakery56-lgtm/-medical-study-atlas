@@ -1,0 +1,19 @@
+3D Body Explorer models (public/models/*.glb)
+
+These models are licensed under Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
+
+They are derived from:
+- Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0
+  https://github.com/Z-Anatomy/Models-of-human-anatomy
+- BodyParts3D, Copyright (c) 2008 Life Science Integrated Database Center (DBCLS),
+  CC-BY-SA 2.1 Japan - https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
+  (kidneys: FMA7204 right kidney, FMA7205 left kidney)
+
+Changes: exported one file per body system, labels and helper objects removed,
+vessels/nerves converted from curves to meshes, meshes simplified and
+meshopt-compressed. Z-Anatomy's inner ear (Univ. of Dundee, CC-BY-NC-SA 4.0) and
+kidney (L. Cowley, CC-BY-NC 4.0) models are NOT included; the kidneys were
+replaced with BodyParts3D meshes.
+
+Regenerate with scripts/export-anatomy.py (see its header).

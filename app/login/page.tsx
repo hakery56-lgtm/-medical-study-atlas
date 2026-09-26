@@ -2,11 +2,15 @@
 
 import { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
-import { useRouter } from "next/navigation"
 import { Loader2, Lock, User, ArrowRight } from "lucide-react"
 
+// where middleware wanted to go before sending us here; only same-site paths
+function nextPath() {
+  const next = new URLSearchParams(window.location.search).get("next")
+  return next && /^\/(?![\/\\])/.test(next) ? next : "/"
+}
+
 export default function LoginPage() {
-  const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
@@ -18,6 +22,11 @@ export default function LoginPage() {
       setDark(true)
       document.documentElement.classList.add("dark")
     }
+    // already logged in (e.g. the auth cookie had expired): the cookie is refreshed on load, so go straight back.
+    // getUser asks the server, like middleware does, so a rejected session can't bounce us back here in a loop
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user) window.location.replace(nextPath())
+    })
   }, [])
 
   const toggleTheme = () => {
@@ -47,7 +56,8 @@ export default function LoginPage() {
     if (authError) {
       setError(authError.message)
     } else {
-      router.push("/")
+      // full load so middleware sees the new auth cookie (also works for PDFs)
+      window.location.assign(nextPath())
     }
     setLoading(false)
   }

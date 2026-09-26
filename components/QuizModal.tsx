@@ -135,6 +135,11 @@ export default function QuizModal({ isOpen, quiz, onClose }: QuizModalProps) {
                   )
                 })}
               </div>
+              {submitted && q.explanation && (
+                <p className="rounded-xl p-3 text-xs leading-relaxed" style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-muted)" }}>
+                  {q.explanation}
+                </p>
+              )}
             </div>
           ))}
         </div>

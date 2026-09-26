@@ -28,8 +28,12 @@ export async function middleware(req: NextRequest) {
   const sessionCookie = req.cookies.get('sb-access-token')?.value || 
                        req.cookies.get('sb-auth-token')?.value;
 
+  // send the user back to the page they wanted after logging in
+  const loginUrl = new URL('/login', req.url);
+  loginUrl.searchParams.set('next', pathname + req.nextUrl.search);
+
   if (!sessionCookie) {
-    return NextResponse.redirect(new URL('/login', req.url));
+    return NextResponse.redirect(loginUrl);
   }
 
   try {
@@ -41,7 +45,7 @@ export async function middleware(req: NextRequest) {
     const { data: { user }, error: authError } = await supabase.auth.getUser(sessionCookie);
 
     if (authError || !user) {
-      return NextResponse.redirect(new URL('/login', req.url));
+      return NextResponse.redirect(loginUrl);
     }
 
     const { data: profile } = await supabase
@@ -55,7 +59,7 @@ export async function middleware(req: NextRequest) {
     }
   } catch (e) {
     console.error('Middleware error:', e);
-    return NextResponse.redirect(new URL('/login', req.url));
+    return NextResponse.redirect(loginUrl);
   }
 
   return NextResponse.next();
