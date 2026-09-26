@@ -22,7 +22,7 @@ type Parts = MutableRefObject<Map<string, Part>>
 
 const HOME = { target: new THREE.Vector3(0, 0, 0), pos: new THREE.Vector3(0, 0.05, 3.4) }
 const EXPLODE_DISTANCE = 0.7
-const LAYER_NAMES = ["Skin", "Muscles", "Vessels, nerves & lymph", "Organs", "Skeleton"]
+const LAYER_NAMES = ["Muscles", "Vessels, nerves & lymph", "Organs", "Skeleton"]
 const ACCENT = new THREE.Color("#14b8a6")
 const clamp01 = (x: number) => Math.min(1, Math.max(0, x))
 
@@ -289,7 +289,7 @@ export default function BodyViewer() {
           <span className="text-xs font-semibold" style={{ color: "var(--accent)" }}>{LAYER_NAMES[Math.min(MAX_DEPTH, Math.floor(peel))]}</span>
         </div>
         <input type="range" min={0} max={MAX_DEPTH} step={0.05} value={peel} onChange={(e) => setPeel(Number(e.target.value))} aria-label="Peel layers" className="w-full accent-[var(--accent)]" />
-        <div className="flex justify-between text-[10px]" style={{ color: "var(--text-muted)" }}><span>Skin</span><span>Skeleton</span></div>
+        <div className="flex justify-between text-[10px]" style={{ color: "var(--text-muted)" }}><span>Muscles</span><span>Skeleton</span></div>
       </section>
 
       <section>
