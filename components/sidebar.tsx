@@ -1,6 +1,6 @@
 "use client"
 
-import { Moon, Sun, Stethoscope, Mail } from "lucide-react"
+import { Moon, Sun, Stethoscope, Mail, PersonStanding } from "lucide-react"
 import type { Subject } from "@/data/subjects"
 import { subjectIcons } from "@/lib/resource-ui"
 import Link from "next/link"
@@ -16,6 +16,7 @@ interface SidebarProps {
 }
 
 const quickAccess = [
+  { label: "3D Body Explorer", icon: PersonStanding, href: "/anatomy" },
   { label: "Contact Us", icon: Mail, href: "mailto:hasan.falah.ai261@kus.edu.iq" },
 ]
 
