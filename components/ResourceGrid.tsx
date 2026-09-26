@@ -5,6 +5,7 @@ import FlashcardModal from "./FlashcardModal"
 import QuizModal from "./QuizModal"
 import { flashcardBank } from "@/data/flashcards"
 import { quizBank } from "@/data/quizzes"
+import { storageUrl } from "@/data/subjects"
 import { BookOpen, BrainCircuit } from "lucide-react"
 
 interface ResourceGridProps {
@@ -67,7 +68,7 @@ export default function ResourceGrid({ categoriesMap }: ResourceGridProps) {
               {items.map((file, idx) => (
                 <a
                   key={idx}
-                  href={`https://fkrhjhfwzaqdntyoysog.supabase.co/storage/v1/object/public/resources/${file.storage_path}`}
+                  href={storageUrl(file.storage_path)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-3 rounded-lg border border-slate-100 hover:border-blue-500 hover:bg-blue-50 transition-all group"

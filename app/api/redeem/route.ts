@@ -20,30 +20,39 @@ export async function POST(req: Request) {
     
     if (authError || !user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
-    const { data: codeData, error: codeError } = await supabase
-      .from('access_codes')
-      .select('*')
-      .eq('code', code)
-      .single();
+    if (!code) return NextResponse.json({ error: 'Access code is required' }, { status: 400 });
 
-    if (codeError || !codeData || codeData.is_used) {
+    // 1. Claim the code in one step: the update only matches while it is unused,
+    //    so two simultaneous requests can't both redeem the same code
+    const { data: claimed, error: claimError } = await supabase
+      .from('access_codes')
+      .update({ is_used: true, used_by: user.id, used_at: new Date().toISOString() })
+      .eq('code', code)
+      .eq('is_used', false)
+      .select('code');
+
+    if (claimError) throw claimError;
+    if (!claimed?.length) {
       return NextResponse.json({ error: 'Invalid or already used code' }, { status: 400 });
     }
 
-    // 1. Mark code as used
-    await supabase
-      .from('access_codes')
-      .update({ is_used: true, used_by: user.id, used_at: new Date().toISOString() })
-      .eq('code', code);
+    // 2. Extend access by 30 days, counting from the current expiry if access is still active
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('access_until')
+      .eq('id', user.id)
+      .single();
 
-    // 2. Extend access by 30 days
-    const expiryDate = new Date();
+    const current = profile?.access_until ? new Date(profile.access_until) : null;
+    const expiryDate = current && current > new Date() ? current : new Date();
     expiryDate.setDate(expiryDate.getDate() + 30);
 
-    await supabase
+    const { error: profileError } = await supabase
       .from('profiles')
       .update({ access_until: expiryDate.toISOString() })
       .eq('id', user.id);
+
+    if (profileError) throw profileError;
 
     return NextResponse.json({ 
       success: true, 
