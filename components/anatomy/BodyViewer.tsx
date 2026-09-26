@@ -215,6 +215,13 @@ export default function BodyViewer() {
     e.stopPropagation()
     setSelected(pick(e))
   }
+  const onDoubleClick = (e: ThreeEvent<MouseEvent>) => {
+    e.stopPropagation()
+    const uuid = pick(e)
+    if (!uuid) return
+    setSelected(uuid)
+    setFocus({ uuid, n: Date.now() })
+  }
 
   const toggleSystem = (id: string) => {
     setEnabled((s) => ({ ...s, [id]: !s[id] }))
@@ -311,11 +318,11 @@ export default function BodyViewer() {
       </aside>
 
       <div className="relative min-w-0 flex-1" style={{ touchAction: "none" }}>
-        <Canvas camera={{ position: HOME.pos.toArray(), fov: 35, near: 0.01, far: 50 }} dpr={[1, 2]} onPointerMissed={() => setSelected(null)}>
+        <Canvas camera={{ position: HOME.pos.toArray(), fov: 35, near: 0.002, far: 50 }} dpr={[1, 2]} onPointerMissed={() => setSelected(null)}>
           <hemisphereLight args={["#ffffff", "#8a8070", 1.3]} />
           <directionalLight position={[2, 3, 4]} intensity={1.6} />
           <directionalLight position={[-3, 1, -3]} intensity={0.7} />
-          <group onPointerMove={onPointerMove} onPointerOut={onPointerOut} onClick={onClick}>
+          <group onPointerMove={onPointerMove} onPointerOut={onPointerOut} onClick={onClick} onDoubleClick={onDoubleClick}>
             {anatomySystems.filter((s) => mounted.has(s.id)).map((s) => (
               <Suspense key={s.id} fallback={null}>
                 <SystemModel sys={s} onLoad={onLoad} />
@@ -324,7 +331,7 @@ export default function BodyViewer() {
           </group>
           <Exploder parts={parts} explode={explode} version={version} />
           <CameraRig parts={parts} focus={focus} />
-          <OrbitControls makeDefault enableDamping target={HOME.target.toArray()} minDistance={0.1} maxDistance={6} />
+          <OrbitControls makeDefault enableDamping zoomToCursor zoomSpeed={2} target={HOME.target.toArray()} minDistance={0.02} maxDistance={6} />
         </Canvas>
 
         <LoadingBadge />

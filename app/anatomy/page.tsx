@@ -35,7 +35,7 @@ export default function AnatomyPage() {
         <div>
           <h1 className="display-serif text-lg font-bold leading-tight">3D Body Explorer</h1>
           <p className="text-[11px]" style={{ color: "var(--text-muted)" }}>
-            Drag to rotate · scroll to zoom · click a structure to inspect it
+            Drag to rotate · scroll to zoom at the pointer · double-click a structure to zoom to it
           </p>
         </div>
       </header>
