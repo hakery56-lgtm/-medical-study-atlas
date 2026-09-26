@@ -2,11 +2,15 @@
 
 import { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { Loader2, Lock, User, ArrowRight } from "lucide-react"
+
+// pages that are themselves about signing in; the popup would cover their forms
+const AUTH_PAGES = ["/login", "/signup", "/redeem"]
 
 export default function LoginPopup() {
   const router = useRouter()
+  const pathname = usePathname()
   const [loading, setLoading] = useState(false)
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
@@ -46,7 +50,7 @@ export default function LoginPopup() {
     setLoading(false)
   }
 
-  if (!isVisible) return null
+  if (!isVisible || AUTH_PAGES.includes(pathname)) return null
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4 transition-all">
