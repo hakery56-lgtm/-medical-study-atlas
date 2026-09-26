@@ -15,12 +15,13 @@ export function generateStaticParams() {
   return lectures.map((r) => ({ id: idOf(r.summary_url!) }))
 }
 
-export default function SummaryPage({ params }: { params: { id: string } }) {
-  const lecture = lectures.find((r) => idOf(r.summary_url!) === params.id)
+export default async function SummaryPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const lecture = lectures.find((r) => idOf(r.summary_url!) === id)
   if (!lecture) notFound()
 
   // our own trusted content, rendered at build time
-  const markdown = readFileSync(path.join(process.cwd(), "content/summaries", `${params.id}.md`), "utf8")
+  const markdown = readFileSync(path.join(process.cwd(), "content/summaries", `${id}.md`), "utf8")
   const html = marked.parse(markdown) as string
 
   return (

@@ -5,10 +5,10 @@ import type { NextRequest } from 'next/server';
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
   
-  // 1. Allow static files, API routes, and public pages
+  // 1. Allow static files, API routes, and public pages (lecture files under /api/file need access)
   if (
     pathname.startsWith('/_next') || 
-    pathname.startsWith('/api') || 
+    (pathname.startsWith('/api') && !pathname.startsWith('/api/file/')) || 
     pathname === '/' || 
     pathname === '/favicon.ico'
   ) {
