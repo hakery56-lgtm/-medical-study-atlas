@@ -165,3 +165,26 @@ body {
 .animate-fade-in {
   animation: atlas-fade-in 0.35s ease both;
 }
+
+/* Lecture exam summaries (app/summary/[id]) — Markdown rendered inside .summary */
+.summary { font-size: 1.02rem; line-height: 1.9; }
+.summary h1 { font-family: var(--font-serif), serif; font-size: 1.75rem; font-weight: 700; line-height: 1.4; margin-bottom: 1rem; }
+.summary h2 { font-size: 1.3rem; font-weight: 700; margin: 2.25rem 0 0.75rem; color: var(--accent); }
+.summary h3 { font-size: 1.08rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+.summary p, .summary ul, .summary ol, .summary table, .summary blockquote, .summary details { margin-bottom: 0.9rem; }
+.summary ul { list-style: disc; padding-inline-start: 1.5rem; }
+.summary ol { list-style: decimal; padding-inline-start: 1.5rem; }
+.summary li { margin-bottom: 0.25rem; }
+.summary strong { color: var(--text-main); font-weight: 700; }
+.summary hr { border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+.summary table { display: block; overflow-x: auto; border-collapse: collapse; font-size: 0.92rem; }
+.summary th, .summary td { border: 1px solid var(--border-color); padding: 0.45rem 0.7rem; text-align: start; vertical-align: top; }
+.summary th { background: var(--bg-pane); }
+.summary blockquote { border-inline-start: 4px solid #d97706; background: var(--type-note-bg); padding: 0.75rem 1rem; border-radius: 0.75rem; }
+.summary blockquote p { margin: 0; }
+.summary details { border: 1px solid var(--border-color); border-radius: 0.75rem; background: var(--bg-card); padding: 0.6rem 0.9rem; }
+.summary details[open] { box-shadow: var(--shadow-card); }
+.summary summary { cursor: pointer; font-weight: 600; }
+.summary details > :not(summary) { margin-top: 0.6rem; }
+.summary .key-points { background: var(--accent-soft); border-radius: 0.75rem; padding: 0.75rem 1rem 0.25rem; margin-bottom: 1rem; line-height: 1.7; }
+.summary .key-points strong:first-child { color: var(--accent); }
