@@ -99,7 +99,7 @@ export const flashcardBank: Record<string, Flashcard[]> = {
     { id: 34, question: "What is the clinical significance of the axillary nerve in shoulder injury?", answer: "It is often damaged during anterior dislocations, leading to deltoid paralysis." },
     { id: 35, question: "What is the function of the coracobrachialis muscle?", answer: "It flexes and adducts the arm." },
     { id: 36, question: "Which muscle is the primary extensor of the shoulder joint?", answer: "Latissimus dorsi." },
-    { id: 37, question: "What is the role of the pectoralis minor muscle?",C
+    { id: 37, question: "What is the role of the pectoralis minor muscle?", answer: "It stabilizes the scapula by pulling it inferiorly and anteriorly." },
     { id: 38, question: "Which tendon is most likely to be ruptured in a shoulder injury?", answer: "Supraspinatus tendon." },
     { id: 39, question: "Where do the tendons of the rotator cuff muscles insert?", answer: "They insert into the greater and lesser tuberosities of the humerus." },
     { id: 40, question: "How do the rotator cuff muscles actively stabilize the shoulder joint?", answer: "They pull the head of the humerus medially towards the glenoid cavity during movement." },
