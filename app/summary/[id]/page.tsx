@@ -35,7 +35,7 @@ export default function SummaryPage({ params }: { params: { id: string } }) {
           <h1 className="truncate text-sm font-bold [overflow-wrap:anywhere]">{lecture.cleanTitle}</h1>
         </div>
       </header>
-      <article dir="rtl" lang="ar" className="summary mx-auto max-w-3xl px-4 py-8 lg:px-8" dangerouslySetInnerHTML={{ __html: html }} />
+      <article className="summary mx-auto max-w-3xl px-4 py-8 lg:px-8" dangerouslySetInnerHTML={{ __html: html }} />
     </main>
   )
 }

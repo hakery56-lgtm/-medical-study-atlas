@@ -1,19 +1,19 @@
-# Applied Anatomy — Shoulder Joint — مراجعة ليلة الامتحان
+# Applied Anatomy — Shoulder Joint — Exam Night Review
 
-هلا بيك 👋 هاي أطول ملزمة بالـ shoulder: أول نصها anatomy المفصل (type، articulation، capsule، ligaments، bursae، stability، movements، shoulder girdle)، والنص الثاني **applied anatomy** (dislocation، impingement، frozen shoulder، clavicle fractures) مع MCQs الدكتور. بعد كل موضوع **Key points** و3 أسئلة short essay (اضغط على السؤال حتى يطلع الجواب).
+The longest shoulder lecture. The first half is joint anatomy (type, articulation, capsule, ligaments, bursae, stability, movements, shoulder girdle); the second half is **applied anatomy** (dislocation, impingement, frozen shoulder, clavicle fractures) with the lecturer's MCQs. After each topic: **Key points** and 3 short-essay questions (tap a question to reveal the answer).
 
 ---
 
-## 1. أهمية المفصل ونوعه وليش هو unstable
+## 1. Importance, type, and why the joint is unstable
 
-- ⭐ **الـ shoulder (glenohumeral) joint هو أكثر مفصل متحرك بالجسم، وبنفس الوقت أكثر مفصل معرض للـ dislocation**.
-- **Type**: **synovial، ball-and-socket variety، multiaxial (freely mobile)** → لهذا هو unstable.
+- ⭐ The **shoulder (glenohumeral) joint is the most movable joint in the body — and the most prone to dislocation**.
+- **Type**: **synovial, ball-and-socket variety, multiaxial (freely mobile)** → hence unstable.
 
-### ليش unstable؟
-1. **Poor fitness of bony parts**: الـ **head of humerus أكبر من الـ glenoid cavity** (صغير وضحل) — النسبة **4:1**.
-2. الـ **capsule** سميك وقوي بس **كلش lax inferiorly**.
+### Why unstable?
+1. **Poor fit of the bony parts**: the **head of the humerus is larger than the glenoid cavity** (small and shallow) — ratio **4:1**.
+2. The **capsule** is thick and strong but **very lax inferiorly**.
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Most movable joint and most prone to dislocation.
@@ -22,80 +22,80 @@
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Why is the shoulder joint unstable?</summary>
 
 **Answer:** Because of poor fitness of its bony parts — the head of the humerus is about four times larger than the small, shallow glenoid cavity (4:1) — and because, although the capsule is thick and strong, it is very lax inferiorly.
 
-**ليش؟** السببين حرفياً من الملزمة.
+**Why:** Both reasons are stated directly in the lecture.
 </details>
 
 <details><summary>Q2. What type of joint is the shoulder and what is its clinical importance?</summary>
 
 **Answer:** A synovial, ball-and-socket, multiaxial (freely mobile) joint; it is the most movable joint in the body and also the most prone to dislocation.
 
-**ليش؟** النوع + الأهمية.
+**Why:** Type + importance.
 </details>
 
 <details><summary>Q3. What is the ratio between the humeral head and the glenoid cavity?</summary>
 
 **Answer:** About 4 to 1 — the humeral head is much larger than the glenoid cavity.
 
-**ليش؟** رقم ينسأل كثير.
+**Why:** A frequently asked number.
 </details>
 
 ---
 
-## 2. Articular surfaces & Capsule
+## 2. Articular surfaces & capsule
 
 ### Articulation
-- **Rounded head of humerus** مع **glenoid cavity of scapula**.
-- الـ glenoid: **pear-shaped، shallow concave fossa** — socket ضعيف للرأس الكبير.
-- ⭐ يتعمق شوية بـ **fibrocartilaginous rim** اسمه **labrum glenoidale**.
+- **Rounded head of the humerus** with the **glenoid cavity of the scapula**.
+- The glenoid is a **pear-shaped, shallow concave fossa** — a poor socket for the large head.
+- ⭐ Slightly deepened by a **fibrocartilaginous rim**, the **labrum glenoidale**.
 
-### Capsule — **thick and lax** (يسمح بحركة واسعة)
-**Attachment:**
-- **Medially**: حافة الـ **glenoid cavity outside the labrum**؛ ويمتد **beyond the supraglenoid tubercle** → لهذا ⭐ **long head of biceps داخل الـ joint cavity**.
-- **Laterally**: **anatomical neck** of humerus، **عدا inferiorly** ينزل **1.5 cm أو أكثر على الـ surgical neck**.
+### Capsule — **thick and lax** (allows a wide range of movement)
+**Attachments:**
+- **Medially**: margin of the **glenoid cavity outside the labrum**; extends **beyond the supraglenoid tubercle** → so ⭐ the **long head of biceps lies inside the joint cavity**.
+- **Laterally**: **anatomical neck** of the humerus, **except inferiorly**, where it extends **1.5 cm or more onto the surgical neck**.
 
 **Weak points:**
-- **Anteriorly** — فيه **فتحتين**:
-  1. وحدة يتصل بيها الـ synovial membrane بالـ **subscapularis bursa**.
-  2. وحدة بين الـ tuberosities يمر منها **tendon of long head of biceps** وغلافه.
-- **Inferiorly** — **lax** ومطوي داخل الـ **quadrangular space** (حتى يسمح بالـ **abduction**).
+- **Anteriorly** — **two openings**:
+  1. One through which the synovial membrane communicates with the **subscapularis bursa**.
+  2. One between the tuberosities for the **tendon of the long head of biceps** and its sheath.
+- **Inferiorly** — **lax**, folded into the **quadrangular space** (to allow **abduction**).
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Glenoid: pear-shaped, shallow; deepened by the labrum glenoidale.
 - Capsule medially outside the labrum and beyond the supraglenoid tubercle → long head of biceps is intracapsular.
 - Laterally anatomical neck, except inferiorly 1.5 cm onto the surgical neck.
-- Weak anteriorly (2 openings: subscapularis bursa, biceps tendon) and inferiorly (lax, folded into quadrangular space).
+- Weak anteriorly (2 openings: subscapularis bursa, biceps tendon) and inferiorly (lax, folded into the quadrangular space).
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Describe the attachments of the shoulder joint capsule.</summary>
 
 **Answer:** Medially to the margin of the glenoid cavity outside the labrum, extending beyond the supraglenoid tubercle so that the long head of biceps lies within the joint cavity. Laterally to the anatomical neck of the humerus, except inferiorly where it extends 1.5 cm or more onto the surgical neck.
 
-**ليش؟** الـ medial و lateral مع الاستثناء السفلي.
+**Why:** Medial and lateral attachments with the inferior exception.
 </details>
 
 <details><summary>Q2. Why is the long head of biceps intracapsular?</summary>
 
 **Answer:** Because the medial attachment of the capsule extends beyond the supraglenoid tubercle, enclosing the origin of the long head of biceps within the joint cavity.
 
-**ليش؟** سؤال "explain why" شائع.
+**Why:** A common "explain why" question.
 </details>
 
 <details><summary>Q3. What are the weak points of the capsule?</summary>
 
 **Answer:** Anteriorly, where it has two openings — one communicating with the subscapularis bursa and one between the tuberosities for the long head of biceps tendon and its sheath; and inferiorly, where it is lax and folded into the quadrangular space to allow abduction.
 
-**ليش؟** نقاط الضعف تفسر الـ dislocation.
+**Why:** The weak points explain dislocation.
 </details>
 
 ---
@@ -103,122 +103,122 @@
 ## 3. Ligaments
 
 ### A. Intra-articular
-- **Glenohumeral ligaments**: **3 weak bands** تقوي **مقدمة** الـ capsule؛ من الـ anterior margin of glenoid إلى **lesser tuberosity** و **anatomical neck**.
+- **Glenohumeral ligaments**: **three weak bands** that strengthen the **front** of the capsule; from the anterior glenoid margin to the **lesser tuberosity** and **anatomical neck**.
 
 ### B. Extra-articular
-- **Transverse humeral ligament**: يقوي الـ capsule ويجسر الفجوة بين الـ tuberosities؛ ⭐ **retinaculum for the tendon of long head of biceps**.
-- **Coracohumeral ligament**: يقوي الـ capsule **من فوق**؛ من **root of coracoid** إلى **greater tuberosity**.
-- **Coracoacromial ligament**: ⭐ **مو thickening of the capsule** (عكس البقية)؛ بين **acromion** و **coracoid** ويكوّن **coraco-acromial arch** → يغطي المفصل ويمنع **superior displacement of the humeral head**.
+- **Transverse humeral ligament**: strengthens the capsule and bridges the gap between the tuberosities; ⭐ a **retinaculum for the tendon of the long head of biceps**.
+- **Coracohumeral ligament**: strengthens the capsule **above**; from the **root of the coracoid** to the **greater tuberosity**.
+- **Coracoacromial ligament**: ⭐ **not a thickening of the capsule** (unlike the others); runs between the **acromion** and **coracoid**, forming the **coraco-acromial arch** → overlies the joint and prevents **superior displacement of the humeral head**.
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Glenohumeral ligaments: 3 weak bands strengthening the front of the capsule.
-- Transverse humeral: bridges tuberosities, retinaculum for long head of biceps.
+- Transverse humeral: bridges the tuberosities, retinaculum for long head of biceps.
 - Coracohumeral: coracoid root → greater tuberosity, strengthens capsule above.
-- Coracoacromial: not a capsular thickening; forms coraco-acromial arch preventing superior displacement.
+- Coracoacromial: not a capsular thickening; forms the coraco-acromial arch preventing superior displacement.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. List the ligaments of the shoulder joint.</summary>
 
 **Answer:** Intra-articular: glenohumeral ligaments (three weak bands on the front of the capsule). Extra-articular: transverse humeral ligament, coracohumeral ligament and coracoacromial ligament.
 
-**ليش؟** تقسيم intra/extra.
+**Why:** The intra/extra-articular split.
 </details>
 
 <details><summary>Q2. What is the coraco-acromial arch and its function?</summary>
 
 **Answer:** It is formed by the coracoacromial ligament running between the acromion and coracoid process (not a thickening of the capsule); it overlies the shoulder joint and prevents superior displacement of the humeral head.
 
-**ليش؟** الـ arch يرجع بالـ impingement.
+**Why:** The arch comes back in impingement.
 </details>
 
 <details><summary>Q3. What is the function of the transverse humeral ligament?</summary>
 
 **Answer:** It strengthens the capsule, bridges the gap between the two tuberosities and acts as a retinaculum for the tendon of the long head of biceps.
 
-**ليش؟** كلمة retinaculum هي المطلوبة.
+**Why:** "Retinaculum" is the word wanted.
 </details>
 
 ---
 
-## 4. Bursae & Synovial membrane
+## 4. Bursae & synovial membrane
 
-**Bursa** = synovial sac مليان synovial fluid: **cushion** بين العظم والأنسجة، **يقلل الاحتكاك**، و **يزيّت** المناطق.
+A **bursa** is a synovial sac filled with synovial fluid: it **cushions** bone from overlying tissues, **reduces friction** and **lubricates** surfaces exposed to wear.
 
 ### a) Subacromial bursa
 - ⭐ **Largest bursa in the body**.
 - ⭐ **No communication with the joint cavity**.
-- بالـ **subacromial space**: **superiorly** acromion، coracoid، coracoacromial ligament، proximal deltoid؛ **inferiorly** fibers of **supraspinatus**.
-- **Height of subacromial space ≈ 1.0–1.5 cm**.
-- يمتد تحت الـ deltoid = **subacromial-subdeltoid bursa** (يسهل حركة الـ deltoid فوق الـ capsule والـ supraspinatus).
+- Lies in the **subacromial space**: bounded **superiorly** by the acromion, coracoid, coracoacromial ligament and proximal deltoid; **inferiorly** by the fibres of **supraspinatus**.
+- **Height of the subacromial space ≈ 1.0–1.5 cm**.
+- Continues beneath the deltoid as the **subacromial-subdeltoid bursa** (eases movement of deltoid over the capsule and supraspinatus).
 
 ### b) Subscapular bursa
-- بين **subscapularis tendon** و **capsule**.
+- Between the **subscapularis tendon** and the **capsule**.
 - ⭐ **Communicates with the joint cavity**.
-- يقلل wear and tear على الـ tendon.
+- Reduces wear and tear on the tendon.
 
 ### Synovial membrane
-يبطن الـ capsule من جوه ويفرز synovial fluid يقلل الاحتكاك.
+Lines the inner surface of the capsule and produces synovial fluid to reduce friction.
 
-> ⚠️ **انتبه:** **Subacromial = لا يتصل** بالمفصل، **Subscapular = يتصل**. فخ مشهور.
+> ⚠️ **Exam trap:** **Subacromial = does not communicate** with the joint; **subscapular = communicates**. A classic trap.
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
-- Subacromial bursa: largest in body, no communication with joint; space bounded above by acromion/coracoid/CA ligament/deltoid and below by supraspinatus; height 1.0–1.5 cm; continues as subacromial-subdeltoid bursa.
+- Subacromial bursa: largest in the body, no communication with the joint; space bounded above by acromion/coracoid/CA ligament/deltoid and below by supraspinatus; height 1.0–1.5 cm; continues as the subacromial-subdeltoid bursa.
 - Subscapular bursa: between subscapularis tendon and capsule; communicates with the joint.
 - Synovial membrane lines the capsule and secretes synovial fluid.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Describe the subacromial bursa and the subacromial space.</summary>
 
-**Answer:** The largest bursa in the body, with no communication with the joint cavity. It lies in the subacromial space, bounded superiorly by the acromion, coracoid, coracoacromial ligament and proximal deltoid, and inferiorly by the supraspinatus; the space is about 1.0–1.5 cm high. It continues beneath the deltoid as the subacromial-subdeltoid bursa, facilitating deltoid movement over the capsule and supraspinatus.
+**Answer:** The largest bursa in the body, with no communication with the joint cavity. It lies in the subacromial space, bounded superiorly by the acromion, coracoid, coracoacromial ligament and proximal deltoid, and inferiorly by the supraspinatus; the space is about 1.0–1.5 cm high. It continues beneath the deltoid as the subacromial-subdeltoid bursa, easing deltoid movement over the capsule and supraspinatus.
 
-**ليش؟** كل تفاصيل الـ bursa مع الحدود.
+**Why:** All the details of the bursa with its boundaries.
 </details>
 
 <details><summary>Q2. Compare the subacromial and subscapular bursae.</summary>
 
 **Answer:** Subacromial: largest bursa, in the subacromial space, does not communicate with the joint. Subscapular: between the subscapularis tendon and the capsule, communicates with the joint cavity, reduces wear on the tendon.
 
-**ليش؟** الاتصال بالمفصل هو الفرق الأهم.
+**Why:** Communication with the joint is the key difference.
 </details>
 
 <details><summary>Q3. What are the functions of a bursa?</summary>
 
 **Answer:** It is a synovial sac filled with synovial fluid that cushions between bone and overlying soft tissues, reduces friction between gliding muscles and bone, and lubricates surfaces exposed to wear.
 
-**ليش؟** ثلاث وظائف.
+**Why:** Three functions.
 </details>
 
 ---
 
-## 5. Stability of the joint & Rotator cuff
+## 5. Stability of the joint & the rotator cuff
 
-### أسباب عدم الثبات
-1. Head of humerus أكبر من الـ glenoid.
-2. Capsule strong بس **very lax**.
+### Causes of instability
+1. The humeral head is larger than the glenoid.
+2. The capsule is strong but **very lax**.
 
-### ⭐ Factors that contribute to stability
-1. **Muscular**: **rotator cuff tendons** + **splinting effect** of **long head of biceps (فوق)** و **long head of triceps (تحت)** الـ humeral head.
-2. **Ligamental**: **glenohumeral** و **coracohumeral ligaments**.
-3. **Bony**: **suprahumeral support by coracoacromial arch** + **deepening of glenoid by labrum**.
+### ⭐ Factors contributing to stability
+1. **Muscular**: **rotator cuff tendons** + the **splinting effect** of the **long head of biceps (above)** and **long head of triceps (below)** the humeral head.
+2. **Ligamentous**: **glenohumeral** and **coracohumeral ligaments**.
+3. **Bony**: **suprahumeral support from the coracoacromial arch** + **deepening of the glenoid by the labrum**.
 
 ### Rotator cuff (SITS)
-- **Subscapularis، Supraspinatus، Infraspinatus، Teres minor** — تنغرز على الـ greater & lesser tuberosities، وأوتارها تحيط المفصل وتندمج بالـ capsule "مثل cuff" من **فوق، ورا، وگدام**.
-- **Importance**: تقوي الـ capsule وتعطي **active support** أثناء الحركة بسحب الـ humeral head **medially نحو الـ glenoid**.
-- ⭐ **Deficient inferiorly** → هذا مكان الضعف.
+- **Subscapularis, Supraspinatus, Infraspinatus, Teres minor** — inserted into the greater and lesser tuberosities; their tendons surround the joint and blend with the capsule "like a cuff" **above, behind and in front**.
+- **Importance**: they reinforce the capsule and give **active support** during movement by pulling the humeral head **medially toward the glenoid**.
+- ⭐ **Deficient inferiorly** → the joint's weak point.
 
-> ⚠️ **انتبه — تعارض بين الملازم:** هاي الملزمة (anatomy) تكول إن المفصل "**commonly dislocates inferiorly**" لأن الـ cuff ناقص من تحت. بس ملزمة الـ **Shoulder Dislocation** (ortho) تكول إن **الـ anterior هو الأشيع (95%)** — الرأس يطلع anterior/inferior. بالـ anatomy جاوب بـ inferior weakness، وبسؤال "most common type of dislocation" جاوب **anterior**.
+> ⚠️ **Conflict between lectures:** this (anatomy) lecture says the joint "**commonly dislocates inferiorly**" because the cuff is deficient below. The **Shoulder Dislocation** (ortho) lecture says **anterior is most common (95%)**, with the head moving anterior/inferior. In anatomy answers, explain the inferior weakness; for "most common type of dislocation", answer **anterior**.
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Stability: muscular (rotator cuff; long heads of biceps above and triceps below), ligamentous (glenohumeral, coracohumeral), bony (coracoacromial arch, labrum).
@@ -227,52 +227,52 @@
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Discuss the factors maintaining the stability of the shoulder joint.</summary>
 
 **Answer:** Muscular: rotator cuff tendons and the splinting effect of the long heads of biceps (above) and triceps (below) the humeral head. Ligamentous: glenohumeral and coracohumeral ligaments. Bony: suprahumeral support from the coracoacromial arch and deepening of the glenoid cavity by the labrum.
 
-**ليش؟** ثلاث مجموعات بأمثلتها — سؤال anatomy كلاسيكي.
+**Why:** Three groups with examples — a classic anatomy question.
 </details>
 
 <details><summary>Q2. What is the rotator cuff and what is its importance?</summary>
 
 **Answer:** The tendons of subscapularis, supraspinatus, infraspinatus and teres minor (SITS), inserted into the tuberosities, which surround the joint and blend with its capsule above, behind and in front. They reinforce the capsule and actively support the joint during movement by pulling the humeral head medially toward the glenoid; the cuff is deficient inferiorly, the joint's weak point.
 
-**ليش؟** التعريف + الأهمية + نقطة الضعف.
+**Why:** Definition + importance + weak point.
 </details>
 
 <details><summary>Q3. Why is the inferior aspect of the shoulder joint weak?</summary>
 
 **Answer:** Because the capsule is lax inferiorly and the rotator cuff is deficient inferiorly, providing no muscular support there.
 
-**ليش؟** سببين يربطون الـ capsule والـ cuff.
+**Why:** Two reasons linking the capsule and the cuff.
 </details>
 
 ---
 
 ## 6. Movements of the shoulder joint
 
-**ليش حر الحركة؟** laxity of capsule + رأس كبير على glenoid صغير وضحل.
-الحركات: flexion/extension، abduction/adduction، medial/lateral rotation، **circumduction** (مجموعها).
+**Why so mobile?** Laxity of the capsule + a relatively large humeral head on a small, shallow glenoid.
+Movements: flexion/extension, abduction/adduction, medial/lateral rotation, **circumduction** (a combination of all).
 
 | Movement | Muscles |
 |---|---|
-| **Flexion** | **clavicular head of pectoralis major**، **anterior deltoid**، sternocostal head (من full extension للـ coronal plane) |
-| **Extension (TLP)** | sternocostal head of pectoralis major (من full flexion للـ coronal plane)، **posterior deltoid**، **teres major**، **latissimus dorsi** |
-| **Abduction** | **supraspinatus (0–15°)**، **middle deltoid (15–90°)** |
-| **Adduction (TLP)** | pectoralis major، teres major، latissimus dorsi، subscapularis |
-| **Medial rotation (TLP)** | pectoralis major، teres major، latissimus dorsi، anterior deltoid، subscapularis |
-| **Lateral rotation** | **infraspinatus**، **posterior deltoid**، **teres minor** |
+| **Flexion** | **clavicular head of pectoralis major**, **anterior deltoid**, sternocostal head (from full extension to the coronal plane) |
+| **Extension (TLP)** | sternocostal head of pectoralis major (from full flexion to the coronal plane), **posterior deltoid**, **teres major**, **latissimus dorsi** |
+| **Abduction** | **supraspinatus (0–15°)**, **middle deltoid (15–90°)** |
+| **Adduction (TLP)** | pectoralis major, teres major, latissimus dorsi, subscapularis |
+| **Medial rotation (TLP)** | pectoralis major, teres major, latissimus dorsi, anterior deltoid, subscapularis |
+| **Lateral rotation** | **infraspinatus**, **posterior deltoid**, **teres minor** |
 
-💡 **TLP** = **T**eres major، **L**atissimus dorsi، **P**ectoralis major — موجودين بالـ extension والـ adduction والـ medial rotation.
+💡 **TLP** = **T**eres major, **L**atissimus dorsi, **P**ectoralis major — they appear in extension, adduction and medial rotation.
 
 ### ⭐ Describe abduction briefly
-- **Joints**: **0–90° glenohumeral**؛ **> 90° girdle joints (AC & SC)**.
-- **Muscles**: **0–15° supraspinatus**؛ **15–90° middle deltoid**؛ **> 90° upper & lower trapezius + lower 5 digitations of serratus anterior** (يدورون الـ scapula).
+- **Joints**: **0–90° glenohumeral**; **> 90° girdle joints (AC & SC)**.
+- **Muscles**: **0–15° supraspinatus**; **15–90° middle deltoid**; **> 90° upper and lower trapezius + lower 5 digitations of serratus anterior** (rotate the scapula).
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Flexion: clavicular pectoralis major + anterior deltoid. Lateral rotation: infraspinatus, posterior deltoid, teres minor.
@@ -281,27 +281,27 @@
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Describe briefly the abduction of the shoulder joint.</summary>
 
 **Answer:** Joints: 0–90° occurs at the glenohumeral joint; beyond 90° at the girdle joints (acromioclavicular and sternoclavicular). Muscles: 0–15° supraspinatus; 15–90° middle (acromial) fibres of deltoid; beyond 90° upper and lower fibres of trapezius plus the lower five digitations of serratus anterior.
 
-**ليش؟** هذا سؤال الدكتور نفسه بالملزمة.
+**Why:** This is the lecturer's own question.
 </details>
 
 <details><summary>Q2. Name the lateral rotators and the flexors of the shoulder.</summary>
 
 **Answer:** Lateral rotators: infraspinatus, posterior fibres of deltoid and teres minor. Flexors: clavicular head of pectoralis major, anterior fibres of deltoid, and the sternocostal head of pectoralis major from full extension to the coronal plane.
 
-**ليش؟** مجموعتين صغار سهل تنسأل.
+**Why:** Two small groups that are easy to ask.
 </details>
 
 <details><summary>Q3. Which muscles produce adduction and medial rotation?</summary>
 
 **Answer:** Adduction: pectoralis major, teres major, latissimus dorsi and subscapularis. Medial rotation: pectoralis major, teres major, latissimus dorsi, anterior deltoid and subscapularis.
 
-**ليش؟** استخدم حيلة TLP + subscapularis.
+**Why:** Use the TLP trick + subscapularis.
 </details>
 
 ---
@@ -310,68 +310,68 @@
 
 ### What is the shoulder girdle?
 - **Clavicle + scapula**.
-- ⭐ الـ **clavicle والـ sternoclavicular joint هم العظم والمفصل الوحيدين** اللي يربطون الطرف العلوي بالـ axial skeleton.
-- الـ clavicle يرتبط بالـ scapula بـ **AC joint** و **coracoclavicular ligament**.
-- الـ humerus يتمفصل مع الـ scapula مو الـ clavicle، فالقوة تنتقل: **humerus → scapula → clavicle → axial skeleton (SC joint)**.
+- ⭐ The **clavicle and the sternoclavicular joint are the only bone and joint** connecting the upper limb to the axial skeleton.
+- The clavicle joins the scapula by the **AC joint** and the **coracoclavicular ligament**.
+- The humerus articulates with the scapula, not the clavicle, so forces pass: **humerus → scapula → clavicle → axial skeleton (at the SC joint)**.
 
 ### AC vs SC joint
 | | **SC joint** | **AC joint** |
 |---|---|---|
-| Type | synovial، **modified saddle** | synovial، **plane** |
+| Type | synovial, **modified saddle** | synovial, **plane** |
 | Stability | **costoclavicular ligament** | **coracoclavicular ligament** |
 | Intra-articular disc | **complete** | **incomplete** |
 | Function | ⭐ **main joint for girdle movements** | shares a little |
 
-> ⚠️ **انتبه:** بسلايد الملزمة عناوين الأعمدة (AC / SC) تبين كأنها **مبدلة**. الصحيح تشريحياً: **saddle + costoclavicular + complete disc + main joint = SC**، و **plane + coracoclavicular + incomplete disc = AC**.
+> ⚠️ **Note:** on the lecture slide, the column headings (AC / SC) appear to be **swapped**. Anatomically: **saddle + costoclavicular + complete disc + main joint = SC**; **plane + coracoclavicular + incomplete disc = AC**.
 
 ### Movements of the shoulder girdle
 | Movement | Muscles |
 |---|---|
-| **Elevation** | upper trapezius، levator scapulae |
-| **Depression** | pectoralis minor، pectoralis major |
-| **Rotation up** | upper & lower trapezius، **serratus anterior** |
-| **Rotation down** | levator scapulae، rhomboids major & minor |
-| **Protraction** | **serratus anterior**، pectoralis minor |
-| **Retraction** | **middle trapezius**، rhomboids major & minor |
+| **Elevation** | upper trapezius, levator scapulae |
+| **Depression** | pectoralis minor, pectoralis major |
+| **Upward rotation** | upper and lower trapezius, **serratus anterior** |
+| **Downward rotation** | levator scapulae, rhomboids major and minor |
+| **Protraction** | **serratus anterior**, pectoralis minor |
+| **Retraction** | **middle trapezius**, rhomboids major and minor |
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
-- Girdle = clavicle + scapula; clavicle + SC joint are the only link to the axial skeleton.
+- Girdle = clavicle + scapula; the clavicle + SC joint are the only link to the axial skeleton.
 - Force path: humerus → scapula → clavicle → SC joint.
 - SC: modified saddle, costoclavicular ligament, complete disc, main girdle joint. AC: plane, coracoclavicular ligament, incomplete disc.
 - Protraction: serratus anterior + pectoralis minor; retraction: middle trapezius + rhomboids; upward rotation: trapezius + serratus anterior.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. What is the shoulder girdle and how are forces transmitted from the arm?</summary>
 
 **Answer:** The clavicle and scapula; the clavicle and sternoclavicular joint are the only bone and joint connecting the upper limb to the axial skeleton, and the clavicle joins the scapula by the AC joint and coracoclavicular ligament. Since the humerus articulates with the scapula, forces pass from the humerus to the scapula, then the clavicle, then the axial skeleton at the SC joint.
 
-**ليش؟** سؤال الدكتور "what is the shoulder girdle".
+**Why:** The lecturer's "what is the shoulder girdle" question.
 </details>
 
 <details><summary>Q2. Compare the acromioclavicular and sternoclavicular joints.</summary>
 
 **Answer:** SC joint: synovial modified saddle, stabilized by the costoclavicular ligament, complete intra-articular disc, the main joint for shoulder girdle movements. AC joint: synovial plane, stabilized by the coracoclavicular ligament, incomplete disc, shares only a little in girdle movements.
 
-**ليش؟** مقارنة بأربع محاور — انتبه لتبديل السلايد.
+**Why:** A four-point comparison — watch for the swapped slide.
 </details>
 
 <details><summary>Q3. Which muscles protract, retract and rotate the scapula upward?</summary>
 
 **Answer:** Protraction: serratus anterior and pectoralis minor. Retraction: middle fibres of trapezius and rhomboids major and minor. Upward rotation: upper and lower fibres of trapezius and serratus anterior.
 
-**ليش؟** من جدول حركات الـ girdle.
+**Why:** From the girdle movements table.
 </details>
 
 ---
 
-## 8. Applied: Anterior shoulder dislocation
+## 8. Applied: anterior shoulder dislocation
 
-**Case:** شاب 22 سنة بعد **football tackle**، اليد بـ **abduction + external rotation**، الكتف **"squared-off"**، ألم، والـ humeral head يتحسس **anteriorly**.
+**Case:** a 22-year-old man after a **football tackle** with the arm in **abduction + external rotation**; **"squared-off"** shoulder, pain on movement, humeral head palpable **anteriorly**.
 
 ### Key anatomical clues
 - **Primary restraint failure**: **Bankart lesion** (anteroinferior labral tear).
@@ -379,253 +379,253 @@
 - **Nerve at risk**: ⭐ **axillary nerve (15–20% of cases)**.
 
 ### Stabilizers
-- **Static**: **glenoid labrum** — ⭐ **يعمّق الـ socket بـ 50%**؛ **inferior glenohumeral ligament (IGHL)** — ⭐ **primary restraint in abduction/external rotation**.
-- **Dynamic**: **rotator cuff** (compresses head)؛ **long head of biceps** (stabilizes superior labrum).
+- **Static**: **glenoid labrum** — ⭐ **deepens the socket by 50%**; **inferior glenohumeral ligament (IGHL)** — ⭐ **primary restraint in abduction/external rotation**.
+- **Dynamic**: **rotator cuff** (compresses the head); **long head of biceps** (stabilizes the superior labrum).
 
 ### Pathoanatomy
-- **Bankart lesion**: labral tear + periosteal sleeve avulsion (**90% of traumatic cases**). **Bony Bankart** = كسر بالـ **anteroinferior glenoid rim**.
-- **Hill-Sachs lesion**: **posterolateral humeral head impaction** ضد الـ **anterior glenoid rim** (يتعشق بالـ glenoid بالـ abduction).
-- **HAGL lesion**: **humeral avulsion of glenohumeral ligament (5–10%)**.
+- **Bankart lesion**: labral tear + periosteal sleeve avulsion (**90% of traumatic cases**). **Bony Bankart** = fracture of the **anteroinferior glenoid rim**.
+- **Hill-Sachs lesion**: **posterolateral humeral head impaction** against the **anterior glenoid rim** (engages the glenoid in abduction).
+- **HAGL lesion**: **humeral avulsion of the glenohumeral ligament (5–10%)**.
 
-### Inferior dislocation — deformity & axillary nerve
-- الـ humeral head ينسحب **medially** بالعضلات القوية، والكتف تحت الـ acromion (عادةً convex بسبب الـ greater tuberosity) **يصير flattened**.
-- **ليش يروح التدوير وتضعف الـ abduction؟** لأن الـ **axillary nerve** مرتبط بالـ **surgical neck**، فيتأذى → **deltoid paralysis** → loss of **abduction (15–90°)** و **rounded contour**؛ وكمان يغذي **جلد النص السفلي للكتف** → **loss of sensation**.
+### Inferior dislocation — deformity & the axillary nerve
+- The humeral head is drawn **medially** by powerful muscles, and the shoulder below the acromion (normally convex because of the greater tuberosity) becomes **flattened**.
+- **Why is the rounded contour lost and abduction weak?** The **axillary nerve** is related to the **surgical neck** and is likely injured → **deltoid paralysis** → loss of **abduction (15–90°)** and the **rounded contour**; it also supplies the **skin over the lower half of the shoulder** → **sensory loss** there.
 
 ### From the MCQs
-- **Primary restraint** to anterior dislocation in abduction → **IGHL** (الـ anterior band يشتد بالـ abduction/ER).
-- **Most commonly injured nerve** → **axillary** (يلف حول الـ surgical neck).
-- **Position most predisposing** → **abduction + external rotation** ("**apprehension position**").
+- **Primary restraint** to anterior dislocation in abduction → **IGHL** (its anterior band tightens in abduction/ER).
+- **Most commonly injured nerve** → **axillary** (wraps around the surgical neck).
+- **Position most predisposing** → **abduction + external rotation** (the "**apprehension position**").
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Mechanism: abduction + external rotation; squared-off shoulder, head palpable anteriorly.
-- Labrum deepens socket by 50%; IGHL = primary restraint in abduction/ER.
+- Labrum deepens the socket by 50%; IGHL = primary restraint in abduction/ER.
 - Bankart = anteroinferior labral tear (90% of traumatic cases); bony Bankart = anteroinferior glenoid rim; Hill-Sachs = posterolateral head impaction on anterior glenoid; HAGL 5–10%.
-- Axillary nerve injured in 15–20% → deltoid paralysis (loss of 15–90° abduction, flat shoulder) + sensory loss over lower shoulder.
+- Axillary nerve injured in 15–20% → deltoid paralysis (loss of 15–90° abduction, flat shoulder) + sensory loss over the lower shoulder.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Following inferior dislocation of the shoulder, the rounded contour is lost and abduction is weak. Explain.</summary>
 
 **Answer:** The axillary nerve is related to the surgical neck of the humerus and is likely to be injured in inferior dislocation. It supplies the deltoid, so deltoid paralysis causes loss of abduction (15–90°) and loss of the rounded shoulder contour; it also supplies the skin over the lower half of the shoulder, so sensation there is lost.
 
-**ليش؟** هذا سؤال الدكتور نفسه.
+**Why:** This is the lecturer's own question.
 </details>
 
 <details><summary>Q2. Define Bankart, Hill-Sachs and HAGL lesions.</summary>
 
 **Answer:** Bankart: anteroinferior labral tear with periosteal sleeve avulsion (90% of traumatic cases); a bony Bankart involves a fracture of the anteroinferior glenoid rim. Hill-Sachs: posterolateral humeral head impaction against the anterior glenoid rim. HAGL: humeral avulsion of the glenohumeral ligament (5–10%).
 
-**ليش؟** ثلاث lesions بتعاريفها ونسبها.
+**Why:** Three lesions with definitions and percentages.
 </details>
 
 <details><summary>Q3. What is the primary restraint to anterior dislocation and what is the role of the labrum?</summary>
 
 **Answer:** The inferior glenohumeral ligament (its anterior band tightens in abduction and external rotation) is the primary restraint. The glenoid labrum deepens the socket by about 50%, increasing concavity-compression stability.
 
-**ليش؟** IGHL + 50% من الـ MCQs.
+**Why:** IGHL + 50% from the MCQs.
 </details>
 
 ---
 
-## 9. Applied: Impingement (Painful arc syndrome)
+## 9. Applied: impingement (painful arc syndrome)
 
-**Case:** عامل بناء 45 سنة، ألم تدريجي لما يشيل فوق راسه، يزيد بالليل خصوصاً على الجهة المصابة؛ **painful arc 60–120°**، ضعف بـ supraspinatus testing، **Neer/Hawkins positive**.
+**Case:** a 45-year-old construction worker with progressive pain lifting overhead, worse at night especially lying on that side; **painful arc 60–120°**, weakness on supraspinatus testing, **positive Neer/Hawkins**.
 
-- **Painful arc syndrome** = **impingement syndrome**: **midabduction pain (60–120°)** بسبب انضغاط **swollen supraspinatus tendon** (chronic tendonitis) أو **inflamed subacromial bursa** تحت الـ **coracoacromial arch**.
+- **Painful arc syndrome** = **impingement syndrome**: **mid-abduction pain (60–120°)** due to impingement of a **swollen supraspinatus tendon** (chronic tendonitis) or an **inflamed subacromial bursa** under the **coracoacromial arch**.
 - **Classic triad**: **painful arc + night pain + weakness with overhead activities**.
-- **High-risk**: overhead athletes (swimmers، pitchers)، manual laborers، **diabetics**.
-- **Affected**: **supraspinatus (most commonly impinged)**، infraspinatus/subscapularis (مراحل متأخرة)، subacromial bursa (**bursitis**).
-- **Acromion types (Bigliani)**: **Type I flat**، **Type II curved**، ⭐ **Type III hooked → ↑ impingement risk**.
+- **High-risk groups**: overhead athletes (swimmers, pitchers), manual labourers, **diabetics**.
+- **Affected**: **supraspinatus (most commonly impinged)**, infraspinatus/subscapularis (later stages), subacromial bursa (**bursitis**).
+- **Acromion types (Bigliani)**: **Type I flat**, **Type II curved**, ⭐ **Type III hooked → ↑ impingement risk**.
 
 ### From the MCQs
-- Most compressed tendon → **supraspinatus** (يمر تحت الـ acromion).
-- Highest-risk acromion → **Type III hooked** (يضيّق الـ subacromial space).
-- **Secondary impingement** ← ضعف **serratus anterior** → **scapular dyskinesia** → وضع غير طبيعي للـ acromion.
-- **Hawkins test** positive → **subacromial impingement** (forced internal rotation يضغط الـ cuff على الـ coracoacromial ligament).
-- Best isolates supraspinatus → **empty can test**.
+- Most compressed tendon → **supraspinatus** (passes beneath the acromion).
+- Highest-risk acromion → **Type III hooked** (narrows the subacromial space).
+- **Secondary impingement** ← **serratus anterior** weakness → **scapular dyskinesia** → abnormal acromial position.
+- Positive **Hawkins test** → **subacromial impingement** (forced internal rotation compresses the cuff against the coracoacromial ligament).
+- Best test to isolate supraspinatus → **empty-can test**.
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Painful arc 60–120° from supraspinatus tendonitis or subacromial bursitis under the coracoacromial arch.
-- Triad: painful arc + night pain + overhead weakness; risk: overhead athletes, laborers, diabetics.
+- Triad: painful arc + night pain + overhead weakness; risk: overhead athletes, labourers, diabetics.
 - Bigliani acromion: I flat, II curved, III hooked (highest risk).
 - Serratus anterior weakness → scapular dyskinesia → secondary impingement. Hawkins = subacromial impingement; empty can = supraspinatus.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. What is painful arc syndrome?</summary>
 
 **Answer:** Also called impingement syndrome, it is characterized by mid-abduction pain between 60° and 120°, due to impingement of a swollen supraspinatus tendon (chronic tendonitis) or an inflamed subacromial bursa under the coracoacromial arch.
 
-**ليش؟** سؤال الدكتور بالملزمة.
+**Why:** The lecturer's question in the slides.
 </details>
 
 <details><summary>Q2. Describe the Bigliani classification of the acromion and its significance.</summary>
 
 **Answer:** Type I flat, Type II curved and Type III hooked; the hooked (Type III) acromion narrows the subacromial space and carries the highest impingement risk.
 
-**ليش؟** التصنيف + أي نوع أخطر.
+**Why:** The classification + which type is most dangerous.
 </details>
 
 <details><summary>Q3. How does serratus anterior weakness cause secondary impingement?</summary>
 
 **Answer:** Serratus anterior weakness causes scapular dyskinesia, leading to abnormal positioning of the acromion and narrowing of the subacromial space.
 
-**ليش؟** يربط عضلة الـ scapula بالـ impingement.
+**Why:** Links a scapular muscle to impingement.
 </details>
 
 ---
 
-## 10. Applied: Frozen shoulder (Adhesive capsulitis)
+## 10. Applied: frozen shoulder (adhesive capsulitis)
 
-**Case:** امرأة **diabetic** عمرها 55، ألم وتيبس تدريجي من 6 أشهر، ألم ليلي، صعوبة بلبس الملابس، ما تكدر توصل ورا ظهرها؛ **active + passive ROM globally restricted**، خصوصاً **external rotation** و abduction.
+**Case:** a 55-year-old **diabetic** woman with gradual shoulder pain and stiffness over 6 months, night pain, difficulty dressing, unable to reach behind her back; **active and passive ROM globally restricted**, especially **external rotation** and abduction.
 
 - **Classic triad**: **pain + stiffness + loss of ROM (active AND passive)**.
-- **High-risk**: ⭐ **diabetics (4× risk)**، **females 40–60**، thyroid disorders.
+- **High-risk**: ⭐ **diabetics (4× risk)**, **women aged 40–60**, thyroid disorders.
 - **Phases**:
-  1. **Freezing** — pain dominant، **2–9 months**
-  2. **Frozen** — stiffness dominant، **4–12 months**
-  3. **Thawing** — تحسن تدريجي، **12–24 months**
-- **Affected structures**: **capsule thickened and contracted** (خصوصاً **coracohumeral ligament** و **rotator interval**)؛ **synovium inflamed** بالبداية؛ **axillary recess obliterated** → يحدد الـ abduction.
-- ⭐ **Loss of external rotation = pathognomonic** (بسبب **coracohumeral ligament contracture**).
-- **No primary joint damage** — الـ articular cartilage **سليم** (عكس الـ OA).
-- **Histology hallmark**: **synovial inflammation + capsular fibrosis** (fibroblastic proliferation + collagen).
+  1. **Freezing** — pain dominant, **2–9 months**
+  2. **Frozen** — stiffness dominant, **4–12 months**
+  3. **Thawing** — gradual improvement, **12–24 months**
+- **Affected structures**: **capsule thickened and contracted** (especially the **coracohumeral ligament** and **rotator interval**); **synovium inflamed** early; **axillary recess obliterated** → limits abduction.
+- ⭐ **Loss of external rotation is pathognomonic** (due to **coracohumeral ligament contracture**).
+- **No primary joint damage** — the articular cartilage stays **intact** (unlike osteoarthritis).
+- **Histological hallmark**: **synovial inflammation + capsular fibrosis** (fibroblastic proliferation + collagen deposition).
 
 ### Rotator interval
-- **Boundaries**: **superiorly supraspinatus tendon**، **inferiorly subscapularis tendon**، **base coracoid process**.
-- **Contents**: **long head of biceps tendon**، **coracohumeral ligament**، **superior glenohumeral ligament**.
-- **Function**: stabilizing structure يمنع الحركة **لتحت ولبرّه** بشكل غير طبيعي.
+- **Boundaries**: **supraspinatus tendon above**, **subscapularis tendon below**, **coracoid process at its base**.
+- **Contents**: **long head of biceps tendon**, **coracohumeral ligament**, **superior glenohumeral ligament**.
+- **Function**: a stabilizing structure preventing abnormal **downward and outward** movement of the joint.
 
 ### From the MCQs
-- Key differential → **rotator cuff tear** (بس بالـ tear الـ **passive ROM يبقى محفوظ**).
+- Key differential → **rotator cuff tear** (but in a tear, **passive ROM is preserved**).
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Triad: pain + stiffness + loss of active AND passive ROM; ER most restricted (pathognomonic, coracohumeral ligament contracture).
 - Risk: diabetes (4×), women 40–60, thyroid disease.
 - Phases: freezing 2–9 m, frozen 4–12 m, thawing 12–24 m.
 - Capsule (coracohumeral ligament, rotator interval) contracted; axillary recess obliterated; cartilage intact; histology = synovitis + capsular fibrosis.
-- Rotator interval: between supraspinatus and subscapularis tendons, base coracoid; contains long head of biceps, coracohumeral and superior glenohumeral ligaments.
+- Rotator interval: between supraspinatus and subscapularis tendons, coracoid at its base; contains long head of biceps, coracohumeral and superior glenohumeral ligaments.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Describe the phases of frozen shoulder.</summary>
 
 **Answer:** Freezing phase — pain dominant, 2–9 months; frozen phase — stiffness dominant, 4–12 months; thawing phase — gradual improvement in range of motion, 12–24 months.
 
-**ليش؟** الثلاث مراحل بمددها.
+**Why:** The three phases with their durations.
 </details>
 
 <details><summary>Q2. Why is loss of external rotation characteristic of frozen shoulder?</summary>
 
 **Answer:** Because of contracture of the thickened coracohumeral ligament (and rotator interval), which limits external rotation (and abduction); the axillary recess is also obliterated, further limiting abduction.
 
-**ليش؟** الربط بين الـ ligament والحركة.
+**Why:** Links the ligament to the movement lost.
 </details>
 
 <details><summary>Q3. Define the rotator interval: boundaries, contents and function.</summary>
 
 **Answer:** Boundaries: supraspinatus tendon superiorly, subscapularis tendon inferiorly and the coracoid process at its base. Contents: long head of biceps tendon, coracohumeral ligament and superior glenohumeral ligament. Function: a stabilizing structure that helps prevent abnormal downward and outward movement of the joint.
 
-**ليش؟** سؤال anatomy تطبيقي كامل.
+**Why:** A complete applied-anatomy question.
 </details>
 
 ---
 
-## 11. Applied: Clavicular fractures
+## 11. Applied: clavicular fractures
 
-**Case:** ولد 15 سنة وگع من البايسكل على كتفه الأيسر، يسند يده **adducted** من الكوع، مع deformity وتورم فوق الـ clavicle.
+**Case:** a 15-year-old boy falls off his bike onto his left shoulder, holding the arm **adducted** and supported at the elbow, with deformity and swelling over the clavicle.
 
-### Function of clavicle
-- ينقل القوى من اليد للـ axial skeleton.
-- **Strut** يخلي اليد معلقة بعيد عن الجذع (مدعومة بشكل رئيسي بالـ **trapezius**).
-- يوفر attachment للعضلات.
+### Functions of the clavicle
+- Transmits forces from the upper limb to the axial skeleton.
+- A **strut** holding the arm free from the trunk (supported mainly by **trapezius**).
+- Provides muscle attachments.
 
-### ليش كسره شائع؟
-**Almost subcutaneous** و **relatively fixed**.
+### Why is it commonly fractured?
+It is **almost subcutaneous** and **relatively fixed**.
 
-### ⭐ ليش أشيع مكان هو junction بين medial 2/3 و lateral 1/3؟
-لأنه **أنحف نقطة**:
-1. نقطة بين **منحنيين مختلفين**.
-2. نقطة بين **cross-sections مختلفة**.
-3. ضعيف بسبب **subclavius groove** على السطح السفلي.
-4. ضعيف بسبب **nutrient foramen**.
-5. **Unprotected** — ماكو muscle attachment.
+### ⭐ Why is the commonest site the junction of the medial 2/3 and lateral 1/3?
+Because it is the **thinnest point**:
+1. It lies between **two different curvatures**.
+2. It lies between **two different cross-sectional shapes**.
+3. It is weakened by the **subclavius groove** on its inferior surface.
+4. It is weakened by the **nutrient foramen**.
+5. It is **unprotected** — no muscle attachment.
 
 ### Anatomical focus
-- **Medial 1/3**: least common (**5%**)، **high risk for mediastinal injury**.
-- **Junction (middle)**: most common (**80%**)، subcutaneous.
-- **Lateral 1/3**: ⭐ **high nonunion risk** بسبب **coracoclavicular ligament disruption**.
-- **Adjacent**: **subclavian vessels & brachial plexus** (posterolateral to medial clavicle)؛ **pleura/lung** (pneumothorax).
+- **Medial 1/3**: least common (**5%**), **high risk of mediastinal injury**.
+- **Junction (middle)**: most common (**80%**), subcutaneous and vulnerable.
+- **Lateral 1/3**: ⭐ **high nonunion risk** due to **coracoclavicular ligament disruption**.
+- **Adjacent structures**: **subclavian vessels and brachial plexus** (posterolateral to the medial clavicle); **pleura/lung** (pneumothorax risk).
 
 ### From the MCQs
-- Muscle يرفع الـ **proximal (medial) fragment** → **sternocleidomastoid**.
+- Muscle elevating the **proximal (medial) fragment** → **sternocleidomastoid**.
 - Primary concern → **injury to subclavian vessels / brachial plexus**.
-- Stabilizes lateral clavicle → **coracoclavicular ligaments (conoid + trapezoid)**.
-- Brachial plexus injury sign → **weakness of hand intrinsics** (C8/T1).
-- Highest nonunion → **lateral** fractures (lack ligamentous stability).
+- Ligaments stabilizing the lateral clavicle → **coracoclavicular (conoid + trapezoid)**.
+- Sign of brachial plexus injury → **weakness of the hand intrinsics** (C8/T1).
+- Highest nonunion risk → **lateral** fractures (lack ligamentous stability).
 
-<div dir="ltr" class="key-points">
+<div class="key-points">
 
 **Key points**
 - Commonly fractured: subcutaneous and relatively fixed.
 - Commonest site = junction of medial 2/3 and lateral 1/3 (80%): thinnest point — two curvatures, change in cross-section, subclavius groove, nutrient foramen, no muscle attachment.
 - Medial 1/3 (5%) → mediastinal risk; lateral 1/3 → high nonunion (coracoclavicular disruption).
-- SCM elevates the medial fragment; conoid + trapezoid stabilize the lateral clavicle; hand intrinsic weakness → brachial plexus (C8/T1) injury.
+- SCM elevates the medial fragment; conoid + trapezoid stabilize the lateral clavicle; hand-intrinsic weakness → brachial plexus (C8/T1) injury.
 
 </div>
 
-**أسئلة Short essay**
+**Short-essay questions**
 
 <details><summary>Q1. Why is the commonest site of clavicle fracture at the junction of the medial two-thirds and lateral one-third?</summary>
 
 **Answer:** Because it is the thinnest and weakest point: it lies between two different curvatures and two different cross-sectional shapes, it is weakened by the subclavius groove on its inferior surface and by the nutrient foramen, and it is unprotected as it has no muscle attachment.
 
-**ليش؟** سؤال الدكتور بخمس أسباب.
+**Why:** The lecturer's question, with five reasons.
 </details>
 
 <details><summary>Q2. Explain the displacement of fragments in a midshaft clavicle fracture.</summary>
 
 **Answer:** The medial (proximal) fragment is elevated by the sternocleidomastoid, while the lateral fragment is pulled downward by the weight of the arm and by pectoralis/trapezius.
 
-**ليش؟** من MCQ الدكتور مع التفسير.
+**Why:** From the lecturer's MCQ and its explanation.
 </details>
 
 <details><summary>Q3. Why do lateral-third fractures have the highest risk of nonunion?</summary>
 
 **Answer:** Because of disruption of the coracoclavicular ligaments (conoid and trapezoid), which normally stabilize the lateral clavicle; lateral fractures therefore lack ligamentous stability.
 
-**ليش؟** الربط بين الـ ligament والـ nonunion.
+**Why:** Links the ligament to nonunion.
 </details>
 
 ---
 
-## 🔥 الخلاصة النهائية — احفظها قبل الامتحان
+## 🔥 Final review — memorize before the exam
 
-1. Shoulder = **most movable + most dislocated**؛ **synovial ball-and-socket، multiaxial**.
+1. Shoulder = **most movable + most dislocated**; **synovial ball-and-socket, multiaxial**.
 2. Instability: **head:glenoid 4:1** + capsule **lax inferiorly**.
-3. Glenoid: **pear-shaped، shallow**؛ **labrum** يعمقه (**50%**).
-4. Capsule: medially outside labrum + beyond **supraglenoid tubercle** (→ **long head of biceps intracapsular**)؛ laterally anatomical neck، **1.5 cm on surgical neck inferiorly**.
-5. Weak points: **anterior** (subscapularis bursa + biceps openings) + **inferior** (quadrangular space).
-6. Ligaments: **glenohumeral** (3 weak)، **transverse humeral** (biceps retinaculum)، **coracohumeral**، **coracoacromial** (مو capsular، arch).
-7. **Subacromial bursa**: largest، **no communication**، space **1.0–1.5 cm**؛ **subscapular bursa communicates**.
-8. Stability: **muscular** (cuff + biceps/triceps long heads)، **ligamentous**، **bony** (arch + labrum).
-9. **SITS** cuff، **deficient inferiorly**. (الـ ortho: **anterior 95%** أشيع dislocation).
-10. Abduction: **0–15 supraspinatus**، **15–90 middle deltoid**، **> 90 trapezius + serratus anterior** (AC & SC)؛ **TLP** = extension، adduction، MR.
-11. **SC = saddle، costoclavicular، complete disc، main**؛ **AC = plane، coracoclavicular، incomplete** (السلايد مبدل).
-12. Anterior dislocation: **ABD + ER**، **IGHL**، **Bankart (90%)**، **Hill-Sachs**، **HAGL (5–10%)**، **axillary nerve 15–20%** → **flat shoulder**.
-13. Impingement: **60–120°**، triad (arc + night pain + weakness)، **supraspinatus**، **Bigliani III hooked**، **serratus anterior → secondary**.
-14. Frozen shoulder: **diabetics 4×**، **ER loss pathognomonic** (coracohumeral)، **axillary recess obliterated**، phases **2–9 / 4–12 / 12–24 months**، cartilage intact.
-15. Clavicle: commonest site **junction medial 2/3–lateral 1/3 (80%)** — 5 reasons؛ **medial 5% mediastinum**؛ **lateral → nonunion**؛ **SCM** lifts medial fragment؛ **hand intrinsics** = brachial plexus.
+3. Glenoid: **pear-shaped, shallow**; the **labrum** deepens it (**50%**).
+4. Capsule: medially outside the labrum and beyond the **supraglenoid tubercle** (→ **long head of biceps intracapsular**); laterally the anatomical neck, **1.5 cm onto the surgical neck inferiorly**.
+5. Weak points: **anterior** (subscapularis bursa + biceps openings) and **inferior** (quadrangular space).
+6. Ligaments: **glenohumeral** (3 weak), **transverse humeral** (biceps retinaculum), **coracohumeral**, **coracoacromial** (not capsular; forms the arch).
+7. **Subacromial bursa**: largest, **no communication**, space **1.0–1.5 cm**; **subscapular bursa communicates**.
+8. Stability: **muscular** (cuff + long heads of biceps/triceps), **ligamentous**, **bony** (arch + labrum).
+9. **SITS** cuff, **deficient inferiorly**. (Ortho lecture: **anterior 95%** is the commonest dislocation.)
+10. Abduction: **0–15 supraspinatus**, **15–90 middle deltoid**, **> 90 trapezius + serratus anterior** (AC & SC); **TLP** = extension, adduction, MR.
+11. **SC = saddle, costoclavicular, complete disc, main joint**; **AC = plane, coracoclavicular, incomplete disc** (slide labels swapped).
+12. Anterior dislocation: **ABD + ER**, **IGHL**, **Bankart (90%)**, **Hill-Sachs**, **HAGL (5–10%)**, **axillary nerve 15–20%** → **flat shoulder**.
+13. Impingement: **60–120°**, triad (arc + night pain + weakness), **supraspinatus**, **Bigliani III hooked**, **serratus anterior → secondary impingement**.
+14. Frozen shoulder: **diabetics 4×**, **ER loss pathognomonic** (coracohumeral), **axillary recess obliterated**, phases **2–9 / 4–12 / 12–24 months**, cartilage intact.
+15. Clavicle: commonest site **junction of medial 2/3 and lateral 1/3 (80%)** — 5 reasons; **medial 5% → mediastinum**; **lateral → nonunion**; **SCM** lifts the medial fragment; **hand intrinsics** = brachial plexus.
 
-بالتوفيق 💪 هاي الملزمة تربط الـ anatomy بالـ ortho — إذا فهمتها، ملزمة الـ dislocation والـ impingement تصير أسهل.
+Good luck 💪 This lecture ties anatomy to orthopaedics — understand it and the dislocation and impingement lectures become much easier.
