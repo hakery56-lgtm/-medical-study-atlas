@@ -9,13 +9,12 @@ import { flashcardBank } from "@/data/flashcards"
 
 interface ResourceDetailProps {
   resource: Resource | null
-  subjectName: string
   related: Resource[]
   onSelectRelated: (r: Resource) => void
   onOpenQuiz: (r: Resource) => void
 }
 
-export default function ResourceDetail({ resource, subjectName, related, onSelectRelated, onOpenQuiz }: ResourceDetailProps) {
+export default function ResourceDetail({ resource, related, onSelectRelated, onOpenQuiz }: ResourceDetailProps) {
   const [showViewer, setShowViewer] = useState(false)
   const [showFlashcards, setShowFlashcards] = useState(false)
   if (!resource) {
@@ -59,7 +58,7 @@ export default function ResourceDetail({ resource, subjectName, related, onSelec
               className="rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest"
               style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-muted)" }}
             >
-              {subjectName}
+              {resource.discipline}
             </span>
             <span
               className="rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest"
