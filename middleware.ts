@@ -1,9 +1,13 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { isFreeAccess } from "@/lib/free-access";
 
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
+
+  // login is temporarily off for everyone (see lib/free-access.ts)
+  if (isFreeAccess()) return NextResponse.next();
   
   // 1. Allow static files, API routes, and public pages (lecture files under /api/file need access)
   if (
