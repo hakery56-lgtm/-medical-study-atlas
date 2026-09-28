@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import LoginPopup from "@/components/LoginPopup"
+import SignupPrompt from "@/components/SignupPrompt"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-serif" })
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <LoginPopup />
         {children}
+        <SignupPrompt />
         <Analytics />
         <SpeedInsights />
       </body>

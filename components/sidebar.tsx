@@ -156,7 +156,7 @@ export default function Sidebar({
           </div>
           <p className="mt-2 text-[10px]" style={{ color: "var(--text-muted)" }}>
             {!streak
-              ? "Sign in to track your daily streak."
+              ? <><Link href="/signup" className="font-semibold hover:underline" style={{ color: "var(--accent)" }}>Create a free account</Link> to track your daily streak.</>
               : streak.studiedToday
                 ? "Studied today, see you tomorrow!"
                 : streak.current

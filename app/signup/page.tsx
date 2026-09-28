@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 import { Loader2, Mail, Lock, Key, UserPlus, ArrowRight } from "lucide-react"
+import { isFreeAccess } from "@/lib/free-access"
 
 export default function SignupPage() {
   const router = useRouter()
@@ -13,8 +14,12 @@ export default function SignupPage() {
   const [accessCode, setAccessCode] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [dark, setDark] = useState(false)
+  // while login is off, accounts can be made without a code (set after mount, the page is prerendered)
+  const [free, setFree] = useState(false)
+  const hasCode = accessCode.trim() !== ""
 
   useEffect(() => {
+    setFree(isFreeAccess())
     if (localStorage.getItem("atlas-theme") === "dark") {
       setDark(true)
       document.documentElement.classList.add("dark")
@@ -38,7 +43,7 @@ export default function SignupPage() {
     setError(null)
 
     // 1. First verify the access code exists and is not used
-    try {
+    if (hasCode) try {
       const verifyRes = await fetch("/api/verify-code", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -87,6 +92,11 @@ export default function SignupPage() {
         return
       }
 
+      if (!hasCode) {
+        router.push("/")
+        return
+      }
+
       // 3. Now redeem the code for the newly created account
       const response = await fetch("/api/redeem", {
         method: "POST",
@@ -130,7 +140,7 @@ export default function SignupPage() {
             Join the Atlas
           </h1>
           <p className="text-slate-500 dark:text-slate-400">
-            Create your account and enter your access code
+            {free ? "Create your free account. Everything is open until Oct 15." : "Create your account and enter your access code"}
           </p>
         </div>
 
@@ -167,12 +177,12 @@ export default function SignupPage() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Access Code</label>
+              <label className="text-sm font-medium text-slate-700 dark:text-slate-300 ml-1">Access Code{free && " (optional until Oct 15)"}</label>
               <div className="relative">
                 <Key className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
                   type="text"
-                  required
+                  required={!free}
                   value={accessCode}
                   onChange={(e) => setAccessCode(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all"
