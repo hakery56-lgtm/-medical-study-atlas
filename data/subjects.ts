@@ -32,6 +32,11 @@ export function storageUrl(path: string) {
   return `/api/file/${encodeURIComponent(name)}`
 }
 
+// lecture PDFs committed under public/lectures (protected by middleware like every non-root path)
+export function lectureUrl(name: string) {
+  return `/lectures/${encodeURIComponent(name)}`
+}
+
 export const subjects: Subject[] = [
   {
     id: "msk",
@@ -73,6 +78,42 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Shoulder joint_9e5186719eea03a9b64eaab71114339e.pdf")
       },
       {
+        id: 12,
+        title: "anatomy of arm-I-_d0848c93981ad6818184b164e6b4dafd.pdf",
+        cleanTitle: "anatomy of arm-I-_d0848c93981ad6818184b164e6b4dafd",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Arm Compartments",
+        summary: "Compartments, muscles and arteries of the arm, and the anastomosis around the elbow.",
+        file_url: lectureUrl("anatomy of arm-I-_d0848c93981ad6818184b164e6b4dafd.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_Arm_I_Bilingual.pdf",
+        summary_url: "/summary/arm-1"
+      },
+      {
+        id: 13,
+        title: "anatomy of arm-II-_a1a5a431c56a6a4da2ab400fcbf3d5ff.pdf",
+        cleanTitle: "anatomy of arm-II-_a1a5a431c56a6a4da2ab400fcbf3d5ff",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Elbow & Cubital Fossa",
+        summary: "The elbow and proximal radio-ulnar joints, pronation and supination, and the cubital fossa.",
+        file_url: lectureUrl("anatomy of arm-II-_a1a5a431c56a6a4da2ab400fcbf3d5ff.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_Arm_II_Bilingual.pdf",
+        summary_url: "/summary/arm-2"
+      },
+      {
+        id: 14,
+        title: "applied anatomy_57306dc1b0269441453bceef6d7b43ab.pdf",
+        cleanTitle: "applied anatomy_57306dc1b0269441453bceef6d7b43ab",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Applied Anatomy of Upper Limb",
+        summary: "Clinical cases: dislocations, fractures, degenerative shoulder and nerve injuries of the upper limb.",
+        file_url: lectureUrl("applied anatomy_57306dc1b0269441453bceef6d7b43ab.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_I_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-1"
+      },
+      {
         id: 2,
         title: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e915112c4.pdf",
         cleanTitle: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e915112c4",
@@ -97,6 +138,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/inflammation"
       },
       {
+        id: 15,
+        title: "inflammation_healing_and_repair_c4b5de9119f2fac98b.pdf",
+        cleanTitle: "inflammation_healing_and_repair_c4b5de9119f2fac98b",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Chronic Inflammation & Repair",
+        summary: "Chronic and granulomatous inflammation, tissue repair, wound healing and fracture healing.",
+        file_url: lectureUrl("inflammation_healing_and_repair_c4b5de9119f2fac98b.pdf"),
+        bilingual_url: "/bilingual/Chronic_Inflammation_Healing_and_Repair_Bilingual.pdf",
+        summary_url: "/summary/chronic-inflammation"
+      },
+      {
         id: 3,
         title: "MSS- 1.pdf",
         cleanTitle: "MSS- 1",
@@ -107,6 +160,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("MSS- 1.pdf"),
         bilingual_url: "/bilingual/MSS1_NSAIDs_Bilingual.pdf",
         summary_url: "/summary/nsaids"
+      },
+      {
+        id: 16,
+        title: "MSS- 2.pdf",
+        cleanTitle: "MSS- 2",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Narcotic Analgesics",
+        summary: "Opioid receptors, morphine, individual opioids and opioid antagonists.",
+        file_url: lectureUrl("MSS- 2.pdf"),
+        bilingual_url: "/bilingual/MSS2_Narcotic_Analgesics_Bilingual.pdf",
+        summary_url: "/summary/narcotics"
       },
       {
         id: 7,
@@ -163,6 +228,18 @@ export const subjects: Subject[] = [
         topic: "Lab",
         summary: "Practical skill development for unit 3.",
         file_url: storageUrl("skill lab unit 3 week 1 (2) warith.pdf")
+      },
+      {
+        id: 17,
+        title: "lecture_networks_and_security_71788629cb8762ff07fe08b7a4556b8b.pdf",
+        cleanTitle: "lecture_networks_and_security_71788629cb8762ff07fe08b7a4556b8b",
+        type: "lecture",
+        discipline: "Computer Science",
+        topic: "Computer Networks",
+        summary: "Types and components of computer networks, network threats and security measures.",
+        file_url: lectureUrl("lecture_networks_and_security_71788629cb8762ff07fe08b7a4556b8b.pdf"),
+        bilingual_url: "/bilingual/Computer_Networks_and_Network_Security_Bilingual.pdf",
+        summary_url: "/summary/networks"
       },
     ],
   },

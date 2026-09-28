@@ -5,7 +5,9 @@ import { subjects } from '@/data/subjects';
 // middleware.ts has already checked login + active access before this runs.
 // Only files the library links to can be signed, never arbitrary bucket paths.
 const allowed = new Set(
-  subjects.flatMap((s) => s.resources).flatMap((r) => (r.file_url ? [decodeURIComponent(r.file_url.split('/').pop()!)] : []))
+  subjects
+    .flatMap((s) => s.resources)
+    .flatMap((r) => (r.file_url?.startsWith('/api/file/') ? [decodeURIComponent(r.file_url.split('/').pop()!)] : []))
 );
 
 export async function GET(_req: Request, { params }: { params: Promise<{ name: string }> }) {
