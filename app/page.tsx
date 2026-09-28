@@ -7,8 +7,7 @@ import Sidebar from "@/components/sidebar"
 import ResourceList from "@/components/resource-list"
 import ResourceDetail from "@/components/resource-detail"
 import QuizModal from "@/components/QuizModal"
-
-const COVERAGE_TARGET = 300
+import { useStreak } from "@/lib/streak"
 
 // each lecture is followed by its quiz, in the same discipline
 function withGeneratedQuizzes(subject: Subject): Resource[] {
@@ -88,9 +87,10 @@ export default function AtlasPage() {
     return allResources.filter((r) => r.id !== selected.id && r.topic === selected.topic).slice(0, 6)
   }, [allResources, selected])
 
-  const totalCatalogued = useMemo(() => subjects.reduce((sum, s) => sum + s.resources.length, 0), [])
+  const [streak, recordStudy] = useStreak()
 
   const openQuiz = (resource: Resource) => {
+    recordStudy()
     const questions = quizBank[resource.topic] || quizBank["General"]
     setQuiz({ questions, title: resource.cleanTitle, topic: resource.topic })
     setShowQuiz(true)
@@ -98,7 +98,10 @@ export default function AtlasPage() {
 
   const handleSelect = (resource: Resource) => {
     if (resource.isQuiz) openQuiz(resource)
-    else setSelected(resource)
+    else {
+      recordStudy()
+      setSelected(resource)
+    }
   }
 
   const selectSubject = (id: string) => {
@@ -116,8 +119,7 @@ export default function AtlasPage() {
         onSelectSubject={selectSubject}
         dark={dark}
         onToggleTheme={toggleTheme}
-        totalResources={COVERAGE_TARGET}
-        mappedResources={totalCatalogued}
+        streak={streak}
       />
       <ResourceList
         subjectName={subjectData.name}
