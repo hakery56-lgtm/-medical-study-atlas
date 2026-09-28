@@ -124,6 +124,11 @@ export default function Sidebar({
           <div className="flex items-center justify-between">
             <p className="text-xs font-semibold" style={{ color: "var(--text-main)" }}>
               Daily Streak
+              {streak?.guestNumber != null && (
+                <span className="ml-1.5 font-normal" style={{ color: "var(--text-muted)" }}>
+                  · Guest {streak.guestNumber}
+                </span>
+              )}
             </p>
             <span className="text-[10px] font-semibold tabular-nums" style={{ color: "var(--text-muted)" }}>
               Best {streak?.best ?? 0}

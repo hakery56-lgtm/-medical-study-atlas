@@ -19,6 +19,7 @@ export async function POST(req: Request) {
     const { data: { user }, error: authError } = await supabase.auth.getUser(token);
     
     if (authError || !user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    if (user.is_anonymous) return NextResponse.json({ error: 'Please sign in with your account to redeem a code' }, { status: 401 });
 
     if (!code) return NextResponse.json({ error: 'Access code is required' }, { status: 400 });
 

@@ -21,7 +21,8 @@ export default function LoginPopup() {
   useEffect(() => {
     async function checkAuth() {
       const { data: { session } } = await supabase.auth.getSession()
-      if (session) {
+      // guest accounts don't count as signed in
+      if (session && !session.user.is_anonymous) {
         setIsVisible(false)
       } else {
         setIsVisible(true)

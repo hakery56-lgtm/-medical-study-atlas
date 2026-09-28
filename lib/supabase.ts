@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { isFreeAccess } from '@/lib/free-access';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -14,5 +15,13 @@ if (typeof window !== 'undefined') {
     document.cookie = session
       ? `sb-access-token=${session.access_token}; Path=/; Max-Age=${session.expires_in ?? 3600}; SameSite=Lax${secure}`
       : `sb-access-token=; Path=/; Max-Age=0; SameSite=Lax${secure}`;
+  });
+}
+
+// While login is off, every new visitor gets a guest account (Guest 1, Guest 2, ...) so their streak is saved.
+// A returning visitor still has their session in this browser, so they keep the same guest account.
+if (typeof window !== 'undefined' && isFreeAccess()) {
+  supabase.auth.getSession().then(({ data: { session } }) => {
+    if (!session) supabase.auth.signInAnonymously().then(({ error }) => error && console.error(error));
   });
 }
