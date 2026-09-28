@@ -10,6 +10,7 @@ export interface Streak {
   current: number
   best: number
   studiedToday: boolean
+  guestNumber: number | null // set for guest accounts made during the free period
   lastWeek: { key: string; label: string; studied: boolean }[]
 }
 
@@ -42,13 +43,14 @@ export function longestRun(days: string[]) {
   return best
 }
 
-function summarize(days: string[]): Streak {
+function summarize(days: string[], guestNumber: number | null = null): Streak {
   const today = new Date()
   const set = new Set(days)
   return {
     current: countStreak(days, today),
     best: longestRun(days),
     studiedToday: set.has(dayKey(today)),
+    guestNumber,
     lastWeek: Array.from({ length: 7 }, (_, i) => {
       const d = shift(today, i - 6)
       return { key: dayKey(d), label: d.toLocaleDateString("en", { weekday: "narrow" }), studied: set.has(dayKey(d)) }
@@ -73,6 +75,7 @@ async function migrateLegacyDays() {
 export function useStreak(): [Streak | null, () => void] {
   const [streak, setStreak] = useState<Streak | null>(null)
   const days = useRef<string[]>([])
+  const guest = useRef<number | null>(null)
 
   const load = useCallback(async () => {
     const { data: { session } } = await supabase.auth.getSession()
@@ -82,10 +85,14 @@ export function useStreak(): [Streak | null, () => void] {
       return
     }
     await migrateLegacyDays()
-    const { data, error } = await supabase.from("study_days").select("day")
+    const [{ data, error }, { data: profile }] = await Promise.all([
+      supabase.from("study_days").select("day"),
+      supabase.from("profiles").select("guest_number").maybeSingle(),
+    ])
     if (error) return console.error(error)
     days.current = data.map((r) => r.day as string)
-    setStreak(summarize(days.current))
+    guest.current = profile?.guest_number ?? null
+    setStreak(summarize(days.current, guest.current))
   }, [])
 
   useEffect(() => {
@@ -103,7 +110,7 @@ export function useStreak(): [Streak | null, () => void] {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) return
     days.current = [...days.current, today]
-    setStreak(summarize(days.current))
+    setStreak(summarize(days.current, guest.current))
     const { error } = await supabase
       .from("study_days")
       .upsert({ day: today }, { onConflict: "user_id,day", ignoreDuplicates: true })

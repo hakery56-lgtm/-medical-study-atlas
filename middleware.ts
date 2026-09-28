@@ -50,7 +50,8 @@ export async function middleware(req: NextRequest) {
 
     const { data: { user }, error: authError } = await supabase.auth.getUser(sessionCookie);
 
-    if (authError || !user) {
+    // guest accounts (from the free period) have to sign in with a real account
+    if (authError || !user || user.is_anonymous) {
       return NextResponse.redirect(loginUrl);
     }
 
