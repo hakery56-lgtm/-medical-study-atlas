@@ -1,7 +1,8 @@
 "use client"
 
-import { Moon, Sun, Stethoscope, Mail, PersonStanding } from "lucide-react"
+import { Moon, Sun, Stethoscope, Mail, PersonStanding, Flame } from "lucide-react"
 import type { Subject } from "@/data/subjects"
+import type { Streak } from "@/lib/streak"
 import { subjectIcons } from "@/lib/resource-ui"
 import Link from "next/link"
 
@@ -11,8 +12,7 @@ interface SidebarProps {
   onSelectSubject: (id: string) => void
   dark: boolean
   onToggleTheme: () => void
-  totalResources: number
-  mappedResources: number
+  streak: Streak | null
 }
 
 const quickAccess = [
@@ -26,10 +26,8 @@ export default function Sidebar({
   onSelectSubject,
   dark,
   onToggleTheme,
-  totalResources,
-  mappedResources,
+  streak,
 }: SidebarProps) {
-  const progress = totalResources === 0 ? 0 : Math.round((mappedResources / totalResources) * 100)
 
   return (
     <aside
@@ -123,19 +121,45 @@ export default function Sidebar({
           className="rounded-xl border p-4"
           style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", boxShadow: "var(--shadow-card)" }}
         >
-          <div className="mb-2 flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <p className="text-xs font-semibold" style={{ color: "var(--text-main)" }}>
-              Library Coverage
+              Daily Streak
             </p>
-            <span className="text-xs font-bold tabular-nums" style={{ color: "var(--accent)" }}>
-              {progress}%
+            <span className="text-[10px] font-semibold tabular-nums" style={{ color: "var(--text-muted)" }}>
+              Best {streak?.best ?? 0}
             </span>
           </div>
-          <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: "var(--border-color)" }}>
-            <div className="h-full rounded-full transition-all" style={{ width: `${progress}%`, backgroundColor: "var(--accent)" }} />
+          <div className="mt-2 flex items-center gap-2">
+            <Flame
+              size={26}
+              className="shrink-0"
+              style={{ color: streak?.studiedToday ? "#f97316" : "var(--text-muted)" }}
+              fill={streak?.studiedToday ? "#fdba74" : "none"}
+            />
+            <span className="display-serif text-2xl font-bold tabular-nums leading-none">{streak?.current ?? 0}</span>
+            <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+              {streak?.current === 1 ? "day" : "days"}
+            </span>
+          </div>
+          <div className="mt-3 flex justify-between" aria-label="Last 7 days">
+            {(streak?.lastWeek ?? []).map((d) => (
+              <div key={d.key} className="flex flex-col items-center gap-1" title={d.key}>
+                <span
+                  className="h-2.5 w-2.5 rounded-full"
+                  style={{ backgroundColor: d.studied ? "var(--accent)" : "var(--border-color)" }}
+                />
+                <span className="text-[9px] font-semibold" style={{ color: "var(--text-muted)" }}>
+                  {d.label}
+                </span>
+              </div>
+            ))}
           </div>
           <p className="mt-2 text-[10px]" style={{ color: "var(--text-muted)" }}>
-            {mappedResources} of {totalResources} resources catalogued
+            {streak?.studiedToday
+              ? "Studied today, see you tomorrow!"
+              : streak?.current
+                ? "Open a lecture or quiz today to keep your streak."
+                : "Open a lecture or quiz to start a streak."}
           </p>
         </div>
       </div>
