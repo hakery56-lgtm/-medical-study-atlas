@@ -174,6 +174,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/narcotics"
       },
       {
+        id: 18,
+        title: "Somatosensory lecture.pdf",
+        cleanTitle: "Somatosensory lecture",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Somatic Sensation",
+        summary: "Neurons, sensory receptors, stimulus coding, sensory acuity and the ascending somatosensory pathways.",
+        file_url: lectureUrl("Somatosensory lecture.pdf"),
+        bilingual_url: "/bilingual/Somatosensory_Lecture_Bilingual.pdf",
+        summary_url: "/summary/somatosensory"
+      },
+      {
         id: 7,
         title: "(Ortho 1) Shoulder_Dislocation_Lecture.pdf",
         cleanTitle: "(Ortho 1) Shoulder_Dislocation_Lecture",
