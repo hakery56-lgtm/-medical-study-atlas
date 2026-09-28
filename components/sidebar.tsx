@@ -155,11 +155,13 @@ export default function Sidebar({
             ))}
           </div>
           <p className="mt-2 text-[10px]" style={{ color: "var(--text-muted)" }}>
-            {streak?.studiedToday
-              ? "Studied today, see you tomorrow!"
-              : streak?.current
-                ? "Open a lecture or quiz today to keep your streak."
-                : "Open a lecture or quiz to start a streak."}
+            {!streak
+              ? "Sign in to track your daily streak."
+              : streak.studiedToday
+                ? "Studied today, see you tomorrow!"
+                : streak.current
+                  ? "Open a lecture or quiz today to keep your streak."
+                  : "Open a lecture or quiz to start a streak."}
           </p>
         </div>
       </div>
