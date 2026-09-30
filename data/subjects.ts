@@ -114,6 +114,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/applied-anatomy-1"
       },
       {
+        id: 19,
+        title: "anatomy of arm-27.pdf",
+        cleanTitle: "Anatomy of the Arm (complete)",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Arm (Complete)",
+        summary: "The full arm lecture: compartments and muscles, brachial artery and elbow anastomosis, elbow and radio-ulnar joints, cubital fossa, and humeral fractures.",
+        file_url: lectureUrl("anatomy of arm-27.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_Arm_Complete_Bilingual.pdf",
+        summary_url: "/summary/arm-complete"
+      },
+      {
         id: 2,
         title: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e915112c4.pdf",
         cleanTitle: "lecture_1_cell_injury_and_adaptation_e8e86e3ed226ee1f5c4ab01e915112c4",
@@ -210,6 +222,42 @@ export const subjects: Subject[] = [
         summary_url: "/summary/clavicle"
       },
       {
+        id: 20,
+        title: "Bone fracture.pdf",
+        cleanTitle: "Bone Fracture: Classification & First Aid",
+        type: "lecture",
+        discipline: "Orthopedics",
+        topic: "Bone Fractures",
+        summary: "Classification of fractures, clinical picture, first aid, emergency signs and key points.",
+        file_url: lectureUrl("Bone fracture.pdf"),
+        bilingual_url: "/bilingual/Bone_Fracture_Bilingual.pdf",
+        summary_url: "/summary/bone-fracture"
+      },
+      {
+        id: 21,
+        title: "Fracture neck of humerus.pdf",
+        cleanTitle: "Fracture of the Proximal (Neck) Humerus",
+        type: "lecture",
+        discipline: "Orthopedics",
+        topic: "Proximal Humerus Fracture",
+        summary: "Neer classification, complications and clinical assessment of proximal humerus fractures.",
+        file_url: lectureUrl("Fracture neck of humerus.pdf"),
+        bilingual_url: "/bilingual/Fracture_Neck_of_Humerus_Bilingual.pdf",
+        summary_url: "/summary/humerus-neck-fracture"
+      },
+      {
+        id: 22,
+        title: "Axillary nerve.pdf",
+        cleanTitle: "Axillary Nerve: Course & Lesion",
+        type: "lecture",
+        discipline: "Orthopedics",
+        topic: "Axillary Nerve",
+        summary: "Root values, course through the quadrangular space, functions, effects of injury and clinical examination.",
+        file_url: lectureUrl("Axillary nerve.pdf"),
+        bilingual_url: "/bilingual/Axillary_Nerve_Bilingual.pdf",
+        summary_url: "/summary/axillary-nerve"
+      },
+      {
         id: 4,
         title: "impenging shoulder.pdf",
         cleanTitle: "impenging shoulder",
@@ -240,6 +288,30 @@ export const subjects: Subject[] = [
         topic: "Lab",
         summary: "Practical skill development for unit 3.",
         file_url: storageUrl("skill lab unit 3 week 1 (2) warith.pdf")
+      },
+      {
+        id: 23,
+        title: "LAB 2 - arm.pdf",
+        cleanTitle: "MSK Lab 2 - Arm",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Arm Lab",
+        summary: "Arm specimens plus applied anatomy questions: deltopectoral approach, veins, humeral fractures, nerve injuries and the elbow.",
+        file_url: lectureUrl("LAB 2 - arm.pdf"),
+        bilingual_url: "/bilingual/LAB2_Arm_Bilingual.pdf",
+        summary_url: "/summary/lab2-arm"
+      },
+      {
+        id: 24,
+        title: "skill lab unit 3 week 2 - shoulder joint.pdf",
+        cleanTitle: "Skill Lab - Week 2 (Shoulder Joint)",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Shoulder Examination",
+        summary: "Shoulder examination, impingement tests (painful arc, Neer, Hawkins-Kennedy), OSCE checklist and clinical reasoning.",
+        file_url: lectureUrl("skill lab unit 3 week 2 - shoulder joint.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Shoulder_Joint_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-shoulder"
       },
       {
         id: 17,

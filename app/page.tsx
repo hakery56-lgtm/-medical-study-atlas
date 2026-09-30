@@ -9,10 +9,10 @@ import ResourceDetail from "@/components/resource-detail"
 import QuizModal from "@/components/QuizModal"
 import { useStreak } from "@/lib/streak"
 
-// each lecture is followed by its quiz, in the same discipline
+// each lecture is followed by its quiz, in the same discipline (labs too, once they have their own summary and exam)
 function withGeneratedQuizzes(subject: Subject): Resource[] {
   return subject.resources.flatMap((r): Resource[] =>
-    r.type !== "lecture"
+    r.type !== "lecture" && !(r.type === "lab" && r.summary_url)
       ? [r]
       : [
           r,
