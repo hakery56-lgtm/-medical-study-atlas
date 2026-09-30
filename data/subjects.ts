@@ -270,6 +270,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/impingement"
       },
       {
+        id: 25,
+        title: "Psychiatric pain disorder.pdf",
+        cleanTitle: "Psychiatric Pain Disorder",
+        type: "lecture",
+        discipline: "Psychiatry",
+        topic: "Psychiatric Pain Disorder",
+        summary: "Psychogenic pain: behavioral symptoms, emotional distress, avoidance, cognitive distortions and treatment alternatives.",
+        file_url: lectureUrl("Psychiatric pain disorder.pdf"),
+        bilingual_url: "/bilingual/Psychiatric_Pain_Disorder_Bilingual.pdf",
+        summary_url: "/summary/pain-disorder"
+      },
+      {
         id: 10,
         title: "lab1 - 2026.pdf",
         cleanTitle: "MSK Lab 1",
