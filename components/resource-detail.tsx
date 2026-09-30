@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages, GraduationCap } from "lucide-react"
+import { useEffect, useState } from "react"
+import { X, CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages, GraduationCap } from "lucide-react"
 import { storageUrl, type Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
 import FlashcardModal from "./FlashcardModal"
@@ -12,14 +12,30 @@ interface ResourceDetailProps {
   related: Resource[]
   onSelectRelated: (r: Resource) => void
   onOpenQuiz: (r: Resource) => void
+  onClose: () => void
 }
 
-export default function ResourceDetail({ resource, related, onSelectRelated, onOpenQuiz }: ResourceDetailProps) {
+export default function ResourceDetail({ resource, related, onSelectRelated, onOpenQuiz, onClose }: ResourceDetailProps) {
   const [showViewer, setShowViewer] = useState(false)
   const [showFlashcards, setShowFlashcards] = useState(false)
+
+  // on phones the details open as a pop-up sheet: lock the page behind it and close it with Escape
+  useEffect(() => {
+    if (!resource || !window.matchMedia("(max-width: 767px)").matches) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && !showFlashcards) onClose()
+    }
+    document.body.style.overflow = "hidden"
+    window.addEventListener("keydown", onKey)
+    return () => {
+      document.body.style.overflow = ""
+      window.removeEventListener("keydown", onKey)
+    }
+  }, [resource, showFlashcards, onClose])
+
   if (!resource) {
     return (
-      <section className="flex h-full items-center justify-center overflow-y-auto p-8" style={{ backgroundColor: "var(--bg-main)" }}>
+      <section className="hidden h-full items-center justify-center overflow-y-auto p-8 md:flex" style={{ backgroundColor: "var(--bg-main)" }}>
         <div className="flex max-w-xs flex-col items-center gap-4 text-center">
           <div
             className="flex h-16 w-16 items-center justify-center rounded-2xl"
@@ -43,7 +59,28 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
 
   return (
     <>
-      <section className="h-full overflow-y-auto p-6 lg:p-10" style={{ backgroundColor: "var(--bg-main)" }}>
+      <div
+        role="dialog"
+        aria-label={resource.cleanTitle}
+        className="fixed inset-0 z-40 flex items-end md:static md:z-auto md:block md:h-full"
+      >
+      {/* phones only: tap outside the sheet to close it */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm md:hidden" onClick={onClose} aria-hidden="true" />
+      <section
+        className="sheet-up relative max-h-[88vh] w-full overflow-y-auto rounded-t-3xl p-6 pt-3 md:h-full md:max-h-none md:rounded-none md:pt-6 lg:p-10"
+        style={{ backgroundColor: "var(--bg-main)" }}
+      >
+      <div className="sticky top-0 z-10 -mx-6 -mt-3 mb-3 flex items-center justify-between px-4 pb-2 pt-3 md:hidden" style={{ backgroundColor: "var(--bg-main)" }}>
+        <span className="mx-auto h-1.5 w-10 rounded-full" style={{ backgroundColor: "var(--border-color)" }} />
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-3 top-2 flex h-9 w-9 items-center justify-center rounded-full border"
+          style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+        >
+          <X size={17} />
+        </button>
+      </div>
       <div key={resource.id} className="animate-fade-in mx-auto max-w-3xl space-y-8">
         <header className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
@@ -192,6 +229,7 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
         </div>
       </div>
     </section>
+    </div>
     <FlashcardModal
       isOpen={showFlashcards}
       onClose={() => setShowFlashcards(false)}

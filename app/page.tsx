@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState, useEffect } from "react"
+import { useCallback, useMemo, useState, useEffect } from "react"
 import { subjects, type Resource, type Subject } from "@/data/subjects"
 import { quizBank } from "@/data/quizzes"
 import Sidebar from "@/components/sidebar"
@@ -104,6 +104,8 @@ export default function AtlasPage() {
     }
   }
 
+  const closeDetail = useCallback(() => setSelected(null), [])
+
   const selectSubject = (id: string) => {
     setCurrentSubject(id)
     setSelected(null)
@@ -137,6 +139,7 @@ export default function AtlasPage() {
         related={related}
         onSelectRelated={handleSelect}
         onOpenQuiz={openQuiz}
+        onClose={closeDetail}
       />
 
       <QuizModal isOpen={showQuiz} quiz={quiz} onClose={() => setShowQuiz(false)} />
