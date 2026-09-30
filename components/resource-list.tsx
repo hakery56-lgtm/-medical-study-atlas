@@ -15,6 +15,7 @@ interface ResourceListProps {
   onSearch: (s: string) => void
   selectedId: string | number | null
   onSelect: (r: Resource) => void
+  emptyText?: string
 }
 
 export default function ResourceList({
@@ -27,6 +28,7 @@ export default function ResourceList({
   onSearch,
   selectedId,
   onSelect,
+  emptyText,
 }: ResourceListProps) {
   return (
     <main
@@ -82,7 +84,7 @@ export default function ResourceList({
       <div className="flex-1 space-y-2.5 overflow-y-auto p-4">
         {resources.length === 0 ? (
           <p className="px-2 py-10 text-center text-sm italic" style={{ color: "var(--text-muted)" }}>
-            No resources match your search.
+            {emptyText ?? "No resources match your search."}
           </p>
         ) : (
           resources.map((r) => {

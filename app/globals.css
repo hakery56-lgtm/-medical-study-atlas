@@ -166,6 +166,16 @@ body {
   animation: atlas-fade-in 0.35s ease both;
 }
 
+/* university chooser shown on entry (components/UniversityPicker.tsx) */
+.uni-picker-bg {
+  background:
+    radial-gradient(40rem 28rem at 15% 10%, var(--accent-soft), transparent 70%),
+    radial-gradient(36rem 26rem at 90% 95%, var(--accent-soft), transparent 70%);
+  opacity: 0.8;
+}
+.uni-option { transition: transform 0.15s ease, border-color 0.15s ease; }
+.uni-option:hover, .uni-option:focus-visible { transform: translateY(-2px); border-color: var(--accent) !important; outline: none; }
+
 /* lecture details slide up as a pop-up sheet on phones (components/resource-detail.tsx) */
 @keyframes atlas-sheet-up {
   from { transform: translateY(100%); }
