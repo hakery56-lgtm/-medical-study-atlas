@@ -166,6 +166,15 @@ body {
   animation: atlas-fade-in 0.35s ease both;
 }
 
+/* lecture details slide up as a pop-up sheet on phones (components/resource-detail.tsx) */
+@keyframes atlas-sheet-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+  .sheet-up { animation: atlas-sheet-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+}
+
 /* Lecture exam summaries (app/summary/[id]) — Markdown rendered inside .summary */
 .summary { font-size: 1.02rem; line-height: 1.9; }
 .summary h1 { font-family: var(--font-serif), serif; font-size: 1.75rem; font-weight: 700; line-height: 1.4; margin-bottom: 1rem; }
