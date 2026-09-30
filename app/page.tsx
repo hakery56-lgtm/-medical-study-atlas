@@ -10,7 +10,7 @@ import QuizModal from "@/components/QuizModal"
 import { useStreak } from "@/lib/streak"
 import UniversityPicker, { universities, type University } from "@/components/UniversityPicker"
 
-const UNI_KEY = "atlas-university" // per visit (sessionStorage), so the chooser shows each time the site is opened
+const UNI_KEY = "atlas-university" // remembered on this device (localStorage); "Change" in the sidebar reopens the chooser
 
 // each lecture is followed by its quiz, in the same discipline (labs too, once they have their own summary and exam)
 function withGeneratedQuizzes(subject: Subject): Resource[] {
@@ -48,14 +48,14 @@ export default function AtlasPage() {
   useEffect(() => {
     let saved: string | null = null
     try {
-      saved = sessionStorage.getItem(UNI_KEY)
+      saved = localStorage.getItem(UNI_KEY)
     } catch {}
     setUniversity(universities.some((u) => u.id === saved) ? (saved as University) : null)
   }, [])
 
   const chooseUniversity = (u: University) => {
     try {
-      sessionStorage.setItem(UNI_KEY, u)
+      localStorage.setItem(UNI_KEY, u)
     } catch {}
     setUniversity(u)
     setSelected(null)
