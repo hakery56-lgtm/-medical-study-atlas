@@ -14,7 +14,10 @@ export async function middleware(req: NextRequest) {
     pathname.startsWith('/_next') || 
     (pathname.startsWith('/api') && !pathname.startsWith('/api/file/')) || 
     pathname === '/' || 
-    pathname === '/favicon.ico'
+    pathname === '/favicon.ico' ||
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.xml' ||
+    pathname === '/googled31c6cabb8cb5d91.html' // Google Search Console verification
   ) {
     return NextResponse.next();
   }
