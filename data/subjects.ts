@@ -24,6 +24,8 @@ export interface Subject {
   icon: "bone" | "heart" | "lungs" | "blood" | "pill" | "microscope"
   // which university's library it belongs to; no value = Al-Warith
   university?: "warith" | "ameed"
+  // Al-Ameed only: the study stage whose menu it appears in
+  stage?: 2 | 3
   resources: Resource[]
 }
 
@@ -382,6 +384,7 @@ export const subjects: Subject[] = [
     name: "Weeks 1–2",
     icon: "microscope",
     university: "ameed",
+    stage: 2,
     resources: [
       {
         id: 101,
@@ -576,5 +579,13 @@ export const subjects: Subject[] = [
         summary_url: "/summary/histology-circulatory-2"
       },
     ],
+  },
+  {
+    id: "ameed-s3",
+    name: "3rd Stage",
+    icon: "microscope",
+    university: "ameed",
+    stage: 3,
+    resources: [],
   },
 ]

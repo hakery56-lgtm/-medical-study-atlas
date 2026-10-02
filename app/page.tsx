@@ -8,8 +8,9 @@ import ResourceList from "@/components/resource-list"
 import ResourceDetail from "@/components/resource-detail"
 import QuizModal from "@/components/QuizModal"
 import { useStreak } from "@/lib/streak"
-import UniversityPicker, { universities, type University } from "@/components/UniversityPicker"
+import UniversityPicker, { universities, stages, type University, type Stage } from "@/components/UniversityPicker"
 
+const STAGE_KEY = "atlas-stage" // Al-Ameed only: 2 or 3
 const UNI_KEY = "atlas-university" // remembered on this device (localStorage); "Change" in the sidebar reopens the chooser
 
 // each lecture is followed by its quiz, in the same discipline (labs too, once they have their own summary and exam)
@@ -44,29 +45,42 @@ export default function AtlasPage() {
   const [showQuiz, setShowQuiz] = useState(false)
   // undefined = not read yet, null = not chosen (show the chooser)
   const [university, setUniversity] = useState<University | null | undefined>(undefined)
+  const [stage, setStage] = useState<Stage>(2)
 
   useEffect(() => {
     let saved: string | null = null
+    let savedStage: string | null = null
     try {
       saved = localStorage.getItem(UNI_KEY)
+      savedStage = localStorage.getItem(STAGE_KEY)
     } catch {}
-    setUniversity(universities.some((u) => u.id === saved) ? (saved as University) : null)
+    const st = stages.find((s) => String(s.id) === savedStage)?.id
+    if (st) setStage(st)
+    // an Al-Ameed visitor who never picked a stage is asked again
+    const ok = universities.some((u) => u.id === saved) && (saved !== "ameed" || st)
+    setUniversity(ok ? (saved as University) : null)
   }, [])
 
-  const chooseUniversity = (u: University) => {
+  const chooseUniversity = (u: University, s?: Stage) => {
     try {
       localStorage.setItem(UNI_KEY, u)
+      if (s) localStorage.setItem(STAGE_KEY, String(s))
     } catch {}
+    if (s) setStage(s)
     setUniversity(u)
     setSelected(null)
     setFilter("all")
     setSearch("")
   }
 
-  // each university sees only its own subjects (a subject without a university belongs to Al-Warith)
+  // each university sees only its own subjects (a subject without a university belongs to Al-Warith);
+  // Al-Ameed is further split by stage
   const visibleSubjects = useMemo(
-    () => subjects.filter((s) => (s.university ?? "warith") === (university ?? "warith")),
-    [university]
+    () =>
+      subjects.filter(
+        (s) => (s.university ?? "warith") === (university ?? "warith") && (university !== "ameed" || s.stage === stage)
+      ),
+    [university, stage]
   )
 
   useEffect(() => {
@@ -120,6 +134,9 @@ export default function AtlasPage() {
     return allResources.filter((r) => r.id !== selected.id && r.topic === selected.topic).slice(0, 6)
   }, [allResources, selected])
 
+  const uniName = universities.find((u) => u.id === university)?.name
+  const uniLabel = uniName && university === "ameed" ? `${uniName} · ${stages.find((s) => s.id === stage)?.name}` : uniName
+
   const [streak, recordStudy] = useStreak()
 
   const openQuiz = (resource: Resource) => {
@@ -150,7 +167,7 @@ export default function AtlasPage() {
     <div className="md:grid md:h-screen md:grid-cols-[minmax(240px,280px)_minmax(300px,380px)_1fr] md:overflow-hidden">
       <Sidebar
         subjects={visibleSubjects}
-        university={universities.find((u) => u.id === university)?.name}
+        university={uniLabel}
         onSwitchUniversity={() => setUniversity(null)}
         currentSubject={subjectData.id}
         onSelectSubject={selectSubject}
@@ -168,6 +185,7 @@ export default function AtlasPage() {
         onSearch={setSearch}
         selectedId={selected?.id ?? null}
         onSelect={handleSelect}
+        emptyText={subjectData.resources.length === 0 ? "Lectures for this stage are coming soon." : undefined}
       />
       <ResourceDetail
         resource={selected}

@@ -1,17 +1,28 @@
 "use client"
 
-import { useEffect } from "react"
-import { Stethoscope, Landmark, ArrowRight } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Stethoscope, Landmark, ArrowRight, ArrowLeft, GraduationCap } from "lucide-react"
 
 export type University = "warith" | "ameed"
+export type Stage = 2 | 3
 
 export const universities: { id: University; name: string; arabic: string; note: string }[] = [
   { id: "warith", name: "Al-Warith University", arabic: "جامعة وارث الأنبياء", note: "Full library: lectures, quizzes & flash cards" },
-  { id: "ameed", name: "Al-Ameed University", arabic: "جامعة العميد", note: "Weeks 1–2: anatomy, physiology, biochemistry & more" },
+  { id: "ameed", name: "Al-Ameed University", arabic: "جامعة العميد", note: "Choose your stage: 2nd or 3rd" },
+]
+
+export const stages: { id: Stage; name: string; arabic: string; note: string }[] = [
+  { id: 2, name: "2nd Stage", arabic: "المرحلة الثانية", note: "Weeks 1–2: anatomy, physiology, biochemistry & more" },
+  { id: 3, name: "3rd Stage", arabic: "المرحلة الثالثة", note: "Lectures coming soon" },
 ]
 
 // full-screen chooser shown when a visitor opens the site; the page behind stays locked until they pick
-export default function UniversityPicker({ onChoose }: { onChoose: (u: University) => void }) {
+export default function UniversityPicker({ onChoose }: { onChoose: (u: University, stage?: Stage) => void }) {
+  // Al-Ameed has a second step: pick the study stage
+  const [step, setStep] = useState<"uni" | "stage">("uni")
+  const options = step === "uni" ? universities : stages
+  const Icon = step === "uni" ? Landmark : GraduationCap
+
   useEffect(() => {
     document.body.style.overflow = "hidden"
     return () => {
@@ -41,19 +52,19 @@ export default function UniversityPicker({ onChoose }: { onChoose: (u: Universit
               Medical Study Atlas
             </p>
             <h1 id="uni-picker-title" className="display-serif mt-3 text-3xl font-bold sm:text-4xl">
-              Choose your university
+              {step === "uni" ? "Choose your university" : "Choose your stage"}
             </h1>
             <p dir="rtl" lang="ar" className="mt-1 text-xl font-bold" style={{ color: "var(--accent)" }}>
-              اختر جامعتك
+              {step === "uni" ? "اختر جامعتك" : "اختر مرحلتك"}
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {universities.map((u, i) => (
+            {options.map((u, i) => (
               <button
-                key={u.id}
+                key={`${step}-${u.id}`}
                 autoFocus={i === 0}
-                onClick={() => onChoose(u.id)}
+                onClick={() => (step === "stage" ? onChoose("ameed", u.id as Stage) : u.id === "ameed" ? setStep("stage") : onChoose(u.id as University))}
                 className="uni-option group flex flex-col items-start gap-5 rounded-2xl border p-6 text-left"
                 style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", boxShadow: "var(--shadow-card)" }}
               >
@@ -61,7 +72,7 @@ export default function UniversityPicker({ onChoose }: { onChoose: (u: Universit
                   className="flex h-12 w-12 items-center justify-center rounded-xl"
                   style={{ backgroundColor: "var(--accent-soft)", color: "var(--accent)" }}
                 >
-                  <Landmark size={24} />
+                  <Icon size={24} />
                 </span>
                 <span className="w-full">
                   <span className="block text-lg font-bold" style={{ color: "var(--text-main)" }}>
@@ -79,9 +90,19 @@ export default function UniversityPicker({ onChoose }: { onChoose: (u: Universit
             ))}
           </div>
 
-          <p className="mt-6 text-center text-xs" style={{ color: "var(--text-muted)" }}>
-            You can switch university anytime from the sidebar.
-          </p>
+          {step === "stage" ? (
+            <button
+              onClick={() => setStep("uni")}
+              className="mx-auto mt-6 flex items-center gap-1.5 text-xs font-semibold hover:underline"
+              style={{ color: "var(--accent)" }}
+            >
+              <ArrowLeft size={14} /> Back to universities
+            </button>
+          ) : (
+            <p className="mt-6 text-center text-xs" style={{ color: "var(--text-muted)" }}>
+              You can switch university anytime from the sidebar.
+            </p>
+          )}
         </div>
       </div>
     </div>
