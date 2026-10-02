@@ -22,6 +22,8 @@ export interface Subject {
   id: string
   name: string
   icon: "bone" | "heart" | "lungs" | "blood" | "pill" | "microscope"
+  // which university's library it belongs to; no value = Al-Warith
+  university?: "warith" | "ameed"
   resources: Resource[]
 }
 
@@ -336,6 +338,206 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("lecture_networks_and_security_71788629cb8762ff07fe08b7a4556b8b.pdf"),
         bilingual_url: "/bilingual/Computer_Networks_and_Network_Security_Bilingual.pdf",
         summary_url: "/summary/networks"
+      },
+    ],
+  },
+  {
+    id: "ameed-w12",
+    name: "Weeks 1–2",
+    icon: "microscope",
+    university: "ameed",
+    resources: [
+      {
+        id: 101,
+        title: "Skull Anatomy - Slides.pdf",
+        cleanTitle: "Skull Anatomy (Slides)",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Skull Anatomy Slides",
+        summary: "Bones of the skull, the five views, foramina and their contents, and the three cranial fossae.",
+        file_url: lectureUrl("Skull Anatomy - Slides.pdf"),
+        bilingual_url: "/bilingual/Skull_Anatomy_Slides_Bilingual.pdf",
+        summary_url: "/summary/skull-slides"
+      },
+      {
+        id: 102,
+        title: "The Skull - Lecture Notes.pdf",
+        cleanTitle: "The Skull (Lecture Notes)",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "The Skull",
+        summary: "Detailed notes on the norma views, temporal, infratemporal and pterygopalatine fossae, skull base and cranial fossae.",
+        file_url: lectureUrl("The Skull - Lecture Notes.pdf"),
+        bilingual_url: "/bilingual/The_Skull_Lecture_Notes_Bilingual.pdf",
+        summary_url: "/summary/skull-notes"
+      },
+      {
+        id: 103,
+        title: "Scalp and Face.pdf",
+        cleanTitle: "Scalp and Face",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Scalp and Face",
+        summary: "Cranial cavity, the five layers of the scalp, facial muscles, vessels, nerves and Bell's palsy.",
+        file_url: lectureUrl("Scalp and Face.pdf"),
+        bilingual_url: "/bilingual/Scalp_and_Face_Bilingual.pdf",
+        summary_url: "/summary/scalp-face"
+      },
+      {
+        id: 104,
+        title: "Autonomic Nervous System.pdf",
+        cleanTitle: "Autonomic Nervous System",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Autonomic Nervous System",
+        summary: "Sympathetic and parasympathetic divisions, central control, ganglia and effects on each organ.",
+        file_url: lectureUrl("Autonomic Nervous System.pdf"),
+        bilingual_url: "/bilingual/Autonomic_Nervous_System_Bilingual.pdf",
+        summary_url: "/summary/ans"
+      },
+      {
+        id: 105,
+        title: "Body Fluids.pdf",
+        cleanTitle: "Body Fluids",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Body Fluids",
+        summary: "Fluid compartments, ionic composition, tonicity, transport across membranes, osmosis and capillary filtration.",
+        file_url: lectureUrl("Body Fluids.pdf"),
+        bilingual_url: "/bilingual/Body_Fluids_Bilingual.pdf",
+        summary_url: "/summary/body-fluids"
+      },
+      {
+        id: 106,
+        title: "CVS Physiology - Lecture 1.pdf",
+        cleanTitle: "CVS Physiology - Lecture 1",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "CVS Physiology 1",
+        summary: "Heart functions, circulations, valves, cardiac muscle properties and the conductive system.",
+        file_url: lectureUrl("CVS Physiology - Lecture 1.pdf"),
+        bilingual_url: "/bilingual/CVS_Physiology_Lecture1_Bilingual.pdf",
+        summary_url: "/summary/cvs-physiology-1"
+      },
+      {
+        id: 107,
+        title: "Cell Physiology.pdf",
+        cleanTitle: "Cell Physiology",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Cell Physiology",
+        summary: "Plasma membrane, ion channels, junctions, cell signaling, Ca and H regulation, apoptosis and necrosis.",
+        file_url: lectureUrl("Cell Physiology.pdf"),
+        bilingual_url: "/bilingual/Cell_Physiology_Bilingual.pdf",
+        summary_url: "/summary/cell-physiology"
+      },
+      {
+        id: 108,
+        title: "Cells of the Nervous System.pdf",
+        cleanTitle: "Cells of the Nervous System",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Cells of the Nervous System",
+        summary: "Neuron structure, structural and functional classification, nerve fiber types and glial cells.",
+        file_url: lectureUrl("Cells of the Nervous System.pdf"),
+        bilingual_url: "/bilingual/Cells_of_the_Nervous_System_Bilingual.pdf",
+        summary_url: "/summary/nervous-cells"
+      },
+      {
+        id: 109,
+        title: "Resting Membrane Potential and Action Potential.pdf",
+        cleanTitle: "Resting Membrane Potential and Action Potential",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Resting Membrane Potential and Action Potential",
+        summary: "Resting potential, graded potentials, phases and properties of the action potential, refractory periods.",
+        file_url: lectureUrl("Resting Membrane Potential and Action Potential.pdf"),
+        bilingual_url: "/bilingual/Resting_Membrane_Potential_and_Action_Potential_Bilingual.pdf",
+        summary_url: "/summary/resting-potential"
+      },
+      {
+        id: 110,
+        title: "Digestion of Carbohydrates.pdf",
+        cleanTitle: "Digestion of Carbohydrates",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Digestion of Carbohydrates",
+        summary: "Carbohydrate digestion, lactose intolerance, glucose absorption and the GLUT transporters.",
+        file_url: lectureUrl("Digestion of Carbohydrates.pdf"),
+        bilingual_url: "/bilingual/Digestion_of_Carbohydrates_Bilingual.pdf",
+        summary_url: "/summary/cho-digestion"
+      },
+      {
+        id: 111,
+        title: "Digestion of Lipids.pdf",
+        cleanTitle: "Digestion of Lipids",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Digestion of Lipids",
+        summary: "Lipases, emulsification, pancreatic enzymes, micelles, chylomicrons and steatorrhoea.",
+        file_url: lectureUrl("Digestion of Lipids.pdf"),
+        bilingual_url: "/bilingual/Digestion_of_Lipids_Bilingual.pdf",
+        summary_url: "/summary/lipid-digestion"
+      },
+      {
+        id: 112,
+        title: "Protein Digestion.pdf",
+        cleanTitle: "Protein Digestion",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Protein Digestion",
+        summary: "Pepsin, rennin, pancreatic zymogens, brush-border peptidases, amino acid absorption and the Meister cycle.",
+        file_url: lectureUrl("Protein Digestion.pdf"),
+        bilingual_url: "/bilingual/Protein_Digestion_Bilingual.pdf",
+        summary_url: "/summary/protein-digestion"
+      },
+      {
+        id: 113,
+        title: "Glycolysis.pdf",
+        cleanTitle: "Glycolysis",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Glycolysis",
+        summary: "The 10 reactions, hexokinase vs glucokinase, regulation, ATP yield and the fate of pyruvate.",
+        file_url: lectureUrl("Glycolysis.pdf"),
+        bilingual_url: "/bilingual/Glycolysis_Bilingual.pdf",
+        summary_url: "/summary/glycolysis"
+      },
+      {
+        id: 114,
+        title: "Mitosis and Meiosis.pdf",
+        cleanTitle: "Mitosis and Meiosis",
+        type: "lecture",
+        discipline: "Embryology",
+        topic: "Mitosis and Meiosis",
+        summary: "Mitosis, meiosis and crossover, chromosomal abnormalities, classic syndromes and gene mutations.",
+        file_url: lectureUrl("Mitosis and Meiosis.pdf"),
+        bilingual_url: "/bilingual/General_Embryology_L1_Mitosis_and_Meiosis_Bilingual.pdf",
+        summary_url: "/summary/mitosis-meiosis"
+      },
+      {
+        id: 115,
+        title: "Histology of the Circulatory System - L1.pdf",
+        cleanTitle: "Histology of the Circulatory System - L1",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology of the Circulatory System 1",
+        summary: "Vessel wall layers, endothelium, arteries, atherosclerosis, capillaries and pericytes.",
+        file_url: lectureUrl("Histology of the Circulatory System - L1.pdf"),
+        bilingual_url: "/bilingual/Histology_of_Circulatory_System_L1_Bilingual.pdf",
+        summary_url: "/summary/histology-circulatory-1"
+      },
+      {
+        id: 116,
+        title: "Histology of the Circulatory System - L2.pdf",
+        cleanTitle: "Histology of the Circulatory System - L2",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology of the Circulatory System 2",
+        summary: "Capillary beds, AV shunts, portal systems, veins, the heart wall, Purkinje fibers and lymphatics.",
+        file_url: lectureUrl("Histology of the Circulatory System - L2.pdf"),
+        bilingual_url: "/bilingual/Histology_of_Circulatory_System_L2_Bilingual.pdf",
+        summary_url: "/summary/histology-circulatory-2"
       },
     ],
   },
