@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { X, RotateCcw, ChevronRight, ChevronLeft } from "lucide-react"
 import { Flashcard } from "@/data/flashcards"
 
@@ -14,6 +14,14 @@ interface FlashcardModalProps {
 export default function FlashcardModal({ isOpen, onClose, cards, topic }: FlashcardModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showAnswer, setShowAnswer] = useState(false)
+
+  // the modal stays mounted, so reset while closed so it opens on card 1 every time
+  useEffect(() => {
+    if (!isOpen) {
+      setCurrentIndex(0)
+      setShowAnswer(false)
+    }
+  }, [isOpen, topic])
 
   if (!isOpen || !cards || cards.length === 0) return null
 
