@@ -7,7 +7,7 @@ export type University = "warith" | "ameed"
 
 export const universities: { id: University; name: string; arabic: string; note: string }[] = [
   { id: "warith", name: "Al-Warith University", arabic: "جامعة وارث الأنبياء", note: "Full library: lectures, quizzes & flash cards" },
-  { id: "ameed", name: "Al-Ameed University", arabic: "جامعة العميد", note: "New: lectures coming soon" },
+  { id: "ameed", name: "Al-Ameed University", arabic: "جامعة العميد", note: "Weeks 1–2: anatomy, physiology, biochemistry & more" },
 ]
 
 // full-screen chooser shown when a visitor opens the site; the page behind stays locked until they pick

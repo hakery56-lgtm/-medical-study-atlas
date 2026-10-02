@@ -63,9 +63,9 @@ export default function AtlasPage() {
     setSearch("")
   }
 
-  // Al-Ameed gets the same site with an empty library until its own lectures are added
+  // each university sees only its own subjects (a subject without a university belongs to Al-Warith)
   const visibleSubjects = useMemo(
-    () => (university === "ameed" ? subjects.map((s) => ({ ...s, resources: [] })) : subjects),
+    () => subjects.filter((s) => (s.university ?? "warith") === (university ?? "warith")),
     [university]
   )
 
@@ -94,7 +94,11 @@ export default function AtlasPage() {
     })
   }
 
-  const subjectData = useMemo(() => visibleSubjects.find((s) => s.id === currentSubject)!, [visibleSubjects, currentSubject])
+  // falls back to the first subject when the one selected belongs to the other university
+  const subjectData = useMemo(
+    () => visibleSubjects.find((s) => s.id === currentSubject) ?? visibleSubjects[0],
+    [visibleSubjects, currentSubject]
+  )
   const allResources = useMemo(() => withGeneratedQuizzes(subjectData), [subjectData])
   const disciplines = useMemo(() => Array.from(new Set(subjectData.resources.map((r) => r.discipline))), [subjectData])
 
@@ -148,7 +152,7 @@ export default function AtlasPage() {
         subjects={visibleSubjects}
         university={universities.find((u) => u.id === university)?.name}
         onSwitchUniversity={() => setUniversity(null)}
-        currentSubject={currentSubject}
+        currentSubject={subjectData.id}
         onSelectSubject={selectSubject}
         dark={dark}
         onToggleTheme={toggleTheme}
@@ -164,7 +168,6 @@ export default function AtlasPage() {
         onSearch={setSearch}
         selectedId={selected?.id ?? null}
         onSelect={handleSelect}
-        emptyText={university === "ameed" ? "Al-Ameed lectures are coming soon." : undefined}
       />
       <ResourceDetail
         resource={selected}
