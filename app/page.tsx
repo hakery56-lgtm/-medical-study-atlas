@@ -8,6 +8,9 @@ import ResourceList from "@/components/resource-list"
 import ResourceDetail from "@/components/resource-detail"
 import QuizModal from "@/components/QuizModal"
 import { useStreak } from "@/lib/streak"
+import UniversityPicker, { universities, type University } from "@/components/UniversityPicker"
+
+const UNI_KEY = "atlas-university" // remembered on this device (localStorage); "Change" in the sidebar reopens the chooser
 
 // each lecture is followed by its quiz, in the same discipline (labs too, once they have their own summary and exam)
 function withGeneratedQuizzes(subject: Subject): Resource[] {
@@ -39,6 +42,32 @@ export default function AtlasPage() {
   const [selected, setSelected] = useState<Resource | null>(null)
   const [quiz, setQuiz] = useState<{ questions: typeof quizBank[string]; title: string; topic: string } | null>(null)
   const [showQuiz, setShowQuiz] = useState(false)
+  // undefined = not read yet, null = not chosen (show the chooser)
+  const [university, setUniversity] = useState<University | null | undefined>(undefined)
+
+  useEffect(() => {
+    let saved: string | null = null
+    try {
+      saved = localStorage.getItem(UNI_KEY)
+    } catch {}
+    setUniversity(universities.some((u) => u.id === saved) ? (saved as University) : null)
+  }, [])
+
+  const chooseUniversity = (u: University) => {
+    try {
+      localStorage.setItem(UNI_KEY, u)
+    } catch {}
+    setUniversity(u)
+    setSelected(null)
+    setFilter("all")
+    setSearch("")
+  }
+
+  // Al-Ameed gets the same site with an empty library until its own lectures are added
+  const visibleSubjects = useMemo(
+    () => (university === "ameed" ? subjects.map((s) => ({ ...s, resources: [] })) : subjects),
+    [university]
+  )
 
   useEffect(() => {
     if (localStorage.getItem("atlas-theme") === "dark") {
@@ -65,7 +94,7 @@ export default function AtlasPage() {
     })
   }
 
-  const subjectData = useMemo(() => subjects.find((s) => s.id === currentSubject)!, [currentSubject])
+  const subjectData = useMemo(() => visibleSubjects.find((s) => s.id === currentSubject)!, [visibleSubjects, currentSubject])
   const allResources = useMemo(() => withGeneratedQuizzes(subjectData), [subjectData])
   const disciplines = useMemo(() => Array.from(new Set(subjectData.resources.map((r) => r.discipline))), [subjectData])
 
@@ -116,7 +145,9 @@ export default function AtlasPage() {
   return (
     <div className="md:grid md:h-screen md:grid-cols-[minmax(240px,280px)_minmax(300px,380px)_1fr] md:overflow-hidden">
       <Sidebar
-        subjects={subjects}
+        subjects={visibleSubjects}
+        university={universities.find((u) => u.id === university)?.name}
+        onSwitchUniversity={() => setUniversity(null)}
         currentSubject={currentSubject}
         onSelectSubject={selectSubject}
         dark={dark}
@@ -133,6 +164,7 @@ export default function AtlasPage() {
         onSearch={setSearch}
         selectedId={selected?.id ?? null}
         onSelect={handleSelect}
+        emptyText={university === "ameed" ? "Al-Ameed lectures are coming soon." : undefined}
       />
       <ResourceDetail
         resource={selected}
@@ -143,6 +175,7 @@ export default function AtlasPage() {
       />
 
       <QuizModal isOpen={showQuiz} quiz={quiz} onClose={() => setShowQuiz(false)} />
+      {university === null && <UniversityPicker onChoose={chooseUniversity} />}
     </div>
   )
 }

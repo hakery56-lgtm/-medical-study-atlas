@@ -1,6 +1,6 @@
 "use client"
 
-import { Moon, Sun, Stethoscope, Mail, PersonStanding, Flame } from "lucide-react"
+import { Moon, Sun, Stethoscope, Mail, PersonStanding, Flame, Landmark } from "lucide-react"
 import type { Subject } from "@/data/subjects"
 import type { Streak } from "@/lib/streak"
 import { subjectIcons } from "@/lib/resource-ui"
@@ -13,6 +13,8 @@ interface SidebarProps {
   dark: boolean
   onToggleTheme: () => void
   streak: Streak | null
+  university?: string
+  onSwitchUniversity: () => void
 }
 
 const quickAccess = [
@@ -27,6 +29,8 @@ export default function Sidebar({
   dark,
   onToggleTheme,
   streak,
+  university,
+  onSwitchUniversity,
 }: SidebarProps) {
 
   return (
@@ -58,6 +62,19 @@ export default function Sidebar({
           {dark ? <Sun size={17} /> : <Moon size={17} />}
         </button>
       </div>
+
+      {university && (
+        <div
+          className="-mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5"
+          style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)" }}
+        >
+          <Landmark size={16} className="shrink-0" style={{ color: "var(--accent)" }} />
+          <span className="flex-1 truncate text-xs font-semibold">{university}</span>
+          <button onClick={onSwitchUniversity} className="shrink-0 text-xs font-semibold hover:underline" style={{ color: "var(--accent)" }}>
+            Change
+          </button>
+        </div>
+      )}
 
       <nav className="flex flex-col gap-8">
         <div>
