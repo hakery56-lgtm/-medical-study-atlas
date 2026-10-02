@@ -284,6 +284,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/pain-disorder"
       },
       {
+        id: 26,
+        title: "Anatomy of Forearm.pdf",
+        cleanTitle: "Anatomy of the Forearm",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy of the Forearm",
+        summary: "Forearm bones, flexor and extensor compartments, nerves and vessels, radioulnar and wrist joints, carpal tunnel and anatomical snuffbox.",
+        file_url: lectureUrl("Anatomy of Forearm.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_Forearm_Bilingual.pdf",
+        summary_url: "/summary/forearm"
+      },
+      {
+        id: 27,
+        title: "Applied Anatomy of Upper Limb IV.pdf",
+        cleanTitle: "Applied Anatomy of Upper Limb IV",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Applied Anatomy of Upper Limb IV",
+        summary: "Humeral fractures and their nerve injuries, the elbow on X-ray (CRITOE, radiological lines) and nursemaid's elbow.",
+        file_url: lectureUrl("Applied Anatomy of Upper Limb IV.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_IV_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-4"
+      },
+      {
         id: 10,
         title: "lab1 - 2026.pdf",
         cleanTitle: "MSK Lab 1",
@@ -326,6 +350,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("skill lab unit 3 week 2 - shoulder joint.pdf"),
         bilingual_url: "/bilingual/Skill_Lab_Shoulder_Joint_Bilingual.pdf",
         summary_url: "/summary/skill-lab-shoulder"
+      },
+      {
+        id: 28,
+        title: "LAB 3 - Forearm.pdf",
+        cleanTitle: "MSK Lab 3 - Forearm",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Forearm Lab",
+        summary: "Forearm specimens: shoulder and arm review, the 8 rules of the forearm muscles, cubital fossa, axial section and the front of the wrist.",
+        file_url: lectureUrl("LAB 3 - Forearm.pdf"),
+        bilingual_url: "/bilingual/LAB3_Forearm_Bilingual.pdf",
+        summary_url: "/summary/lab3-forearm"
       },
       {
         id: 17,
