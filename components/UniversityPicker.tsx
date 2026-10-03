@@ -13,7 +13,7 @@ export const universities: { id: University; name: string; arabic: string; note:
 
 export const stages: { id: Stage; name: string; arabic: string; note: string }[] = [
   { id: 2, name: "2nd Stage", arabic: "المرحلة الثانية", note: "Weeks 1–2: anatomy, physiology, biochemistry & more" },
-  { id: 3, name: "3rd Stage", arabic: "المرحلة الثالثة", note: "Lectures coming soon" },
+  { id: 3, name: "3rd Stage", arabic: "المرحلة الثالثة", note: "Pharmacology, pathology, microbiology, parasitology & more" },
 ]
 
 // full-screen chooser shown when a visitor opens the site; the page behind stays locked until they pick
