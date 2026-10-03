@@ -202,6 +202,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/somatosensory"
       },
       {
+        id: 31,
+        title: "Pain Physiology.pdf",
+        cleanTitle: "Pain Physiology",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Pain Physiology",
+        summary: "Nociceptors and pain mediators, Aδ vs C fibers, fast and slow pain pathways, gate control and descending inhibition, neuropathic, referred and chronic pain.",
+        file_url: lectureUrl("Pain Physiology.pdf"),
+        bilingual_url: "/bilingual/Pain_Physiology_Bilingual.pdf",
+        summary_url: "/summary/pain-physiology"
+      },
+      {
         id: 7,
         title: "(Ortho 1) Shoulder_Dislocation_Lecture.pdf",
         cleanTitle: "(Ortho 1) Shoulder_Dislocation_Lecture",
