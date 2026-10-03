@@ -602,6 +602,18 @@ export const subjects: Subject[] = [
         bilingual_url: "/bilingual/Histology_of_Circulatory_System_L2_Bilingual.pdf",
         summary_url: "/summary/histology-circulatory-2"
       },
+      {
+        id: 117,
+        title: "High-Energy Compounds.pdf",
+        cleanTitle: "Bioenergetics: High-Energy Compounds",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "High-Energy Compounds",
+        summary: "What a high-energy compound really is, ATP hydrolysis and energy coupling, the phosphoryl group-transfer scale (PEP, 1,3-BPG, creatine phosphate) and thioesters such as acetyl-CoA.",
+        file_url: lectureUrl("High-Energy Compounds.pdf"),
+        bilingual_url: "/bilingual/Bioenergetics_High_Energy_Compounds_Bilingual.pdf",
+        summary_url: "/summary/high-energy-compounds"
+      },
     ],
   },
   {
