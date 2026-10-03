@@ -15,6 +15,8 @@ export async function middleware(req: NextRequest) {
     (pathname.startsWith('/api') && !pathname.startsWith('/api/file/')) || 
     pathname === '/' || 
     pathname === '/favicon.ico' ||
+    pathname === '/manifest.webmanifest' || // installable app files must load before login
+    pathname.startsWith('/icons/') ||
     pathname === '/robots.txt' ||
     pathname === '/sitemap.xml' ||
     pathname === '/googled31c6cabb8cb5d91.html' // Google Search Console verification
