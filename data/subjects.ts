@@ -286,6 +286,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/pain-disorder"
       },
       {
+        id: 30,
+        title: "Infectious Diseases of the PNS - Shingles.pdf",
+        cleanTitle: "Infectious Diseases of the PNS - Shingles",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "Shingles and PNS Infections",
+        summary: "Infections of the peripheral nervous system, Varicella-Zoster Virus biology and pathogenesis, shingles features and complications, lab diagnosis, vaccines and treatment.",
+        file_url: lectureUrl("Infectious Diseases of the PNS - Shingles.pdf"),
+        bilingual_url: "/bilingual/Microbiology_Infectious_Diseases_PNS_Shingles_Bilingual.pdf",
+        summary_url: "/summary/micro-shingles"
+      },
+      {
         id: 26,
         title: "Anatomy of Forearm.pdf",
         cleanTitle: "Anatomy of the Forearm",
@@ -298,16 +310,28 @@ export const subjects: Subject[] = [
         summary_url: "/summary/forearm"
       },
       {
-        id: 27,
-        title: "Applied Anatomy of Upper Limb IV.pdf",
-        cleanTitle: "Applied Anatomy of Upper Limb IV",
+        id: 29,
+        title: "Applied Anatomy of Upper Limb II.pdf",
+        cleanTitle: "Applied Anatomy of Upper Limb II - Brachial Plexus",
         type: "lecture",
         discipline: "Anatomy",
-        topic: "Applied Anatomy of Upper Limb IV",
+        topic: "Applied Anatomy of Upper Limb II",
+        summary: "Erb's point, upper trunk (Erb) and lower trunk (Klumpke) palsies, root avulsion and Horner's syndrome, axillary, suprascapular and long thoracic nerve injuries, and the deformity table.",
+        file_url: lectureUrl("Applied Anatomy of Upper Limb II.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_II_Brachial_Plexus_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-2"
+      },
+      {
+        id: 27,
+        title: "Applied Anatomy of Upper Limb III.pdf",
+        cleanTitle: "Applied Anatomy of Upper Limb III",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Applied Anatomy of Upper Limb III",
         summary: "Humeral fractures and their nerve injuries, the elbow on X-ray (CRITOE, radiological lines) and nursemaid's elbow.",
-        file_url: lectureUrl("Applied Anatomy of Upper Limb IV.pdf"),
-        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_IV_Bilingual.pdf",
-        summary_url: "/summary/applied-anatomy-4"
+        file_url: lectureUrl("Applied Anatomy of Upper Limb III.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_III_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-3"
       },
       {
         id: 10,
