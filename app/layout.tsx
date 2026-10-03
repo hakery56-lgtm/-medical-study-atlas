@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import LoginPopup from "@/components/LoginPopup"
+import InstallPrompt from "@/components/InstallPrompt"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-serif" })
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
   title: "Medical Study Atlas — Academic Repository",
   description:
     "A curated repository of medical lectures, labs, notes, and interactive quizzes across Musculoskeletal, Cardiovascular, Respiratory, Hematology, Pharmacology, and Pathology.",
+  appleWebApp: { capable: true, title: "Study Atlas", statusBarStyle: "default" },
+  icons: { apple: "/icons/icon-192.png" },
 }
 
 export const viewport: Viewport = {
@@ -27,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <LoginPopup />
         {children}
+        <InstallPrompt />
         <Analytics />
         <SpeedInsights />
       </body>
