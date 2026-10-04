@@ -10,7 +10,7 @@ Dr. Muhannad Y. Al-Muhanna's physiology lecture: **definition and significance o
 - **Nerve fibers:** myelinated **Aα** (thick), **Aβ** (intermediate), **Aδ** (thin); unmyelinated **C**. **All pain receptors are free nerve endings of unmyelinated C fibers and small Aδ fibers.**
 - **Protective function:** makes us aware of damage; helps us **avoid noxious stimuli, remove body parts from danger, promote healing** by preventing further damage and **store painful experiences in memory**.
 - **Biological function:** immobility and withdrawal give an environment for **healing and restoration of function**.
-- Pain is accompanied by **behavioral** (withdrawal, defense) and **emotional** (crying, fear) responses and is **perceived at cortical and thalamic levels**.
+- Pain is accompanied by **behavioral** (withdrawal, defense) and **emotional** (crying, fear) responses and is **perceived at cortical and thalamic levels**. **Negative emotions during the pain experience enhance the strength and duration of the memory for the pain.**
 
 | | Threshold | Tolerance |
 |---|---|---|
@@ -206,6 +206,8 @@ Pain receptors are depolarized directly or by **pain-producing substances** from
 | Ends in | **Ventrobasal complex and posterior nuclei of the thalamus** → somatosensory cortex | **Brain stem reticular formation, intralaminar thalamic nuclei, hypothalamus** |
 | Effect | Well localized | **Arousal** from sleep; poorly localized |
 
+- **Reticular formation** = a net-like brainstem network that relays and integrates **wakefulness, attention, sleep–wake cycles and autonomic control**; slow pain projections to it explain the **arousal**.
+- **Non-nociceptive pathway (for comparison):** fine touch, pressure, vibration and position travel in **Aα/Aβ fibers** through the **dorsal column–medial lemniscal pathway**, which **decussates in the medulla**; the spinothalamic tract decussates **at the spinal cord level**.
 - **Somatosensory cortex** = **topognosis** (localization and quality of pain). **Fast pain is better localized** because the neospinothalamic tract reaches the cortex, while only a small part of the paleospinothalamic pathway does.
 
 <div class="key-points">
@@ -253,6 +255,7 @@ Pain receptors are depolarized directly or by **pain-producing substances** from
 | Fibers / tract | **Aδ** / neospinothalamic | **C** / paleospinothalamic |
 | Receptors | Mechanical and thermal | **Polymodal** |
 | Other | Reflex withdrawal; usually **somatic** | Skin or **any organ**; the **emotional aspect** of pain |
+| Fibers activated | **10–20%** of Aδ fibers | **50–80%** of C fibers |
 
 <div class="key-points">
 
@@ -300,7 +303,7 @@ Pain depends on the **balance of large-fiber vs small-fiber input** to the cord.
 | **Non-painful (large fibers)** | **Activated** | Activated but blocked by I | **Closed** | **No pain** |
 | **Painful (small fibers)** | **Blocked** | Free to fire | **Open** | **PAIN** |
 
-*(Myelinated afferents excite the inhibitory interneurons; unmyelinated nociceptors inhibit them.)*
+*(Large myelinated afferents (**Aβ**) excite the inhibitory interneurons and inhibit pain; the small fibers (**C and Aδ**) inhibit the interneurons.)*
 
 ### Descending modulation and endogenous analgesia
 - Inhibition from higher centers comes mainly from the ⭐ **periaqueductal grey (PAG, midbrain)** and the **raphe nucleus (medulla)**, which **excite the inhibitory interneurons** of the substantia gelatinosa.
@@ -343,13 +346,13 @@ Pain depends on the **balance of large-fiber vs small-fiber input** to the cord.
 
 ## 8. Types of pain: neuropathic, phantom, migraine, referred
 
-- **Classification:** by **duration** (acute vs chronic) and by **nature** (nociceptive, non-nociceptive; visceral, somatic; neuropathic; sympathetic).
+- **Classification:** by **duration** (acute vs chronic) and by **nature**: **nociceptive** (visceral, somatic) vs **non-nociceptive** (neuropathic, sympathetic).
 - ⭐ **Neuropathic pain:** damage or disease of the **somatosensory system**; described as **burning, tingling, electrical, stabbing, "pins and needles"**.
 - ⭐ **Phantom pain:** pain felt in a **lost body part** (amputees); a neuropathic pain, **unresponsive to morphine**.
   - **Peripheral:** damaged nociceptive fibers, abnormal discharge from **neuromas** at the cut nerve ends.
   - **Spinal:** sprouting of nociceptive terminals, sensitized second-order neurons.
   - **Higher centers:** abnormal flow through the somatosensory cortex or burst-firing thalamic neurons.
-- **Migraine:** a **central** pain, **not sensitive to morphine**; abnormal cerebral vascular function — **vasospasm followed by vasodilatation**.
+- **Migraine:** a **central** pain, **not sensitive to morphine**; abnormal cerebral vascular function — **vasospasm followed by smooth muscle relaxation (vasodilatation)**.
 - ⭐ **Referred pain:** visceral pain felt at a **somatic** site, often far from the origin; **poorly localized**; follows the **dermatomal rule**; common with **visceral and deep somatic** pain, **not cutaneous**.
   - **Convergence theory:** visceral and skin afferents from the same embryonic segment **converge on the same second-order neuron (lamina V)**; the brain assumes the skin is the source.
   - **Facilitation theory:** impulses from the diseased viscus **raise the excitability** of second-order neurons receiving skin pain fibers.
@@ -401,7 +404,7 @@ Pain depends on the **balance of large-fiber vs small-fiber input** to the cord.
   - Nociceptive examples: postoperative pain, mechanical low back pain, sickle cell crisis, arthritis, sports injuries.
   - Neuropathic examples: postherpetic neuralgia, trigeminal neuralgia, distal polyneuropathy (diabetic, HIV), complex regional pain syndrome.
 - **Pathophysiology — wind-up:** persistent nociceptive input to the dorsal horn causes a **frequency-dependent increase in excitability of spinal neurons** (glutamate acting on **NMDA receptors**); it **lowers the threshold** and can make non-nociceptive fibers respond to pain signals; difficult to reverse.
-- **Central pain:** damage or malfunction in the CNS (spinothalamic tract, thalamus, somatosensory cortex, lesions of inhibitory pathways) → **sensitization** of the pain system via wind-up; **often insensitive to opioids**, but **anti-epileptic drugs** can help.
+- **Central pain:** a **specific type of neuropathic pain** — damage or malfunction in the CNS (spinothalamic tract, thalamus, somatosensory cortex, lesions of inhibitory pathways) → **sensitization** of the pain system via wind-up; **often insensitive to opioids**, but **anti-epileptic drugs** can help.
 - **Dejerine–Roussy (thalamic pain) syndrome:** after a **thalamic stroke**; first loss of sensation and tingling on the **opposite side**, weeks to months later **severe chronic pain** (**dysaesthesia/allodynia**).
 - **Chronic pain syndrome:** ≥3–6 months, complex, poor response to therapy, widespread or ≥2 coexisting pain conditions.
 
