@@ -214,6 +214,46 @@ Saad Ibrahim Al-Ghabban's Family and Community Medicine lecture: **statistics vs
 
 ---
 
+## 5. Data collection: primary vs secondary data
+
+- ⭐ **Primary data** — collected **from the respondent, for the first time, by the investigator, for a specific purpose**; **no statistical operations** have been performed; "**pure / source data**".
+- ⭐ **Secondary data** — data **sourced from somewhere else** (e.g. **hospital records**, other people's research results); **statistical analyses have already been performed** on it.
+- **Data** (revised definition) = a **collection of facts, observations, measurements or information recorded for analysis**, to answer questions or make decisions; the raw pieces of information before they are organized and interpreted.
+- Also stressed in this version: **qualitative data** = data in the form of **words**, no tool to measure, does not describe quantities; **quantitative data** = describes **quantities expressed numerically**, with an objective way of measuring or counting.
+
+<div class="key-points">
+
+**Key points**
+- Primary = first-hand, unanalysed, for a specific purpose; secondary = existing sources, already analysed (hospital records, other studies).
+- Data = recorded facts/measurements before they are organized.
+
+</div>
+
+**Short-essay questions**
+
+<details><summary>Q1. Differentiate primary from secondary data.</summary>
+
+**Answer:** Primary data are collected for the first time from the respondent by the investigator for a specific purpose, with no statistical operations yet performed (pure/source data). Secondary data are taken from other sources such as hospital records or other researchers' results, and statistical analyses have already been performed on them.
+
+**Why:** New slide "Data collection" in the revised lecture.
+</details>
+
+<details><summary>Q2. Give an example of secondary data.</summary>
+
+**Answer:** Hospital records or the results of other people's research.
+
+**Why:** Examples listed on the slide.
+</details>
+
+<details><summary>Q3. Define data.</summary>
+
+**Answer:** A collection of facts, observations, measurements or information recorded for analysis, to answer questions or make decisions; the raw information before it is organized and interpreted.
+
+**Why:** Definition on the revised "Data" slide.
+</details>
+
+---
+
 ## ⚠️ Exam traps
 - **Descriptive = summarize; inferential = generalize/estimate/test hypotheses.**
 - **Sample must be representative and random** (reduces sampling error).
@@ -224,6 +264,8 @@ Saad Ibrahim Al-Ghabban's Family and Community Medicine lecture: **statistics vs
 - **Dichotomous = 2 categories (gender, survival, exposure).**
 - **"Qualitative data are discrete" (as stated on the slide).**
 - **Different samples give different results (chance).**
+- **Slide error in the revised lecture:** the examples under "Qualitative" and "Quantitative" data are swapped on the data slide. Correct: **age, weight, height, blood pressure = quantitative; gender, race, marital status = qualitative.**
+- **Primary data = first-hand and unanalysed; secondary data = existing sources already analysed.**
 
 ---
 

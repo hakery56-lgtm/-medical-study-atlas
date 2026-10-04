@@ -732,6 +732,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-pharm-practical"
       },
       {
+        id: 235,
+        title: "Pharmacology Practical 3 - Drug Absorption.pdf",
+        cleanTitle: "Pharmacology Practical 3 - Drug Absorption (Quiz 2)",
+        type: "lab",
+        discipline: "Pharmacology",
+        topic: "Pharmacology Practical 3 - Drug Absorption",
+        summary: "Migraine case treated with paracetamol and metoclopramide: absorption site and factors, bioavailability, gastric emptying, food effects, transport mechanisms and the patient's guide.",
+        file_url: lectureUrl("Pharmacology Practical 3 - Drug Absorption.pdf"),
+        bilingual_url: "/bilingual/Pharmacology_Practical_3_Drug_Absorption_Quiz_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-practical-3"
+      },
+      {
         id: 209,
         title: "Introduction to Pathology.pdf",
         cleanTitle: "Introduction to Pathology",
