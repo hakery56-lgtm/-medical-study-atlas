@@ -792,6 +792,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-path-inflammation"
       },
       {
+        id: 236,
+        title: "Inflammation - Part II.pdf",
+        cleanTitle: "Inflammation - Part II",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Inflammation - Part II",
+        summary: "Morphologic patterns of acute inflammation, its effects and outcomes, chronic inflammation, its cells, and granulomatous inflammation (TB, sarcoidosis).",
+        file_url: lectureUrl("Inflammation - Part II.pdf"),
+        bilingual_url: "/bilingual/Pathology_L5_Inflammation_Part2_Bilingual.pdf",
+        summary_url: "/summary/s3-path-inflammation-2"
+      },
+      {
         id: 213,
         title: "Bacterial Structure.pdf",
         cleanTitle: "Bacterial Structure",
@@ -900,6 +912,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-para-4"
       },
       {
+        id: 237,
+        title: "Parasitology L5 - Balantidium coli.pdf",
+        cleanTitle: "Parasitology L5 - Balantidium coli",
+        type: "lecture",
+        discipline: "Parasitology",
+        topic: "Parasitology L5 - Balantidium coli",
+        summary: "Morphology, life cycle, clinical features, diagnosis and treatment of balantidiasis, the only ciliate parasite of humans.",
+        file_url: lectureUrl("Parasitology L5 - Balantidium coli.pdf"),
+        bilingual_url: "/bilingual/Parasitology_L5_Balantidium_coli_Bilingual.pdf",
+        summary_url: "/summary/s3-para-5"
+      },
+      {
+        id: 238,
+        title: "Parasitology L6 - Trichomonas vaginalis.pdf",
+        cleanTitle: "Parasitology L6 - Trichomonas vaginalis",
+        type: "lecture",
+        discipline: "Parasitology",
+        topic: "Parasitology L6 - Trichomonas vaginalis",
+        summary: "The three human Trichomonas species, morphology, life cycle, vaginal and male trichomoniasis, diagnosis and treatment.",
+        file_url: lectureUrl("Parasitology L6 - Trichomonas vaginalis.pdf"),
+        bilingual_url: "/bilingual/Parasitology_L6_Trichomonas_vaginalis_Bilingual.pdf",
+        summary_url: "/summary/s3-para-6"
+      },
+      {
         id: 222,
         title: "Introduction to Surgery.pdf",
         cleanTitle: "Introduction to Surgery",
@@ -994,6 +1030,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Psychology of Learning.pdf"),
         bilingual_url: "/bilingual/Psychology_of_Learning_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-learning"
+      },
+      {
+        id: 239,
+        title: "Psychology of Memory.pdf",
+        cleanTitle: "Psychology of Memory",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology of Memory",
+        summary: "Phases and models of memory, sensory, working and long-term memory, declarative vs procedural memory, forgetfulness, amnesia and memory strategies.",
+        file_url: lectureUrl("Psychology of Memory.pdf"),
+        bilingual_url: "/bilingual/Psychiatry_Memory_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-memory"
       },
       {
         id: 230,
