@@ -264,7 +264,6 @@ Saad Ibrahim Al-Ghabban's Family and Community Medicine lecture: **statistics vs
 - **Dichotomous = 2 categories (gender, survival, exposure).**
 - **"Qualitative data are discrete" (as stated on the slide).**
 - **Different samples give different results (chance).**
-- **Slide error in the revised lecture:** the examples under "Qualitative" and "Quantitative" data are swapped on the data slide. Correct: **age, weight, height, blood pressure = quantitative; gender, race, marital status = qualitative.**
 - **Primary data = first-hand and unanalysed; secondary data = existing sources already analysed.**
 
 ---

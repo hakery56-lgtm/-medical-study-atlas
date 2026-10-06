@@ -298,6 +298,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/pain-disorder"
       },
       {
+        id: 34,
+        title: "Adjustment Disorders and Physical Pain.pdf",
+        cleanTitle: "Adjustment Disorders and Physical Pain",
+        type: "lecture",
+        discipline: "Psychiatry",
+        topic: "Adjustment Disorders and Physical Pain",
+        summary: "Adjustment disorders and physical pain: the link, manifestations, DSM-5 diagnosis, CBT, medication, pain management and the psychiatrist's role.",
+        file_url: lectureUrl("Adjustment Disorders and Physical Pain.pdf"),
+        bilingual_url: "/bilingual/Adjustment_Disorders_Physical_Pain_Bilingual.pdf",
+        summary_url: "/summary/adjustment-disorders"
+      },
+      {
         id: 30,
         title: "Infectious Diseases of the PNS - Shingles.pdf",
         cleanTitle: "Infectious Diseases of the PNS - Shingles",
@@ -388,6 +400,30 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("skill lab unit 3 week 2 - shoulder joint.pdf"),
         bilingual_url: "/bilingual/Skill_Lab_Shoulder_Joint_Bilingual.pdf",
         summary_url: "/summary/skill-lab-shoulder"
+      },
+      {
+        id: 32,
+        title: "skill lab unit 3 week 3 - radial nerve.pdf",
+        cleanTitle: "Skill Lab - Week 3 (Radial Nerve)",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Skill Lab Week 3 - Radial Nerve Examination",
+        summary: "Radial nerve anatomy and examination, injury sites, an emergency case of humeral shaft fracture with radial nerve palsy, and choosing an analgesic.",
+        file_url: lectureUrl("skill lab unit 3 week 3 - radial nerve.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Week3_Radial_Nerve_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-week3"
+      },
+      {
+        id: 33,
+        title: "skill lab unit 3 week 4 - elbow and ulnar nerve.pdf",
+        cleanTitle: "Skill Lab - Week 4 (Elbow and Ulnar Nerve)",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Skill Lab Week 4 - Elbow Joint and Ulnar Nerve",
+        summary: "Elbow surface anatomy, look-feel-move, testing the median, ulnar and radial nerves (OK sign) and a child's displaced supracondylar fracture case.",
+        file_url: lectureUrl("skill lab unit 3 week 4 - elbow and ulnar nerve.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Week4_Elbow_Ulnar_Nerve_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-week4"
       },
       {
         id: 28,
@@ -1044,6 +1080,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-psychology-memory"
       },
       {
+        id: 240,
+        title: "Psychology of Memory - 2026 version.pdf",
+        cleanTitle: "Psychology of Memory (2026 version)",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology of Memory (2026 version)",
+        summary: "Iconic, echoic, working and long-term memory, Sperling's experiment, declarative vs procedural memory, H.M., brain areas, memory problems and amnesia.",
+        file_url: lectureUrl("Psychology of Memory - 2026 version.pdf"),
+        bilingual_url: "/bilingual/Psychology_of_Memory_2026_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-memory-2026"
+      },
+      {
         id: 230,
         title: "Histopathology Lab 1.pdf",
         cleanTitle: "Histopathology Lab 1 - Introduction to Pathology",
@@ -1066,6 +1114,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Histopathology Lab 2.pdf"),
         bilingual_url: "/bilingual/Histopathology_Lab2_Cell_Injury_Bilingual.pdf",
         summary_url: "/summary/s3-histopath-lab2"
+      },
+      {
+        id: 241,
+        title: "Histopathology Lab 3 - Inflammation.pdf",
+        cleanTitle: "Histopathology Lab 3 - Inflammation",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Histopathology Lab 3 - Inflammation",
+        summary: "Cardinal signs, acute vs chronic inflammation, exudate vs transudate, serous, fibrinous and suppurative patterns, ulcers, chronic inflammation and granulomas (TB, foreign body).",
+        file_url: lectureUrl("Histopathology Lab 3 - Inflammation.pdf"),
+        bilingual_url: "/bilingual/Histopathology_Lab3_Inflammation_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab3"
       },
       {
         id: 232,
