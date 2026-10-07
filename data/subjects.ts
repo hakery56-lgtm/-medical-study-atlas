@@ -1020,6 +1020,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-history-taking"
       },
       {
+        id: 243,
+        title: "Clinical History Taking and CVS.pdf",
+        cleanTitle: "Clinical History Taking and CVS",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Clinical History Taking and CVS",
+        summary: "Why history taking matters, the 9 components of the history, SOCRATES, and the CVS history: chest pain, breathlessness, palpitations, swelling and syncope.",
+        file_url: lectureUrl("Clinical History Taking and CVS.pdf"),
+        bilingual_url: "/bilingual/Clinical_History_Taking_CVS_Bilingual.pdf",
+        summary_url: "/summary/s3-history-taking-cvs"
+      },
+      {
         id: 225,
         title: "General Examination.pdf",
         cleanTitle: "General Examination",
