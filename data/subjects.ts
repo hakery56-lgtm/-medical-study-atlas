@@ -453,7 +453,7 @@ export const subjects: Subject[] = [
   },
   {
     id: "ameed-w12",
-    name: "Weeks 1–2",
+    name: "2nd Stage",
     icon: "microscope",
     university: "ameed",
     stage: 2,
