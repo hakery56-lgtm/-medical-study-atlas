@@ -543,6 +543,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/cell-physiology"
       },
       {
+        id: 118,
+        title: "Introduction to Blood Physiology.pdf",
+        cleanTitle: "Introduction to Blood Physiology",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Introduction to Blood Physiology",
+        summary: "Blood components, plasma vs serum, anticoagulants, capillary, venous and arterial blood collection and the color-coded collection tubes.",
+        file_url: lectureUrl("Introduction to Blood Physiology.pdf"),
+        bilingual_url: "/bilingual/Introduction_to_Blood_Physiology_Bilingual.pdf",
+        summary_url: "/summary/blood-physiology"
+      },
+      {
         id: 108,
         title: "Cells of the Nervous System.pdf",
         cleanTitle: "Cells of the Nervous System",
@@ -1150,6 +1162,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Microbiology Lab 2.pdf"),
         bilingual_url: "/bilingual/Microbiology_Lab2_Culture_Media_Bilingual.pdf",
         summary_url: "/summary/s3-micro-lab2"
+      },
+      {
+        id: 242,
+        title: "Microbiology Lab - Bacterial Staining.pdf",
+        cleanTitle: "Microbiology Lab - Bacterial Staining",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Microbiology Lab - Bacterial Staining",
+        summary: "Why we stain bacteria, simple vs differential vs structural stains, basic and acidic dyes, smear and heat fixation, and the Gram stain.",
+        file_url: lectureUrl("Microbiology Lab - Bacterial Staining.pdf"),
+        bilingual_url: "/bilingual/Microbiology_Lab_Bacterial_Staining_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-staining"
       },
       {
         id: 234,
