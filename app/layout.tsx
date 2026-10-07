@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   description:
     "A curated repository of medical lectures, labs, notes, and interactive quizzes across Musculoskeletal, Cardiovascular, Respiratory, Hematology, Pharmacology, and Pathology.",
   appleWebApp: { capable: true, title: "Study Atlas", statusBarStyle: "default" },
-  icons: { apple: "/icons/icon-192.png" },
+  icons: {
+    icon: [{ url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }, { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" }],
+    apple: "/icons/icon-192.png",
+  },
 }
 
 export const viewport: Viewport = {
