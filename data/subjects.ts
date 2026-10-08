@@ -322,6 +322,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/micro-shingles"
       },
       {
+        id: 35,
+        title: "Herpes Zoster.pdf",
+        cleanTitle: "Herpes Zoster (Varicella-Zoster Virus)",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "Herpes Zoster (Varicella-Zoster Virus)",
+        summary: "VZV virology and pathogenesis, risk factors, prodrome and rash, HZO and Hutchinson sign, Ramsay Hunt, postherpetic neuralgia, diagnosis, antivirals and the Shingrix vaccine.",
+        file_url: storageUrl("Herpes Zoster.pdf"),
+        bilingual_url: "/bilingual/Herpes_Zoster_Bilingual.pdf",
+        summary_url: "/summary/herpes-zoster"
+      },
+      {
         id: 26,
         title: "Anatomy of Forearm.pdf",
         cleanTitle: "Anatomy of the Forearm",
