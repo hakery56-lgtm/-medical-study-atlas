@@ -195,6 +195,12 @@ export default function SignupPage() {
             {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <>Create Account <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all" /></>}
           </button>
 
+          <p className="text-center text-xs text-slate-500 dark:text-slate-400">
+            By creating an account you agree to the{" "}
+            <a href="/terms" className="text-blue-600 hover:underline">Terms and Conditions</a> and the{" "}
+            <a href="/cookies" className="text-blue-600 hover:underline">Cookies Policy</a>.
+          </p>
+
           <div className="text-center text-sm text-slate-500 dark:text-slate-400">
             Already have an account?{" "}
             <a href="/login" className="text-blue-600 hover:underline font-medium">Sign in</a>

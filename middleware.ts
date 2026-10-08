@@ -19,6 +19,7 @@ export async function middleware(req: NextRequest) {
     pathname.startsWith('/icons/') ||
     pathname === '/robots.txt' ||
     pathname === '/sitemap.xml' ||
+    pathname === '/terms' || pathname === '/cookies' || // policies must be readable before signing up
     pathname === '/googled31c6cabb8cb5d91.html' // Google Search Console verification
   ) {
     return NextResponse.next();

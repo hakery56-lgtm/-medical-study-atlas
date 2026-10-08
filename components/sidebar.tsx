@@ -186,6 +186,11 @@ export default function Sidebar({
                   : "Open a lecture or quiz to start a streak."}
           </p>
         </div>
+        <p className="mt-3 flex justify-center gap-3 text-[11px]" style={{ color: "var(--text-muted)" }}>
+          <Link href="/terms" className="hover:underline">Terms</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/cookies" className="hover:underline">Cookies</Link>
+        </p>
       </div>
     </aside>
   )
