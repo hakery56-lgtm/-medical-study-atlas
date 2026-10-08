@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // lets the running app tell when a newer deployment is live (components/UpdateChecker.tsx)
+  env: { NEXT_PUBLIC_BUILD_ID: process.env.VERCEL_GIT_COMMIT_SHA || "dev" },
   // basic hardening; a full CSP is skipped until the inline styles / R3F / Supabase sources are mapped
   async headers() {
     return [{

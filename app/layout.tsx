@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import LoginPopup from "@/components/LoginPopup"
 import InstallPrompt from "@/components/InstallPrompt"
+import UpdateChecker from "@/components/UpdateChecker"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-serif" })
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LoginPopup />
         {children}
         <InstallPrompt />
+        <UpdateChecker />
         <Analytics />
         <SpeedInsights />
       </body>
