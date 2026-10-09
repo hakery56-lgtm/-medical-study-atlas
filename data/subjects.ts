@@ -864,6 +864,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-path-inflammation-2"
       },
       {
+        id: 244,
+        title: "Tissue Repair.pdf",
+        cleanTitle: "Tissue Repair and Systemic Effects of Inflammation",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Tissue Repair and Systemic Effects of Inflammation",
+        summary: "Acute-phase response, regeneration vs scar formation, labile/stable/permanent tissues, wound healing steps, first vs second intention and factors impairing repair.",
+        file_url: storageUrl("Tissue Repair.pdf"),
+        bilingual_url: "/bilingual/Tissue_Repair_Bilingual.pdf",
+        summary_url: "/summary/s3-tissue-repair"
+      },
+      {
+        id: 245,
+        title: "Environmental and Nutritional Diseases.pdf",
+        cleanTitle: "Environmental and Nutritional Diseases",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Environmental and Nutritional Diseases",
+        summary: "Air pollution, lead and mercury, occupational risks, tobacco and alcohol, radiation injury, malnutrition (marasmus, kwashiorkor) and vitamins A and D.",
+        file_url: storageUrl("Environmental and Nutritional Diseases.pdf"),
+        bilingual_url: "/bilingual/Environmental_and_Nutritional_Diseases_Bilingual.pdf",
+        summary_url: "/summary/s3-environmental-nutritional"
+      },
+      {
         id: 213,
         title: "Bacterial Structure.pdf",
         cleanTitle: "Bacterial Structure",
@@ -1044,6 +1068,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-history-taking-cvs"
       },
       {
+        id: 246,
+        title: "12-Lead ECG Electrode Placement and Recording.pdf",
+        cleanTitle: "12-Lead ECG Electrode Placement and Recording",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "12-Lead ECG Electrode Placement and Recording",
+        summary: "10 electrodes to 12 leads, landmarks for V1-V6, limb electrodes, patient and skin preparation, artifact troubleshooting and the OSCE checklist.",
+        file_url: storageUrl("12-Lead ECG Electrode Placement and Recording.pdf"),
+        bilingual_url: "/bilingual/12-Lead_ECG_Electrode_Placement_Bilingual.pdf",
+        summary_url: "/summary/s3-ecg-placement"
+      },
+      {
         id: 225,
         title: "General Examination.pdf",
         cleanTitle: "General Examination",
@@ -1198,6 +1234,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Microbiology Lab - Bacterial Staining.pdf"),
         bilingual_url: "/bilingual/Microbiology_Lab_Bacterial_Staining_Bilingual.pdf",
         summary_url: "/summary/s3-micro-staining"
+      },
+      {
+        id: 247,
+        title: "Microbiology Skill - Swab Collection.pdf",
+        cleanTitle: "Microbiology Skill - Nasal, Throat and Skin Swab Collection",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Microbiology Skill - Nasal, Throat and Skin Swab Collection",
+        summary: "Right test, right site, right transport: the universal swab workflow, nasal, throat and wound swabs, transport media and the OSCE critical items.",
+        file_url: storageUrl("Microbiology Skill - Swab Collection.pdf"),
+        bilingual_url: "/bilingual/Microbiology_Skill_Swab_Collection_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-swab-skill"
       },
       {
         id: 234,
