@@ -780,6 +780,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-pharmacology"
       },
       {
+        id: 248,
+        title: "ANS Pharmacology - Cholinergic Transmission.pdf",
+        cleanTitle: "ANS Pharmacology - Cholinergic Transmission",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "ANS Pharmacology - Cholinergic Transmission",
+        summary: "Autonomic vs somatic pathways, ACh synthesis, release and termination, nicotinic receptors and muscarinic receptors M1-M5 with their locations and functions.",
+        file_url: storageUrl("ANS Pharmacology - Cholinergic Transmission.pdf"),
+        bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Transmission_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-cholinergic-transmission"
+      },
+      {
+        id: 249,
+        title: "ANS Pharmacology - Cholinergic Agonists.pdf",
+        cleanTitle: "ANS Pharmacology - Cholinergic Agonists",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "ANS Pharmacology - Cholinergic Agonists",
+        summary: "Choline esters, pilocarpine, reversible anticholinesterases, myasthenia gravis and the two crises, and organophosphate poisoning with atropine and pralidoxime.",
+        file_url: storageUrl("ANS Pharmacology - Cholinergic Agonists.pdf"),
+        bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Agonists_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-cholinergic-agonists"
+      },
+      {
         id: 208,
         title: "Pharmacology Practical 1 and 2.pdf",
         cleanTitle: "Pharmacology Practical 1 and 2 - Formulations and Routes",
