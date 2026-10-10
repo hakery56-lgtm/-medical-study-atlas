@@ -190,6 +190,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/narcotics"
       },
       {
+        id: 41,
+        title: "MSS- 4.pdf",
+        cleanTitle: "MSS- 4 - Antirheumatic Drugs",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Antirheumatic Drugs",
+        summary: "Traditional DMARDs (methotrexate, hydroxychloroquine, leflunomide, sulfasalazine), glucocorticoids, TNF-alpha inhibitors, non-TNF biologics and tofacitinib in rheumatoid arthritis.",
+        file_url: storageUrl("MSS- 4.pdf"),
+        bilingual_url: "/bilingual/MSS4_Antirheumatic_Drugs_Bilingual.pdf",
+        summary_url: "/summary/antirheumatic-drugs"
+      },
+      {
         id: 18,
         title: "Somatosensory lecture.pdf",
         cleanTitle: "Somatosensory lecture",
@@ -364,7 +376,7 @@ export const subjects: Subject[] = [
         type: "lecture",
         discipline: "Anatomy",
         topic: "Anatomy of the Hand",
-        summary: "Hand skeleton and joints, palmar fascia and spaces, synovial sheaths, thenar, hypothenar, lumbrical and interosseous muscles, nerves and the palmar arterial arches.",
+        summary: "Hand skeleton and joints, palmar fascia and spaces, synovial sheaths, thenar, hypothenar, lumbrical and interosseous muscles, extensor compartments, nerves and the palmar arterial arches.",
         file_url: storageUrl("Anatomy of the Hand.pdf"),
         bilingual_url: "/bilingual/Anatomy_of_the_Hand_Bilingual.pdf",
         summary_url: "/summary/hand"

@@ -69,16 +69,17 @@ Dr. Ahmed Al-Baghdadi's anatomy lecture on the hand: **the skeleton and joints, 
 - The **deep fascia** of the palm is specialized into **three structures**: **flexor and extensor retinacula; palmar aponeurosis; fibrous flexor and extensor sheaths** of the digits.
 - ⭐ **Palmar aponeurosis:** **triangular** thickened central part of the deep fascia covering the **long flexor tendons and the superficial palmar arch**; **improves grip** (fixes the skin) and **protects** tendons, nerves and vessels.
 - **Dupuytren contracture:** progressive **fibrosis and degeneration** of the palmar aponeurosis; **digits 4 and 5** most affected; **males > females**; etiology unknown.
+- **Differential diagnosis:** **ulnar nerve palsy (claw hand)** — wasting of the intrinsic muscles, sensory loss, fingers can still be **passively straightened**; **rheumatoid arthritis / intrinsic joint disease** — marked systemic joint pain, swelling, morning stiffness, **erosive bone changes** on X-ray.
 - **Fibrous flexor sheaths:** thickened deep fascia over the long flexor tendons of each digit, from the **metacarpal head to the base of the distal phalanx**; **hold the tendons in position** during flexion.
 
 | Layer of the hand (palmar → dorsal) | Content |
 |---|---|
 | 1–2 | Skin; superficial fascia (veins, cutaneous nerves, fat) |
 | 3 | Palmar aponeurosis |
-| 4 | Superficial palmar arch + digital nerves |
+| 4 | Superficial palmar arch + digital nerves (predominates from the **ulnar artery**; digital branches of the **median and ulnar nerves**) |
 | 5 | Flexor tendons + synovial sheaths (FDS, FDP, FPL, lumbricals) |
 | 6 | Thenar and hypothenar compartments, adductor pollicis |
-| 7 | Deep palmar arch |
+| 7 | Deep palmar arch (predominates from the **radial artery**) |
 | 8–10 | Deep interosseous fascia (palmar interossei); metacarpal bones; dorsal interossei and extensor apparatus |
 
 <div class="key-points">
@@ -121,6 +122,15 @@ Dr. Ahmed Al-Baghdadi's anatomy lecture on the hand: **the skeleton and joints, 
 - **Parts:** **ulnar bursa, radial bursa, digital synovial sheaths.**
 - **Functions:** allow smooth movement under the **flexor retinaculum** and **fibrous flexor sheaths** with minimum friction; **help absorb shock**.
 - **Extensor tendons:** at the posterior wrist there are **six tunnels** (extensor compartments), each lined by a **synovial sheath** and separated by **fibrous septa**.
+
+| Compartment | Tendons |
+|---|---|
+| **1** | **Abductor pollicis longus, extensor pollicis brevis** |
+| **2** | **Extensor carpi radialis longus and brevis** |
+| **3** | **Extensor pollicis longus** |
+| **4** | **Extensor digitorum, extensor indicis** |
+| **5** | **Extensor digiti minimi** |
+| **6** | **Extensor carpi ulnaris** |
 
 <div class="key-points">
 
