@@ -346,6 +346,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/forearm"
       },
       {
+        id: 36,
+        title: "Anatomy of the Hand.pdf",
+        cleanTitle: "Anatomy of the Hand",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy of the Hand",
+        summary: "Hand skeleton and joints, palmar fascia and spaces, synovial sheaths, thenar, hypothenar, lumbrical and interosseous muscles, nerves and the palmar arterial arches.",
+        file_url: storageUrl("Anatomy of the Hand.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_the_Hand_Bilingual.pdf",
+        summary_url: "/summary/hand"
+      },
+      {
         id: 29,
         title: "Applied Anatomy of Upper Limb II.pdf",
         cleanTitle: "Applied Anatomy of Upper Limb II - Brachial Plexus",
@@ -368,6 +380,30 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Applied Anatomy of Upper Limb III.pdf"),
         bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_III_Bilingual.pdf",
         summary_url: "/summary/applied-anatomy-3"
+      },
+      {
+        id: 37,
+        title: "Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand.pdf",
+        cleanTitle: "Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand",
+        summary: "Radial head, radial shaft, Colles' and scaphoid fractures, carpal tunnel and Guyon canal syndromes, rheumatoid hand deformities and wrist radiology.",
+        file_url: storageUrl("Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_Radial_Fractures_Wrist_Hand_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-radius-wrist-hand"
+      },
+      {
+        id: 38,
+        title: "Nerve Injuries of the Upper Limb.pdf",
+        cleanTitle: "Nerve Injuries of the Upper Limb",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Nerve Injuries of the Upper Limb",
+        summary: "Median, ulnar and radial nerve courses, branches and injuries: benediction and ape hands, claw hand, wrist drop, carpal tunnel and Guyon's canal syndromes.",
+        file_url: storageUrl("Nerve Injuries of the Upper Limb.pdf"),
+        bilingual_url: "/bilingual/Nerve_Injuries_of_the_Upper_Limb_Bilingual.pdf",
+        summary_url: "/summary/nerve-injuries-upper-limb"
       },
       {
         id: 10,
@@ -448,6 +484,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("LAB 3 - Forearm.pdf"),
         bilingual_url: "/bilingual/LAB3_Forearm_Bilingual.pdf",
         summary_url: "/summary/lab3-forearm"
+      },
+      {
+        id: 39,
+        title: "Anatomy Lab IV - Hand.pdf",
+        cleanTitle: "MSK Lab 4 - Hand",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Anatomy Lab IV - Hand",
+        summary: "Hand lab: grips and the thumb, quick nerve tests, palmar arches and Allen's test, RA vs OA deformities, cadaveric hand images and upper limb radiology.",
+        file_url: storageUrl("Anatomy Lab IV - Hand.pdf"),
+        bilingual_url: "/bilingual/Anatomy_Lab_IV_Hand_Bilingual.pdf",
+        summary_url: "/summary/lab4-hand"
       },
       {
         id: 17,
@@ -685,6 +733,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("High-Energy Compounds.pdf"),
         bilingual_url: "/bilingual/Bioenergetics_High_Energy_Compounds_Bilingual.pdf",
         summary_url: "/summary/high-energy-compounds"
+      },
+      {
+        id: 119,
+        title: "Clinical Biochemistry - Spectrophotometry.pdf",
+        cleanTitle: "Clinical Biochemistry - Spectrophotometry",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Clinical Biochemistry - Spectrophotometry",
+        summary: "Light and matter, the electromagnetic spectrum, parts of a spectrophotometer, transmittance, absorbance, Beer's law and the standardization graph.",
+        file_url: storageUrl("Clinical Biochemistry - Spectrophotometry.pdf"),
+        bilingual_url: "/bilingual/Clinical_Biochemistry_Spectrophotometry_Bilingual.pdf",
+        summary_url: "/summary/spectrophotometry"
       },
     ],
   },
