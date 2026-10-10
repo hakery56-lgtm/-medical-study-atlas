@@ -202,6 +202,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/somatosensory"
       },
       {
+        id: 40,
+        title: "Reflexes.pdf",
+        cleanTitle: "Reflexes and Control of Body Movements",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Reflexes and Control of Body Movements",
+        summary: "Reflex arc and classification, nerve fiber types, muscle spindle, alpha-gamma coactivation, Golgi tendon organ, knee jerk, flexion and crossed extensor reflexes.",
+        file_url: storageUrl("Reflexes.pdf"),
+        bilingual_url: "/bilingual/Reflexes_Bilingual.pdf",
+        summary_url: "/summary/reflexes"
+      },
+      {
         id: 31,
         title: "Pain Physiology.pdf",
         cleanTitle: "Pain Physiology",
@@ -723,6 +735,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/histology-circulatory-2"
       },
       {
+        id: 120,
+        title: "Practical Histology - Lymphoid System.pdf",
+        cleanTitle: "Practical Histology - Lymphoid System",
+        type: "lab",
+        discipline: "Histology",
+        topic: "Practical Histology - Lymphoid System",
+        summary: "Slide identification of Peyer's patches, colon and appendix, lymph node, palatine tonsil, thymus (Hassall's corpuscles) and spleen (white and red pulp).",
+        file_url: storageUrl("Practical Histology - Lymphoid System.pdf"),
+        bilingual_url: "/bilingual/Practical_Histology_Lymphoid_System_Bilingual.pdf",
+        summary_url: "/summary/lymphoid-system-practical"
+      },
+      {
         id: 117,
         title: "High-Energy Compounds.pdf",
         cleanTitle: "Bioenergetics: High-Energy Compounds",
@@ -862,6 +886,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("ANS Pharmacology - Cholinergic Agonists.pdf"),
         bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Agonists_Bilingual.pdf",
         summary_url: "/summary/s3-ans-cholinergic-agonists"
+      },
+      {
+        id: 250,
+        title: "Autacoids - Histamine and Serotonin.pdf",
+        cleanTitle: "Autacoids - Histamine and Serotonin",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Autacoids - Histamine and Serotonin",
+        summary: "Autacoid classes, histamine release, receptors and effects, H1 antagonists (first vs second generation), serotonin receptors, agonists and antagonists.",
+        file_url: storageUrl("Autacoids - Histamine and Serotonin.pdf"),
+        bilingual_url: "/bilingual/Autacoids_Histamine_Serotonin_Bilingual.pdf",
+        summary_url: "/summary/s3-autacoids"
+      },
+      {
+        id: 251,
+        title: "Autacoids - Eicosanoids.pdf",
+        cleanTitle: "Autacoids - Eicosanoids",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Autacoids - Eicosanoids",
+        summary: "COX and lipoxygenase pathways, effects of prostaglandins, thromboxanes and leukotrienes, inhibition of synthesis and their clinical applications.",
+        file_url: storageUrl("Autacoids - Eicosanoids.pdf"),
+        bilingual_url: "/bilingual/Autacoids_Eicosanoids_Bilingual.pdf",
+        summary_url: "/summary/s3-autacoids-eicosanoids"
       },
       {
         id: 208,
