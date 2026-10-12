@@ -1404,6 +1404,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-histopath-lab3"
       },
       {
+        id: 255,
+        title: "Histopathology Lab 4.pdf",
+        cleanTitle: "Histopathology Lab 4 - Tissue Repair and Environmental Diseases",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Histopathology Lab 4 - Tissue Repair and Environmental Diseases",
+        summary: "Granulation tissue, scars (hypertrophic scar vs keloid), pneumoconioses, asbestos, lead, tobacco, fatty liver, marasmus and kwashiorkor, and vitamin A and D deficiency.",
+        file_url: storageUrl("Histopathology Lab 4.pdf"),
+        bilingual_url: "/bilingual/Histopathology_Lab4_Tissue_Repair_Environmental_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab4"
+      },
+      {
         id: 232,
         title: "Microbiology Lab 1.pdf",
         cleanTitle: "Microbiology Lab 1 - Introduction",
