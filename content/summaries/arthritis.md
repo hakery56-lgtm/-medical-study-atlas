@@ -1,6 +1,6 @@
 # Arthritis — Exam Night Review
 
-A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, clinical features, pathogenesis, morphology), juvenile idiopathic arthritis, reactive arthritis and infectious (suppurative) arthritis.** After each topic: **Key points** and 3 short-essay questions (tap a question to reveal the answer).
+Assist. Prof. Dr. Zainab Al-Ali's pathology lecture on joint inflammation: **rheumatoid arthritis (definition, clinical features, pathogenesis, morphology), juvenile idiopathic arthritis, seronegative spondyloarthropathies (ankylosing spondylitis), reactive arthritis and infectious (suppurative) arthritis.** After each topic: **Key points** and 3 short-essay questions (tap a question to reveal the answer).
 
 ---
 
@@ -58,14 +58,17 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 | **TNF and IL-1** | Macrophages | Synovial cells secrete proteases → destroy hyaline cartilage |
 
 - **TNF** is the cytokine **most firmly implicated**; **TNF antagonists** are effective therapy.
-- The synovium has **germinal centers with secondary follicles** and abundant **plasma cells**; autoantibodies called **rheumatoid factor** may form **immune complexes** in joints, but are **not present in all** RA patients and can occur in people without RA.
+- The synovium has **germinal centers with secondary follicles** and abundant **plasma cells**.
+- **Citrullination:** many serum autoantibodies are specific for **citrullinated peptides**; complexes with **citrullinated fibrinogen, type II collagen, α-enolase and vimentin** deposit in joints. **ACPA + a T cell response** to citrullinated proteins → **chronicity**. **Infection and smoking** promote citrullination → **new epitopes**. **≥ 70%** of patients have **ACPA**.
+- **Rheumatoid factor:** about **80%** have serum **IgM or IgA** autoantibodies against their own **IgG**; may form **immune complexes** in joints, but are **not present in all** RA patients and can occur in people without RA.
+- **Genes:** ~**50%** of risk is inherited; the **HLA class II locus** is linked to **ACPA-positive RA**; a **citrullinated vinculin** epitope mimics microbial epitopes and is a **CD4+ T-cell target** presented by **HLA-DQ**; **PTPN22** encodes a **tyrosine phosphatase** postulated to **inhibit T-cell activation**.
 
 <div class="key-points">
 
 **Key points**
 - TH1 → IFN-γ; TH17 → IL-17; T cells → RANKL; macrophages → TNF and IL-1.
 - TNF is the key cytokine; TNF antagonists work.
-- Rheumatoid factor is neither universal nor exclusive.
+- Rheumatoid factor (IgM/IgA against IgG, ~80%) is neither universal nor exclusive; ACPA are present in ≥ 70%.
 
 </div>
 
@@ -87,7 +90,7 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 
 <details><summary>Q3. What is rheumatoid factor?</summary>
 
-**Answer:** An autoantibody produced by plasma cells in synovial germinal centers that may deposit in joints as immune complexes; it is not present in all RA patients and can be found in patients without the disease.
+**Answer:** IgM or IgA autoantibodies that bind the patient's own IgG (about 80% of patients), produced by plasma cells in synovial germinal centers; they may deposit in joints as immune complexes, but are not present in all RA patients and can be found in patients without the disease.
 
 **Why:** Slide on synovial germinal centers.
 </details>
@@ -97,8 +100,8 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 ## 3. Morphology of RA
 
 - **Gross:** synovium **edematous, thickened, hyperplastic**, with **delicate bulbous villi**.
-- **Histology:** (1) **synovial cell hyperplasia**; (2) **dense infiltrate** of CD4+ T cells, B cells, plasma cells, dendritic cells, macrophages; (3) **angiogenesis**; (4) **neutrophils and fibrin** on joint surfaces; (5) **osteoclastic activity** → **periarticular erosions**.
-- **Pannus:** edematous synovium, inflammatory cells, granulation tissue and fibroblasts growing over cartilage → **cartilage erosion**. Joint outcomes: **fibrous and bony ankylosis**.
+- **Histology:** (1) **synovial cell hyperplasia**; (2) **dense infiltrate** of CD4+ T cells, B cells, plasma cells, dendritic cells, macrophages; (3) **angiogenesis**; (4) **neutrophils and fibrin** on joint surfaces; (5) **osteoclastic activity** letting the synovium penetrate bone → **periarticular erosions and subchondral cysts**.
+- **Pannus:** edematous synovium, inflammatory cells, granulation tissue and fibroblasts growing over cartilage → **cartilage erosion**. In advanced untreated cases the pannus **bridges the bones** → **fibrous ankylosis**, which may later **ossify** (**bony ankylosis**).
 - **Rheumatoid nodules:** infrequent; **subcutaneous** (forearm, elbows, occiput, lumbosacral area); microscopically a **necrotizing granuloma-like** lesion with **central necrosis rimmed by palisaded histiocytes**.
 - **Lungs (rare):** rheumatoid nodules, interstitial lung disease.
 
@@ -144,7 +147,7 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 | Systemic disease | Less | **More frequent** |
 | Nodules / RF | Present in some | **Usually absent** |
 | ANA | — | **Common** |
-| Mechanism | TH1/TH17 cytokines | Unknown, similar; **TH1 and TH17** |
+| Mechanism | TH1/TH17 cytokines | Unknown, similar (**HLA and PTPN22** variants); **TH1 and TH17** |
 | Outcome | — | Variable; only **~10%** serious disability |
 
 - **Reactive arthritis:** **triad = arthritis + nongonococcal urethritis or cervicitis + conjunctivitis**; **men in 20s–30s**; **> 80% HLA-B27 positive**.
@@ -184,18 +187,66 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 
 ---
 
-## 5. Infectious (suppurative) arthritis
+## 5. Seronegative spondyloarthropathies
 
-- Joints become infected by **hematogenous dissemination**, **direct inoculation through the skin**, or **contiguous spread** from a soft tissue abscess or osteomyelitis.
-- Potentially serious: **rapid, permanent joint destruction**.
-- **Suppurative arthritis:** bacteria usually enter **from distant sites by the blood**. **H. influenzae** predominates **< 2 years**; **S. aureus** in **older children and adults**.
-- **Classic presentation:** **sudden acutely painful, warm, swollen joint with restricted range of motion**; **fever, leukocytosis, raised ESR**.
-- **Drug users:** **axial joints** more often involved.
+- **Shared features:** (1) **no rheumatoid factor**; (2) changes in **ligamentous attachments** rather than synovium; (3) **sacroiliac joint** involvement ± other joints; (4) **HLA-B27**; (5) **bony proliferation → ankylosis (fusion)**.
+- **Mechanism:** immune-mediated; a **T-cell response** to an **undefined (possibly infectious) antigen** that may **cross-react** with musculoskeletal antigens.
+- **Ankylosing spondylitis:** the **prototype**; **destroys articular cartilage** and causes **bony ankylosis**, especially of the **sacroiliac joints**; symptomatic in the **2nd–3rd decades** with **low back pain and spinal immobility**; **peripheral joints** (hips, knees, shoulders) in **≥ one-third**; **~90% HLA-B27 positive**.
 
 <div class="key-points">
 
 **Key points**
-- H. influenzae < 2 years; S. aureus otherwise.
+- Spondyloarthropathies: RF-negative, ligament attachments, sacroiliitis, HLA-B27, ankylosis.
+- Ankylosing spondylitis: young adults, back pain, spinal immobility, ~90% HLA-B27.
+
+</div>
+
+**Short-essay questions**
+
+<details><summary>Q1. List the shared features of the seronegative spondyloarthropathies.</summary>
+
+**Answer:** Absence of rheumatoid factor; pathologic changes in ligamentous attachments rather than synovium; involvement of the sacroiliac joints with or without other joints; association with HLA-B27; and bony proliferation leading to ankylosis.
+
+**Why:** Slide "Seronegative spondyloarthropathies".
+</details>
+
+<details><summary>Q2. What is the proposed mechanism of the spondyloarthropathies?</summary>
+
+**Answer:** An immune-mediated T-cell response directed against an undefined antigen, possibly infectious, that may cross-react with antigens expressed on cells of the musculoskeletal system.
+
+**Why:** Slide "Seronegative spondyloarthropathies".
+</details>
+
+<details><summary>Q3. Describe ankylosing spondylitis.</summary>
+
+**Answer:** The prototypical spondyloarthritis, causing destruction of articular cartilage and bony ankylosis especially of the sacroiliac joints; it becomes symptomatic in the second and third decades as lower back pain and spinal immobility, involves peripheral joints (hips, knees, shoulders) in at least one-third of patients, and about 90% are HLA-B27 positive.
+
+**Why:** Slide "Ankylosing spondylitis".
+</details>
+
+---
+
+## 6. Infectious (suppurative) arthritis
+
+- Joints become infected by **hematogenous dissemination**, **direct inoculation through the skin**, or **contiguous spread** from a soft tissue abscess or osteomyelitis.
+- Potentially serious: **rapid, permanent joint destruction**.
+- **Suppurative arthritis:** bacteria usually enter **from distant sites by the blood**.
+
+| Group | Organism / note |
+|---|---|
+| **Children < 2 years** | **H. influenzae** |
+| **Older children and adults** | **S. aureus** (main agent) |
+| **Late adolescence and young adulthood** | **Gonococcus** (mainly **sexually active women**; otherwise both sexes equal) |
+| **Sickle cell disease** | **Salmonella** |
+| **Complement deficiency (C5, C6, C7, C9)** | **Disseminated gonococcal** infection |
+
+- **Classic presentation:** **sudden acutely painful, warm, swollen joint with restricted range of motion**; **fever, leukocytosis, raised ESR**.
+- **90% of nongonococcal cases** involve a **single joint**: **knee** most often, then **hip, shoulder, elbow, wrist, sternoclavicular**. **Drug users:** **axial joints** more often involved.
+
+<div class="key-points">
+
+**Key points**
+- H. influenzae < 2 years; S. aureus otherwise; gonococcus in young adults; Salmonella in sickle cell.
 - Hot, swollen, painful joint + fever + leukocytosis + high ESR.
 
 </div>
@@ -211,14 +262,14 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 
 <details><summary>Q2. Name the main organisms of suppurative arthritis by age.</summary>
 
-**Answer:** H. influenzae in children younger than 2 years; S. aureus in older children and adults.
+**Answer:** H. influenzae in children younger than 2 years; S. aureus in older children and adults; gonococcus in late adolescence and young adulthood (mainly sexually active women); Salmonella in people with sickle cell disease.
 
 **Why:** Slide "Suppurative arthritis".
 </details>
 
 <details><summary>Q3. Describe the presentation of suppurative arthritis.</summary>
 
-**Answer:** Sudden acutely painful, warm, swollen joint with restricted range of motion, with fever, leukocytosis and elevated sedimentation rate; axial joints are more involved in drug users.
+**Answer:** Sudden acutely painful, warm, swollen joint with restricted range of motion, with fever, leukocytosis and elevated sedimentation rate; in 90% of nongonococcal cases a single joint is involved, most often the knee; axial joints are more involved in drug users.
 
 **Why:** Slide "Suppurative arthritis".
 </details>
@@ -232,7 +283,8 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 - **TNF is the cytokine most firmly implicated; IL-17 recruits neutrophils/monocytes; RANKL drives osteoclasts.**
 - **Pannus erodes cartilage; rheumatoid nodule = necrosis with palisaded histiocytes.**
 - **Reactive arthritis: HLA-B27, triad, asymmetric lower-limb joints.**
-- **H. influenzae < 2 years; S. aureus in older children and adults.**
+- **H. influenzae < 2 years; S. aureus in older children and adults; gonococcus in young sexually active women.**
+- **Spondyloarthropathies are RF-negative, HLA-B27-associated and involve ligament attachments and the sacroiliac joints.**
 
 ## 🔥 Final review — memorize before the exam
 
@@ -243,6 +295,7 @@ A pathology lecture on joint inflammation: **rheumatoid arthritis (definition, c
 5. Rheumatoid nodule: subcutaneous, necrosis + palisaded histiocytes.
 6. JIA: < 16 y, ≥ 6 weeks, oligoarthritis, ANA+, RF−, ~10% serious disability.
 7. Reactive arthritis: triad, HLA-B27, Chlamydia or GI infection, spine like AS.
-8. Infectious arthritis: H. influenzae (< 2 y), S. aureus; hot swollen joint, fever, high ESR.
+8. Spondyloarthropathies: RF−, HLA-B27, sacroiliac joints, ankylosis; ankylosing spondylitis ~90% HLA-B27.
+9. Infectious arthritis: H. influenzae (< 2 y), S. aureus, gonococcus; hot swollen joint, fever, high ESR; 90% monoarticular (knee).
 
 Good luck 💪

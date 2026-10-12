@@ -208,7 +208,7 @@ export const subjects: Subject[] = [
         type: "lecture",
         discipline: "Pathology",
         topic: "Arthritis",
-        summary: "Rheumatoid arthritis (pathogenesis, synovium, pannus, nodules), juvenile idiopathic arthritis, reactive arthritis and infectious (suppurative) arthritis.",
+        summary: "Rheumatoid arthritis (pathogenesis with ACPA and citrullination, synovium, pannus, nodules), juvenile idiopathic arthritis, seronegative spondyloarthropathies, reactive arthritis and infectious (suppurative) arthritis.",
         file_url: storageUrl("Arthritis.pdf"),
         bilingual_url: "/bilingual/Arthritis_Bilingual.pdf",
         summary_url: "/summary/arthritis"
@@ -1402,6 +1402,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Histopathology Lab 3 - Inflammation.pdf"),
         bilingual_url: "/bilingual/Histopathology_Lab3_Inflammation_Bilingual.pdf",
         summary_url: "/summary/s3-histopath-lab3"
+      },
+      {
+        id: 255,
+        title: "Histopathology Lab 4.pdf",
+        cleanTitle: "Histopathology Lab 4 - Tissue Repair and Environmental Diseases",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Histopathology Lab 4 - Tissue Repair and Environmental Diseases",
+        summary: "Granulation tissue, scars (hypertrophic scar vs keloid), pneumoconioses, asbestos, lead, tobacco, fatty liver, marasmus and kwashiorkor, and vitamin A and D deficiency.",
+        file_url: storageUrl("Histopathology Lab 4.pdf"),
+        bilingual_url: "/bilingual/Histopathology_Lab4_Tissue_Repair_Environmental_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab4"
       },
       {
         id: 232,
