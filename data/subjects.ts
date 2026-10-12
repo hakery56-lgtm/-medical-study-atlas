@@ -208,7 +208,7 @@ export const subjects: Subject[] = [
         type: "lecture",
         discipline: "Pathology",
         topic: "Arthritis",
-        summary: "Rheumatoid arthritis (pathogenesis, synovium, pannus, nodules), juvenile idiopathic arthritis, reactive arthritis and infectious (suppurative) arthritis.",
+        summary: "Rheumatoid arthritis (pathogenesis with ACPA and citrullination, synovium, pannus, nodules), juvenile idiopathic arthritis, seronegative spondyloarthropathies, reactive arthritis and infectious (suppurative) arthritis.",
         file_url: storageUrl("Arthritis.pdf"),
         bilingual_url: "/bilingual/Arthritis_Bilingual.pdf",
         summary_url: "/summary/arthritis"
