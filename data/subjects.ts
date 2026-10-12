@@ -202,6 +202,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/antirheumatic-drugs"
       },
       {
+        id: 42,
+        title: "Arthritis.pdf",
+        cleanTitle: "Arthritis",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Arthritis",
+        summary: "Rheumatoid arthritis (pathogenesis, synovium, pannus, nodules), juvenile idiopathic arthritis, reactive arthritis and infectious (suppurative) arthritis.",
+        file_url: storageUrl("Arthritis.pdf"),
+        bilingual_url: "/bilingual/Arthritis_Bilingual.pdf",
+        summary_url: "/summary/arthritis"
+      },
+      {
+        id: 43,
+        title: "Immunopathogenesis of Rheumatoid Arthritis.pdf",
+        cleanTitle: "Immunopathogenesis of Rheumatoid Arthritis",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Immunopathogenesis of Rheumatoid Arthritis",
+        summary: "From HLA-DRB1 and citrullination to ACPA, T and B cells, synovial cells, the cytokine network, JAK-STAT, joint destruction and targeted therapy in RA.",
+        file_url: storageUrl("Immunopathogenesis of Rheumatoid Arthritis.pdf"),
+        bilingual_url: "/bilingual/Immunopathogenesis_of_Rheumatoid_Arthritis_Bilingual.pdf",
+        summary_url: "/summary/immunopathogenesis-ra"
+      },
+      {
         id: 18,
         title: "Somatosensory lecture.pdf",
         cleanTitle: "Somatosensory lecture",
@@ -1248,6 +1272,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-general-physical-exam"
       },
       {
+        id: 254,
+        title: "Pulmonary Function Tests.pdf",
+        cleanTitle: "Pulmonary Function Tests",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Pulmonary Function Tests",
+        summary: "Spirometry, diffusion studies and body plethysmography: what each measures, how they are done, how to prepare, flow-volume patterns and predicted values.",
+        file_url: storageUrl("Pulmonary Function Tests.pdf"),
+        bilingual_url: "/bilingual/Pulmonary_Function_Tests_Bilingual.pdf",
+        summary_url: "/summary/s3-pulmonary-function-tests"
+      },
+      {
         id: 227,
         title: "Fundamentals of Human Nutrition.pdf",
         cleanTitle: "Fundamentals of Human Nutrition",
@@ -1258,6 +1294,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Fundamentals of Human Nutrition.pdf"),
         bilingual_url: "/bilingual/Fundamentals_of_Human_Nutrition_Bilingual.pdf",
         summary_url: "/summary/s3-nutrition"
+      },
+      {
+        id: 253,
+        title: "Energy Requirements.pdf",
+        cleanTitle: "Energy Requirements",
+        type: "lecture",
+        discipline: "Community Medicine",
+        topic: "Energy Requirements",
+        summary: "Energy balance, fuel stores and fasting stages, BMR and its factors, physical activity, thermic effect of food, TER calculations, and needs in growth, pregnancy and lactation.",
+        file_url: storageUrl("Energy Requirements.pdf"),
+        bilingual_url: "/bilingual/Energy_Requirements_Bilingual.pdf",
+        summary_url: "/summary/s3-energy-requirements"
       },
       {
         id: 228,
@@ -1306,6 +1354,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Psychology of Memory - 2026 version.pdf"),
         bilingual_url: "/bilingual/Psychology_of_Memory_2026_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-memory-2026"
+      },
+      {
+        id: 252,
+        title: "Psychology of Emotions.pdf",
+        cleanTitle: "Psychology of Emotions",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology of Emotions",
+        summary: "Definition and components of emotion, affect vs mood, functions, primary, secondary and tertiary emotions, neuroanatomy, theories of emotion, Freud and Scherer, and abnormal emotional reactions.",
+        file_url: storageUrl("Psychology of Emotions.pdf"),
+        bilingual_url: "/bilingual/Psychology_of_Emotions_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-emotions"
       },
       {
         id: 230,
