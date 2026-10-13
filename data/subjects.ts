@@ -202,6 +202,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/antirheumatic-drugs"
       },
       {
+        id: 46,
+        title: "Drug Compliance.pdf",
+        cleanTitle: "The Importance of Drug Compliance",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "The Importance of Drug Compliance",
+        summary: "Why adherence matters, challenges, strategies to improve compliance, intentional non-adherence, technology and the cost of non-adherence.",
+        file_url: storageUrl("Drug Compliance.pdf"),
+        bilingual_url: "/bilingual/Drug_Compliance_Bilingual.pdf",
+        summary_url: "/summary/drug-compliance"
+      },
+      {
         id: 42,
         title: "Arthritis.pdf",
         cleanTitle: "Arthritis",
@@ -224,6 +236,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Immunopathogenesis of Rheumatoid Arthritis.pdf"),
         bilingual_url: "/bilingual/Immunopathogenesis_of_Rheumatoid_Arthritis_Bilingual.pdf",
         summary_url: "/summary/immunopathogenesis-ra"
+      },
+      {
+        id: 44,
+        title: "Rheumatoid Arthritis - Clinical Approach.pdf",
+        cleanTitle: "Rheumatoid Arthritis - Clinical Approach",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Rheumatoid Arthritis - Clinical Approach",
+        summary: "RA definition, etiology and pathogenesis, hand deformities, extra-articular manifestations, RF and anti-CCP, 2010 ACR/EULAR criteria, differential diagnosis, treat-to-target and DMARDs.",
+        file_url: storageUrl("Rheumatoid Arthritis - Clinical Approach.pdf"),
+        bilingual_url: "/bilingual/Rheumatoid_Arthritis_Clinical_Approach_Bilingual.pdf",
+        summary_url: "/summary/rheumatoid-arthritis-clinical"
       },
       {
         id: 18,
@@ -454,6 +478,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/nerve-injuries-upper-limb"
       },
       {
+        id: 45,
+        title: "Carpal Tunnel Syndrome.pdf",
+        cleanTitle: "Carpal Tunnel Syndrome",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Carpal Tunnel Syndrome",
+        summary: "Median nerve entrapment: anatomy, pathophysiology, causes, symptoms, Phalen, Tinel and Durkan tests, differential diagnosis, NCS, EMG, ultrasound and treatment.",
+        file_url: storageUrl("Carpal Tunnel Syndrome.pdf"),
+        bilingual_url: "/bilingual/Carpal_Tunnel_Syndrome_Bilingual.pdf",
+        summary_url: "/summary/carpal-tunnel-syndrome"
+      },
+      {
         id: 10,
         title: "lab1 - 2026.pdf",
         cleanTitle: "MSK Lab 1",
@@ -556,6 +592,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("lecture_networks_and_security_71788629cb8762ff07fe08b7a4556b8b.pdf"),
         bilingual_url: "/bilingual/Computer_Networks_and_Network_Security_Bilingual.pdf",
         summary_url: "/summary/networks"
+      },
+      {
+        id: 47,
+        title: "Common Challenges in Medical Research.pdf",
+        cleanTitle: "Common Challenges in Medical Research",
+        type: "lecture",
+        discipline: "Research",
+        topic: "Common Challenges in Medical Research",
+        summary: "Nine challenges of the research journey: the beginning, mentor, courses, team, writing, statistics, data, publication and funding.",
+        file_url: storageUrl("Common Challenges in Medical Research.pdf"),
+        bilingual_url: "/bilingual/Common_Challenges_in_Medical_Research_Bilingual.pdf",
+        summary_url: "/summary/common-challenges-research"
       },
     ],
   },
@@ -970,6 +1018,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Pharmacology Practical 3 - Drug Absorption.pdf"),
         bilingual_url: "/bilingual/Pharmacology_Practical_3_Drug_Absorption_Quiz_Bilingual.pdf",
         summary_url: "/summary/s3-pharm-practical-3"
+      },
+      {
+        id: 256,
+        title: "Pharmacology Practical 4.pdf",
+        cleanTitle: "Pharmacology Practical 4 - Drug Metabolism (GTN Problem)",
+        type: "lab",
+        discipline: "Pharmacology",
+        topic: "Pharmacology Practical 4 - Drug Metabolism (GTN Problem)",
+        summary: "Angina and GTN, first-pass metabolism and how to bypass it, liver impairment, phases of hepatic metabolism, enzyme inducers and inhibitors, nitrate tolerance and the patient guide.",
+        file_url: storageUrl("Pharmacology Practical 4.pdf"),
+        bilingual_url: "/bilingual/Pharmacology_Practical4_Drug_Metabolism_GTN_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-practical-4"
       },
       {
         id: 209,
