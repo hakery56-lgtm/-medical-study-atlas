@@ -214,6 +214,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/drug-compliance"
       },
       {
+        id: 49,
+        title: "Immunosuppressants.pdf",
+        cleanTitle: "Immunosuppressants",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Immunosuppressants",
+        summary: "Three-signal T-cell activation, induction and maintenance in transplantation, antibodies, calcineurin and mTOR inhibitors, belatacept, anti-proliferatives, corticosteroids, belimumab, eculizumab and tofacitinib.",
+        file_url: storageUrl("Immunosuppressants.pdf"),
+        bilingual_url: "/bilingual/Immunosuppressants_Bilingual.pdf",
+        summary_url: "/summary/immunosuppressants"
+      },
+      {
         id: 42,
         title: "Arthritis.pdf",
         cleanTitle: "Arthritis",
@@ -442,6 +454,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/applied-anatomy-2"
       },
       {
+        id: 48,
+        title: "Brachial Plexus and Major Peripheral Nerve Injuries.pdf",
+        cleanTitle: "Brachial Plexus and Major Peripheral Nerve Injuries",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Brachial Plexus and Major Peripheral Nerve Injuries",
+        summary: "Roots, dermatomes and the plexus with its branches, Seddon classification, pre- vs postganglionic lesions, Erb and Klumpke palsy, thoracic outlet syndrome, median, ulnar and radial nerve injuries, and surgical timing.",
+        file_url: storageUrl("Brachial Plexus and Major Peripheral Nerve Injuries.pdf"),
+        bilingual_url: "/bilingual/Brachial_Plexus_and_Peripheral_Nerve_Injuries_Bilingual.pdf",
+        summary_url: "/summary/brachial-plexus-nerve-injuries"
+      },
+      {
         id: 27,
         title: "Applied Anatomy of Upper Limb III.pdf",
         cleanTitle: "Applied Anatomy of Upper Limb III",
@@ -649,6 +673,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Scalp and Face.pdf"),
         bilingual_url: "/bilingual/Scalp_and_Face_Bilingual.pdf",
         summary_url: "/summary/scalp-face"
+      },
+      {
+        id: 121,
+        title: "The Temporal Region.pdf",
+        cleanTitle: "The Temporal Region",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "The Temporal Region",
+        summary: "Temporal and infratemporal fossae, temporalis, pterygoid muscles, mandibular nerve, maxillary artery, pterygoid venous plexus and the temporomandibular joint.",
+        file_url: storageUrl("The Temporal Region.pdf"),
+        bilingual_url: "/bilingual/The_Temporal_Region_Bilingual.pdf",
+        summary_url: "/summary/temporal-region"
       },
       {
         id: 104,
@@ -972,6 +1008,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-cholinergic-agonists"
       },
       {
+        id: 258,
+        title: "ANS Pharmacology - Cholinergic Antagonists.pdf",
+        cleanTitle: "ANS Pharmacology - Cholinergic Antagonists",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "ANS Pharmacology - Cholinergic Antagonists",
+        summary: "Muscarinic antagonists: atropine effects and drugs, scopolamine, quaternary derivatives, selective and central antimuscarinics, atropine poisoning and clinical uses.",
+        file_url: storageUrl("ANS Pharmacology - Cholinergic Antagonists.pdf"),
+        bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Antagonists_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-cholinergic-antagonists"
+      },
+      {
         id: 250,
         title: "Autacoids - Histamine and Serotonin.pdf",
         cleanTitle: "Autacoids - Histamine and Serotonin",
@@ -1246,6 +1294,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Parasitology L6 - Trichomonas vaginalis.pdf"),
         bilingual_url: "/bilingual/Parasitology_L6_Trichomonas_vaginalis_Bilingual.pdf",
         summary_url: "/summary/s3-para-6"
+      },
+      {
+        id: 257,
+        title: "Sporozoa - Toxoplasma gondii.pdf",
+        cleanTitle: "Parasitology L7 - Toxoplasma gondii",
+        type: "lecture",
+        discipline: "Parasitology",
+        topic: "Sporozoa - Toxoplasma gondii",
+        summary: "Sporozoa and Toxoplasma gondii: stages, life cycle in humans and cats, congenital toxoplasmosis, diagnosis (Sabin-Feldman, serology, PCR), treatment and prophylaxis.",
+        file_url: storageUrl("Sporozoa - Toxoplasma gondii.pdf"),
+        bilingual_url: "/bilingual/Toxoplasma_gondii_Bilingual.pdf",
+        summary_url: "/summary/s3-para-7"
       },
       {
         id: 222,
@@ -1534,6 +1594,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("CBD-TBL Acute Coronary Syndrome.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Acute_Coronary_Syndrome_Bilingual.pdf",
         summary_url: "/summary/s3-cbd-acs"
+      },
+      {
+        id: 259,
+        title: "CBD-TBL Acute Decompensated Heart Failure.pdf",
+        cleanTitle: "CBD-TBL - Acute Decompensated Heart Failure",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "CBD-TBL - Acute Decompensated Heart Failure (The Drowning Lungs)",
+        summary: "Case of worsening breathlessness in HFrEF: recognizing congestion, the RAAS/sympathetic mechanism map, the acute management algorithm, loop diuretic, nitroglycerin and dobutamine.",
+        file_url: storageUrl("CBD-TBL Acute Decompensated Heart Failure.pdf"),
+        bilingual_url: "/bilingual/CBD_TBL_Acute_Decompensated_Heart_Failure_Bilingual.pdf",
+        summary_url: "/summary/s3-cbd-hf"
       },
     ],
   },
