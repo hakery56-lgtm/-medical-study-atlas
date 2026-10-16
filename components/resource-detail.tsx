@@ -19,13 +19,14 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
   const [showViewer, setShowViewer] = useState(false)
   const [showFlashcards, setShowFlashcards] = useState(false)
 
-  // on phones the details open as a pop-up sheet: lock the page behind it and close it with Escape
+  // Escape closes the details on every screen size; on phones they open as a pop-up sheet, so also lock the page behind it
   useEffect(() => {
-    if (!resource || !window.matchMedia("(max-width: 767px)").matches) return
+    if (!resource) return
+    const isPhone = window.matchMedia("(max-width: 767px)").matches
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape" && !showFlashcards) onClose()
     }
-    document.body.style.overflow = "hidden"
+    if (isPhone) document.body.style.overflow = "hidden"
     window.addEventListener("keydown", onKey)
     return () => {
       document.body.style.overflow = ""
@@ -81,6 +82,17 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
           <X size={17} />
         </button>
       </div>
+      {/* desktop: the details pane stays open until closed */}
+      <button
+        onClick={onClose}
+        aria-label="Close"
+        title="Close (Esc)"
+        className="absolute right-6 top-6 z-10 hidden items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold transition-opacity hover:opacity-80 md:flex"
+        style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
+      >
+        <X size={14} />
+        Close
+      </button>
       <div key={resource.id} className="animate-fade-in mx-auto max-w-3xl space-y-8">
         <header className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
