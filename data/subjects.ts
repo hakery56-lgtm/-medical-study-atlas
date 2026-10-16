@@ -582,6 +582,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skill-lab-week4"
       },
       {
+        id: 50,
+        title: "PBL 5 - Low Back Pain.pdf",
+        cleanTitle: "PBL 5 - Low Back Pain (Unit III Week 5)",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "PBL 5 - Low Back Pain (Unit III Week 5)",
+        summary: "Mr. Qasim's sciatica case: history, examination, diagnosis, management plan and alternative-therapy questions.",
+        file_url: storageUrl("PBL 5 - Low Back Pain.pdf"),
+        bilingual_url: "/bilingual/PBL5_Low_Back_Pain_Bilingual.pdf",
+        summary_url: "/summary/pbl5-low-back-pain"
+      },
+      {
+        id: 51,
+        title: "Mini-PBL - Neck Pain.pdf",
+        cleanTitle: "Mini-PBL - Neck Pain (Unit 3 Week 5)",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "Mini-PBL - Neck Pain (Unit 3 Week 5)",
+        summary: "Nader's neck pain with right arm paresthesia: case, cervical spine film and the eight questions with standard answers.",
+        file_url: storageUrl("Mini-PBL - Neck Pain.pdf"),
+        bilingual_url: "/bilingual/Mini_PBL_Neck_Pain_Bilingual.pdf",
+        summary_url: "/summary/mini-pbl-neck-pain"
+      },
+      {
         id: 28,
         title: "LAB 3 - Forearm.pdf",
         cleanTitle: "MSK Lab 3 - Forearm",
@@ -867,6 +891,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/lymphoid-system-practical"
       },
       {
+        id: 122,
+        title: "Lymphoid Organs - Practical Histopathology.pdf",
+        cleanTitle: "Lymphoid Organs - Practical Histopathology",
+        type: "lab",
+        discipline: "Histology",
+        topic: "Lymphoid Organs - Practical Histopathology",
+        summary: "Classification and microscopic features of the thymus, lymph node, spleen, palatine tonsil and Peyer's patches.",
+        file_url: storageUrl("Lymphoid Organs - Practical Histopathology.pdf"),
+        bilingual_url: "/bilingual/Lymphoid_Organs_Practical_Histopathology_Bilingual.pdf",
+        summary_url: "/summary/lymphoid-organs-histopathology"
+      },
+      {
         id: 117,
         title: "High-Energy Compounds.pdf",
         cleanTitle: "Bioenergetics: High-Energy Compounds",
@@ -1020,6 +1056,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-cholinergic-antagonists"
       },
       {
+        id: 265,
+        title: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists Part 1.pdf",
+        cleanTitle: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists (Part 1)",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists (Part 1)",
+        summary: "Adrenergic neurotransmission, catecholamine synthesis, direct and indirect sympathomimetics, beta-receptor drugs, adrenaline, noradrenaline and dopamine.",
+        file_url: storageUrl("Sympathetic NS Drugs - Adrenergic Transmission and Agonists Part 1.pdf"),
+        bilingual_url: "/bilingual/Sympathetic_NS_Drugs_Adrenergic_Agonists_Part1_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-adrenergic-1"
+      },
+      {
         id: 250,
         title: "Autacoids - Histamine and Serotonin.pdf",
         cleanTitle: "Autacoids - Histamine and Serotonin",
@@ -1164,6 +1212,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-environmental-nutritional"
       },
       {
+        id: 263,
+        title: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis.pdf",
+        cleanTitle: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis",
+        summary: "Hyperemia versus congestion, edema (Starling forces, transudate versus exudate), hemorrhage, Virchow's triad and thrombus morphology.",
+        file_url: storageUrl("Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis.pdf"),
+        bilingual_url: "/bilingual/Hemodynamic_Disorders_I_Bilingual.pdf",
+        summary_url: "/summary/s3-hemodynamics-1"
+      },
+      {
+        id: 264,
+        title: "Hemodynamic Disorders II - Embolism, Infarction and Shock.pdf",
+        cleanTitle: "Hemodynamic Disorders II - Embolism, Infarction and Shock",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Hemodynamic Disorders II - Embolism, Infarction and Shock",
+        summary: "Pulmonary and systemic embolism, fat, amniotic fluid and air emboli, red versus white infarcts, and the types, pathogenesis and stages of shock.",
+        file_url: storageUrl("Hemodynamic Disorders II - Embolism, Infarction and Shock.pdf"),
+        bilingual_url: "/bilingual/Hemodynamic_Disorders_II_Bilingual.pdf",
+        summary_url: "/summary/s3-hemodynamics-2"
+      },
+      {
         id: 213,
         title: "Bacterial Structure.pdf",
         cleanTitle: "Bacterial Structure",
@@ -1306,6 +1378,42 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Sporozoa - Toxoplasma gondii.pdf"),
         bilingual_url: "/bilingual/Toxoplasma_gondii_Bilingual.pdf",
         summary_url: "/summary/s3-para-7"
+      },
+      {
+        id: 260,
+        title: "Introduction to the Immune System - Part 1.pdf",
+        cleanTitle: "Introduction to the Immune System - Part 1",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Introduction to the Immune System - Part 1",
+        summary: "Immunity and its two arms, innate barriers, neutrophils, phagocytosis, macrophages, NK cells, TLRs and the primary versus secondary immune response.",
+        file_url: storageUrl("Introduction to the Immune System - Part 1.pdf"),
+        bilingual_url: "/bilingual/Introduction_to_the_Immune_System_Part1_Bilingual.pdf",
+        summary_url: "/summary/s3-imm-intro-1"
+      },
+      {
+        id: 261,
+        title: "Introduction to the Immune System - Part 2.pdf",
+        cleanTitle: "Introduction to the Immune System - Part 2",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Introduction to the Immune System - Part 2",
+        summary: "Cytokines, interferons, interleukins, TNF, complement, coagulation and inflammation (acute versus chronic).",
+        file_url: storageUrl("Introduction to the Immune System - Part 2.pdf"),
+        bilingual_url: "/bilingual/Introduction_to_the_Immune_System_Part2_Bilingual.pdf",
+        summary_url: "/summary/s3-imm-intro-2"
+      },
+      {
+        id: 262,
+        title: "Cells and Organs of the Immune System.pdf",
+        cleanTitle: "Cells and Organs of the Immune System",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Cells and Organs of the Immune System",
+        summary: "Hematopoiesis, primary and secondary lymphoid organs, thymus and DiGeorge syndrome, T, B and NK cells, macrophages, granulocytes and dendritic cells.",
+        file_url: storageUrl("Cells and Organs of the Immune System.pdf"),
+        bilingual_url: "/bilingual/Cells_and_Organs_of_the_Immune_System_Bilingual.pdf",
+        summary_url: "/summary/s3-imm-cells-organs"
       },
       {
         id: 222,
@@ -1486,6 +1594,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Psychology of Emotions.pdf"),
         bilingual_url: "/bilingual/Psychology_of_Emotions_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-emotions"
+      },
+      {
+        id: 266,
+        title: "Psychology of Emotions - 2026 version.pdf",
+        cleanTitle: "Psychology of Emotions (2026 version)",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology of Emotions (2026 version)",
+        summary: "Emotion, feeling, affect and mood, the four components, primary, secondary and tertiary emotions, theories of emotion, fear circuits and abnormal emotional reactions.",
+        file_url: storageUrl("Psychology of Emotions - 2026 version.pdf"),
+        bilingual_url: "/bilingual/Psychology_of_Emotions_2026_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-emotions-2026"
       },
       {
         id: 230,
