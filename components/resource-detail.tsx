@@ -1,11 +1,15 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { X, CalendarDays, FileText, ExternalLink, Info, Layers, BookOpenCheck, ChevronRight, Brain, Languages, GraduationCap } from "lucide-react"
 import { storageUrl, type Resource } from "@/data/subjects"
 import { typeIcons, typeLabels, typeBadgeStyle } from "@/lib/resource-ui"
 import FlashcardModal from "./FlashcardModal"
 import { flashcardBank } from "@/data/flashcards"
+
+// files open in the same tab, inside the app, so there is always a way back to the main menu
+const viewHref = (src: string, title: string) => `/view?src=${encodeURIComponent(src)}&title=${encodeURIComponent(title)}`
 
 interface ResourceDetailProps {
   resource: Resource | null
@@ -150,16 +154,14 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
           ) : (
             <div className="space-y-4">
               {/* open the PDF directly: the Google Docs viewer proxy often failed ("No preview available") */}
-              <a
-                href={resource.file_url ?? storageUrl(resource.title)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={viewHref(resource.file_url ?? storageUrl(resource.title), resource.cleanTitle)}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
                 style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
               >
                 <ExternalLink size={16} />
                 View Document
-              </a>
+              </Link>
             {flashcardBank[resource.topic] && (
               <button
                 onClick={() => setShowFlashcards(true)}
@@ -171,28 +173,24 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
               </button>
             )}
             {resource.bilingual_url && (
-              <a
-                href={resource.bilingual_url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={viewHref(resource.bilingual_url, `${resource.cleanTitle} (Arabic)`)}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
                 style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
               >
                 <Languages size={16} />
                 Arabic Version
-              </a>
+              </Link>
             )}
             {resource.summary_url && (
-              <a
+              <Link
                 href={resource.summary_url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
                 style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
               >
                 <GraduationCap size={16} />
                 Exam Summary
-              </a>
+              </Link>
             )}
             </div>
           )}
