@@ -202,6 +202,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/antirheumatic-drugs"
       },
       {
+        id: 53,
+        title: "MSS-5 - Local Anesthetics.pdf",
+        cleanTitle: "MSS-5: Local Anesthetics",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "MSS-5 - Local Anesthetics",
+        summary: "Mechanism, classification, pharmacokinetics, clinical uses and toxicity of local anesthetics.",
+        file_url: storageUrl("MSS-5 - Local Anesthetics.pdf"),
+        bilingual_url: "/bilingual/MSS5_Local_Anesthetics_Bilingual.pdf",
+        summary_url: "/summary/local-anesthetics"
+      },
+      {
         id: 46,
         title: "Drug Compliance.pdf",
         cleanTitle: "The Importance of Drug Compliance",
@@ -284,6 +296,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Reflexes.pdf"),
         bilingual_url: "/bilingual/Reflexes_Bilingual.pdf",
         summary_url: "/summary/reflexes"
+      },
+      {
+        id: 54,
+        title: "The Muscular System Physiology.pdf",
+        cleanTitle: "The Muscular System Physiology",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "The Muscular System Physiology",
+        summary: "Muscle types, sarcomere structure, neuromuscular junction, excitation-contraction coupling, energy sources, contraction types and fiber types.",
+        file_url: storageUrl("The Muscular System Physiology.pdf"),
+        bilingual_url: "/bilingual/The_Muscular_System_Physiology_Bilingual.pdf",
+        summary_url: "/summary/muscle-physiology"
       },
       {
         id: 31,
@@ -514,6 +538,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/carpal-tunnel-syndrome"
       },
       {
+        id: 55,
+        title: "Basic Nerve Conduction Study.pdf",
+        cleanTitle: "Basic Nerve Conduction Study",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Basic Nerve Conduction Study",
+        summary: "Motor and sensory NCS, CMAP and SNAP parameters, conduction velocity and the F wave.",
+        file_url: storageUrl("Basic Nerve Conduction Study.pdf"),
+        bilingual_url: "/bilingual/Basic_Nerve_Conduction_Study_Bilingual.pdf",
+        summary_url: "/summary/nerve-conduction-study"
+      },
+      {
         id: 10,
         title: "lab1 - 2026.pdf",
         cleanTitle: "MSK Lab 1",
@@ -582,6 +618,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skill-lab-week4"
       },
       {
+        id: 56,
+        title: "Skill Lab Unit 3 Week 5 - Hand Examination.pdf",
+        cleanTitle: "Skill Lab - Week 5 (Hand Examination)",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Skill Lab Unit 3 Week 5: Hand Examination",
+        summary: "Hand and wrist anatomy, look-feel-move examination, median nerve examination, Tinel's sign and Phalen's test.",
+        file_url: storageUrl("Skill Lab Unit 3 Week 5 - Hand Examination.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Unit_3_Week_5_Hand_Examination_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-week5"
+      },
+      {
         id: 50,
         title: "PBL 5 - Low Back Pain.pdf",
         cleanTitle: "PBL 5 - Low Back Pain (Unit III Week 5)",
@@ -604,6 +652,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Mini-PBL - Neck Pain.pdf"),
         bilingual_url: "/bilingual/Mini_PBL_Neck_Pain_Bilingual.pdf",
         summary_url: "/summary/mini-pbl-neck-pain"
+      },
+      {
+        id: 52,
+        title: "Microbiology of Osteomyelitis and Septic Arthritis.pdf",
+        cleanTitle: "Microbiology of Osteomyelitis and Septic Arthritis",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "Microbiology of Osteomyelitis and Septic Arthritis",
+        summary: "Routes of infection, causative organisms by age and risk group, pathogenesis, diagnosis and treatment of bone and joint infections.",
+        file_url: storageUrl("Microbiology of Osteomyelitis and Septic Arthritis.pdf"),
+        bilingual_url: "/bilingual/Microbiology_of_Osteomyelitis_Septic_Arthritis_Bilingual.pdf",
+        summary_url: "/summary/micro-osteomyelitis-septic-arthritis"
       },
       {
         id: 28,
@@ -771,6 +831,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/blood-physiology"
       },
       {
+        id: 123,
+        title: "ABO Blood Grouping.pdf",
+        cleanTitle: "ABO Blood Grouping",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "ABO Blood Grouping",
+        summary: "ABO system antigens and antibodies, the four blood groups, Rh factor, inheritance, forward and reverse typing and transfusion compatibility.",
+        file_url: storageUrl("ABO Blood Grouping.pdf"),
+        bilingual_url: "/bilingual/ABO_Blood_Grouping_Bilingual.pdf",
+        summary_url: "/summary/abo-blood-grouping"
+      },
+      {
         id: 108,
         title: "Cells of the Nervous System.pdf",
         cleanTitle: "Cells of the Nervous System",
@@ -793,6 +865,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Resting Membrane Potential and Action Potential.pdf"),
         bilingual_url: "/bilingual/Resting_Membrane_Potential_and_Action_Potential_Bilingual.pdf",
         summary_url: "/summary/resting-potential"
+      },
+      {
+        id: 124,
+        title: "Classification of Nerve Fibers.pdf",
+        cleanTitle: "Classification of Nerve Fibers",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Classification of Nerve Fibers",
+        summary: "Erlanger-Gasser and Lloyd-Hunt classifications, fiber diameter, myelination, conduction velocity and the functions of each fiber type.",
+        file_url: storageUrl("Classification of Nerve Fibers.pdf"),
+        bilingual_url: "/bilingual/Classification_of_Nerve_Fibers_Bilingual.pdf",
+        summary_url: "/summary/nerve-fibers-classification"
       },
       {
         id: 110,
@@ -925,6 +1009,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Clinical Biochemistry - Spectrophotometry.pdf"),
         bilingual_url: "/bilingual/Clinical_Biochemistry_Spectrophotometry_Bilingual.pdf",
         summary_url: "/summary/spectrophotometry"
+      },
+      {
+        id: 125,
+        title: "12-Lead ECG Recording - 2nd Stage Mastery Skills.pdf",
+        cleanTitle: "12-Lead ECG Recording (2nd Stage Mastery Skills)",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "12-Lead ECG Recording (2nd Stage Mastery Skills)",
+        summary: "Step-by-step 12-lead ECG recording skills for the second-stage mastery assessment.",
+        file_url: storageUrl("12-Lead ECG Recording - 2nd Stage Mastery Skills.pdf"),
+        bilingual_url: "/bilingual/12-Lead_ECG_Recording_2nd_Stage_Bilingual.pdf",
+        summary_url: "/summary/ecg-recording-mastery"
       },
     ],
   },
@@ -1066,6 +1162,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Sympathetic NS Drugs - Adrenergic Transmission and Agonists Part 1.pdf"),
         bilingual_url: "/bilingual/Sympathetic_NS_Drugs_Adrenergic_Agonists_Part1_Bilingual.pdf",
         summary_url: "/summary/s3-ans-adrenergic-1"
+      },
+      {
+        id: 269,
+        title: "Sympathetic NS Drugs Part 2.pdf",
+        cleanTitle: "Sympathetic NS Drugs - Direct, Indirect and Selected Agonists (Part 2)",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Sympathetic NS Drugs Part 2",
+        summary: "Epinephrine, norepinephrine, phenylephrine, midodrine, clonidine, dobutamine, beta-2 agonists, mirabegron, amphetamine, cocaine and ephedrine.",
+        file_url: storageUrl("Sympathetic NS Drugs Part 2.pdf"),
+        bilingual_url: "/bilingual/Sympathetic_NS_Drugs_Part_2_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-adrenergic-2"
       },
       {
         id: 250,
@@ -1440,6 +1548,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-surgery-metabolic"
       },
       {
+        id: 267,
+        title: "Key Catabolic Elements of the Flow Phase.pdf",
+        cleanTitle: "Key Catabolic Elements of the Flow Phase",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Key Catabolic Elements of the Flow Phase",
+        summary: "Catabolic mediators and substrate metabolism of the flow phase of the metabolic response to injury.",
+        file_url: storageUrl("Key Catabolic Elements of the Flow Phase.pdf"),
+        bilingual_url: "/bilingual/Key_Catabolic_Elements_of_the_Flow_Phase_Bilingual.pdf",
+        summary_url: "/summary/s3-surgery-flow-phase"
+      },
+      {
         id: 224,
         title: "History Taking.pdf",
         cleanTitle: "History Taking",
@@ -1546,6 +1666,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Introduction to Biostatistics.pdf"),
         bilingual_url: "/bilingual/Introduction_to_Biostatistics_Bilingual.pdf",
         summary_url: "/summary/s3-biostatistics"
+      },
+      {
+        id: 268,
+        title: "Summarization and Presentation of Data.pdf",
+        cleanTitle: "Summarization and Presentation of Data",
+        type: "lecture",
+        discipline: "Community Medicine",
+        topic: "Summarization and Presentation of Data",
+        summary: "Descriptive vs inferential statistics, frequency distributions, summarizing continuous and categorical data, and choosing tables and graphs.",
+        file_url: storageUrl("Summarization and Presentation of Data.pdf"),
+        bilingual_url: "/bilingual/Summarization_and_Presentation_of_Data_Bilingual.pdf",
+        summary_url: "/summary/s3-biostat-summarizing-data"
       },
       {
         id: 229,
