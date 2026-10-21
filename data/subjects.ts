@@ -630,6 +630,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skill-lab-week5"
       },
       {
+        id: 59,
+        title: "Hand Examination Guide - Week 5.pdf",
+        cleanTitle: "Hand Examination (Guide Week 5)",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Hand Examination (Guide Week 5)",
+        summary: "Hand anatomy, SOCRATES history, look-feel-move, motor nerve screen and special tests (Finkelstein, trigger finger, Phalen, Tinel, Dupuytren).",
+        file_url: storageUrl("Hand Examination Guide - Week 5.pdf"),
+        bilingual_url: "/bilingual/Hand_Examination_Guide_Bilingual.pdf",
+        summary_url: "/summary/hand-exam-guide"
+      },
+      {
+        id: 60,
+        title: "Median Nerve Examination Guide - Week 5.pdf",
+        cleanTitle: "Median Nerve Examination (Guide Week 5)",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Median Nerve Examination (Guide Week 5)",
+        summary: "Median nerve anatomy and supply, look-feel-move examination, sensation and special tests for carpal tunnel syndrome.",
+        file_url: storageUrl("Median Nerve Examination Guide - Week 5.pdf"),
+        bilingual_url: "/bilingual/Median_Nerve_Examination_Guide_Bilingual.pdf",
+        summary_url: "/summary/median-nerve-exam-guide"
+      },
+      {
         id: 50,
         title: "PBL 5 - Low Back Pain.pdf",
         cleanTitle: "PBL 5 - Low Back Pain (Unit III Week 5)",
@@ -640,6 +664,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("PBL 5 - Low Back Pain.pdf"),
         bilingual_url: "/bilingual/PBL5_Low_Back_Pain_Bilingual.pdf",
         summary_url: "/summary/pbl5-low-back-pain"
+      },
+      {
+        id: 58,
+        title: "Applied Anatomy of the Intervertebral Disc.pdf",
+        cleanTitle: "Applied Anatomy of the Intervertebral Disc",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Applied Anatomy of the Intervertebral Disc",
+        summary: "Spinal meninges and cord, conus medullaris vs cauda equina, disc structure, herniation directions, ligaments, dermatomes and myotomes.",
+        file_url: storageUrl("Applied Anatomy of the Intervertebral Disc.pdf"),
+        bilingual_url: "/bilingual/Applied_Anatomy_of_Intervertebral_Disc_Bilingual.pdf",
+        summary_url: "/summary/applied-anatomy-ivd"
+      },
+      {
+        id: 57,
+        title: "Sciatica.pdf",
+        cleanTitle: "Sciatica",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Sciatica",
+        summary: "Definition, causes, L4/L5/S1 root syndromes, provocative tests, red flags and cauda equina, investigations and management.",
+        file_url: storageUrl("Sciatica.pdf"),
+        bilingual_url: "/bilingual/Sciatica_Bilingual.pdf",
+        summary_url: "/summary/sciatica"
       },
       {
         id: 51,
@@ -688,6 +736,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Anatomy Lab IV - Hand.pdf"),
         bilingual_url: "/bilingual/Anatomy_Lab_IV_Hand_Bilingual.pdf",
         summary_url: "/summary/lab4-hand"
+      },
+      {
+        id: 61,
+        title: "MSK Lab 5 - Vertebral Column.pdf",
+        cleanTitle: "MSK Lab 5 - Vertebral Column",
+        type: "lab",
+        discipline: "Labs",
+        topic: "MSK Lab 5 - Vertebral Column",
+        summary: "Vertebrae, discs, joints and ligaments, curvatures, radiological anatomy, spinal cord and nerve exits, and disc herniation.",
+        file_url: storageUrl("MSK Lab 5 - Vertebral Column.pdf"),
+        bilingual_url: "/bilingual/MSK_Lab5_Vertebral_Column_Bilingual.pdf",
+        summary_url: "/summary/msk-lab5-vertebral-column"
       },
       {
         id: 17,
@@ -781,6 +841,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Autonomic Nervous System.pdf"),
         bilingual_url: "/bilingual/Autonomic_Nervous_System_Bilingual.pdf",
         summary_url: "/summary/ans"
+      },
+      {
+        id: 126,
+        title: "Autonomic Nervous System - Lecture 2.pdf",
+        cleanTitle: "Autonomic Nervous System - Receptors and Neurotransmitters",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Autonomic Nervous System - Receptors and Neurotransmitters",
+        summary: "Cholinergic vs adrenergic fibers, ACh and NE synthesis and clearance, receptor types, adrenal medullae and SNS vs PNS effects.",
+        file_url: storageUrl("Autonomic Nervous System - Lecture 2.pdf"),
+        bilingual_url: "/bilingual/ANS_Receptors_and_Neurotransmitters_Bilingual.pdf",
+        summary_url: "/summary/ans-receptors-neurotransmitters"
       },
       {
         id: 105,
@@ -1152,6 +1224,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-cholinergic-antagonists"
       },
       {
+        id: 270,
+        title: "Neuromuscular Blocking and Ganglion Drugs.pdf",
+        cleanTitle: "ANS Pharmacology - Neuromuscular Blockers and Ganglion Drugs",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Neuromuscular Blocking and Ganglion Drugs",
+        summary: "Non-depolarizing and depolarizing neuromuscular blockers, succinylcholine dangers, malignant hyperthermia, and ganglion stimulants and blockers.",
+        file_url: storageUrl("Neuromuscular Blocking and Ganglion Drugs.pdf"),
+        bilingual_url: "/bilingual/Neuromuscular_Blocking_and_Ganglion_Drugs_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-nmb-ganglion"
+      },
+      {
         id: 265,
         title: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists Part 1.pdf",
         cleanTitle: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists (Part 1)",
@@ -1234,6 +1318,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Pharmacology Practical 4.pdf"),
         bilingual_url: "/bilingual/Pharmacology_Practical4_Drug_Metabolism_GTN_Bilingual.pdf",
         summary_url: "/summary/s3-pharm-practical-4"
+      },
+      {
+        id: 271,
+        title: "Pharmacology Practical - Pharmacodynamics (Beta-Blockers).pdf",
+        cleanTitle: "Pharmacology Practical - Pharmacodynamics (Beta-Blockers Problem)",
+        type: "lab",
+        discipline: "Pharmacology",
+        topic: "Pharmacology Practical 4 - Pharmacodynamics (Beta-Blockers Problem)",
+        summary: "Hypertension guidelines, affinity vs efficacy vs potency, partial agonists, GPCRs, anaphylaxis and the patient guide for beta-blockers.",
+        file_url: storageUrl("Pharmacology Practical - Pharmacodynamics (Beta-Blockers).pdf"),
+        bilingual_url: "/bilingual/Pharmacology_Practical_Pharmacodynamics_BetaBlockers_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-practical-pharmacodynamics"
       },
       {
         id: 209,
@@ -1740,6 +1836,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-psychology-emotions-2026"
       },
       {
+        id: 273,
+        title: "Psychology of Motivation.pdf",
+        cleanTitle: "Psychology of Motivation",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology of Motivation",
+        summary: "Components of motivation, six theories, neurobiology (VTA, nucleus accumbens), wanting vs liking and motivation in psychiatric disorders.",
+        file_url: storageUrl("Psychology of Motivation.pdf"),
+        bilingual_url: "/bilingual/Psychology_of_Motivation_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-motivation"
+      },
+      {
         id: 230,
         title: "Histopathology Lab 1.pdf",
         cleanTitle: "Histopathology Lab 1 - Introduction to Pathology",
@@ -1788,6 +1896,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-histopath-lab4"
       },
       {
+        id: 274,
+        title: "Histopathology Lab 5 - Hemodynamic Disorders.pdf",
+        cleanTitle: "Histopathology Lab 5 - Hemodynamic Disorders",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Histopathology Lab 5 - Hemodynamic Disorders",
+        summary: "Hyperemia vs congestion, nutmeg liver, edema, thrombosis and lines of Zahn, hemorrhage, embolism types and red vs white infarcts.",
+        file_url: storageUrl("Histopathology Lab 5 - Hemodynamic Disorders.pdf"),
+        bilingual_url: "/bilingual/Histopathology_Lab5_Hemodynamic_Disorders_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab5"
+      },
+      {
         id: 232,
         title: "Microbiology Lab 1.pdf",
         cleanTitle: "Microbiology Lab 1 - Introduction",
@@ -1834,6 +1954,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Microbiology Skill - Swab Collection.pdf"),
         bilingual_url: "/bilingual/Microbiology_Skill_Swab_Collection_Bilingual.pdf",
         summary_url: "/summary/s3-micro-swab-skill"
+      },
+      {
+        id: 272,
+        title: "Midstream Urine Collection and Urinalysis with Multistix.pdf",
+        cleanTitle: "Midstream Urine Collection and Urinalysis with Multistix",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Midstream Urine Collection and Urinalysis with Multistix",
+        summary: "Clean-catch urine collection, storage and transport, Multistix dipstick steps and urine colour clues.",
+        file_url: storageUrl("Midstream Urine Collection and Urinalysis with Multistix.pdf"),
+        bilingual_url: "/bilingual/Midstream_Urine_Collection_and_Urinalysis_Bilingual.pdf",
+        summary_url: "/summary/s3-urinalysis-skill"
       },
       {
         id: 234,
