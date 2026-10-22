@@ -209,7 +209,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "MSS-5 - Local Anesthetics",
         summary: "Mechanism, classification, pharmacokinetics, clinical uses and toxicity of local anesthetics.",
-        file_url: storageUrl("MSS-5 - Local Anesthetics.pdf"),
+        file_url: storageUrl("MSS- 5.pdf"),
         bilingual_url: "/bilingual/MSS5_Local_Anesthetics_Bilingual.pdf",
         summary_url: "/summary/local-anesthetics"
       },
@@ -305,7 +305,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "The Muscular System Physiology",
         summary: "Muscle types, sarcomere structure, neuromuscular junction, excitation-contraction coupling, energy sources, contraction types and fiber types.",
-        file_url: storageUrl("The Muscular System Physiology.pdf"),
+        file_url: storageUrl("muscle ppt.pdf"),
         bilingual_url: "/bilingual/The_Muscular_System_Physiology_Bilingual.pdf",
         summary_url: "/summary/muscle-physiology"
       },
@@ -545,7 +545,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Basic Nerve Conduction Study",
         summary: "Motor and sensory NCS, CMAP and SNAP parameters, conduction velocity and the F wave.",
-        file_url: storageUrl("Basic Nerve Conduction Study.pdf"),
+        file_url: storageUrl("NCS 19.pdf"),
         bilingual_url: "/bilingual/Basic_Nerve_Conduction_Study_Bilingual.pdf",
         summary_url: "/summary/nerve-conduction-study"
       },
@@ -625,7 +625,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Skills",
         topic: "Skill Lab Unit 3 Week 5: Hand Examination",
         summary: "Hand and wrist anatomy, look-feel-move examination, median nerve examination, Tinel's sign and Phalen's test.",
-        file_url: storageUrl("Skill Lab Unit 3 Week 5 - Hand Examination.pdf"),
+        file_url: storageUrl("Skill lab unit 3 week 5 student guide warith.pdf"),
         bilingual_url: "/bilingual/Skill_Lab_Unit_3_Week_5_Hand_Examination_Bilingual.pdf",
         summary_url: "/summary/skill-lab-week5"
       },
@@ -637,7 +637,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Skills",
         topic: "Hand Examination (Guide Week 5)",
         summary: "Hand anatomy, SOCRATES history, look-feel-move, motor nerve screen and special tests (Finkelstein, trigger finger, Phalen, Tinel, Dupuytren).",
-        file_url: storageUrl("Hand Examination Guide - Week 5.pdf"),
+        file_url: storageUrl("Hand_Examination_Guide_Week5.pdf"),
         bilingual_url: "/bilingual/Hand_Examination_Guide_Bilingual.pdf",
         summary_url: "/summary/hand-exam-guide"
       },
@@ -649,7 +649,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Skills",
         topic: "Median Nerve Examination (Guide Week 5)",
         summary: "Median nerve anatomy and supply, look-feel-move examination, sensation and special tests for carpal tunnel syndrome.",
-        file_url: storageUrl("Median Nerve Examination Guide - Week 5.pdf"),
+        file_url: storageUrl("Median_Nerve_Examination_Guide_Week5.pdf"),
         bilingual_url: "/bilingual/Median_Nerve_Examination_Guide_Bilingual.pdf",
         summary_url: "/summary/median-nerve-exam-guide"
       },
@@ -673,7 +673,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Applied Anatomy of the Intervertebral Disc",
         summary: "Spinal meninges and cord, conus medullaris vs cauda equina, disc structure, herniation directions, ligaments, dermatomes and myotomes.",
-        file_url: storageUrl("Applied Anatomy of the Intervertebral Disc.pdf"),
+        file_url: storageUrl("Applied Anatomy of IVD (1)_5b8e0350a7efed9bc869a8db9a33a161.pdf"),
         bilingual_url: "/bilingual/Applied_Anatomy_of_Intervertebral_Disc_Bilingual.pdf",
         summary_url: "/summary/applied-anatomy-ivd"
       },
@@ -685,7 +685,7 @@ export const subjects: Subject[] = [
         discipline: "Surgery",
         topic: "Sciatica",
         summary: "Definition, causes, L4/L5/S1 root syndromes, provocative tests, red flags and cauda equina, investigations and management.",
-        file_url: storageUrl("Sciatica.pdf"),
+        file_url: storageUrl("Sciatica_Lecture_Medical_Students.pdf"),
         bilingual_url: "/bilingual/Sciatica_Bilingual.pdf",
         summary_url: "/summary/sciatica"
       },
@@ -709,7 +709,7 @@ export const subjects: Subject[] = [
         discipline: "Microbiology",
         topic: "Microbiology of Osteomyelitis and Septic Arthritis",
         summary: "Routes of infection, causative organisms by age and risk group, pathogenesis, diagnosis and treatment of bone and joint infections.",
-        file_url: storageUrl("Microbiology of Osteomyelitis and Septic Arthritis.pdf"),
+        file_url: storageUrl("Microbiology_of_osteomyelitis_septic_arthritis_36c571700a7ee5bf.pdf"),
         bilingual_url: "/bilingual/Microbiology_of_Osteomyelitis_Septic_Arthritis_Bilingual.pdf",
         summary_url: "/summary/micro-osteomyelitis-septic-arthritis"
       },
@@ -745,7 +745,7 @@ export const subjects: Subject[] = [
         discipline: "Labs",
         topic: "MSK Lab 5 - Vertebral Column",
         summary: "Vertebrae, discs, joints and ligaments, curvatures, radiological anatomy, spinal cord and nerve exits, and disc herniation.",
-        file_url: storageUrl("MSK Lab 5 - Vertebral Column.pdf"),
+        file_url: storageUrl("LAB 5_ff2a825d2b879ed8a4ffcb01afefe2be.pdf"),
         bilingual_url: "/bilingual/MSK_Lab5_Vertebral_Column_Bilingual.pdf",
         summary_url: "/summary/msk-lab5-vertebral-column"
       },
@@ -838,7 +838,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Anatomy of the Neck",
         summary: "Compartments, cervical fascia, jugular veins, triangles and muscles of the neck.",
-        file_url: storageUrl("Anatomy of the Neck.pdf"),
+        file_url: storageUrl("4) Neck Anatomy-1.pdf"),
         bilingual_url: "/bilingual/Anatomy_of_the_Neck_Bilingual.pdf",
         summary_url: "/summary/neck-anatomy"
       },
@@ -898,7 +898,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Physiology of the Respiratory System",
         summary: "Airway anatomy, surfactant, mechanics of breathing, lung volumes and function tests, V/Q, gas transport, regulation of respiration and clinical terms.",
-        file_url: storageUrl("Physiology of the Respiratory System.pdf"),
+        file_url: storageUrl("Respiratory sys..pdf"),
         bilingual_url: "/bilingual/Physiology_of_the_Respiratory_System_Bilingual.pdf",
         summary_url: "/summary/resp-physiology"
       },
@@ -934,7 +934,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Blood Physiology - Lecture 1: Blood, Plasma and Red Blood Cells",
         summary: "Blood volume and properties, hematopoiesis, plasma proteins, serum, the red blood cell and erythropoietin.",
-        file_url: storageUrl("Blood Physiology - Lecture 1.pdf"),
+        file_url: storageUrl("Lecture 1 (3) (2).pdf"),
         bilingual_url: "/bilingual/Blood_Physiology_Lecture_1_Bilingual.pdf",
         summary_url: "/summary/blood-physiology-l1"
       },
@@ -946,7 +946,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Blood Physiology - Lecture 2: White Blood Cells",
         summary: "WBC types, genesis and life span, phagocytosis, macrophage system, inflammation, eosinophils, basophils, leukopenia and leukemia.",
-        file_url: storageUrl("Blood Physiology - Lecture 2.pdf"),
+        file_url: storageUrl("2-Bl.pdf"),
         bilingual_url: "/bilingual/Blood_Physiology_Lecture_2_Bilingual.pdf",
         summary_url: "/summary/blood-physiology-l2"
       },
@@ -958,7 +958,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Blood Physiology - Lecture 3: Hemostasis, Blood Groups and Rh",
         summary: "Platelets, coagulation cascade, ABO and Rh blood groups, transfusion reactions and erythroblastosis fetalis.",
-        file_url: storageUrl("Blood Physiology - Lecture 3.pdf"),
+        file_url: storageUrl("Lecture 3 (1).pdf"),
         bilingual_url: "/bilingual/Blood_Physiology_Lecture_3_Bilingual.pdf",
         summary_url: "/summary/blood-physiology-l3"
       },
@@ -1006,7 +1006,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Classification of Nerve Fibers",
         summary: "Erlanger-Gasser and Lloyd-Hunt classifications, fiber diameter, myelination, conduction velocity and the functions of each fiber type.",
-        file_url: storageUrl("Classification of Nerve Fibers.pdf"),
+        file_url: storageUrl("classification of nerve fibers (2).pdf"),
         bilingual_url: "/bilingual/Classification_of_Nerve_Fibers_Bilingual.pdf",
         summary_url: "/summary/nerve-fibers-classification"
       },
@@ -1090,7 +1090,7 @@ export const subjects: Subject[] = [
         discipline: "Embryology",
         topic: "General Embryology L2 - Gametogenesis",
         summary: "Primordial germ cells, oogenesis, spermatogenesis, spermiogenesis and abnormal gametes.",
-        file_url: storageUrl("General Embryology L2 - Gametogenesis.pdf"),
+        file_url: storageUrl("Lecture 2 (1).pdf"),
         bilingual_url: "/bilingual/General_Embryology_L2_Gametogenesis_Bilingual.pdf",
         summary_url: "/summary/embryology-gametogenesis"
       },
@@ -1102,7 +1102,7 @@ export const subjects: Subject[] = [
         discipline: "Embryology",
         topic: "Embryology - Ovulation to Implantation",
         summary: "Ovarian cycle, ovulation, corpus luteum, fertilization, infertility, assisted reproduction and cloning.",
-        file_url: storageUrl("Embryology - Ovulation to Implantation.pdf"),
+        file_url: storageUrl("Lecture 3 (2) (2).pdf"),
         bilingual_url: "/bilingual/Embryology_Ovulation_to_Implantation_Bilingual.pdf",
         summary_url: "/summary/embryology-ovulation-fertilization"
       },
@@ -1138,7 +1138,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Innate and Adaptive Immunity",
         summary: "MHC, cells of the immune system, antigen inactivation, innate immunity and complement, B, T and NK cells.",
-        file_url: storageUrl("Innate and Adaptive Immunity.pdf"),
+        file_url: storageUrl("Lecture 3 (10).pdf"),
         bilingual_url: "/bilingual/Innate_and_Adaptive_Immunity_Bilingual.pdf",
         summary_url: "/summary/innate-adaptive-immunity"
       },
@@ -1150,7 +1150,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Lymphoid Organs L1 - Nodules, Tonsils and Lymph Nodes",
         summary: "MALT, palatine tonsil, lymph node cortex, paracortex and medulla, lymphocyte recirculation.",
-        file_url: storageUrl("Lymphoid Organs L1.pdf"),
+        file_url: storageUrl("Lecture 4 (10).pdf"),
         bilingual_url: "/bilingual/Lymphoid_Organs_L1_Bilingual.pdf",
         summary_url: "/summary/lymphoid-organs-l1"
       },
@@ -1162,7 +1162,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Lymphoid Organs L2 - Thymus and Spleen",
         summary: "Thymus structure, blood-thymus barrier, T-cell selection, and the spleen's white and red pulp and circulation.",
-        file_url: storageUrl("Lymphoid Organs L2.pdf"),
+        file_url: storageUrl("Lecture 5 (10).pdf"),
         bilingual_url: "/bilingual/Lymphoid_Organs_L2_Bilingual.pdf",
         summary_url: "/summary/lymphoid-organs-l2"
       },
@@ -1198,7 +1198,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Histology of the Skin L1 - Epidermis",
         summary: "Epidermal layers, keratinocytes, melanocytes, Langerhans and Merkel cells, and epidermal diseases.",
-        file_url: storageUrl("Histology of the Skin L1.pdf"),
+        file_url: storageUrl("Lecture 6 (5).pdf"),
         bilingual_url: "/bilingual/Histology_of_the_Skin_L1_Bilingual.pdf",
         summary_url: "/summary/skin-histology-l1"
       },
@@ -1210,7 +1210,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Histology of the Skin L2 - Dermis, Appendages and Receptors",
         summary: "Dermis, hair, sebaceous and sweat glands, nails, cutaneous receptors and aging skin.",
-        file_url: storageUrl("Histology of the Skin L2.pdf"),
+        file_url: storageUrl("Lecture 7 (7).pdf"),
         bilingual_url: "/bilingual/Histology_of_the_Skin_L2_Bilingual.pdf",
         summary_url: "/summary/skin-histology-l2"
       },
@@ -1246,7 +1246,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Skills",
         topic: "12-Lead ECG Recording (2nd Stage Mastery Skills)",
         summary: "Step-by-step 12-lead ECG recording skills for the second-stage mastery assessment.",
-        file_url: storageUrl("12-Lead ECG Recording - 2nd Stage Mastery Skills.pdf"),
+        file_url: storageUrl("2nd-Mastery-ECG-16-10.pdf"),
         bilingual_url: "/bilingual/12-Lead_ECG_Recording_2nd_Stage_Bilingual.pdf",
         summary_url: "/summary/ecg-recording-mastery"
       },
@@ -1387,7 +1387,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Neuromuscular Blocking and Ganglion Drugs",
         summary: "Non-depolarizing and depolarizing neuromuscular blockers, succinylcholine dangers, malignant hyperthermia, and ganglion stimulants and blockers.",
-        file_url: storageUrl("Neuromuscular Blocking and Ganglion Drugs.pdf"),
+        file_url: storageUrl("Lecture 7 (6).pdf"),
         bilingual_url: "/bilingual/Neuromuscular_Blocking_and_Ganglion_Drugs_Bilingual.pdf",
         summary_url: "/summary/s3-ans-nmb-ganglion"
       },
@@ -1483,7 +1483,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Pharmacology Practical 4 - Pharmacodynamics (Beta-Blockers Problem)",
         summary: "Hypertension guidelines, affinity vs efficacy vs potency, partial agonists, GPCRs, anaphylaxis and the patient guide for beta-blockers.",
-        file_url: storageUrl("Pharmacology Practical - Pharmacodynamics (Beta-Blockers).pdf"),
+        file_url: storageUrl("Lab 4 (4).pdf"),
         bilingual_url: "/bilingual/Pharmacology_Practical_Pharmacodynamics_BetaBlockers_Bilingual.pdf",
         summary_url: "/summary/s3-pharm-practical-pharmacodynamics"
       },
@@ -1807,7 +1807,7 @@ export const subjects: Subject[] = [
         discipline: "Surgery",
         topic: "Key Catabolic Elements of the Flow Phase",
         summary: "Catabolic mediators and substrate metabolism of the flow phase of the metabolic response to injury.",
-        file_url: storageUrl("Key Catabolic Elements of the Flow Phase.pdf"),
+        file_url: storageUrl("Lecture 25.pdf"),
         bilingual_url: "/bilingual/Key_Catabolic_Elements_of_the_Flow_Phase_Bilingual.pdf",
         summary_url: "/summary/s3-surgery-flow-phase"
       },
@@ -1927,7 +1927,7 @@ export const subjects: Subject[] = [
         discipline: "Community Medicine",
         topic: "Summarization and Presentation of Data",
         summary: "Descriptive vs inferential statistics, frequency distributions, summarizing continuous and categorical data, and choosing tables and graphs.",
-        file_url: storageUrl("Summarization and Presentation of Data.pdf"),
+        file_url: storageUrl("Lecture 2 (12).pdf"),
         bilingual_url: "/bilingual/Summarization_and_Presentation_of_Data_Bilingual.pdf",
         summary_url: "/summary/s3-biostat-summarizing-data"
       },
@@ -1999,7 +1999,7 @@ export const subjects: Subject[] = [
         discipline: "Psychology",
         topic: "Psychology of Motivation",
         summary: "Components of motivation, six theories, neurobiology (VTA, nucleus accumbens), wanting vs liking and motivation in psychiatric disorders.",
-        file_url: storageUrl("Psychology of Motivation.pdf"),
+        file_url: storageUrl("Lecture 4 (8).pdf"),
         bilingual_url: "/bilingual/Psychology_of_Motivation_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-motivation"
       },
@@ -2059,7 +2059,7 @@ export const subjects: Subject[] = [
         discipline: "Labs",
         topic: "Histopathology Lab 5 - Hemodynamic Disorders",
         summary: "Hyperemia vs congestion, nutmeg liver, edema, thrombosis and lines of Zahn, hemorrhage, embolism types and red vs white infarcts.",
-        file_url: storageUrl("Histopathology Lab 5 - Hemodynamic Disorders.pdf"),
+        file_url: storageUrl("Lecture 5 (9).pdf"),
         bilingual_url: "/bilingual/Histopathology_Lab5_Hemodynamic_Disorders_Bilingual.pdf",
         summary_url: "/summary/s3-histopath-lab5"
       },
@@ -2119,7 +2119,7 @@ export const subjects: Subject[] = [
         discipline: "Labs",
         topic: "Midstream Urine Collection and Urinalysis with Multistix",
         summary: "Clean-catch urine collection, storage and transport, Multistix dipstick steps and urine colour clues.",
-        file_url: storageUrl("Midstream Urine Collection and Urinalysis with Multistix.pdf"),
+        file_url: storageUrl("Lecture 4 (9).pdf"),
         bilingual_url: "/bilingual/Midstream_Urine_Collection_and_Urinalysis_Bilingual.pdf",
         summary_url: "/summary/s3-urinalysis-skill"
       },
