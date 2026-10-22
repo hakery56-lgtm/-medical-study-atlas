@@ -831,6 +831,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/temporal-region"
       },
       {
+        id: 139,
+        title: "Anatomy of the Neck.pdf",
+        cleanTitle: "Anatomy of the Neck",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy of the Neck",
+        summary: "Compartments, cervical fascia, jugular veins, triangles and muscles of the neck.",
+        file_url: storageUrl("Anatomy of the Neck.pdf"),
+        bilingual_url: "/bilingual/Anatomy_of_the_Neck_Bilingual.pdf",
+        summary_url: "/summary/neck-anatomy"
+      },
+      {
         id: 104,
         title: "Autonomic Nervous System.pdf",
         cleanTitle: "Autonomic Nervous System",
@@ -879,6 +891,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/cvs-physiology-1"
       },
       {
+        id: 127,
+        title: "Physiology of the Respiratory System.pdf",
+        cleanTitle: "Physiology of the Respiratory System",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology of the Respiratory System",
+        summary: "Airway anatomy, surfactant, mechanics of breathing, lung volumes and function tests, V/Q, gas transport, regulation of respiration and clinical terms.",
+        file_url: storageUrl("Physiology of the Respiratory System.pdf"),
+        bilingual_url: "/bilingual/Physiology_of_the_Respiratory_System_Bilingual.pdf",
+        summary_url: "/summary/resp-physiology"
+      },
+      {
         id: 107,
         title: "Cell Physiology.pdf",
         cleanTitle: "Cell Physiology",
@@ -901,6 +925,42 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Introduction to Blood Physiology.pdf"),
         bilingual_url: "/bilingual/Introduction_to_Blood_Physiology_Bilingual.pdf",
         summary_url: "/summary/blood-physiology"
+      },
+      {
+        id: 128,
+        title: "Blood Physiology - Lecture 1.pdf",
+        cleanTitle: "Blood Physiology - Lecture 1: Blood, Plasma and RBCs",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Blood Physiology - Lecture 1: Blood, Plasma and Red Blood Cells",
+        summary: "Blood volume and properties, hematopoiesis, plasma proteins, serum, the red blood cell and erythropoietin.",
+        file_url: storageUrl("Blood Physiology - Lecture 1.pdf"),
+        bilingual_url: "/bilingual/Blood_Physiology_Lecture_1_Bilingual.pdf",
+        summary_url: "/summary/blood-physiology-l1"
+      },
+      {
+        id: 129,
+        title: "Blood Physiology - Lecture 2.pdf",
+        cleanTitle: "Blood Physiology - Lecture 2: White Blood Cells",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Blood Physiology - Lecture 2: White Blood Cells",
+        summary: "WBC types, genesis and life span, phagocytosis, macrophage system, inflammation, eosinophils, basophils, leukopenia and leukemia.",
+        file_url: storageUrl("Blood Physiology - Lecture 2.pdf"),
+        bilingual_url: "/bilingual/Blood_Physiology_Lecture_2_Bilingual.pdf",
+        summary_url: "/summary/blood-physiology-l2"
+      },
+      {
+        id: 130,
+        title: "Blood Physiology - Lecture 3.pdf",
+        cleanTitle: "Blood Physiology - Lecture 3: Hemostasis, Blood Groups and Rh",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Blood Physiology - Lecture 3: Hemostasis, Blood Groups and Rh",
+        summary: "Platelets, coagulation cascade, ABO and Rh blood groups, transfusion reactions and erythroblastosis fetalis.",
+        file_url: storageUrl("Blood Physiology - Lecture 3.pdf"),
+        bilingual_url: "/bilingual/Blood_Physiology_Lecture_3_Bilingual.pdf",
+        summary_url: "/summary/blood-physiology-l3"
       },
       {
         id: 123,
@@ -949,6 +1009,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Classification of Nerve Fibers.pdf"),
         bilingual_url: "/bilingual/Classification_of_Nerve_Fibers_Bilingual.pdf",
         summary_url: "/summary/nerve-fibers-classification"
+      },
+      {
+        id: 138,
+        title: "Medical Biochemistry - Introduction.pdf",
+        cleanTitle: "Medical Biochemistry - Introduction",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Medical Biochemistry - Introduction",
+        summary: "Biomolecules, enzymes, metabolism and laboratory biomarkers.",
+        file_url: storageUrl("Medical Biochemistry - Introduction.pdf"),
+        bilingual_url: "/bilingual/Medical_Biochemistry_Introduction_Bilingual.pdf",
+        summary_url: "/summary/biochem-introduction"
       },
       {
         id: 110,
@@ -1011,6 +1083,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/mitosis-meiosis"
       },
       {
+        id: 136,
+        title: "General Embryology L2 - Gametogenesis.pdf",
+        cleanTitle: "General Embryology L2 - Gametogenesis",
+        type: "lecture",
+        discipline: "Embryology",
+        topic: "General Embryology L2 - Gametogenesis",
+        summary: "Primordial germ cells, oogenesis, spermatogenesis, spermiogenesis and abnormal gametes.",
+        file_url: storageUrl("General Embryology L2 - Gametogenesis.pdf"),
+        bilingual_url: "/bilingual/General_Embryology_L2_Gametogenesis_Bilingual.pdf",
+        summary_url: "/summary/embryology-gametogenesis"
+      },
+      {
+        id: 137,
+        title: "Embryology - Ovulation to Implantation.pdf",
+        cleanTitle: "Embryology - Ovulation to Implantation",
+        type: "lecture",
+        discipline: "Embryology",
+        topic: "Embryology - Ovulation to Implantation",
+        summary: "Ovarian cycle, ovulation, corpus luteum, fertilization, infertility, assisted reproduction and cloning.",
+        file_url: storageUrl("Embryology - Ovulation to Implantation.pdf"),
+        bilingual_url: "/bilingual/Embryology_Ovulation_to_Implantation_Bilingual.pdf",
+        summary_url: "/summary/embryology-ovulation-fertilization"
+      },
+      {
         id: 115,
         title: "Histology of the Circulatory System - L1.pdf",
         cleanTitle: "Histology of the Circulatory System - L1",
@@ -1035,6 +1131,42 @@ export const subjects: Subject[] = [
         summary_url: "/summary/histology-circulatory-2"
       },
       {
+        id: 131,
+        title: "Innate and Adaptive Immunity.pdf",
+        cleanTitle: "Innate and Adaptive Immunity",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Innate and Adaptive Immunity",
+        summary: "MHC, cells of the immune system, antigen inactivation, innate immunity and complement, B, T and NK cells.",
+        file_url: storageUrl("Innate and Adaptive Immunity.pdf"),
+        bilingual_url: "/bilingual/Innate_and_Adaptive_Immunity_Bilingual.pdf",
+        summary_url: "/summary/innate-adaptive-immunity"
+      },
+      {
+        id: 132,
+        title: "Lymphoid Organs L1.pdf",
+        cleanTitle: "Lymphoid Organs L1 - Nodules, Tonsils and Lymph Nodes",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Lymphoid Organs L1 - Nodules, Tonsils and Lymph Nodes",
+        summary: "MALT, palatine tonsil, lymph node cortex, paracortex and medulla, lymphocyte recirculation.",
+        file_url: storageUrl("Lymphoid Organs L1.pdf"),
+        bilingual_url: "/bilingual/Lymphoid_Organs_L1_Bilingual.pdf",
+        summary_url: "/summary/lymphoid-organs-l1"
+      },
+      {
+        id: 133,
+        title: "Lymphoid Organs L2.pdf",
+        cleanTitle: "Lymphoid Organs L2 - Thymus and Spleen",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Lymphoid Organs L2 - Thymus and Spleen",
+        summary: "Thymus structure, blood-thymus barrier, T-cell selection, and the spleen's white and red pulp and circulation.",
+        file_url: storageUrl("Lymphoid Organs L2.pdf"),
+        bilingual_url: "/bilingual/Lymphoid_Organs_L2_Bilingual.pdf",
+        summary_url: "/summary/lymphoid-organs-l2"
+      },
+      {
         id: 120,
         title: "Practical Histology - Lymphoid System.pdf",
         cleanTitle: "Practical Histology - Lymphoid System",
@@ -1057,6 +1189,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lymphoid Organs - Practical Histopathology.pdf"),
         bilingual_url: "/bilingual/Lymphoid_Organs_Practical_Histopathology_Bilingual.pdf",
         summary_url: "/summary/lymphoid-organs-histopathology"
+      },
+      {
+        id: 134,
+        title: "Histology of the Skin L1.pdf",
+        cleanTitle: "Histology of the Skin L1 - Epidermis",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology of the Skin L1 - Epidermis",
+        summary: "Epidermal layers, keratinocytes, melanocytes, Langerhans and Merkel cells, and epidermal diseases.",
+        file_url: storageUrl("Histology of the Skin L1.pdf"),
+        bilingual_url: "/bilingual/Histology_of_the_Skin_L1_Bilingual.pdf",
+        summary_url: "/summary/skin-histology-l1"
+      },
+      {
+        id: 135,
+        title: "Histology of the Skin L2.pdf",
+        cleanTitle: "Histology of the Skin L2 - Dermis, Appendages and Receptors",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology of the Skin L2 - Dermis, Appendages and Receptors",
+        summary: "Dermis, hair, sebaceous and sweat glands, nails, cutaneous receptors and aging skin.",
+        file_url: storageUrl("Histology of the Skin L2.pdf"),
+        bilingual_url: "/bilingual/Histology_of_the_Skin_L2_Bilingual.pdf",
+        summary_url: "/summary/skin-histology-l2"
       },
       {
         id: 117,
