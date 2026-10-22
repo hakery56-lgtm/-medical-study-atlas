@@ -221,7 +221,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "The Importance of Drug Compliance",
         summary: "Why adherence matters, challenges, strategies to improve compliance, intentional non-adherence, technology and the cost of non-adherence.",
-        file_url: storageUrl("Drug Compliance.pdf"),
+        file_url: storageUrl("Drug-Compliance 3.pdf"),
         bilingual_url: "/bilingual/Drug_Compliance_Bilingual.pdf",
         summary_url: "/summary/drug-compliance"
       },
@@ -233,7 +233,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Immunosuppressants",
         summary: "Three-signal T-cell activation, induction and maintenance in transplantation, antibodies, calcineurin and mTOR inhibitors, belatacept, anti-proliferatives, corticosteroids, belimumab, eculizumab and tofacitinib.",
-        file_url: storageUrl("Immunosuppressants.pdf"),
+        file_url: storageUrl("Immunosuppressants 2026-27.pdf"),
         bilingual_url: "/bilingual/Immunosuppressants_Bilingual.pdf",
         summary_url: "/summary/immunosuppressants"
       },
@@ -245,7 +245,7 @@ export const subjects: Subject[] = [
         discipline: "Pathology",
         topic: "Arthritis",
         summary: "Rheumatoid arthritis (pathogenesis with ACPA and citrullination, synovium, pannus, nodules), juvenile idiopathic arthritis, seronegative spondyloarthropathies, reactive arthritis and infectious (suppurative) arthritis.",
-        file_url: storageUrl("Arthritis.pdf"),
+        file_url: storageUrl("arthritis new.pdf"),
         bilingual_url: "/bilingual/Arthritis_Bilingual.pdf",
         summary_url: "/summary/arthritis"
       },
@@ -257,7 +257,7 @@ export const subjects: Subject[] = [
         discipline: "Immunology",
         topic: "Immunopathogenesis of Rheumatoid Arthritis",
         summary: "From HLA-DRB1 and citrullination to ACPA, T and B cells, synovial cells, the cytokine network, JAK-STAT, joint destruction and targeted therapy in RA.",
-        file_url: storageUrl("Immunopathogenesis of Rheumatoid Arthritis.pdf"),
+        file_url: storageUrl("Immunology_Imminopathogenesis_of_Rheumatoid_arthritis_a923e3063.pdf"),
         bilingual_url: "/bilingual/Immunopathogenesis_of_Rheumatoid_Arthritis_Bilingual.pdf",
         summary_url: "/summary/immunopathogenesis-ra"
       },
@@ -293,7 +293,7 @@ export const subjects: Subject[] = [
         discipline: "Physiology",
         topic: "Reflexes and Control of Body Movements",
         summary: "Reflex arc and classification, nerve fiber types, muscle spindle, alpha-gamma coactivation, Golgi tendon organ, knee jerk, flexion and crossed extensor reflexes.",
-        file_url: storageUrl("Reflexes.pdf"),
+        file_url: storageUrl("Reflexs.pdf"),
         bilingual_url: "/bilingual/Reflexes_Bilingual.pdf",
         summary_url: "/summary/reflexes"
       },
@@ -461,7 +461,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Anatomy of the Hand",
         summary: "Hand skeleton and joints, palmar fascia and spaces, synovial sheaths, thenar, hypothenar, lumbrical and interosseous muscles, extensor compartments, nerves and the palmar arterial arches.",
-        file_url: storageUrl("Anatomy of the Hand.pdf"),
+        file_url: storageUrl("anatomy of hand_e53c715571b490751b318d9a93929774.pdf"),
         bilingual_url: "/bilingual/Anatomy_of_the_Hand_Bilingual.pdf",
         summary_url: "/summary/hand"
       },
@@ -485,7 +485,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Brachial Plexus and Major Peripheral Nerve Injuries",
         summary: "Roots, dermatomes and the plexus with its branches, Seddon classification, pre- vs postganglionic lesions, Erb and Klumpke palsy, thoracic outlet syndrome, median, ulnar and radial nerve injuries, and surgical timing.",
-        file_url: storageUrl("Brachial Plexus and Major Peripheral Nerve Injuries.pdf"),
+        file_url: storageUrl("Brachial_Plexus_and_Peripheral_Nerve_Injuries (1).pdf"),
         bilingual_url: "/bilingual/Brachial_Plexus_and_Peripheral_Nerve_Injuries_Bilingual.pdf",
         summary_url: "/summary/brachial-plexus-nerve-injuries"
       },
@@ -509,7 +509,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand",
         summary: "Radial head, radial shaft, Colles' and scaphoid fractures, carpal tunnel and Guyon canal syndromes, rheumatoid hand deformities and wrist radiology.",
-        file_url: storageUrl("Applied Anatomy of Upper Limb - Radial Fractures, Wrist and Hand.pdf"),
+        file_url: storageUrl("applied anatomy of UL-III-.pdf"),
         bilingual_url: "/bilingual/Applied_Anatomy_of_Upper_Limb_Radial_Fractures_Wrist_Hand_Bilingual.pdf",
         summary_url: "/summary/applied-anatomy-radius-wrist-hand"
       },
@@ -521,7 +521,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "Nerve Injuries of the Upper Limb",
         summary: "Median, ulnar and radial nerve courses, branches and injuries: benediction and ape hands, claw hand, wrist drop, carpal tunnel and Guyon's canal syndromes.",
-        file_url: storageUrl("Nerve Injuries of the Upper Limb.pdf"),
+        file_url: storageUrl("NERVE INJURIES.pdf"),
         bilingual_url: "/bilingual/Nerve_Injuries_of_the_Upper_Limb_Bilingual.pdf",
         summary_url: "/summary/nerve-injuries-upper-limb"
       },
@@ -661,7 +661,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Cases",
         topic: "PBL 5 - Low Back Pain (Unit III Week 5)",
         summary: "Mr. Qasim's sciatica case: history, examination, diagnosis, management plan and alternative-therapy questions.",
-        file_url: storageUrl("PBL 5 - Low Back Pain.pdf"),
+        file_url: storageUrl("Unit3-week5 case (Low back pain).pdf"),
         bilingual_url: "/bilingual/PBL5_Low_Back_Pain_Bilingual.pdf",
         summary_url: "/summary/pbl5-low-back-pain"
       },
@@ -697,7 +697,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Cases",
         topic: "Mini-PBL - Neck Pain (Unit 3 Week 5)",
         summary: "Nader's neck pain with right arm paresthesia: case, cervical spine film and the eight questions with standard answers.",
-        file_url: storageUrl("Mini-PBL - Neck Pain.pdf"),
+        file_url: storageUrl("Unit3-week5 complementary cases.pdf"),
         bilingual_url: "/bilingual/Mini_PBL_Neck_Pain_Bilingual.pdf",
         summary_url: "/summary/mini-pbl-neck-pain"
       },
@@ -733,7 +733,7 @@ export const subjects: Subject[] = [
         discipline: "Labs",
         topic: "Anatomy Lab IV - Hand",
         summary: "Hand lab: grips and the thumb, quick nerve tests, palmar arches and Allen's test, RA vs OA deformities, cadaveric hand images and upper limb radiology.",
-        file_url: storageUrl("Anatomy Lab IV - Hand.pdf"),
+        file_url: storageUrl("lab4 - 27.pdf"),
         bilingual_url: "/bilingual/Anatomy_Lab_IV_Hand_Bilingual.pdf",
         summary_url: "/summary/lab4-hand"
       },
@@ -769,7 +769,7 @@ export const subjects: Subject[] = [
         discipline: "Research",
         topic: "Common Challenges in Medical Research",
         summary: "Nine challenges of the research journey: the beginning, mentor, courses, team, writing, statistics, data, publication and funding.",
-        file_url: storageUrl("Common Challenges in Medical Research.pdf"),
+        file_url: storageUrl("Common Challenges.pdf"),
         bilingual_url: "/bilingual/Common_Challenges_in_Medical_Research_Bilingual.pdf",
         summary_url: "/summary/common-challenges-research"
       },
@@ -826,7 +826,7 @@ export const subjects: Subject[] = [
         discipline: "Anatomy",
         topic: "The Temporal Region",
         summary: "Temporal and infratemporal fossae, temporalis, pterygoid muscles, mandibular nerve, maxillary artery, pterygoid venous plexus and the temporomandibular joint.",
-        file_url: storageUrl("The Temporal Region.pdf"),
+        file_url: storageUrl("3) Temporal Region.pdf"),
         bilingual_url: "/bilingual/The_Temporal_Region_Bilingual.pdf",
         summary_url: "/summary/temporal-region"
       },
@@ -1174,7 +1174,7 @@ export const subjects: Subject[] = [
         discipline: "Histology",
         topic: "Practical Histology - Lymphoid System",
         summary: "Slide identification of Peyer's patches, colon and appendix, lymph node, palatine tonsil, thymus (Hassall's corpuscles) and spleen (white and red pulp).",
-        file_url: storageUrl("Practical Histology - Lymphoid System.pdf"),
+        file_url: storageUrl("lymphoid system.pdf"),
         bilingual_url: "/bilingual/Practical_Histology_Lymphoid_System_Bilingual.pdf",
         summary_url: "/summary/lymphoid-system-practical"
       },
@@ -1234,7 +1234,7 @@ export const subjects: Subject[] = [
         discipline: "Biochemistry",
         topic: "Clinical Biochemistry - Spectrophotometry",
         summary: "Light and matter, the electromagnetic spectrum, parts of a spectrophotometer, transmittance, absorbance, Beer's law and the standardization graph.",
-        file_url: storageUrl("Clinical Biochemistry - Spectrophotometry.pdf"),
+        file_url: storageUrl("Lab 2 (3) (1).pdf"),
         bilingual_url: "/bilingual/Clinical_Biochemistry_Spectrophotometry_Bilingual.pdf",
         summary_url: "/summary/spectrophotometry"
       },
@@ -1351,7 +1351,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "ANS Pharmacology - Cholinergic Transmission",
         summary: "Autonomic vs somatic pathways, ACh synthesis, release and termination, nicotinic receptors and muscarinic receptors M1-M5 with their locations and functions.",
-        file_url: storageUrl("ANS Pharmacology - Cholinergic Transmission.pdf"),
+        file_url: storageUrl("ANS-Cholinergic Transmission.pdf"),
         bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Transmission_Bilingual.pdf",
         summary_url: "/summary/s3-ans-cholinergic-transmission"
       },
@@ -1363,7 +1363,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "ANS Pharmacology - Cholinergic Agonists",
         summary: "Choline esters, pilocarpine, reversible anticholinesterases, myasthenia gravis and the two crises, and organophosphate poisoning with atropine and pralidoxime.",
-        file_url: storageUrl("ANS Pharmacology - Cholinergic Agonists.pdf"),
+        file_url: storageUrl("ANS-Cholinergic Agonist.pdf"),
         bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Agonists_Bilingual.pdf",
         summary_url: "/summary/s3-ans-cholinergic-agonists"
       },
@@ -1375,7 +1375,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "ANS Pharmacology - Cholinergic Antagonists",
         summary: "Muscarinic antagonists: atropine effects and drugs, scopolamine, quaternary derivatives, selective and central antimuscarinics, atropine poisoning and clinical uses.",
-        file_url: storageUrl("ANS Pharmacology - Cholinergic Antagonists.pdf"),
+        file_url: storageUrl("ANS-Cholinergic Antagonist.pdf"),
         bilingual_url: "/bilingual/ANS_Pharmacology_Cholinergic_Antagonists_Bilingual.pdf",
         summary_url: "/summary/s3-ans-cholinergic-antagonists"
       },
@@ -1399,7 +1399,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Sympathetic NS Drugs - Adrenergic Transmission and Agonists (Part 1)",
         summary: "Adrenergic neurotransmission, catecholamine synthesis, direct and indirect sympathomimetics, beta-receptor drugs, adrenaline, noradrenaline and dopamine.",
-        file_url: storageUrl("Sympathetic NS Drugs - Adrenergic Transmission and Agonists Part 1.pdf"),
+        file_url: storageUrl("Lecture 3 (9).pdf"),
         bilingual_url: "/bilingual/Sympathetic_NS_Drugs_Adrenergic_Agonists_Part1_Bilingual.pdf",
         summary_url: "/summary/s3-ans-adrenergic-1"
       },
@@ -1423,7 +1423,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Autacoids - Histamine and Serotonin",
         summary: "Autacoid classes, histamine release, receptors and effects, H1 antagonists (first vs second generation), serotonin receptors, agonists and antagonists.",
-        file_url: storageUrl("Autacoids - Histamine and Serotonin.pdf"),
+        file_url: storageUrl("Lecture 4 (6).pdf"),
         bilingual_url: "/bilingual/Autacoids_Histamine_Serotonin_Bilingual.pdf",
         summary_url: "/summary/s3-autacoids"
       },
@@ -1435,7 +1435,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Autacoids - Eicosanoids",
         summary: "COX and lipoxygenase pathways, effects of prostaglandins, thromboxanes and leukotrienes, inhibition of synthesis and their clinical applications.",
-        file_url: storageUrl("Autacoids - Eicosanoids.pdf"),
+        file_url: storageUrl("Lecture 5 (7).pdf"),
         bilingual_url: "/bilingual/Autacoids_Eicosanoids_Bilingual.pdf",
         summary_url: "/summary/s3-autacoids-eicosanoids"
       },
@@ -1471,7 +1471,7 @@ export const subjects: Subject[] = [
         discipline: "Pharmacology",
         topic: "Pharmacology Practical 4 - Drug Metabolism (GTN Problem)",
         summary: "Angina and GTN, first-pass metabolism and how to bypass it, liver impairment, phases of hepatic metabolism, enzyme inducers and inhibitors, nitrate tolerance and the patient guide.",
-        file_url: storageUrl("Pharmacology Practical 4.pdf"),
+        file_url: storageUrl("Lab 3 (5).pdf"),
         bilingual_url: "/bilingual/Pharmacology_Practical4_Drug_Metabolism_GTN_Bilingual.pdf",
         summary_url: "/summary/s3-pharm-practical-4"
       },
@@ -1555,7 +1555,7 @@ export const subjects: Subject[] = [
         discipline: "Pathology",
         topic: "Tissue Repair and Systemic Effects of Inflammation",
         summary: "Acute-phase response, regeneration vs scar formation, labile/stable/permanent tissues, wound healing steps, first vs second intention and factors impairing repair.",
-        file_url: storageUrl("Tissue Repair.pdf"),
+        file_url: storageUrl("Lecture 6 (3).pdf"),
         bilingual_url: "/bilingual/Tissue_Repair_Bilingual.pdf",
         summary_url: "/summary/s3-tissue-repair"
       },
@@ -1567,7 +1567,7 @@ export const subjects: Subject[] = [
         discipline: "Pathology",
         topic: "Environmental and Nutritional Diseases",
         summary: "Air pollution, lead and mercury, occupational risks, tobacco and alcohol, radiation injury, malnutrition (marasmus, kwashiorkor) and vitamins A and D.",
-        file_url: storageUrl("Environmental and Nutritional Diseases.pdf"),
+        file_url: storageUrl("Lecture 7 (4).pdf"),
         bilingual_url: "/bilingual/Environmental_and_Nutritional_Diseases_Bilingual.pdf",
         summary_url: "/summary/s3-environmental-nutritional"
       },
@@ -1579,7 +1579,7 @@ export const subjects: Subject[] = [
         discipline: "Pathology",
         topic: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis",
         summary: "Hyperemia versus congestion, edema (Starling forces, transudate versus exudate), hemorrhage, Virchow's triad and thrombus morphology.",
-        file_url: storageUrl("Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis.pdf"),
+        file_url: storageUrl("Lecture 8 (4).pdf"),
         bilingual_url: "/bilingual/Hemodynamic_Disorders_I_Bilingual.pdf",
         summary_url: "/summary/s3-hemodynamics-1"
       },
@@ -1591,7 +1591,7 @@ export const subjects: Subject[] = [
         discipline: "Pathology",
         topic: "Hemodynamic Disorders II - Embolism, Infarction and Shock",
         summary: "Pulmonary and systemic embolism, fat, amniotic fluid and air emboli, red versus white infarcts, and the types, pathogenesis and stages of shock.",
-        file_url: storageUrl("Hemodynamic Disorders II - Embolism, Infarction and Shock.pdf"),
+        file_url: storageUrl("Lecture 9 (2).pdf"),
         bilingual_url: "/bilingual/Hemodynamic_Disorders_II_Bilingual.pdf",
         summary_url: "/summary/s3-hemodynamics-2"
       },
@@ -1735,7 +1735,7 @@ export const subjects: Subject[] = [
         discipline: "Parasitology",
         topic: "Sporozoa - Toxoplasma gondii",
         summary: "Sporozoa and Toxoplasma gondii: stages, life cycle in humans and cats, congenital toxoplasmosis, diagnosis (Sabin-Feldman, serology, PCR), treatment and prophylaxis.",
-        file_url: storageUrl("Sporozoa - Toxoplasma gondii.pdf"),
+        file_url: storageUrl("Lecture 7 (5).pdf"),
         bilingual_url: "/bilingual/Toxoplasma_gondii_Bilingual.pdf",
         summary_url: "/summary/s3-para-7"
       },
@@ -1747,7 +1747,7 @@ export const subjects: Subject[] = [
         discipline: "Immunology",
         topic: "Introduction to the Immune System - Part 1",
         summary: "Immunity and its two arms, innate barriers, neutrophils, phagocytosis, macrophages, NK cells, TLRs and the primary versus secondary immune response.",
-        file_url: storageUrl("Introduction to the Immune System - Part 1.pdf"),
+        file_url: storageUrl("Lecture 1 (12)1.pdf"),
         bilingual_url: "/bilingual/Introduction_to_the_Immune_System_Part1_Bilingual.pdf",
         summary_url: "/summary/s3-imm-intro-1"
       },
@@ -1759,7 +1759,7 @@ export const subjects: Subject[] = [
         discipline: "Immunology",
         topic: "Introduction to the Immune System - Part 2",
         summary: "Cytokines, interferons, interleukins, TNF, complement, coagulation and inflammation (acute versus chronic).",
-        file_url: storageUrl("Introduction to the Immune System - Part 2.pdf"),
+        file_url: storageUrl("Lecture 2 (10).pdf"),
         bilingual_url: "/bilingual/Introduction_to_the_Immune_System_Part2_Bilingual.pdf",
         summary_url: "/summary/s3-imm-intro-2"
       },
@@ -1771,7 +1771,7 @@ export const subjects: Subject[] = [
         discipline: "Immunology",
         topic: "Cells and Organs of the Immune System",
         summary: "Hematopoiesis, primary and secondary lymphoid organs, thymus and DiGeorge syndrome, T, B and NK cells, macrophages, granulocytes and dendritic cells.",
-        file_url: storageUrl("Cells and Organs of the Immune System.pdf"),
+        file_url: storageUrl("Lecture 3 (8).pdf"),
         bilingual_url: "/bilingual/Cells_and_Organs_of_the_Immune_System_Bilingual.pdf",
         summary_url: "/summary/s3-imm-cells-organs"
       },
@@ -1879,7 +1879,7 @@ export const subjects: Subject[] = [
         discipline: "Clinical Skills",
         topic: "Pulmonary Function Tests",
         summary: "Spirometry, diffusion studies and body plethysmography: what each measures, how they are done, how to prepare, flow-volume patterns and predicted values.",
-        file_url: storageUrl("Pulmonary Function Tests.pdf"),
+        file_url: storageUrl("Lecture 3 (6)1.pdf"),
         bilingual_url: "/bilingual/Pulmonary_Function_Tests_Bilingual.pdf",
         summary_url: "/summary/s3-pulmonary-function-tests"
       },
@@ -1903,7 +1903,7 @@ export const subjects: Subject[] = [
         discipline: "Community Medicine",
         topic: "Energy Requirements",
         summary: "Energy balance, fuel stores and fasting stages, BMR and its factors, physical activity, thermic effect of food, TER calculations, and needs in growth, pregnancy and lactation.",
-        file_url: storageUrl("Energy Requirements.pdf"),
+        file_url: storageUrl("Lecture 2 (9).pdf"),
         bilingual_url: "/bilingual/Energy_Requirements_Bilingual.pdf",
         summary_url: "/summary/s3-energy-requirements"
       },
@@ -1975,7 +1975,7 @@ export const subjects: Subject[] = [
         discipline: "Psychology",
         topic: "Psychology of Emotions",
         summary: "Definition and components of emotion, affect vs mood, functions, primary, secondary and tertiary emotions, neuroanatomy, theories of emotion, Freud and Scherer, and abnormal emotional reactions.",
-        file_url: storageUrl("Psychology of Emotions.pdf"),
+        file_url: storageUrl("emotion (1).pdf"),
         bilingual_url: "/bilingual/Psychology_of_Emotions_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-emotions"
       },
@@ -1987,7 +1987,7 @@ export const subjects: Subject[] = [
         discipline: "Psychology",
         topic: "Psychology of Emotions (2026 version)",
         summary: "Emotion, feeling, affect and mood, the four components, primary, secondary and tertiary emotions, theories of emotion, fear circuits and abnormal emotional reactions.",
-        file_url: storageUrl("Psychology of Emotions - 2026 version.pdf"),
+        file_url: storageUrl("Lecture 3 (7)1.pdf"),
         bilingual_url: "/bilingual/Psychology_of_Emotions_2026_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-emotions-2026"
       },
@@ -2047,7 +2047,7 @@ export const subjects: Subject[] = [
         discipline: "Labs",
         topic: "Histopathology Lab 4 - Tissue Repair and Environmental Diseases",
         summary: "Granulation tissue, scars (hypertrophic scar vs keloid), pneumoconioses, asbestos, lead, tobacco, fatty liver, marasmus and kwashiorkor, and vitamin A and D deficiency.",
-        file_url: storageUrl("Histopathology Lab 4.pdf"),
+        file_url: storageUrl("Lab 4 (3).pdf"),
         bilingual_url: "/bilingual/Histopathology_Lab4_Tissue_Repair_Environmental_Bilingual.pdf",
         summary_url: "/summary/s3-histopath-lab4"
       },
@@ -2143,7 +2143,7 @@ export const subjects: Subject[] = [
         discipline: "CBD-TBL",
         topic: "CBD-TBL - Acute Decompensated Heart Failure (The Drowning Lungs)",
         summary: "Case of worsening breathlessness in HFrEF: recognizing congestion, the RAAS/sympathetic mechanism map, the acute management algorithm, loop diuretic, nitroglycerin and dobutamine.",
-        file_url: storageUrl("CBD-TBL Acute Decompensated Heart Failure.pdf"),
+        file_url: storageUrl("CBD 2.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Acute_Decompensated_Heart_Failure_Bilingual.pdf",
         summary_url: "/summary/s3-cbd-hf"
       },
