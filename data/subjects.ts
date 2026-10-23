@@ -1071,6 +1071,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/glycolysis"
       },
       {
+        id: 140,
+        title: "Citric Acid Cycle.pdf",
+        cleanTitle: "Citric Acid Cycle",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Citric Acid Cycle",
+        summary: "Pyruvate dehydrogenase, the eight reactions of the TCA cycle, energy yield, regulation and the amphibolic role of the cycle.",
+        file_url: storageUrl("Citric Acid Cycle.pdf"),
+        bilingual_url: "/bilingual/Citric_Acid_Cycle_Bilingual.pdf",
+        summary_url: "/summary/citric-acid-cycle"
+      },
+      {
         id: 114,
         title: "Mitosis and Meiosis.pdf",
         cleanTitle: "Mitosis and Meiosis",
@@ -1416,6 +1428,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-adrenergic-2"
       },
       {
+        id: 279,
+        title: "Adrenergic Antagonists - Alpha and Beta Blockers.pdf",
+        cleanTitle: "Adrenergic Antagonists - Alpha and Beta Blockers",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Adrenergic Antagonists - Alpha and Beta Blockers",
+        summary: "Alpha and beta blockers, selectivity, pharmacological effects, uses, adverse effects and contraindications.",
+        file_url: storageUrl("Adrenergic Antagonists - Alpha and Beta Blockers.pdf"),
+        bilingual_url: "/bilingual/Adrenergic_Antagonists_Alpha_and_Beta_Blockers_Bilingual.pdf",
+        summary_url: "/summary/s3-ans-adrenergic-antagonists"
+      },
+      {
         id: 250,
         title: "Autacoids - Histamine and Serotonin.pdf",
         cleanTitle: "Autacoids - Histamine and Serotonin",
@@ -1738,6 +1762,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 7 (5).pdf"),
         bilingual_url: "/bilingual/Toxoplasma_gondii_Bilingual.pdf",
         summary_url: "/summary/s3-para-7"
+      },
+      {
+        id: 280,
+        title: "Parasitology L8 - Plasmodium (Malaria).pdf",
+        cleanTitle: "Parasitology L8 - Plasmodium (Malaria)",
+        type: "lecture",
+        discipline: "Parasitology",
+        topic: "Parasitology L8 - Plasmodium (Malaria)",
+        summary: "Plasmodium species, human and mosquito cycles, species comparison, paroxysm, cerebral malaria, diagnosis, treatment and prophylaxis.",
+        file_url: storageUrl("Parasitology L8 - Plasmodium (Malaria).pdf"),
+        bilingual_url: "/bilingual/Parasitology_L8_Plasmodium_Malaria_Bilingual.pdf",
+        summary_url: "/summary/s3-para-8"
       },
       {
         id: 260,
@@ -2100,6 +2136,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-micro-staining"
       },
       {
+        id: 275,
+        title: "Microbiology Lab 4 - Handling of Bacterial Cultures.pdf",
+        cleanTitle: "Microbiology Lab 4 - Handling of Bacterial Cultures",
+        type: "lecture",
+        discipline: "Labs",
+        topic: "Microbiology Lab 4 - Handling of Bacterial Cultures",
+        summary: "Safe handling, inoculation and subculture techniques, streaking methods and incubation of bacterial cultures.",
+        file_url: storageUrl("Microbiology Lab 4 - Handling of Bacterial Cultures.pdf"),
+        bilingual_url: "/bilingual/Microbiology_Lab4_Handling_of_Bacterial_Cultures_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-lab4"
+      },
+      {
         id: 247,
         title: "Microbiology Skill - Swab Collection.pdf",
         cleanTitle: "Microbiology Skill - Nasal, Throat and Skin Swab Collection",
@@ -2110,6 +2158,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Microbiology Skill - Swab Collection.pdf"),
         bilingual_url: "/bilingual/Microbiology_Skill_Swab_Collection_Bilingual.pdf",
         summary_url: "/summary/s3-micro-swab-skill"
+      },
+      {
+        id: 277,
+        title: "Pyogenic Cocci - Staphylococcus.pdf",
+        cleanTitle: "Pyogenic Cocci - Staphylococcus",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "Pyogenic Cocci - Staphylococcus",
+        summary: "Staphylococcus aureus and epidermidis, virulence factors, catalase and coagulase tests, infections, MRSA and treatment.",
+        file_url: storageUrl("Pyogenic Cocci - Staphylococcus.pdf"),
+        bilingual_url: "/bilingual/Pyogenic_Cocci_Staphylococcus_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-staph"
+      },
+      {
+        id: 278,
+        title: "Streptococcus.pdf",
+        cleanTitle: "Streptococcus",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "Streptococcus",
+        summary: "Hemolysis, Lancefield groups, S. pyogenes, S. pneumoniae, viridans and group B streptococci, diseases and sequelae.",
+        file_url: storageUrl("Streptococcus.pdf"),
+        bilingual_url: "/bilingual/Streptococcus_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-strep"
       },
       {
         id: 272,
@@ -2146,6 +2218,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("CBD 2.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Acute_Decompensated_Heart_Failure_Bilingual.pdf",
         summary_url: "/summary/s3-cbd-hf"
+      },
+      {
+        id: 276,
+        title: "Presenting Problems in Gastrointestinal Disease.pdf",
+        cleanTitle: "Presenting Problems in Gastrointestinal Disease",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Presenting Problems in Gastrointestinal Disease",
+        summary: "Dysphagia, dyspepsia, vomiting, abdominal pain, malabsorption, diarrhea, constipation, GI bleeding and jaundice.",
+        file_url: storageUrl("Presenting Problems in Gastrointestinal Disease.pdf"),
+        bilingual_url: "/bilingual/Presenting_Problems_in_Gastrointestinal_Disease_Bilingual.pdf",
+        summary_url: "/summary/s3-gi-presenting-problems"
       },
     ],
   },
