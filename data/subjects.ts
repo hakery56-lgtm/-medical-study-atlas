@@ -550,6 +550,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/nerve-conduction-study"
       },
       {
+        id: 124,
+        title: "Classification of Nerve Fibers.pdf",
+        cleanTitle: "Classification of Nerve Fibers",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Classification of Nerve Fibers",
+        summary: "Erlanger-Gasser and Lloyd-Hunt classifications, fiber diameter, myelination, conduction velocity and the functions of each fiber type.",
+        file_url: storageUrl("classification of nerve fibers (2).pdf"),
+        bilingual_url: "/bilingual/Classification_of_Nerve_Fibers_Bilingual.pdf",
+        summary_url: "/summary/nerve-fibers-classification"
+      },
+      {
         id: 10,
         title: "lab1 - 2026.pdf",
         cleanTitle: "MSK Lab 1",
@@ -997,18 +1009,6 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Resting Membrane Potential and Action Potential.pdf"),
         bilingual_url: "/bilingual/Resting_Membrane_Potential_and_Action_Potential_Bilingual.pdf",
         summary_url: "/summary/resting-potential"
-      },
-      {
-        id: 124,
-        title: "Classification of Nerve Fibers.pdf",
-        cleanTitle: "Classification of Nerve Fibers",
-        type: "lecture",
-        discipline: "Physiology",
-        topic: "Classification of Nerve Fibers",
-        summary: "Erlanger-Gasser and Lloyd-Hunt classifications, fiber diameter, myelination, conduction velocity and the functions of each fiber type.",
-        file_url: storageUrl("classification of nerve fibers (2).pdf"),
-        bilingual_url: "/bilingual/Classification_of_Nerve_Fibers_Bilingual.pdf",
-        summary_url: "/summary/nerve-fibers-classification"
       },
       {
         id: 138,
