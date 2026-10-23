@@ -31,7 +31,7 @@ function loadPdfJs(): Promise<any> {
   })
 }
 
-export default function PdfViewer({ src, title }: { src: string; title: string }) {
+export default function PdfViewer({ src, title, from }: { src: string; title: string; from?: string | null }) {
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading")
   const [pages, setPages] = useState(0)
   const [ratio, setRatio] = useState(0.75)
@@ -104,12 +104,12 @@ export default function PdfViewer({ src, title }: { src: string; title: string }
     <main className="flex min-h-screen flex-col" style={{ backgroundColor: "var(--bg-pane)", color: "var(--text-main)" }}>
       <header className="sticky top-0 z-10 flex items-center gap-3 border-b px-3 py-2.5" style={{ backgroundColor: "var(--bg-main)", borderColor: "var(--border-color)" }}>
         <Link
-          href="/"
+          href={from ? `/?lecture=${encodeURIComponent(from)}` : "/"}
           className="flex shrink-0 items-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-semibold"
           style={{ borderColor: "var(--border-color)", backgroundColor: "var(--bg-card)" }}
         >
           <Home size={16} />
-          Main menu
+          {from ? "Lecture menu" : "Main menu"}
         </Link>
         <h1 className="min-w-0 flex-1 truncate text-sm font-bold">{title}</h1>
         <a

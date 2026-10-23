@@ -10,6 +10,7 @@ function Viewer() {
   const params = useSearchParams()
   const src = params.get("src") ?? ""
   const title = params.get("title") || "Document"
+  const from = params.get("from")
 
   if (!isViewable(src)) {
     return (
@@ -21,7 +22,7 @@ function Viewer() {
       </main>
     )
   }
-  return <PdfViewer src={src} title={title} />
+  return <PdfViewer src={src} title={title} from={from} />
 }
 
 export default function ViewPage() {
