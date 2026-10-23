@@ -28,9 +28,9 @@ export default async function SummaryPage({ params }: { params: Promise<{ id: st
     <main className="min-h-screen" style={{ backgroundColor: "var(--bg-main)", color: "var(--text-main)" }}>
       <ApplyStoredTheme />
       <header className="sticky top-0 z-10 flex items-center gap-3 border-b px-4 py-3" style={{ backgroundColor: "var(--bg-pane)", borderColor: "var(--border-color)" }}>
-        <Link href="/" aria-label="Back to main menu" className="flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-sm font-semibold" style={{ borderColor: "var(--border-color)", backgroundColor: "var(--bg-card)" }}>
+        <Link href={`/?lecture=${encodeURIComponent(String(lecture.id))}`} aria-label="Back to lecture menu" className="flex h-9 shrink-0 items-center gap-1.5 rounded-lg border px-3 text-sm font-semibold" style={{ borderColor: "var(--border-color)", backgroundColor: "var(--bg-card)" }}>
           <ArrowLeft size={16} />
-          Main menu
+          Lecture menu
         </Link>
         <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-widest" style={{ color: "var(--accent)" }}>Exam Summary · {lecture.topic}</p>

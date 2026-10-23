@@ -54,7 +54,21 @@ export default function AtlasPage() {
       saved = localStorage.getItem(UNI_KEY)
       savedStage = localStorage.getItem(STAGE_KEY)
     } catch {}
-    const st = stages.find((s) => String(s.id) === savedStage)?.id
+    let st = stages.find((s) => String(s.id) === savedStage)?.id
+    // coming back from a document or summary: reopen that lecture's menu (its university, stage and subject)
+    const wanted = new URLSearchParams(window.location.search).get("lecture")
+    const owner = wanted ? subjects.find((s) => s.resources.some((r) => String(r.id) === wanted)) : undefined
+    if (owner) {
+      saved = owner.university ?? "warith"
+      st = owner.stage ?? st
+      try {
+        localStorage.setItem(UNI_KEY, saved)
+        if (st) localStorage.setItem(STAGE_KEY, String(st))
+      } catch {}
+      setCurrentSubject(owner.id)
+      setSelected(owner.resources.find((r) => String(r.id) === wanted) ?? null)
+      window.history.replaceState(null, "", "/")
+    }
     if (st) setStage(st)
     // an Al-Ameed visitor who never picked a stage is asked again
     const ok = universities.some((u) => u.id === saved) && (saved !== "ameed" || st)
