@@ -418,6 +418,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/adjustment-disorders"
       },
       {
+        id: 286,
+        title: "Malingering.pdf",
+        cleanTitle: "Malingering",
+        type: "lecture",
+        discipline: "Psychiatry",
+        topic: "Psychiatry - Malingering",
+        summary: "Definition and motives, methods of feigning, detection, neuropsychological tests, ethics and societal impact.",
+        file_url: storageUrl("Malingering.pdf"),
+        bilingual_url: "/bilingual/Malingering_Bilingual.pdf",
+        summary_url: "/summary/malingering"
+      },
+      {
         id: 30,
         title: "Infectious Diseases of the PNS - Shingles.pdf",
         cleanTitle: "Infectious Diseases of the PNS - Shingles",
@@ -666,6 +678,54 @@ export const subjects: Subject[] = [
         summary_url: "/summary/median-nerve-exam-guide"
       },
       {
+        id: 287,
+        title: "Physical Examination of the Spine.pdf",
+        cleanTitle: "Physical Examination of the Spine",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Clinical Skills - Physical Examination of the Spine",
+        summary: "Spine anatomy, back pain history and red flags, look-feel-move, Schober, straight leg raising, femoral stretch and flip tests.",
+        file_url: storageUrl("Physical Examination of the Spine.pdf"),
+        bilingual_url: "/bilingual/Physical_Examination_of_the_Spine_Bilingual.pdf",
+        summary_url: "/summary/spine-exam"
+      },
+      {
+        id: 288,
+        title: "Lower Limb Neurological Examination.pdf",
+        cleanTitle: "Lower Limb Neurological Examination",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Clinical Skills - Lower Limb Neurological Examination",
+        summary: "Gait, muscle inspection, tone, power, reflexes and sensory examination of the lower limb.",
+        file_url: storageUrl("Lower Limb Neurological Examination.pdf"),
+        bilingual_url: "/bilingual/Lower_Limb_Neurological_Examination_Bilingual.pdf",
+        summary_url: "/summary/lower-limb-neuro-exam"
+      },
+      {
+        id: 289,
+        title: "Skill Lab Unit 3 Week 6 - Spine Examination Guide.pdf",
+        cleanTitle: "Skill Lab Unit 3 Week 6 - Spine Examination Guide",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Skill Lab Unit 3 Week 6 - Spine Examination Guide",
+        summary: "Student guide: tools, history steps, spine examination, sciatic nerve test and the lower limb neurological examination.",
+        file_url: storageUrl("Skill Lab Unit 3 Week 6 - Spine Examination Guide.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Unit3_Week6_Spine_Guide_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-w6-student"
+      },
+      {
+        id: 290,
+        title: "Skill Lab Unit 3 Week 6 - Tutor Guide.pdf",
+        cleanTitle: "Skill Lab Unit 3 Week 6 - Tutor Guide (Spine)",
+        type: "lab",
+        discipline: "Clinical Skills",
+        topic: "Skill Lab Unit 3 Week 6 - Tutor Guide (Spine)",
+        summary: "Tutor guide: objectives, spine examination, pain-sensitive structures, disc mechanics, red flags and lower limb examination.",
+        file_url: storageUrl("Skill Lab Unit 3 Week 6 - Tutor Guide.pdf"),
+        bilingual_url: "/bilingual/Skill_Lab_Unit3_Week6_Tutor_Guide_Bilingual.pdf",
+        summary_url: "/summary/skill-lab-w6-tutor"
+      },
+      {
         id: 50,
         title: "PBL 5 - Low Back Pain.pdf",
         cleanTitle: "PBL 5 - Low Back Pain (Unit III Week 5)",
@@ -784,6 +844,54 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Common Challenges.pdf"),
         bilingual_url: "/bilingual/Common_Challenges_in_Medical_Research_Bilingual.pdf",
         summary_url: "/summary/common-challenges-research"
+      },
+      {
+        id: 291,
+        title: "Gluteal Region.pdf",
+        cleanTitle: "Gluteal Region and Nerve Plexuses",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Gluteal Region and Nerve Plexuses",
+        summary: "Gluteal muscles, arteries, lumbar and sacral plexuses, sciatic foramina and the sciatic nerve.",
+        file_url: storageUrl("Gluteal Region.pdf"),
+        bilingual_url: "/bilingual/Gluteal_Region_Bilingual.pdf",
+        summary_url: "/summary/gluteal-region"
+      },
+      {
+        id: 292,
+        title: "Femoral Region and Hip Joint.pdf",
+        cleanTitle: "Femoral Region and Hip Joint",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Femoral Region and Hip Joint",
+        summary: "Fascia lata, femoral triangle and sheath, femoral artery and nerve, hip joint ligaments, supply and the hip-shoulder comparison.",
+        file_url: storageUrl("Femoral Region and Hip Joint.pdf"),
+        bilingual_url: "/bilingual/Femoral_Region_and_Hip_Joint_Bilingual.pdf",
+        summary_url: "/summary/femoral-hip-joint"
+      },
+      {
+        id: 293,
+        title: "Clinical Considerations of the Hip and Gluteal Region.pdf",
+        cleanTitle: "Clinical Considerations of the Hip and Gluteal Region",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Clinical Considerations of the Hip and Gluteal Region",
+        summary: "Femoral neck angle, Trendelenburg sign, sciatic injury, gluteal injections, neck of femur fractures, dislocation, AVN and septic hip.",
+        file_url: storageUrl("Clinical Considerations of the Hip and Gluteal Region.pdf"),
+        bilingual_url: "/bilingual/Clinical_Considerations_Hip_Gluteal_Bilingual.pdf",
+        summary_url: "/summary/hip-clinical-considerations"
+      },
+      {
+        id: 294,
+        title: "Anatomy Lab 6 - Muscles of the Thigh.pdf",
+        cleanTitle: "Anatomy Lab 6 - Muscles of the Thigh",
+        type: "lab",
+        discipline: "Anatomy",
+        topic: "Anatomy Lab 6 - Bones, Regions and Applied Anatomy of the Hip",
+        summary: "Bones of the hip and femur, acetabulum, sciatic foramina, gateways, thigh dissection and three applied case studies.",
+        file_url: storageUrl("Anatomy Lab 6 - Muscles of the Thigh.pdf"),
+        bilingual_url: "/bilingual/Anatomy_Lab6_Hip_and_Thigh_Bilingual.pdf",
+        summary_url: "/summary/anatomy-lab6-thigh"
       },
     ],
   },
@@ -975,6 +1083,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/blood-physiology-l3"
       },
       {
+        id: 141,
+        title: "Coagulation and Bleeding Time.pdf",
+        cleanTitle: "Coagulation and Bleeding Time",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology - Coagulation and Bleeding Time",
+        summary: "Hemostasis stages, the platelet plug, fibrinolysis, and the Duke and Ivy bleeding time and capillary and tube clotting time tests.",
+        file_url: storageUrl("Coagulation and Bleeding Time.pdf"),
+        bilingual_url: "/bilingual/Coagulation_and_Bleeding_Time_Bilingual.pdf",
+        summary_url: "/summary/bleeding-coagulation-time"
+      },
+      {
         id: 123,
         title: "ABO Blood Grouping.pdf",
         cleanTitle: "ABO Blood Grouping",
@@ -1081,6 +1201,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Citric Acid Cycle.pdf"),
         bilingual_url: "/bilingual/Citric_Acid_Cycle_Bilingual.pdf",
         summary_url: "/summary/citric-acid-cycle"
+      },
+      {
+        id: 142,
+        title: "Glycogen Metabolism.pdf",
+        cleanTitle: "Glycogen Metabolism",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Biochemistry - Glycogen Metabolism",
+        summary: "Glycogenesis and glycogenolysis, liver and muscle roles, hormonal regulation and the glycogen storage diseases.",
+        file_url: storageUrl("Glycogen Metabolism.pdf"),
+        bilingual_url: "/bilingual/Glycogen_Metabolism_Bilingual.pdf",
+        summary_url: "/summary/glycogen-metabolism"
       },
       {
         id: 114,
@@ -1261,6 +1393,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("2nd-Mastery-ECG-16-10.pdf"),
         bilingual_url: "/bilingual/12-Lead_ECG_Recording_2nd_Stage_Bilingual.pdf",
         summary_url: "/summary/ecg-recording-mastery"
+      },
+      {
+        id: 144,
+        title: "Capillary Random Blood Glucose Measurement.pdf",
+        cleanTitle: "Capillary Random Blood Glucose Measurement (2nd Stage Mastery Skills)",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Mastery Skills - Capillary Random Blood Glucose",
+        summary: "Uses and limits, equipment, the eight-step procedure, errors, interpretation and two practice cases.",
+        file_url: storageUrl("Capillary Random Blood Glucose Measurement.pdf"),
+        bilingual_url: "/bilingual/Capillary_Random_Blood_Glucose_Bilingual.pdf",
+        summary_url: "/summary/capillary-glucose-mastery"
+      },
+      {
+        id: 143,
+        title: "CBD RTA and Hyperlipidemia.pdf",
+        cleanTitle: "CBD - RTA and Hyperlipidemia",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "Case-Based Discussion - RTA and Hyperlipidemia",
+        summary: "Case of a head injury with hyperlipidemia linking lipid metabolism, the nervous system and Na+/K+ pump physiology.",
+        file_url: storageUrl("CBD RTA and Hyperlipidemia.pdf"),
+        bilingual_url: "/bilingual/CBD_RTA_and_Hyperlipidemia_Bilingual.pdf",
+        summary_url: "/summary/cbd-rta-hyperlipidemia"
       },
     ],
   },
@@ -1620,6 +1776,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-hemodynamics-2"
       },
       {
+        id: 284,
+        title: "Immunopathology I.pdf",
+        cleanTitle: "Immunopathology I",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Immunopathology I",
+        summary: "The normal immune response, hypersensitivity types I-IV, immunodeficiency syndromes and AIDS.",
+        file_url: storageUrl("Immunopathology I.pdf"),
+        bilingual_url: "/bilingual/Immunopathology_I_Bilingual.pdf",
+        summary_url: "/summary/s3-immunopathology-1"
+      },
+      {
+        id: 285,
+        title: "Genetic Diseases and Cytogenetic Abnormalities.pdf",
+        cleanTitle: "Genetic Diseases and Cytogenetic Abnormalities",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Genetic Diseases and Cytogenetics",
+        summary: "Mutations, Mendelian and non-Mendelian inheritance, imprinting, mosaicism and chromosomal basics.",
+        file_url: storageUrl("Genetic Diseases and Cytogenetic Abnormalities.pdf"),
+        bilingual_url: "/bilingual/Genetic_Diseases_and_Cytogenetics_Bilingual.pdf",
+        summary_url: "/summary/s3-genetic-diseases"
+      },
+      {
         id: 213,
         title: "Bacterial Structure.pdf",
         cleanTitle: "Bacterial Structure",
@@ -1848,6 +2028,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-surgery-flow-phase"
       },
       {
+        id: 281,
+        title: "Nutrition and Fluid Therapy.pdf",
+        cleanTitle: "Nutrition and Fluid Therapy",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Surgery - Nutrition and Fluid Therapy",
+        summary: "Malnutrition, starvation response, nutritional assessment, crystalloids and colloids, and nutritional requirements.",
+        file_url: storageUrl("Nutrition and Fluid Therapy.pdf"),
+        bilingual_url: "/bilingual/Nutrition_and_Fluid_Therapy_Bilingual.pdf",
+        summary_url: "/summary/s3-nutrition-fluid-therapy"
+      },
+      {
         id: 224,
         title: "History Taking.pdf",
         cleanTitle: "History Taking",
@@ -1944,6 +2136,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-energy-requirements"
       },
       {
+        id: 282,
+        title: "Assessment of Nutritional Status.pdf",
+        cleanTitle: "Assessment of Nutritional Status",
+        type: "lecture",
+        discipline: "Community Medicine",
+        topic: "Community Medicine - Assessment of Nutritional Status",
+        summary: "Direct (ABCD) and indirect assessment, anthropometry, BMI, dietary methods and indications.",
+        file_url: storageUrl("Assessment of Nutritional Status.pdf"),
+        bilingual_url: "/bilingual/Assessment_of_Nutritional_Status_Bilingual.pdf",
+        summary_url: "/summary/s3-nutritional-status"
+      },
+      {
         id: 228,
         title: "Introduction to Biostatistics.pdf",
         cleanTitle: "Introduction to Biostatistics",
@@ -2038,6 +2242,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 4 (8).pdf"),
         bilingual_url: "/bilingual/Psychology_of_Motivation_Bilingual.pdf",
         summary_url: "/summary/s3-psychology-motivation"
+      },
+      {
+        id: 283,
+        title: "Psychology of Perception.pdf",
+        cleanTitle: "Psychology of Perception",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology - Psychology of Perception",
+        summary: "Sensation versus perception, Gestalt principles, constancies, depth cues, attention, illusions and hallucinations.",
+        file_url: storageUrl("Psychology of Perception.pdf"),
+        bilingual_url: "/bilingual/Psychology_of_Perception_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-perception"
       },
       {
         id: 230,
