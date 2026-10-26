@@ -9,7 +9,9 @@ import FlashcardModal from "./FlashcardModal"
 import { flashcardBank } from "@/data/flashcards"
 
 // files open in the same tab, inside the app, so there is always a way back to the main menu
-const viewHref = (src: string, title: string) => `/view?src=${encodeURIComponent(src)}&title=${encodeURIComponent(title)}`
+// "from" lets the viewer's back button return to this lecture's menu instead of the main menu
+const viewHref = (src: string, title: string, from: string | number) =>
+  `/view?src=${encodeURIComponent(src)}&title=${encodeURIComponent(title)}&from=${encodeURIComponent(String(from))}`
 
 interface ResourceDetailProps {
   resource: Resource | null
@@ -155,7 +157,7 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
             <div className="space-y-4">
               {/* open the PDF directly: the Google Docs viewer proxy often failed ("No preview available") */}
               <Link
-                href={viewHref(resource.file_url ?? storageUrl(resource.title), resource.cleanTitle)}
+                href={viewHref(resource.file_url ?? storageUrl(resource.title), resource.cleanTitle, resource.id)}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-opacity hover:opacity-90"
                 style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}
               >
@@ -174,7 +176,7 @@ export default function ResourceDetail({ resource, related, onSelectRelated, onO
             )}
             {resource.bilingual_url && (
               <Link
-                href={viewHref(resource.bilingual_url, `${resource.cleanTitle} (Arabic)`)}
+                href={viewHref(resource.bilingual_url, `${resource.cleanTitle} (Arabic)`, resource.id)}
                 className="flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold transition-all border hover:opacity-80 active:scale-95"
                 style={{ backgroundColor: "var(--bg-card)", borderColor: "var(--border-color)", color: "var(--text-main)" }}
               >
