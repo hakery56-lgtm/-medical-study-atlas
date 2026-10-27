@@ -642,6 +642,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skill-lab-week4"
       },
       {
+        id: 299,
+        title: "Elbow_Joint_Exam.pdf",
+        cleanTitle: "Physical Examination of the Elbow Joint",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Clinical Skills - Physical Examination of the Elbow Joint",
+        summary: "Elbow anatomy, Look-Feel-Move, carrying angle, tennis and golfer's elbow tests, and radial, median and ulnar nerve checks.",
+        file_url: storageUrl("Elbow_Joint_Exam.pdf"),
+        bilingual_url: "/bilingual/Elbow_Joint_Exam_Bilingual.pdf",
+        summary_url: "/summary/elbow-joint-exam"
+      },
+      {
+        id: 300,
+        title: "Ulnar_Nerve_Exam.pdf",
+        cleanTitle: "Physical Examination of the Ulnar Nerve",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Clinical Skills - Physical Examination of the Ulnar Nerve",
+        summary: "Ulnar nerve anatomy, claw hand, sensory and motor testing, and Froment's sign, Tinel's sign and the elbow flexion test.",
+        file_url: storageUrl("Ulnar_Nerve_Exam.pdf"),
+        bilingual_url: "/bilingual/Ulnar_Nerve_Exam_Bilingual.pdf",
+        summary_url: "/summary/ulnar-nerve-exam"
+      },
+      {
         id: 56,
         title: "Skill Lab Unit 3 Week 5 - Hand Examination.pdf",
         cleanTitle: "Skill Lab - Week 5 (Hand Examination)",
@@ -760,6 +784,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Sciatica_Lecture_Medical_Students.pdf"),
         bilingual_url: "/bilingual/Sciatica_Bilingual.pdf",
         summary_url: "/summary/sciatica"
+      },
+      {
+        id: 295,
+        title: "Osteoporosis.pdf",
+        cleanTitle: "Osteoporosis",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Medicine - Osteoporosis",
+        summary: "Definition, bone remodeling (RANKL, OPG, sclerostin), causes and risk factors, DXA T-score and FRAX, laboratory work-up, and treatment with bisphosphonates, denosumab and anabolic agents.",
+        file_url: storageUrl("Osteoporosis.pdf"),
+        bilingual_url: "/bilingual/Osteoporosis_Bilingual.pdf",
+        summary_url: "/summary/osteoporosis"
       },
       {
         id: 51,
@@ -892,6 +928,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Anatomy Lab 6 - Muscles of the Thigh.pdf"),
         bilingual_url: "/bilingual/Anatomy_Lab6_Hip_and_Thigh_Bilingual.pdf",
         summary_url: "/summary/anatomy-lab6-thigh"
+      },
+      {
+        id: 297,
+        title: "Calcium_Homeostasis.pdf",
+        cleanTitle: "Calcium Homeostasis",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Biochemistry - Calcium Homeostasis",
+        summary: "Calcium balance and functions, plasma fractions, PTH, vitamin D activation, calcitonin, and adjusted calcium, albumin and pH effects.",
+        file_url: storageUrl("Calcium_Homeostasis.pdf"),
+        bilingual_url: "/bilingual/Calcium_Homeostasis_Bilingual.pdf",
+        summary_url: "/summary/calcium-homeostasis"
+      },
+      {
+        id: 298,
+        title: "Bone_Remodeling_Calcium.pdf",
+        cleanTitle: "Bone Remodeling and Calcium Metabolism",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology - Bone Remodeling and Calcium Metabolism",
+        summary: "Bone cells, osteoid, estrogen deficiency and osteoporosis, calcium requirements and absorption, PTH, calcitonin and vitamin D.",
+        file_url: storageUrl("Bone_Remodeling_Calcium.pdf"),
+        bilingual_url: "/bilingual/Bone_Remodeling_Calcium_Bilingual.pdf",
+        summary_url: "/summary/bone-remodeling-calcium-metabolism"
       },
     ],
   },
@@ -1584,6 +1644,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ans-adrenergic-2"
       },
       {
+        id: 301,
+        title: "Sympathomimetics_Practical6.pdf",
+        cleanTitle: "Pharmacology Practical 6 - Sympathomimetics (Asthma Case)",
+        type: "lab",
+        discipline: "Pharmacology",
+        topic: "Pharmacology - Sympathomimetics Practical 6",
+        summary: "Salbutamol-induced hypokalemia, beta-1 and beta-2 effects, beta-blockers in asthma and diabetes, central alpha-2 agonists, inhaler technique and theophylline.",
+        file_url: storageUrl("Sympathomimetics_Practical6.pdf"),
+        bilingual_url: "/bilingual/Sympathomimetics_Practical6_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-practical-6-sympathomimetics"
+      },
+      {
         id: 279,
         title: "Adrenergic Antagonists - Alpha and Beta Blockers.pdf",
         cleanTitle: "Adrenergic Antagonists - Alpha and Beta Blockers",
@@ -1788,6 +1860,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-immunopathology-1"
       },
       {
+        id: 302,
+        title: "Immunopathology_Lab6.pdf",
+        cleanTitle: "Histopathology Lab 6 - Immunopathology",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Pathology - Immunopathology Lab 6",
+        summary: "Innate vs adaptive immunity, the four hypersensitivity types with histology, transplant rejection patterns, GVHD and amyloidosis.",
+        file_url: storageUrl("Immunopathology_Lab6.pdf"),
+        bilingual_url: "/bilingual/Immunopathology_Lab6_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab6-immunopathology"
+      },
+      {
         id: 285,
         title: "Genetic Diseases and Cytogenetic Abnormalities.pdf",
         cleanTitle: "Genetic Diseases and Cytogenetic Abnormalities",
@@ -1956,6 +2040,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-para-8"
       },
       {
+        id: 303,
+        title: "Blood_Sample_Lab4.pdf",
+        cleanTitle: "Parasitology Lab 4 - Blood Sample and Blood Films",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Parasitology - Lab 4 Blood Sample and Blood Films",
+        summary: "Capillary and venous sampling, thin and thick blood films, fixation, and Leishman, Giemsa and hematoxylin staining.",
+        file_url: storageUrl("Blood_Sample_Lab4.pdf"),
+        bilingual_url: "/bilingual/Blood_Sample_Lab4_Bilingual.pdf",
+        summary_url: "/summary/s3-para-lab4-blood-sample"
+      },
+      {
+        id: 304,
+        title: "Swab_Lab3.pdf",
+        cleanTitle: "Parasitology Lab 3 - Swab",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Parasitology - Lab 3 Swab",
+        summary: "Sterile swabs, types and sterilization, collection steps, vaginal swab and wet-mount diagnosis of Trichomonas vaginalis.",
+        file_url: storageUrl("Swab_Lab3.pdf"),
+        bilingual_url: "/bilingual/Swab_Lab3_Bilingual.pdf",
+        summary_url: "/summary/s3-para-lab3-swab"
+      },
+      {
         id: 260,
         title: "Introduction to the Immune System - Part 1.pdf",
         cleanTitle: "Introduction to the Immune System - Part 1",
@@ -2062,6 +2170,18 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Clinical History Taking and CVS.pdf"),
         bilingual_url: "/bilingual/Clinical_History_Taking_CVS_Bilingual.pdf",
         summary_url: "/summary/s3-history-taking-cvs"
+      },
+      {
+        id: 305,
+        title: "BLS_CPR_AED.pdf",
+        cleanTitle: "Basic Life Support - CPR and AED",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Clinical Skills - BLS CPR and AED",
+        summary: "Seven steps of adult CPR, compression rate and depth, rescue breaths, and safe AED use.",
+        file_url: storageUrl("BLS_CPR_AED.pdf"),
+        bilingual_url: "/bilingual/BLS_CPR_AED_Bilingual.pdf",
+        summary_url: "/summary/s3-bls-cpr-aed"
       },
       {
         id: 246,
@@ -2434,6 +2554,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("CBD 2.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Acute_Decompensated_Heart_Failure_Bilingual.pdf",
         summary_url: "/summary/s3-cbd-hf"
+      },
+      {
+        id: 296,
+        title: "Secretory_Diarrhea_CBD.pdf",
+        cleanTitle: "CBD - Secretory Diarrhea (The Unstoppable Flow)",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "Medicine - Secretory Diarrhea (CBD)",
+        summary: "Acute watery diarrhea case: secretory vs osmotic diarrhea, osmotic gap, cholera toxin, VIPoma, and ORS and IV fluid management.",
+        file_url: storageUrl("Secretory_Diarrhea_CBD.pdf"),
+        bilingual_url: "/bilingual/Secretory_Diarrhea_CBD_Bilingual.pdf",
+        summary_url: "/summary/s3-cbd-secretory-diarrhea"
       },
       {
         id: 276,
