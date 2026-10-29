@@ -774,6 +774,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/pbl5-low-back-pain"
       },
       {
+        id: 314,
+        title: "PBL7_Osteosarcoma.pdf",
+        cleanTitle: "PBL 7 - Swelling in the Leg (Osteosarcoma)",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "Orthopedics - PBL 7 Swelling in the Leg (Osteosarcoma)",
+        summary: "A 13-year-old with thigh pain: sunburst and Codman's triangle, biopsy, osteosarcoma, limb salvage with chemotherapy and the patient's denial.",
+        file_url: storageUrl("PBL7_Osteosarcoma.pdf"),
+        bilingual_url: "/bilingual/PBL7_Osteosarcoma_Bilingual.pdf",
+        summary_url: "/summary/pbl7-osteosarcoma"
+      },
+      {
+        id: 315,
+        title: "PBL7_Complementary_Cases.pdf",
+        cleanTitle: "PBL 7 Complementary Cases - Osteoid Osteoma and Ewing Sarcoma",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "Orthopedics - PBL 7 Complementary Cases (Mini-PBLs)",
+        summary: "Two mini-PBLs: night knee pain relieved by aspirin (osteoid osteoma) and a child's thigh mass (Ewing sarcoma, t(11;22)).",
+        file_url: storageUrl("PBL7_Complementary_Cases.pdf"),
+        bilingual_url: "/bilingual/PBL7_Complementary_Cases_Bilingual.pdf",
+        summary_url: "/summary/pbl7-complementary-cases"
+      },
+      {
         id: 58,
         title: "Applied Anatomy of the Intervertebral Disc.pdf",
         cleanTitle: "Applied Anatomy of the Intervertebral Disc",
@@ -964,6 +988,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Bone_Remodeling_Calcium.pdf"),
         bilingual_url: "/bilingual/Bone_Remodeling_Calcium_Bilingual.pdf",
         summary_url: "/summary/bone-remodeling-calcium-metabolism"
+      },
+      {
+        id: 312,
+        title: "Neoplasia_Concepts.pdf",
+        cleanTitle: "Neoplasia - Main Concepts",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Neoplasia: Main Concepts",
+        summary: "Definitions, oncogenes and suppressor genes, nomenclature, benign vs malignant, anaplasia, dysplasia, invasion and metastasis, systemic effects, grading and TNM staging.",
+        file_url: storageUrl("Neoplasia_Concepts.pdf"),
+        bilingual_url: "/bilingual/Neoplasia_Concepts_Bilingual.pdf",
+        summary_url: "/summary/neoplasia-concepts"
+      },
+      {
+        id: 313,
+        title: "Neoplasia_Practical.pdf",
+        cleanTitle: "Neoplasia Practical Session",
+        type: "lab",
+        discipline: "Pathology",
+        topic: "Pathology - Neoplasia Practical Session",
+        summary: "Hamartoma, choristoma, adenoma, fibroadenoma, dysplasia grades, squamous cell carcinoma, adenocarcinoma, leiomyoma vs leiomyosarcoma, invasion and anaplasia.",
+        file_url: storageUrl("Neoplasia_Practical.pdf"),
+        bilingual_url: "/bilingual/Neoplasia_Practical_Bilingual.pdf",
+        summary_url: "/summary/neoplasia-practical"
       },
     ],
   },
