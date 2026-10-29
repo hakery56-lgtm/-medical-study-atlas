@@ -358,6 +358,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/bone-fracture"
       },
       {
+        id: 306,
+        title: "Open_Femoral_Fracture.pdf",
+        cleanTitle: "Open Femoral Fracture, Tetanus and Septic Arthritis",
+        type: "lecture",
+        discipline: "Orthopedics",
+        topic: "Orthopedics - Open Femoral Fracture, Tetanus and Septic Arthritis",
+        summary: "Open fracture priorities and Gustilo-Anderson grades, complications, initial management, tetanus prophylaxis, and septic arthritis diagnosis and treatment.",
+        file_url: storageUrl("Open_Femoral_Fracture.pdf"),
+        bilingual_url: "/bilingual/Open_Femoral_Fracture_Bilingual.pdf",
+        summary_url: "/summary/open-femoral-fracture"
+      },
+      {
         id: 21,
         title: "Fracture neck of humerus.pdf",
         cleanTitle: "Fracture of the Proximal (Neck) Humerus",
@@ -1023,6 +1035,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/neck-anatomy"
       },
       {
+        id: 309,
+        title: "Root_of_the_Neck.pdf",
+        cleanTitle: "Root of the Neck",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Root of the Neck",
+        summary: "Subclavian and carotid arteries, jugular and subclavian veins, cervical plexus, phrenic and vagus nerves, sympathetic trunk, and cervical lymph nodes.",
+        file_url: storageUrl("Root_of_the_Neck.pdf"),
+        bilingual_url: "/bilingual/Root_of_the_Neck_Bilingual.pdf",
+        summary_url: "/summary/root-of-the-neck"
+      },
+      {
         id: 104,
         title: "Autonomic Nervous System.pdf",
         cleanTitle: "Autonomic Nervous System",
@@ -1189,6 +1213,30 @@ export const subjects: Subject[] = [
         file_url: lectureUrl("Resting Membrane Potential and Action Potential.pdf"),
         bilingual_url: "/bilingual/Resting_Membrane_Potential_and_Action_Potential_Bilingual.pdf",
         summary_url: "/summary/resting-potential"
+      },
+      {
+        id: 310,
+        title: "Nerve_Muscle_Lec1_Glia_BBB.pdf",
+        cleanTitle: "Nerve and Muscle Lecture 1 - Glia, Neuron and Blood-Brain Barrier",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology - Nerve and Muscle Lecture 1 (Glia, Neuron, BBB)",
+        summary: "Glial cells, neuron structure and functional zones, nerve-fiber classes (A-alpha to C), and the blood-brain barrier with a kernicterus case.",
+        file_url: storageUrl("Nerve_Muscle_Lec1_Glia_BBB.pdf"),
+        bilingual_url: "/bilingual/Nerve_Muscle_Lec1_Glia_BBB_Bilingual.pdf",
+        summary_url: "/summary/nerve-muscle-lec1-glia-bbb"
+      },
+      {
+        id: 311,
+        title: "Nerve_Muscle_Lec2_Membrane_Potential.pdf",
+        cleanTitle: "Nerve and Muscle Lecture 2 - Membrane Potential (Handout)",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology - Nerve and Muscle Lecture 2 (Membrane Potential Handout)",
+        summary: "Resting membrane potential values and causes, local responses, threshold, action potential phases and refractory periods.",
+        file_url: storageUrl("Nerve_Muscle_Lec2_Membrane_Potential.pdf"),
+        bilingual_url: "/bilingual/Nerve_Muscle_Lec2_Membrane_Potential_Bilingual.pdf",
+        summary_url: "/summary/nerve-muscle-lec2-membrane-potential"
       },
       {
         id: 138,
@@ -1419,6 +1467,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skin-histology-l2"
       },
       {
+        id: 307,
+        title: "Histology_Skin_Practical.pdf",
+        cleanTitle: "Practical Histology of Skin",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology - Practical Histology of Skin",
+        summary: "Epidermal strata in thin and thick skin, epidermal cell types, papillary and reticular dermis, hair follicle, sebaceous and sweat glands.",
+        file_url: storageUrl("Histology_Skin_Practical.pdf"),
+        bilingual_url: "/bilingual/Histology_Skin_Practical_Bilingual.pdf",
+        summary_url: "/summary/skin-histology-practical"
+      },
+      {
         id: 117,
         title: "High-Energy Compounds.pdf",
         cleanTitle: "Bioenergetics: High-Energy Compounds",
@@ -1441,6 +1501,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lab 2 (3) (1).pdf"),
         bilingual_url: "/bilingual/Clinical_Biochemistry_Spectrophotometry_Bilingual.pdf",
         summary_url: "/summary/spectrophotometry"
+      },
+      {
+        id: 308,
+        title: "Hemoglobin_Lab3.pdf",
+        cleanTitle: "Biochemistry Lab 3 - Hemoglobin Determination",
+        type: "lab",
+        discipline: "Biochemistry",
+        topic: "Biochemistry - Lab 3 Hemoglobin Determination",
+        summary: "Hemoglobin structure, estimation methods, the cyanmethemoglobin procedure, normal ranges, causes of high and low Hb, and an iron deficiency case.",
+        file_url: storageUrl("Hemoglobin_Lab3.pdf"),
+        bilingual_url: "/bilingual/Hemoglobin_Lab3_Bilingual.pdf",
+        summary_url: "/summary/hemoglobin-lab3"
       },
       {
         id: 125,
