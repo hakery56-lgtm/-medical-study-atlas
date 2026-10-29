@@ -1013,6 +1013,18 @@ export const subjects: Subject[] = [
         bilingual_url: "/bilingual/Neoplasia_Practical_Bilingual.pdf",
         summary_url: "/summary/neoplasia-practical"
       },
+      {
+        id: 316,
+        title: "Arabic_Indefinite_Subject.pdf",
+        cleanTitle: "Justifications for Starting with an Indefinite Noun (Arabic Grammar)",
+        type: "lecture",
+        discipline: "Arabic Language",
+        topic: "Arabic Language - Justifications for Starting with an Indefinite Noun",
+        summary: "The 23 justifications that allow an indefinite noun to be the subject of a nominal sentence, each with its example and analysis.",
+        file_url: storageUrl("Arabic_Indefinite_Subject.pdf"),
+        bilingual_url: "/bilingual/Arabic_Indefinite_Subject_Bilingual.pdf",
+        summary_url: "/summary/arabic-indefinite-subject"
+      },
     ],
   },
   {
