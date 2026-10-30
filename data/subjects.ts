@@ -906,6 +906,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/networks"
       },
       {
+        id: 321,
+        title: "E_Commerce_and_E_Banking.pdf",
+        cleanTitle: "E-Commerce and E-Banking",
+        type: "lecture",
+        discipline: "Computer Science",
+        topic: "E-Commerce and E-Banking",
+        summary: "E-Commerce components, benefits and risks, EDI and electronic publishing, E-Banking services, challenges and future trends (AI, blockchain, biometrics).",
+        file_url: storageUrl("E_Commerce_and_E_Banking.pdf"),
+        bilingual_url: "/bilingual/E_Commerce_and_E_Banking_Bilingual.pdf",
+        summary_url: "/summary/e-commerce-banking"
+      },
+      {
         id: 47,
         title: "Common Challenges in Medical Research.pdf",
         cleanTitle: "Common Challenges in Medical Research",
@@ -964,6 +976,54 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Anatomy Lab 6 - Muscles of the Thigh.pdf"),
         bilingual_url: "/bilingual/Anatomy_Lab6_Hip_and_Thigh_Bilingual.pdf",
         summary_url: "/summary/anatomy-lab6-thigh"
+      },
+      {
+        id: 317,
+        title: "Muscles_of_the_Thigh.pdf",
+        cleanTitle: "Muscles of the Thigh",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Muscles of the Thigh",
+        summary: "Compartments of the thigh, adductor muscles, iliopsoas, sartorius, quadriceps femoris and the hamstrings with origins, insertions, nerve supply and actions.",
+        file_url: storageUrl("Muscles_of_the_Thigh.pdf"),
+        bilingual_url: "/bilingual/Muscles_of_the_Thigh_Bilingual.pdf",
+        summary_url: "/summary/thigh-muscles"
+      },
+      {
+        id: 318,
+        title: "Neurovascular_Structures_of_the_Thigh.pdf",
+        cleanTitle: "Neurovascular Structures of the Thigh",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Neurovascular Structures of the Thigh",
+        summary: "Obturator, femoral, saphenous and sciatic nerves, femoral and popliteal vessels, the four anastomoses, femoral shaft fractures, compartment syndrome and the Q angle.",
+        file_url: storageUrl("Neurovascular_Structures_of_the_Thigh.pdf"),
+        bilingual_url: "/bilingual/Neurovascular_Structures_of_the_Thigh_Bilingual.pdf",
+        summary_url: "/summary/thigh-neurovascular"
+      },
+      {
+        id: 319,
+        title: "Transitional_Areas_of_the_Thigh.pdf",
+        cleanTitle: "Transitional Areas of the Thigh",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Anatomy - Transitional Areas of the Thigh",
+        summary: "Femoral triangle, adductor (subsartorial) canal and popliteal fossa: boundaries, contents, popliteus and clinical conditions.",
+        file_url: storageUrl("Transitional_Areas_of_the_Thigh.pdf"),
+        bilingual_url: "/bilingual/Transitional_Areas_of_the_Thigh_Bilingual.pdf",
+        summary_url: "/summary/thigh-transitional-areas"
+      },
+      {
+        id: 320,
+        title: "Lab7_Thigh_Dissection_and_Radiology.pdf",
+        cleanTitle: "Anatomy Lab 7 - Thigh Dissection and Radiology",
+        type: "lab",
+        discipline: "Anatomy",
+        topic: "Anatomy Lab 7 - Thigh Dissection and Radiology",
+        summary: "Thigh muscle checklist, hip attachments and lumbar plexus nerve review, labeled dissections of the thigh and popliteal fossa, and hip, femur and knee radiology.",
+        file_url: storageUrl("Lab7_Thigh_Dissection_and_Radiology.pdf"),
+        bilingual_url: "/bilingual/Lab7_Thigh_Dissection_and_Radiology_Bilingual.pdf",
+        summary_url: "/summary/anatomy-lab7-thigh"
       },
       {
         id: 297,
