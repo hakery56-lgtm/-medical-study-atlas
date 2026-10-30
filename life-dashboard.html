@@ -1,0 +1,234 @@
+<title>Life Dashboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky date header, then a masonry-ish grid of working panels (Today, Tasks, Habits, Goals, Notes). */
+:root{
+  --bg:#eef1ee; --surface:#fbfcfb; --ink:#16211c; --muted:#5d6b64; --line:#d9dfdb;
+  --accent:#2d4fd6; --accent-ink:#ffffff; --accent-soft:#e1e7fb;
+  --good:#1d7a4d; --warn:#b36b00; --bad:#b3261e;
+  --a-study:#2d4fd6; --a-health:#1d7a4d; --a-money:#b36b00; --a-people:#a3336f; --a-home:#5d6b64;
+  --f-display:'Bricolage Grotesque',system-ui,sans-serif; --f-body:'DM Sans',system-ui,sans-serif; --f-mono:'DM Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1512; --surface:#171f1b; --ink:#e6ece8; --muted:#92a099; --line:#2a342f;
+  --accent:#8ea2ff; --accent-ink:#0f1512; --accent-soft:#222c4f;
+  --good:#4cc38a; --warn:#e0a03a; --bad:#ff8a80;
+  --a-study:#8ea2ff; --a-health:#4cc38a; --a-money:#e0a03a; --a-people:#f08cc0; --a-home:#92a099; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1512; --surface:#171f1b; --ink:#e6ece8; --muted:#92a099; --line:#2a342f;
+  --accent:#8ea2ff; --accent-ink:#0f1512; --accent-soft:#222c4f;
+  --good:#4cc38a; --warn:#e0a03a; --bad:#ff8a80;
+  --a-study:#8ea2ff; --a-health:#4cc38a; --a-money:#e0a03a; --a-people:#f08cc0; --a-home:#92a099; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.45 var(--f-body)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2{font-family:var(--f-display);margin:0;text-wrap:balance}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between;padding-bottom:18px}
+header h1{font-size:clamp(26px,5vw,38px);line-height:1.1}
+.date{font:500 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.summary{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-width:96px}
+.stat b{display:block;font:600 22px var(--f-display);font-variant-numeric:tabular-nums}
+.stat span{font:12px var(--f-mono);color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.p-today{grid-column:span 5}.p-tasks{grid-column:span 7}.p-habits{grid-column:span 7}.p-goals{grid-column:span 5}.p-notes{grid-column:span 12}
+@media(max-width:860px){.panel{grid-column:1/-1!important}}
+.ph{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:12px}
+h2{font-size:18px}
+.hint{font:12px var(--f-mono);color:var(--muted)}
+.row{display:flex;gap:8px;align-items:center}
+.add{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+input,select,textarea,button{font:inherit;color:inherit}
+input[type=text],input[type=time],input[type=date],input[type=number],select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-width:0}
+input[type=text]{flex:1 1 140px}
+textarea{width:100%;min-height:120px;resize:vertical;line-height:1.5}
+button{cursor:pointer;border:1px solid var(--line);background:transparent;border-radius:8px;padding:7px 12px}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+button.x{border:0;padding:2px 8px;color:var(--muted);font-size:18px;line-height:1}
+button:hover{border-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border-radius:99px;padding:3px 11px;font-size:13px}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+li{display:flex;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+li:first-child{border-top:0}
+li .t{flex:1;min-width:0;overflow-wrap:anywhere}
+li.done .t{text-decoration:line-through;color:var(--muted)}
+input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);flex:none}
+.tag{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.due{font:12px var(--f-mono);color:var(--muted);white-space:nowrap}.due.over{color:var(--bad)}
+.time{font:500 13px var(--f-mono);width:48px;color:var(--accent);flex:none}
+.empty{color:var(--muted);padding:10px 0}
+.habit{display:grid;grid-template-columns:minmax(90px,1.4fr) repeat(7,minmax(26px,1fr)) auto;gap:6px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.habit.head{border-top:0;font:11px var(--f-mono);color:var(--muted);text-align:center;padding-top:0}
+.habit.head span:first-child{text-align:left}
+.cell{height:28px;border-radius:7px;border:1px solid var(--line);padding:0}
+.cell.on{background:var(--good);border-color:var(--good)}
+.cell.today{outline:2px solid var(--accent);outline-offset:1px}
+.streak{font:12px var(--f-mono);color:var(--muted);min-width:44px;text-align:right}
+.goal{padding:10px 0;border-top:1px solid var(--line)}
+.goal:first-of-type{border-top:0}
+.bar{height:8px;background:var(--bg);border-radius:99px;overflow:hidden;margin:8px 0 6px;border:1px solid var(--line)}
+.bar i{display:block;height:100%;background:var(--accent)}
+.goal .row{justify-content:space-between}
+.goal input[type=range]{width:100%;accent-color:var(--accent)}
+.theme{font-size:13px}
+@media(prefers-reduced-motion:no-preference){.bar i{transition:width .25s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="date" id="date"></div>
+      <h1 id="greet">Good day</h1>
+    </div>
+    <div class="summary" id="summary"></div>
+  </header>
+
+  <div class="grid">
+    <section class="panel p-today" aria-labelledby="h-today">
+      <div class="ph"><h2 id="h-today">Today</h2><span class="hint" id="syncState"></span></div>
+      <label class="hint" for="focus">Main focus</label>
+      <input type="text" id="focus" placeholder="The one thing that makes today a good day" style="width:100%;margin:4px 0 16px">
+      <div class="ph"><h2 style="font-size:15px">Schedule</h2></div>
+      <form class="add" id="evForm">
+        <input type="time" id="evTime" required aria-label="Time">
+        <input type="text" id="evText" placeholder="Lecture, gym, call…" required aria-label="Event">
+        <button class="primary">Add</button>
+      </form>
+      <ul id="events"></ul>
+    </section>
+
+    <section class="panel p-tasks" aria-labelledby="h-tasks">
+      <div class="ph"><h2 id="h-tasks">Tasks</h2><span class="hint" id="taskCount"></span></div>
+      <form class="add" id="taskForm">
+        <input type="text" id="taskText" placeholder="Add a task" required aria-label="Task">
+        <select id="taskArea" aria-label="Area"></select>
+        <input type="date" id="taskDue" aria-label="Due date">
+        <button class="primary">Add</button>
+      </form>
+      <div class="chips" id="areaFilter"></div>
+      <ul id="tasks"></ul>
+    </section>
+
+    <section class="panel p-habits" aria-labelledby="h-habits">
+      <div class="ph"><h2 id="h-habits">Habits</h2><span class="hint">last 7 days</span></div>
+      <div id="habits"></div>
+      <form class="add" id="habitForm" style="margin:12px 0 0">
+        <input type="text" id="habitText" placeholder="New habit" required aria-label="Habit">
+        <button class="primary">Add</button>
+      </form>
+    </section>
+
+    <section class="panel p-goals" aria-labelledby="h-goals">
+      <div class="ph"><h2 id="h-goals">Goals</h2></div>
+      <form class="add" id="goalForm">
+        <input type="text" id="goalText" placeholder="Add a goal" required aria-label="Goal">
+        <select id="goalArea" aria-label="Goal area"></select>
+        <button class="primary">Add</button>
+      </form>
+      <div id="goals"></div>
+    </section>
+
+    <section class="panel p-notes" aria-labelledby="h-notes">
+      <div class="ph"><h2 id="h-notes">Notes and brain dump</h2><span class="hint">saved as you type</span></div>
+      <textarea id="notes" placeholder="Ideas, things to remember, anything that is taking up space in your head."></textarea>
+    </section>
+  </div>
+</div>
+
+<script>
+const AREAS={study:'Study',health:'Health',money:'Money',people:'People',home:'Home'};
+const $=id=>document.getElementById(id);
+const uid=()=>Math.random().toString(36).slice(2,9);
+const dayKey=d=>{const x=new Date(d);return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0')};
+const todayKey=dayKey(new Date());
+const daysBack=n=>{const d=new Date();d.setDate(d.getDate()-n);return dayKey(d)};
+
+// Starter content so the dashboard opens in a working state; edit or delete any of it.
+let S={focus:'',notes:'',
+  tasks:[{id:uid(),t:'Review this week\'s lecture notes',a:'study',due:todayKey,done:false},{id:uid(),t:'Book dentist appointment',a:'health',due:'',done:false},{id:uid(),t:'Pay phone bill',a:'money',due:'',done:false},{id:uid(),t:'Call family',a:'people',due:'',done:true}],
+  events:[{id:uid(),time:'09:00',t:'Lecture'},{id:uid(),time:'14:00',t:'Study block'},{id:uid(),time:'18:30',t:'Gym'}],
+  habits:[{id:uid(),t:'Study 2 hours',log:{}},{id:uid(),t:'Exercise',log:{}},{id:uid(),t:'Read 20 minutes',log:{}},{id:uid(),t:'Sleep before midnight',log:{}}],
+  goals:[{id:uid(),t:'Finish the semester revision plan',a:'study',p:35},{id:uid(),t:'Save for a new laptop',a:'money',p:50}]};
+let filter='all', save=()=>{};
+
+function areaOptions(sel){sel.innerHTML=Object.entries(AREAS).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}
+areaOptions($('taskArea'));areaOptions($('goalArea'));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tag=a=>`<span class="tag" style="color:var(--a-${a})">${AREAS[a]}</span>`;
+function streak(h){let n=0;for(let i=0;i<400;i++){if(h.log[daysBack(i)])n++;else if(i>0)break;else continue}return n}
+
+function render(){
+  const d=new Date(),hr=d.getHours();
+  $('date').textContent=d.toLocaleDateString(undefined,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  $('greet').textContent=(hr<12?'Good morning':hr<18?'Good afternoon':'Good evening');
+  const open=S.tasks.filter(t=>!t.done),over=open.filter(t=>t.due&&t.due<todayKey).length;
+  const hDone=S.habits.filter(h=>h.log[todayKey]).length;
+  $('summary').innerHTML=`<div class="stat"><b>${open.length}</b><span>open tasks</span></div><div class="stat"><b style="color:${over?'var(--bad)':'inherit'}">${over}</b><span>overdue</span></div><div class="stat"><b>${hDone}/${S.habits.length}</b><span>habits today</span></div>`;
+  if($('focus')!==document.activeElement)$('focus').value=S.focus;
+  if($('notes')!==document.activeElement)$('notes').value=S.notes;
+
+  $('events').innerHTML=S.events.length?[...S.events].sort((a,b)=>a.time.localeCompare(b.time)).map(e=>`<li><span class="time">${e.time}</span><span class="t">${esc(e.t)}</span><button class="x" data-del-ev="${e.id}" aria-label="Remove ${esc(e.t)}">×</button></li>`).join(''):'<li class="empty">Nothing scheduled. Add your first event above.</li>';
+
+  $('areaFilter').innerHTML=['all',...Object.keys(AREAS)].map(k=>`<button class="chip" aria-pressed="${filter===k}" data-f="${k}">${k==='all'?'All':AREAS[k]}</button>`).join('');
+  const list=S.tasks.filter(t=>filter==='all'||t.a===filter).sort((a,b)=>a.done-b.done||(a.due||'9').localeCompare(b.due||'9'));
+  $('taskCount').textContent=open.length+' open';
+  $('tasks').innerHTML=list.length?list.map(t=>`<li class="${t.done?'done':''}"><input type="checkbox" data-task="${t.id}" ${t.done?'checked':''} aria-label="Done: ${esc(t.t)}"><span class="t">${esc(t.t)}</span>${t.due?`<span class="due ${!t.done&&t.due<todayKey?'over':''}">${t.due===todayKey?'today':t.due}</span>`:''}${tag(t.a)}<button class="x" data-del-task="${t.id}" aria-label="Delete task">×</button></li>`).join(''):'<li class="empty">No tasks here. Add one above.</li>';
+
+  const days=[6,5,4,3,2,1,0].map(i=>({k:daysBack(i),l:new Date(daysBack(i)+'T12:00').toLocaleDateString(undefined,{weekday:'narrow'})}));
+  $('habits').innerHTML=S.habits.length?`<div class="habit head"><span></span>${days.map(x=>`<span>${x.l}</span>`).join('')}<span></span></div>`+S.habits.map(h=>`<div class="habit"><span style="overflow-wrap:anywhere">${esc(h.t)}</span>${days.map(x=>`<button class="cell ${h.log[x.k]?'on':''} ${x.k===todayKey?'today':''}" data-h="${h.id}" data-d="${x.k}" aria-pressed="${!!h.log[x.k]}" aria-label="${esc(h.t)} ${x.k}"></button>`).join('')}<span class="streak">${streak(h)}d <button class="x" data-del-h="${h.id}" aria-label="Delete habit">×</button></span></div>`).join(''):'<div class="empty">No habits yet.</div>';
+
+  $('goals').innerHTML=S.goals.length?S.goals.map(g=>`<div class="goal"><div class="row"><span style="overflow-wrap:anywhere">${esc(g.t)}</span><span class="row">${tag(g.a)}<button class="x" data-del-g="${g.id}" aria-label="Delete goal">×</button></span></div><div class="bar"><i style="width:${g.p}%"></i></div><div class="row"><span class="hint">${g.p}% done</span></div><input type="range" min="0" max="100" step="5" value="${g.p}" data-g="${g.id}" aria-label="Progress: ${esc(g.t)}"></div>`).join(''):'<div class="empty">No goals yet.</div>';
+}
+function commit(){render();save()}
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;const ds=b.dataset;
+  if(ds.f){filter=ds.f;render()}
+  else if(ds.delTask){S.tasks=S.tasks.filter(t=>t.id!==ds.delTask);commit()}
+  else if(ds.delEv){S.events=S.events.filter(t=>t.id!==ds.delEv);commit()}
+  else if(ds.delH){S.habits=S.habits.filter(t=>t.id!==ds.delH);commit()}
+  else if(ds.delG){S.goals=S.goals.filter(t=>t.id!==ds.delG);commit()}
+  else if(ds.h){const h=S.habits.find(x=>x.id===ds.h);h.log[ds.d]?delete h.log[ds.d]:h.log[ds.d]=1;commit()}
+});
+document.addEventListener('change',e=>{
+  const t=e.target;
+  if(t.dataset.task){S.tasks.find(x=>x.id===t.dataset.task).done=t.checked;commit()}
+  if(t.dataset.g){S.goals.find(x=>x.id===t.dataset.g).p=+t.value;commit()}
+});
+document.addEventListener('input',e=>{
+  if(e.target.dataset.g){const g=S.goals.find(x=>x.id===e.target.dataset.g);g.p=+e.target.value;render();}
+});
+$('focus').addEventListener('input',e=>{S.focus=e.target.value;save()});
+$('notes').addEventListener('input',e=>{S.notes=e.target.value;save()});
+$('taskForm').addEventListener('submit',e=>{e.preventDefault();S.tasks.unshift({id:uid(),t:$('taskText').value.trim(),a:$('taskArea').value,due:$('taskDue').value,done:false});$('taskText').value='';$('taskDue').value='';commit()});
+$('evForm').addEventListener('submit',e=>{e.preventDefault();S.events.push({id:uid(),time:$('evTime').value,t:$('evText').value.trim()});$('evText').value='';commit()});
+$('habitForm').addEventListener('submit',e=>{e.preventDefault();S.habits.push({id:uid(),t:$('habitText').value.trim(),log:{}});$('habitText').value='';commit()});
+$('goalForm').addEventListener('submit',e=>{e.preventDefault();S.goals.push({id:uid(),t:$('goalText').value.trim(),a:$('goalArea').value,p:0});$('goalText').value='';commit()});
+
+// Persistence: signed-in db document when available, otherwise this browser's storage.
+const LS='life-dashboard-v1';
+function lsGet(){try{return JSON.parse(localStorage.getItem(LS))}catch(e){return null}}
+function lsSet(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}}
+let timer;
+function debounced(fn){clearTimeout(timer);timer=setTimeout(fn,500)}
+save=()=>{lsSet();debounced(()=>{if(save.doc)save.doc.set({state:JSON.stringify(S)}).then(()=>$('syncState').textContent='saved').catch(()=>$('syncState').textContent='saved on this device')})};
+const local=lsGet();if(local)S=Object.assign(S,local);
+render();$('syncState').textContent=local?'saved on this device':'';
+(async()=>{
+  try{
+    const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
+    if(!db||!user)return;
+    const id=await user.id();if(!id)return;
+    const doc=db.doc('data/users/'+id+'/life');
+    const snap=await doc.get();
+    if(snap.exists){S=Object.assign(S,JSON.parse(snap.data().state));render()}
+    save.doc=doc;$('syncState').textContent='synced';
+    if(!snap.exists)doc.set({state:JSON.stringify(S)}).catch(()=>{});
+  }catch(e){}
+})();
+</script>
