@@ -13,6 +13,10 @@ const nextConfig = {
         { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
         { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
       ],
+    }, {
+      // the 3D models never change between deployments of the same name; let browsers keep them
+      source: '/models/:path*',
+      headers: [{ key: 'Cache-Control', value: 'max-age=86400, stale-while-revalidate=604800' }],
     }];
   },
 };

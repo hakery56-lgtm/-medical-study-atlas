@@ -9,6 +9,9 @@ Sources and licenses:
 Z-Anatomy's inner ear (CC-BY-NC-SA) and kidney (CC-BY-NC) are non-commercial, so they are removed
 and the kidneys are replaced with BodyParts3D meshes (see public/models/LICENSE.txt).
 
+After the GLBs are in public/models, rebuild the search/region index with: node scripts/anatomy-index.mjs
+(it reads every GLB and writes public/models/index.json; run node scripts/anatomy-check.mts to verify the rules).
+
 Then simplify + compress each GLB into public/models (ratio per system: muscular 0.25,
 skeletal/joints 0.35, nervous/urinary 0.3, respiratory/digestive 0.4, cardiovascular/lymphatic 0.5,
 reproductive/endocrine 0.6):
