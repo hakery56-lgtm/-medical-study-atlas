@@ -966,6 +966,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/hip-clinical-considerations"
       },
       {
+        id: 329,
+        title: "Physical Examination of the Hip Joint.pdf",
+        cleanTitle: "Physical Examination of the Hip Joint",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Physical Examination of the Hip Joint",
+        summary: "Groin and hip surface anatomy, Look-Feel-Move, leg length, range of movement and the special tests of the hip.",
+        file_url: storageUrl("Physical Examination of the Hip Joint.pdf"),
+        bilingual_url: "/bilingual/Physical_Examination_of_the_Hip_Joint_Bilingual.pdf",
+        summary_url: "/summary/hip-joint-exam"
+      },
+      {
+        id: 330,
+        title: "Focused History Taking in Groin Pain.pdf",
+        cleanTitle: "Focused History Taking in a Patient with Groin Pain",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Focused History Taking in a Patient with Groin Pain",
+        summary: "SOCRATES pain history, past medical and surgical history, and drug, family and social history for groin pain.",
+        file_url: storageUrl("Focused History Taking in Groin Pain.pdf"),
+        bilingual_url: "/bilingual/Focused_History_Taking_in_Groin_Pain_Bilingual.pdf",
+        summary_url: "/summary/groin-pain-history"
+      },
+      {
         id: 294,
         title: "Anatomy Lab 6 - Muscles of the Thigh.pdf",
         cleanTitle: "Anatomy Lab 6 - Muscles of the Thigh",
@@ -1359,6 +1383,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/nerve-muscle-lec2-membrane-potential"
       },
       {
+        id: 322,
+        title: "Nerve_Muscle_Lec3_Impulse_Conduction_Axonal_Transport.pdf",
+        cleanTitle: "Nerve and Muscle Lecture 3 - Impulse Conduction and Axonal Transport",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Nerve and Muscle Lecture 3 - Impulse Conduction and Axonal Transport",
+        summary: "Myelin and demyelination, action potential conduction, orthodromic and antidromic spread, and fast and slow axonal transport.",
+        file_url: storageUrl("Nerve_Muscle_Lec3_Impulse_Conduction_Axonal_Transport.pdf"),
+        bilingual_url: "/bilingual/Nerve_Muscle_Lec3_Impulse_Conduction_Axonal_Transport_Bilingual.pdf",
+        summary_url: "/summary/nerve-muscle-lec3-impulse-conduction"
+      },
+      {
         id: 138,
         title: "Medical Biochemistry - Introduction.pdf",
         cleanTitle: "Medical Biochemistry - Introduction",
@@ -1477,6 +1513,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 3 (2) (2).pdf"),
         bilingual_url: "/bilingual/Embryology_Ovulation_to_Implantation_Bilingual.pdf",
         summary_url: "/summary/embryology-ovulation-fertilization"
+      },
+      {
+        id: 323,
+        title: "Embryology L4 - Pre-embryonic Period.pdf",
+        cleanTitle: "Embryology L4 - Pre-embryonic Period (First 2 Weeks)",
+        type: "lecture",
+        discipline: "Embryology",
+        topic: "Embryology L4 - Pre-embryonic Period (First 2 Weeks)",
+        summary: "Fertilisation to morula, blastocyst and implantation, the bilaminar germ disc, implantation defects and early pregnancy loss.",
+        file_url: storageUrl("Embryology L4 - Pre-embryonic Period.pdf"),
+        bilingual_url: "/bilingual/Embryology_L4_Pre_embryonic_Period_Bilingual.pdf",
+        summary_url: "/summary/embryology-pre-embryonic-period"
       },
       {
         id: 115,
@@ -1884,6 +1932,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-autacoids-eicosanoids"
       },
       {
+        id: 325,
+        title: "Introduction to CNS Pharmacology.pdf",
+        cleanTitle: "Introduction to CNS Pharmacology",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Introduction to CNS Pharmacology",
+        summary: "CNS versus ANS, excitatory and inhibitory synaptic potentials, and the main CNS neurotransmitters.",
+        file_url: storageUrl("Introduction to CNS Pharmacology.pdf"),
+        bilingual_url: "/bilingual/Introduction_to_CNS_Pharmacology_Bilingual.pdf",
+        summary_url: "/summary/s3-cns-pharmacology-intro"
+      },
+      {
         id: 208,
         title: "Pharmacology Practical 1 and 2.pdf",
         cleanTitle: "Pharmacology Practical 1 and 2 - Formulations and Routes",
@@ -2050,6 +2110,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Immunopathology I.pdf"),
         bilingual_url: "/bilingual/Immunopathology_I_Bilingual.pdf",
         summary_url: "/summary/s3-immunopathology-1"
+      },
+      {
+        id: 326,
+        title: "Immunopathology II.pdf",
+        cleanTitle: "Immunopathology II - Transplant Rejection, Autoimmunity and Amyloidosis",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Immunopathology II - Transplant Rejection, Autoimmunity and Amyloidosis",
+        summary: "Hyperacute, acute and chronic transplant rejection, self-tolerance and autoimmune diseases, and amyloid types and classification.",
+        file_url: storageUrl("Immunopathology II.pdf"),
+        bilingual_url: "/bilingual/Immunopathology_II_Bilingual.pdf",
+        summary_url: "/summary/s3-immunopathology-2"
       },
       {
         id: 302,
@@ -2292,6 +2364,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-imm-cells-organs"
       },
       {
+        id: 327,
+        title: "Antigens and Antigen Presenting Cells.pdf",
+        cleanTitle: "Antigens and Antigen Presenting Cells",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Antigens and Antigen Presenting Cells",
+        summary: "Antigens, epitopes and haptens, antigenicity and immunogenicity, antigen presenting cells, and MHC molecules in antigen presentation.",
+        file_url: storageUrl("Antigens and Antigen Presenting Cells.pdf"),
+        bilingual_url: "/bilingual/Antigens_and_Antigen_Presenting_Cells_Bilingual.pdf",
+        summary_url: "/summary/s3-imm-antigens-apc"
+      },
+      {
         id: 222,
         title: "Introduction to Surgery.pdf",
         cleanTitle: "Introduction to Surgery",
@@ -2338,6 +2422,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Nutrition and Fluid Therapy.pdf"),
         bilingual_url: "/bilingual/Nutrition_and_Fluid_Therapy_Bilingual.pdf",
         summary_url: "/summary/s3-nutrition-fluid-therapy"
+      },
+      {
+        id: 328,
+        title: "Fluid and Nutritional Consequences of Intestinal Resection.pdf",
+        cleanTitle: "Fluid and Nutritional Consequences of Intestinal Resection",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Fluid and Nutritional Consequences of Intestinal Resection",
+        summary: "Intestinal physiology and the effects of resection, enteral nutrition, and parenteral nutrition with its complications.",
+        file_url: storageUrl("Fluid and Nutritional Consequences of Intestinal Resection.pdf"),
+        bilingual_url: "/bilingual/Fluid_and_Nutritional_Consequences_of_Intestinal_Resection_Bilingual.pdf",
+        summary_url: "/summary/s3-intestinal-resection-nutrition"
       },
       {
         id: 224,
@@ -2422,6 +2518,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 3 (6)1.pdf"),
         bilingual_url: "/bilingual/Pulmonary_Function_Tests_Bilingual.pdf",
         summary_url: "/summary/s3-pulmonary-function-tests"
+      },
+      {
+        id: 324,
+        title: "Major Manifestations of Lung Diseases.pdf",
+        cleanTitle: "Major Manifestations of Lung Diseases",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Major Manifestations of Lung Diseases (Respiratory Symptomatology)",
+        summary: "Dyspnoea and the MRC scale, cough and its associations, haemoptysis versus haematemesis, and the causes of chest pain.",
+        file_url: storageUrl("Major Manifestations of Lung Diseases.pdf"),
+        bilingual_url: "/bilingual/Major_Manifestations_of_Lung_Diseases_Bilingual.pdf",
+        summary_url: "/summary/s3-lung-disease-manifestations"
       },
       {
         id: 227,
