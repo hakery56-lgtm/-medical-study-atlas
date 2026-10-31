@@ -3,7 +3,7 @@
 import { anatomySystems, systemById, type LayerId, type SystemId } from "@/data/anatomy-systems"
 import { LAYERS, PRESETS, type RegionId } from "./catalog.ts"
 import { registry, requestSystem, loadIndex } from "./registry.ts"
-import { store, type CameraReq } from "./store.ts"
+import { freshQuiz, store, type CameraReq, type Sheet } from "./store.ts"
 
 let reqN = 0
 const camera = (r: Omit<CameraReq, "n">) => store.set({ cameraReq: { ...r, n: ++reqN } })
@@ -14,6 +14,7 @@ function ensureLoaded(ids: SystemId[]) {
 
 export const ROUND = 10
 let asked = new Set<string>()
+let testQueue: string[] = []
 let quizTimer: ReturnType<typeof setTimeout> | undefined
 
 export const actions = {
@@ -100,22 +101,26 @@ export const actions = {
     if (t.length < 2) return
     store.set((s) => ({ recent: [t, ...s.recent.filter((r) => r !== t)].slice(0, 6) }))
   },
-  openSheet(sheet: "layers" | "regions" | "search" | "more" | null) { store.set({ sheet }) },
+  openSheet(sheet: Sheet) { store.set({ sheet }) },
   dismissHint() { store.set({ hintDismissed: true }) },
 
   // ----- test yourself -----
+
+  // tap mode: "Tap the X" in whatever is on screen
   startQuiz() {
+    clearTimeout(quizTimer)
     asked = new Set()
-    store.set({ quiz: { active: true, target: null, score: 0, asked: 0, streak: 0, misses: 0, message: "", flash: null }, selected: null, isolated: null, sheet: null })
+    store.set({ quiz: freshQuiz({ active: true, mode: "tap", total: ROUND }), selected: null, isolated: null, sheet: null })
     actions.quizNext()
   },
   stopQuiz() {
     clearTimeout(quizTimer)
-    store.set({ quiz: { active: false, target: null, score: 0, asked: 0, streak: 0, misses: 0, message: "", flash: null } })
+    store.set({ quiz: freshQuiz() })
   },
   quizNext() {
     const q = store.get().quiz
-    if (q.asked >= ROUND) { store.set({ quiz: { ...q, target: null, flash: null, message: "done" } }); return }
+    if (q.mode === "name") { nextName(); return }
+    if (q.asked >= q.total) { store.set({ quiz: { ...q, target: null, flash: null, message: "done" } }); return }
     const region = store.get().lastRegion
     const pool: string[] = []
     registry.parts.forEach((p) => {
@@ -131,7 +136,7 @@ export const actions = {
   },
   quizAnswer(k: string | null) {
     const q = store.get().quiz
-    if (!q.active || !q.target || !k) return
+    if (!q.active || q.mode !== "tap" || !q.target || !k) return
     clearTimeout(quizTimer)
     if (k === q.target) {
       store.set({ quiz: { ...q, score: q.score + 1, streak: q.streak + 1, message: "Correct", flash: { key: k, ok: true, n: Date.now() } } })
@@ -153,4 +158,100 @@ export const actions = {
     if (t) camera({ kind: "part", arg: t })
   },
   quizSkip() { clearTimeout(quizTimer); actions.quizNext() },
+
+  // name mode: one test per body system. Only that system is shown, everything but the target is faded,
+  // and you pick its name from four choices.
+  async startTest(system: SystemId) {
+    clearTimeout(quizTimer)
+    store.set((s) => ({
+      quiz: freshQuiz({ active: true, mode: "name", system, message: "loading" }),
+      systemsOn: Object.fromEntries(anatomySystems.map((x) => [x.id, x.id === system])) as Record<SystemId, boolean>,
+      outline: false,
+      opacity: Object.fromEntries(anatomySystems.map((x) => [x.id, 1])) as Record<SystemId, number>,
+      hidden: new Set([...s.hidden].filter((k) => /segment of liver/i.test(k))),
+      preset: null, selected: null, isolated: null, sheet: null,
+    }))
+    requestSystem(system, true)
+    await whenSettled(system)
+    const q = store.get().quiz
+    if (!q.active || q.system !== system) return // stopped or switched while loading
+    if (store.get().load[system].status !== "ready") { store.set({ quiz: { ...q, message: "error" } }); return }
+    testQueue = testPool(system)
+    if (testQueue.length < 3) { store.set({ quiz: { ...q, message: "empty" } }); return }
+    store.set({ quiz: { ...q, total: Math.min(ROUND, testQueue.length), message: "" } })
+    nextName()
+  },
+  quizChoose(label: string) {
+    const q = store.get().quiz
+    if (!q.active || q.mode !== "name" || !q.target || q.chosen) return
+    clearTimeout(quizTimer)
+    const ok = label === q.correctLabel
+    store.set({
+      quiz: {
+        ...q, chosen: label, score: q.score + (ok ? 1 : 0), streak: ok ? q.streak + 1 : 0,
+        message: ok ? "Correct" : `It's the ${q.correctLabel}.`, flash: { key: q.target, ok: true, n: Date.now() },
+      },
+    })
+    quizTimer = setTimeout(nextName, ok ? 1100 : 2400)
+  },
+}
+
+// ---------- helpers for the per-system tests ----------
+
+const baseLabel = (label: string) => label.replace(/ \((left|right)\)$/, "")
+const shuffle = <T,>(a: T[]) => {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+function whenSettled(id: SystemId) {
+  return new Promise<void>((resolve) => {
+    const done = () => ["ready", "error"].includes(store.get().load[id].status)
+    if (done()) return resolve()
+    const off = store.subscribe(() => { if (done()) { off(); resolve() } })
+  })
+}
+
+// one question per distinct name (left and right count once); tiny structures are skipped unless the system is small
+function testPool(system: SystemId) {
+  const hidden = store.get().hidden
+  const small = [...registry.entryByKey.values()].filter((e) => e.system === system).length < 40
+  const seen = new Set<string>()
+  const keys: string[] = []
+  registry.parts.forEach((p) => {
+    if (p.system.id !== system || hidden.has(p.key) || p.radius < (small ? 0.004 : 0.01)) return
+    const b = baseLabel(p.label)
+    if (seen.has(b)) return
+    seen.add(b)
+    keys.push(p.key)
+  })
+  return shuffle(keys)
+}
+
+function nextName() {
+  const q = store.get().quiz
+  if (!q.active || q.mode !== "name") return
+  if (q.asked >= q.total || !testQueue.length) { store.set({ quiz: { ...q, target: null, flash: null, chosen: null, message: "done" } }); return }
+  const key = testQueue.shift()!
+  const part = registry.parts.get(key)
+  if (!part) { nextName(); return }
+  const correct = baseLabel(part.label)
+  // wrong choices: other names from the same system, nearest region first, topped up from the rest of the body
+  const same = new Map<string, number>()
+  registry.entryByKey.forEach((e) => {
+    const b = baseLabel(e.label)
+    if (e.system === part.system.id && b !== correct) same.set(b, e.region === part.region ? 0 : 1)
+  })
+  const near = shuffle([...same].filter(([, r]) => r === 0).map(([b]) => b))
+  const far = shuffle([...same].filter(([, r]) => r === 1).map(([b]) => b))
+  const wrong = [...near, ...far].slice(0, 3)
+  if (wrong.length < 3) {
+    const rest = shuffle([...registry.entryByKey.values()].filter((e) => e.system !== part.system.id).map((e) => baseLabel(e.label)))
+    for (const b of rest) if (wrong.length < 3 && !wrong.includes(b) && b !== correct) wrong.push(b)
+  }
+  store.set({ quiz: { ...q, target: key, asked: q.asked + 1, options: shuffle([correct, ...wrong]), correctLabel: correct, chosen: null, message: "", flash: null } })
+  camera({ kind: "part", arg: key })
 }

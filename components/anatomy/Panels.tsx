@@ -1,10 +1,11 @@
 "use client"
 
+import { useMemo } from "react"
 import { Check, GraduationCap, RotateCcw } from "lucide-react"
 import { anatomySystems } from "@/data/anatomy-systems"
 import { LAYERS, PRESETS, REGIONS } from "@/lib/anatomy/catalog"
 import { actions } from "@/lib/anatomy/actions"
-import { requestSystem } from "@/lib/anatomy/registry"
+import { registry, requestSystem } from "@/lib/anatomy/registry"
 import { store, useStore } from "@/lib/anatomy/store"
 
 const border = { borderColor: "var(--border-color)" }
@@ -178,11 +179,40 @@ export function RegionsPanel() {
   )
 }
 
-export function TestButton() {
+export function TestsPanel() {
+  const version = useStore((s) => s.version)
+  const counts = useMemo(() => {
+    const c: Record<string, number> = {}
+    const seen = new Set<string>()
+    registry.entryByKey.forEach((e) => {
+      const id = e.system + ":" + e.label.replace(/ \((left|right)\)$/, "")
+      if (seen.has(id)) return
+      seen.add(id)
+      c[e.system] = (c[e.system] ?? 0) + 1
+    })
+    return c
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [version])
   return (
-    <button onClick={actions.startQuiz} className="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl text-sm font-bold" style={{ backgroundColor: "var(--accent)", color: "var(--accent-contrast)" }}>
-      <GraduationCap size={17} /> Test yourself
-    </button>
+    <section>
+      <Heading hint="10 questions each">Test yourself</Heading>
+      <ul className="divide-y rounded-xl border" style={{ ...border, backgroundColor: "var(--bg-card)" }}>
+        {anatomySystems.map((sys) => (
+          <li key={sys.id} style={border}>
+            <button onClick={() => actions.startTest(sys.id)} className="flex min-h-[48px] w-full items-center gap-3 px-3 py-2 text-left focus-visible:outline-2 focus-visible:outline-offset-[-2px]" style={{ outlineColor: "var(--accent)" }}>
+              <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: sys.color }} />
+              <span className="min-w-0 flex-1">
+                <span className="block text-sm font-semibold" style={{ color: "var(--text-main)" }}>{sys.label.replace(" & Sense organs", "")}</span>
+                <span className="block text-[11px]" style={{ color: "var(--text-muted)" }}>{counts[sys.id] ? `${counts[sys.id]} structures` : "Name the glowing structure"}</span>
+              </span>
+              <GraduationCap size={16} style={{ color: "var(--accent)" }} aria-hidden />
+            </button>
+          </li>
+        ))}
+      </ul>
+      <button onClick={actions.startQuiz} className="mt-2 flex min-h-[44px] w-full items-center justify-center rounded-xl border text-[13px] font-semibold" style={{ ...border, color: "var(--text-main)", backgroundColor: "var(--bg-card)" }}>
+        Or tap structures in the current view
+      </button>
+    </section>
   )
 }
-

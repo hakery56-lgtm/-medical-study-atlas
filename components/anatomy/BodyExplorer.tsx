@@ -11,7 +11,7 @@ import { store, useStore } from "@/lib/anatomy/store"
 import type { Tier } from "@/lib/anatomy/materials"
 import Scene from "./Scene"
 import SearchBox from "./SearchBox"
-import { LayersPanel, RegionsPanel, TestButton } from "./Panels"
+import { LayersPanel, RegionsPanel, TestsPanel } from "./Panels"
 import { QuizBar, SelectionCard } from "./Cards"
 
 const border = { borderColor: "var(--border-color)" }
@@ -125,7 +125,7 @@ export default function BodyExplorer() {
     return () => window.removeEventListener("keydown", on)
   }, [])
 
-  const tool = (id: "layers" | "regions" | "search", text: string, icon: React.ReactNode) => (
+  const tool = (id: "layers" | "regions" | "search" | "tests", text: string, icon: React.ReactNode) => (
     <button key={id} onClick={() => actions.openSheet(sheet === id ? null : id)} aria-pressed={sheet === id} className="flex min-h-[48px] flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-semibold" style={{ color: sheet === id ? "var(--accent)" : "var(--text-main)" }}>
       {icon}{text}
     </button>
@@ -138,7 +138,7 @@ export default function BodyExplorer() {
         <SearchBox />
         <LayersPanel />
         <RegionsPanel />
-        <TestButton />
+        <TestsPanel />
         <p className="text-[10px] leading-relaxed" style={{ color: "var(--text-muted)" }}>
           Models: Z-Anatomy (CC BY-SA 4.0) and BodyParts3D © DBCLS (CC BY-SA 2.1 JP). <a href="/models/LICENSE.txt" className="underline">Details</a>
         </p>
@@ -150,7 +150,7 @@ export default function BodyExplorer() {
           frameloop="demand" dpr={[1, dpr]} aria-label="3D model of the human body"
           camera={{ fov: layout.fov, near: 0.005, far: 20, position: [0, 0, 3.5] }}
           gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-          onCreated={({ gl }) => { gl.toneMapping = NeutralToneMapping; gl.toneMappingExposure = 1.0 }}
+          onCreated={({ gl }) => { gl.toneMapping = NeutralToneMapping; gl.toneMappingExposure = 1.0; gl.localClippingEnabled = true }}
         >
           <Scene tier={tier} onDecline={() => setDpr(1)} />
         </Canvas>
@@ -181,11 +181,11 @@ export default function BodyExplorer() {
         {sheet === "search" && (
           <div className="absolute inset-x-3 top-3 z-30 md:hidden"><SearchBox autoFocus onDone={() => actions.openSheet(null)} /></div>
         )}
-        {(sheet === "layers" || sheet === "regions") && (
+        {(sheet === "layers" || sheet === "regions" || sheet === "tests") && (
           <>
             <button aria-label="Close panel" onClick={() => actions.openSheet(null)} className="absolute inset-0 z-20 md:hidden" />
-            <div role="dialog" aria-label={sheet === "layers" ? "Layers" : "Regions"} className="absolute inset-x-0 z-20 max-h-[60dvh] overflow-y-auto rounded-t-2xl border-t p-5 shadow-2xl md:hidden" style={{ bottom: `calc(${TOOLBAR_PX}px + env(safe-area-inset-bottom))`, backgroundColor: "var(--bg-pane)", ...border }}>
-              {sheet === "layers" ? <LayersPanel /> : <RegionsPanel />}
+            <div role="dialog" aria-label={sheet === "layers" ? "Layers" : sheet === "regions" ? "Regions" : "Tests"} className="absolute inset-x-0 z-20 max-h-[60dvh] overflow-y-auto rounded-t-2xl border-t p-5 shadow-2xl md:hidden" style={{ bottom: `calc(${TOOLBAR_PX}px + env(safe-area-inset-bottom))`, backgroundColor: "var(--bg-pane)", ...border }}>
+              {sheet === "layers" ? <LayersPanel /> : sheet === "regions" ? <RegionsPanel /> : <TestsPanel />}
               <p className="mt-5 text-[10px]" style={{ color: "var(--text-muted)" }}>Models: Z-Anatomy and BodyParts3D (CC BY-SA). <a href="/models/LICENSE.txt" className="underline">Details</a></p>
             </div>
           </>
@@ -194,7 +194,7 @@ export default function BodyExplorer() {
           {tool("layers", "Layers", <Layers size={20} />)}
           {tool("regions", "Regions", <MapPin size={20} />)}
           {tool("search", "Search", <Search size={20} />)}
-          <button onClick={() => (quizActive ? actions.stopQuiz() : actions.startQuiz())} aria-pressed={quizActive} className="flex min-h-[48px] flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-semibold" style={{ color: quizActive ? "var(--accent)" : "var(--text-main)" }}><GraduationCap size={20} />Test</button>
+          <button onClick={() => (quizActive ? actions.stopQuiz() : actions.openSheet(sheet === "tests" ? null : "tests"))} aria-pressed={quizActive || sheet === "tests"} className="flex min-h-[48px] flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-semibold" style={{ color: quizActive || sheet === "tests" ? "var(--accent)" : "var(--text-main)" }}><GraduationCap size={20} />{quizActive ? "Stop" : "Test"}</button>
           <button onClick={actions.home} className="flex min-h-[48px] flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-semibold" style={{ color: "var(--text-main)" }}><RotateCcw size={20} />Reset</button>
         </nav>
       </div>

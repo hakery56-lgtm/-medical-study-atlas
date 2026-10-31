@@ -59,6 +59,11 @@ for (const [sys, rows] of Object.entries(idx.systems)) {
 console.log("tissues:", dist)
 assert.ok((dist.generic ?? 0) / total < 0.03, "too many generic structures")
 
+// removed structures never reach the catalogue
+assert.ok(isJunk("Glans penis") && isJunk("Testis.l") && isJunk("Left testicular artery") && isJunk("Deep dorsal vein of penis"))
+assert.ok(!isJunk("Prostate") && !isJunk("Seminal gland.l"))
+assert.ok(!entries.some((e) => /penis|testis|testicular|epididym/i.test(e.label)))
+
 // search
 assert.match(searchIndex(entries, "bicep")[0].label, /biceps brachii/i)
 assert.ok(searchIndex(entries, "femur").length > 0)

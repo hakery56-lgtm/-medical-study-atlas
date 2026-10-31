@@ -4,7 +4,7 @@ import * as THREE from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js"
 import { anatomySystems, prettyName, systemById, type AnatomySystem, type SystemId } from "@/data/anatomy-systems"
-import { baseName, classifyTissue, isJunk, normalize, regionOf, sideOf, type RegionId, type SearchEntry, type Side, type Tissue } from "./catalog.ts"
+import { CLIP_BELOW, baseName, classifyTissue, isJunk, normalize, regionOf, sideOf, type RegionId, type SearchEntry, type Side, type Tissue } from "./catalog.ts"
 import { TISSUES, ghostMaterial, makeMaterial, principalAxis, type Tier } from "./materials.ts"
 import { store, type State } from "./store.ts"
 
@@ -86,6 +86,8 @@ function buildParts(sys: AnatomySystem, scene: THREE.Group) {
       tissue ??= t
       const axis = (TISSUES[t].fibre ?? 0) > 0 ? principalAxis(mesh.geometry) : new THREE.Vector3(0, 1, 0)
       const m = makeMaterial(t, old.color ?? null, name, axis, registry.tier, sys.color)
+      const clip = CLIP_BELOW.find((c) => c.re.test(name))
+      if (clip) m.clippingPlanes = [new THREE.Plane(new THREE.Vector3(0, 1, 0), -clip.y)]
       mesh.material = m
       old.dispose()
       meshes.push(mesh)
@@ -184,6 +186,7 @@ const BAD = new THREE.Color("#ef4444")
 export function glowOf(p: Part, s: State) {
   const f = s.quiz.flash
   if (f && f.key === p.key) return { color: f.ok ? GOOD : BAD, k: 0.6 }
+  if (s.quiz.active && s.quiz.mode === "name") return { color: ACCENT, k: p.key === s.quiz.target ? 0.7 : 0 }
   if (s.quiz.active) return { color: ACCENT, k: 0 }
   if (p.key === s.selected) return { color: ACCENT, k: 0.6 }
   if (p.key === registry.hoverKey) return { color: ACCENT, k: 0.25 }
@@ -210,7 +213,9 @@ export function applyVisuals(s: State) {
       if (isGhost) { mesh.material = ghostMaterial; continue }
       mesh.material = m
       const base = (m.userData.baseOpacity as number) ?? 1
-      const o = s.isolated ? 1 : base * s.opacity[sysId]
+      // in a name test everything of that system except the question is faded so the target stands out
+      const faded = s.quiz.active && s.quiz.mode === "name" && !!s.quiz.target && sysId === s.quiz.system && p.key !== s.quiz.target
+      const o = s.isolated ? 1 : faded ? 0.07 : base * s.opacity[sysId]
       const translucent = o < 0.999
       if (m.transparent !== translucent) { m.transparent = translucent; m.needsUpdate = true }
       m.opacity = o

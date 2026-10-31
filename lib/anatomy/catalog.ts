@@ -52,7 +52,16 @@ export const regionLabel = (id: RegionId) => REGIONS.find((r) => r.id === id)!.l
 // ---------- names ----------
 
 export const baseName = (raw: string) => raw.replace(/\.[lr]$/, "")
-export const isJunk = (raw: string) => /^\?/.test(raw)
+// Structures that are never shown, searched or tested: broken names from the source model, and the external male
+// genitalia (penis, scrotal contents and their vessels). Internal anatomy such as the prostate stays.
+const REMOVED = /penis|penile|glans|prepuce|foreskin|scrot|testis|testes|testic|epididym|spermatic cord/i
+// Parts of these structures that hang outside the pelvis are cut off (everything below world y is not drawn),
+// so the urethra and the deferent duct end inside the body instead of dangling where the penis was.
+export const CLIP_BELOW: { re: RegExp; y: number }[] = [
+  { re: /^Urethra$/, y: -0.045 },
+  { re: /^Ductus deferens/, y: -0.05 },
+]
+export const isJunk = (raw: string) => /^\?/.test(raw) || REMOVED.test(raw)
 
 export function sideOf(raw: string, x: number): Side {
   if (raw.endsWith(".l")) return "l"

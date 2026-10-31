@@ -60,10 +60,11 @@ function Visuals() {
   const selected = useStore((s) => s.selected)
   const flash = useStore((s) => s.quiz.flash)
   const quizActive = useStore((s) => s.quiz.active)
+  const quizTarget = useStore((s) => s.quiz.target)
   useEffect(() => {
     applyVisuals(store.get())
     invalidate()
-  }, [version, systemsOn, outline, opacity, hidden, isolated, selected, flash, quizActive, invalidate])
+  }, [version, systemsOn, outline, opacity, hidden, isolated, selected, flash, quizActive, quizTarget, invalidate])
   return null
 }
 
@@ -232,7 +233,7 @@ function Picker() {
       if (Math.hypot(e.clientX - d.x, e.clientY - d.y) > slop || performance.now() - d.t > 450) return
       const k = pick(e.clientX, e.clientY)
       const s = store.get()
-      if (s.quiz.active) { actions.quizAnswer(k); return }
+      if (s.quiz.active) { if (s.quiz.mode === "tap") actions.quizAnswer(k); return }
       const now = performance.now()
       if (k && lastTap.key === k && now - lastTap.t < 320) { actions.focus(k); lastTap = { key: "", t: 0 } } else lastTap = { key: k ?? "", t: now }
       actions.select(k)

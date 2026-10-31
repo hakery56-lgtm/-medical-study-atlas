@@ -7,16 +7,27 @@ import { PRESETS, type RegionId } from "./catalog"
 export interface LoadState { status: "idle" | "queued" | "loading" | "ready" | "error"; p: number }
 export interface QuizState {
   active: boolean
+  // "tap": tap the named structure in the current view; "name": pick the name of the highlighted one (one system)
+  mode: "tap" | "name"
+  system: SystemId | null
   target: string | null
   score: number
   asked: number
+  total: number
   streak: number
   misses: number
   message: string
   flash: { key: string; ok: boolean; n: number } | null
+  options: string[]
+  correctLabel: string
+  chosen: string | null
 }
+export const freshQuiz = (patch: Partial<QuizState> = {}): QuizState => ({
+  active: false, mode: "tap", system: null, target: null, score: 0, asked: 0, total: 10, streak: 0, misses: 0,
+  message: "", flash: null, options: [], correctLabel: "", chosen: null, ...patch,
+})
 export type CameraReq = { kind: "home" | "part" | "region" | "view"; arg?: string; side?: 1 | -1; n: number }
-export type Sheet = null | "layers" | "regions" | "search" | "more"
+export type Sheet = null | "layers" | "regions" | "search" | "tests"
 
 export interface State {
   systemsOn: Record<SystemId, boolean>
@@ -52,7 +63,7 @@ const initial: State = {
   selected: null,
   load: rec(() => ({ status: "idle", p: 0 })),
   version: 0,
-  quiz: { active: false, target: null, score: 0, asked: 0, streak: 0, misses: 0, message: "", flash: null },
+  quiz: freshQuiz(),
   cameraReq: null,
   sheet: null,
   hintDismissed: false,
