@@ -150,7 +150,7 @@ export default function BodyExplorer() {
           frameloop="demand" dpr={[1, dpr]} aria-label="3D model of the human body"
           camera={{ fov: layout.fov, near: 0.005, far: 20, position: [0, 0, 3.5] }}
           gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-          onCreated={({ gl }) => { gl.toneMapping = NeutralToneMapping; gl.toneMappingExposure = 1.0; gl.localClippingEnabled = true }}
+          onCreated={({ gl }) => { gl.toneMapping = NeutralToneMapping; gl.toneMappingExposure = 1.0 }}
         >
           <Scene tier={tier} onDecline={() => setDpr(1)} />
         </Canvas>

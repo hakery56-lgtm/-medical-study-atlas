@@ -4,7 +4,7 @@ import * as THREE from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js"
 import { anatomySystems, prettyName, systemById, type AnatomySystem, type SystemId } from "@/data/anatomy-systems"
-import { CLIP_BELOW, baseName, classifyTissue, isJunk, normalize, regionOf, sideOf, type RegionId, type SearchEntry, type Side, type Tissue } from "./catalog.ts"
+import { baseName, classifyTissue, isJunk, normalize, regionOf, sideOf, type RegionId, type SearchEntry, type Side, type Tissue } from "./catalog.ts"
 import { TISSUES, ghostMaterial, makeMaterial, principalAxis, type Tier } from "./materials.ts"
 import { store, type State } from "./store.ts"
 
@@ -86,8 +86,6 @@ function buildParts(sys: AnatomySystem, scene: THREE.Group) {
       tissue ??= t
       const axis = (TISSUES[t].fibre ?? 0) > 0 ? principalAxis(mesh.geometry) : new THREE.Vector3(0, 1, 0)
       const m = makeMaterial(t, old.color ?? null, name, axis, registry.tier, sys.color)
-      const clip = CLIP_BELOW.find((c) => c.re.test(name))
-      if (clip) m.clippingPlanes = [new THREE.Plane(new THREE.Vector3(0, 1, 0), -clip.y)]
       mesh.material = m
       old.dispose()
       meshes.push(mesh)
