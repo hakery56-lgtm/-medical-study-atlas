@@ -1683,6 +1683,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/hemoglobin-lab3"
       },
       {
+        id: 332,
+        title: "Physiology Lab 7 - RBC Indices.pdf",
+        cleanTitle: "Physiology Lab 7 - RBC Indices",
+        type: "lab",
+        discipline: "Physiology",
+        topic: "Physiology Lab 7 - RBC Indices",
+        summary: "MCV, MCH and MCHC: formulas, normal ranges, the indices in common anemias, and worked cases.",
+        file_url: storageUrl("Physiology Lab 7 - RBC Indices.pdf"),
+        bilingual_url: "/bilingual/Physiology_Lab_7_RBC_Indices_Bilingual.pdf",
+        summary_url: "/summary/physiology-lab7-rbc-indices"
+      },
+      {
         id: 125,
         title: "12-Lead ECG Recording - 2nd Stage Mastery Skills.pdf",
         cleanTitle: "12-Lead ECG Recording (2nd Stage Mastery Skills)",
@@ -1707,6 +1719,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/capillary-glucose-mastery"
       },
       {
+        id: 331,
+        title: "First Aid - 2nd Stage Mastery Skills.pdf",
+        cleanTitle: "First Aid (2nd Stage Mastery Skills)",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "First Aid - 2nd Stage Mastery Skills",
+        summary: "The safe approach and first aid kit, and what to do for nosebleeds, burns, convulsions, sprains, fractures, amputations and choking.",
+        file_url: storageUrl("First Aid - 2nd Stage Mastery Skills.pdf"),
+        bilingual_url: "/bilingual/First_Aid_2nd_Stage_Mastery_Skills_Bilingual.pdf",
+        summary_url: "/summary/first-aid-mastery"
+      },
+      {
         id: 143,
         title: "CBD RTA and Hyperlipidemia.pdf",
         cleanTitle: "CBD - RTA and Hyperlipidemia",
@@ -1717,6 +1741,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("CBD RTA and Hyperlipidemia.pdf"),
         bilingual_url: "/bilingual/CBD_RTA_and_Hyperlipidemia_Bilingual.pdf",
         summary_url: "/summary/cbd-rta-hyperlipidemia"
+      },
+      {
+        id: 333,
+        title: "CBD-TBL - Anemia Secondary to CKD.pdf",
+        cleanTitle: "CBD-TBL - Anemia Secondary to Chronic Kidney Disease",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "CBD-TBL - Anemia Secondary to Chronic Kidney Disease",
+        summary: "Erythropoiesis, EPO and HIF, hemoglobin versus hematocrit, and the causes, iron handling and treatment of anemia in CKD.",
+        file_url: storageUrl("CBD-TBL - Anemia Secondary to CKD.pdf"),
+        bilingual_url: "/bilingual/CBD_TBL_Anemia_Secondary_to_CKD_Bilingual.pdf",
+        summary_url: "/summary/cbd-anemia-ckd"
       },
     ],
   },
@@ -1906,6 +1942,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Adrenergic Antagonists - Alpha and Beta Blockers.pdf"),
         bilingual_url: "/bilingual/Adrenergic_Antagonists_Alpha_and_Beta_Blockers_Bilingual.pdf",
         summary_url: "/summary/s3-ans-adrenergic-antagonists"
+      },
+      {
+        id: 335,
+        title: "CVS 1 - Antianginal Drugs.pdf",
+        cleanTitle: "CVS 1 - Antianginal Drugs",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "CVS 1 - Antianginal Drugs",
+        summary: "Angina and oxygen balance, then beta-blockers, calcium channel blockers, organic nitrates and ranolazine, and how to choose the drug.",
+        file_url: storageUrl("CVS 1 - Antianginal Drugs.pdf"),
+        bilingual_url: "/bilingual/CVS_1_Antianginal_Drugs_Bilingual.pdf",
+        summary_url: "/summary/s3-antianginal-drugs"
       },
       {
         id: 250,
@@ -2374,6 +2422,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Antigens and Antigen Presenting Cells.pdf"),
         bilingual_url: "/bilingual/Antigens_and_Antigen_Presenting_Cells_Bilingual.pdf",
         summary_url: "/summary/s3-imm-antigens-apc"
+      },
+      {
+        id: 334,
+        title: "Immunoglobulins - Structure and Function.pdf",
+        cleanTitle: "Immunoglobulins - Structure and Function",
+        type: "lecture",
+        discipline: "Immunology",
+        topic: "Immunoglobulins - Structure and Function",
+        summary: "Antibody structure and fragments, the five classes and subclasses, isotype, allotype and idiotype, antibody roles and monoclonal antibodies.",
+        file_url: storageUrl("Immunoglobulins - Structure and Function.pdf"),
+        bilingual_url: "/bilingual/Immunoglobulins_Structure_and_Function_Bilingual.pdf",
+        summary_url: "/summary/s3-imm-immunoglobulins"
       },
       {
         id: 222,
