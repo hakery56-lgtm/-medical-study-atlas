@@ -2736,6 +2736,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-psychology-perception"
       },
       {
+        id: 336,
+        title: "Developmental Psychology.pdf",
+        cleanTitle: "Developmental Psychology",
+        type: "lecture",
+        discipline: "Psychology",
+        topic: "Psychology - Developmental Psychology",
+        summary: "Brain development and critical periods, Piaget's four stages, Vygotsky's sociocultural theory and Kohlberg's stages of moral development.",
+        file_url: storageUrl("Developmental Psychology.pdf"),
+        bilingual_url: "/bilingual/Developmental_Psychology_Bilingual.pdf",
+        summary_url: "/summary/s3-psychology-developmental"
+      },
+      {
         id: 230,
         title: "Histopathology Lab 1.pdf",
         cleanTitle: "Histopathology Lab 1 - Introduction to Pathology",
