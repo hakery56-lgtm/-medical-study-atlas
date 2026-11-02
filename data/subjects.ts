@@ -1086,6 +1086,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/neoplasia-concepts"
       },
       {
+        id: 337,
+        title: "Neoplasia_Molecular_Basis_of_Cancer.pdf",
+        cleanTitle: "Neoplasia: Molecular Basis of Cancer",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Neoplasia: Molecular Basis of Cancer",
+        summary: "Principles of carcinogenesis, the hallmarks of cancer, oncogenes and tumor suppressor genes, DNA repair defects, carcinogens, tumor viruses and tumor immunity.",
+        file_url: storageUrl("Neoplasia_Molecular_Basis_of_Cancer.pdf"),
+        bilingual_url: "/bilingual/Neoplasia_Molecular_Basis_of_Cancer_Bilingual.pdf",
+        summary_url: "/summary/neoplasia-molecular-basis"
+      },
+      {
         id: 313,
         title: "Neoplasia_Practical.pdf",
         cleanTitle: "Neoplasia Practical Session",
@@ -1096,6 +1108,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Neoplasia_Practical.pdf"),
         bilingual_url: "/bilingual/Neoplasia_Practical_Bilingual.pdf",
         summary_url: "/summary/neoplasia-practical"
+      },
+      {
+        id: 338,
+        title: "Bone_Tumor_Pathology.pdf",
+        cleanTitle: "Bone Tumor Pathology",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Bone Tumors",
+        summary: "Bone-forming, cartilage-forming and fibrous tumors, Ewing sarcoma, giant cell tumor, metastatic bone tumors and a classification table.",
+        file_url: storageUrl("Bone_Tumor_Pathology.pdf"),
+        bilingual_url: "/bilingual/Bone_Tumor_Pathology_Bilingual.pdf",
+        summary_url: "/summary/bone-tumor-pathology"
       },
       {
         id: 316,
