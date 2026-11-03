@@ -1122,6 +1122,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/bone-tumor-pathology"
       },
       {
+        id: 339,
+        title: "Bone_Tumours_1_2nd_Stage_2026.pdf",
+        cleanTitle: "Bone Tumours 1 (2nd Stage 2026)",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Surgery - Bone Tumours 1 (2nd Stage 2026)",
+        summary: "Presentation, imaging, labs, biopsy, staging and treatment of bone tumours, plus the benign lesions: non-ossifying fibroma, fibrous dysplasia, osteoid osteoma, chondroma, osteochondroma, giant-cell tumour and bone cysts.",
+        file_url: storageUrl("Bone_Tumours_1_2nd_Stage_2026.pdf"),
+        bilingual_url: "/bilingual/Bone_Tumours_1_2nd_Stage_2026_Bilingual.pdf",
+        summary_url: "/summary/bone-tumours-1-2026"
+      },
+      {
+        id: 340,
+        title: "Bone_Tumours_2_2nd_Stage_2026.pdf",
+        cleanTitle: "Bone Tumours 2 (2nd Stage 2026)",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Surgery - Bone Tumours 2 (2nd Stage 2026)",
+        summary: "Benign bone tumours reviewed, then chondrosarcoma, osteosarcoma, Ewing's sarcoma, multiple myeloma and metastatic bone disease with their features, X-ray signs and treatment.",
+        file_url: storageUrl("Bone_Tumours_2_2nd_Stage_2026.pdf"),
+        bilingual_url: "/bilingual/Bone_Tumours_2_2nd_Stage_2026_Bilingual.pdf",
+        summary_url: "/summary/bone-tumours-2-2026"
+      },
+      {
         id: 316,
         title: "Arabic_Indefinite_Subject.pdf",
         cleanTitle: "Justifications for Starting with an Indefinite Noun (Arabic Grammar)",
@@ -1671,6 +1695,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/skin-histology-practical"
       },
       {
+        id: 341,
+        title: "Histology of the Respiratory System L1.pdf",
+        cleanTitle: "Histology of the Respiratory System L1",
+        type: "lecture",
+        discipline: "Histology",
+        topic: "Histology of the Respiratory System L1 - Conducting Portion",
+        summary: "Respiratory mucosa and epithelium (five cell types, immotile cilia syndrome), nasal cavities, olfactory epithelium, paranasal sinuses, larynx and trachea.",
+        file_url: storageUrl("Histology of the Respiratory System L1.pdf"),
+        bilingual_url: "/bilingual/Histology_of_the_Respiratory_System_L1_Bilingual.pdf",
+        summary_url: "/summary/histology-respiratory-1"
+      },
+      {
         id: 117,
         title: "High-Energy Compounds.pdf",
         cleanTitle: "Bioenergetics: High-Energy Compounds",
@@ -2208,6 +2244,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-histopath-lab6-immunopathology"
       },
       {
+        id: 343,
+        title: "Histopathology Lab7 Genetics Pedigree and Karyotype.pdf",
+        cleanTitle: "Histopathology Lab 7 - Genetics, Pedigree and Karyotype",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Histopathology Lab 7: Genetics, Pedigree and Karyotype",
+        summary: "Pedigree symbols, autosomal dominant, recessive and X-linked inheritance risks, karyotype nomenclature, and numerical and structural chromosome abnormalities.",
+        file_url: storageUrl("Histopathology Lab7 Genetics Pedigree and Karyotype.pdf"),
+        bilingual_url: "/bilingual/Histopathology_Lab7_Genetics_Pedigree_and_Karyotype_Bilingual.pdf",
+        summary_url: "/summary/s3-histopath-lab7-genetics"
+      },
+      {
         id: 285,
         title: "Genetic Diseases and Cytogenetic Abnormalities.pdf",
         cleanTitle: "Genetic Diseases and Cytogenetic Abnormalities",
@@ -2374,6 +2422,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Parasitology L8 - Plasmodium (Malaria).pdf"),
         bilingual_url: "/bilingual/Parasitology_L8_Plasmodium_Malaria_Bilingual.pdf",
         summary_url: "/summary/s3-para-8"
+      },
+      {
+        id: 345,
+        title: "Parasitology L9 - Haemoflagellates Leishmania.pdf",
+        cleanTitle: "Parasitology L9 - Haemoflagellates (Leishmania)",
+        type: "lecture",
+        discipline: "Parasitology",
+        topic: "Parasitology L9 - Haemoflagellates (Leishmania)",
+        summary: "Haemoflagellate stages, Leishmania species and life cycles, kala-azar, cutaneous and muco-cutaneous leishmaniasis, diagnosis, treatment and prophylaxis.",
+        file_url: storageUrl("Parasitology L9 - Haemoflagellates Leishmania.pdf"),
+        bilingual_url: "/bilingual/Parasitology_L9_Haemoflagellates_Leishmania_Bilingual.pdf",
+        summary_url: "/summary/s3-para-9"
       },
       {
         id: 303,
@@ -2604,6 +2664,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-pulmonary-function-tests"
       },
       {
+        id: 346,
+        title: "Pulmonary Function Tests - Spirometry in Clinical Practice.pdf",
+        cleanTitle: "Pulmonary Function Tests - Spirometry in Clinical Practice",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Pulmonary Function Tests - Spirometry in Clinical Practice",
+        summary: "What PFTs include, indications and contraindications, spirometry parameters, flow-volume loop patterns, two worked reports and upper airway obstruction.",
+        file_url: storageUrl("Pulmonary Function Tests - Spirometry in Clinical Practice.pdf"),
+        bilingual_url: "/bilingual/Pulmonary_Function_Tests_Spirometry_Bilingual.pdf",
+        summary_url: "/summary/s3-pulmonary-function-spirometry"
+      },
+      {
         id: 324,
         title: "Major Manifestations of Lung Diseases.pdf",
         cleanTitle: "Major Manifestations of Lung Diseases",
@@ -2674,6 +2746,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 2 (12).pdf"),
         bilingual_url: "/bilingual/Summarization_and_Presentation_of_Data_Bilingual.pdf",
         summary_url: "/summary/s3-biostat-summarizing-data"
+      },
+      {
+        id: 344,
+        title: "Measures of Central Tendency.pdf",
+        cleanTitle: "Measures of Central Tendency",
+        type: "lecture",
+        discipline: "Community Medicine",
+        topic: "Measures of Central Tendency",
+        summary: "Mean, median and mode: definitions, formulas, uses, behaviour in normal and skewed distributions, with a worked plasma-volume exercise.",
+        file_url: storageUrl("Measures of Central Tendency.pdf"),
+        bilingual_url: "/bilingual/Measures_of_Central_Tendency_Bilingual.pdf",
+        summary_url: "/summary/s3-biostat-central-tendency"
       },
       {
         id: 229,
@@ -2878,6 +2962,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Microbiology Lab 4 - Handling of Bacterial Cultures.pdf"),
         bilingual_url: "/bilingual/Microbiology_Lab4_Handling_of_Bacterial_Cultures_Bilingual.pdf",
         summary_url: "/summary/s3-micro-lab4"
+      },
+      {
+        id: 342,
+        title: "Microbiology Lab 5 - Antibiotic Susceptibility Testing.pdf",
+        cleanTitle: "Microbiology Lab 5 - Antibiotic Susceptibility Testing",
+        type: "lab",
+        discipline: "Labs",
+        topic: "Microbiology Lab 5 - Antibiotic Susceptibility Testing",
+        summary: "Kirby-Bauer disk diffusion and the zone chart, the E-test, MIC versus MBC, CLSI S/I/SDD/R categories, and MDR, XDR and PDR.",
+        file_url: storageUrl("Microbiology Lab 5 - Antibiotic Susceptibility Testing.pdf"),
+        bilingual_url: "/bilingual/Microbiology_Lab5_Antibiotic_Susceptibility_Testing_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-lab5"
       },
       {
         id: 247,
