@@ -442,6 +442,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/malingering"
       },
       {
+        id: 348,
+        title: "Hypochondriasis.pdf",
+        cleanTitle: "Hypochondriasis",
+        type: "lecture",
+        discipline: "Psychiatry",
+        topic: "Psychiatry - Hypochondriasis",
+        summary: "Definition, onset, epidemiology, features and symptoms, five etiology models, ICD-10 and DSM-IV criteria, and therapy recommendations for hypochondriasis.",
+        file_url: storageUrl("Hypochondriasis.pdf"),
+        bilingual_url: "/bilingual/Hypochondriasis_Bilingual.pdf",
+        summary_url: "/summary/hypochondriasis"
+      },
+      {
         id: 30,
         title: "Infectious Diseases of the PNS - Shingles.pdf",
         cleanTitle: "Infectious Diseases of the PNS - Shingles",
@@ -1108,6 +1120,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Neoplasia_Practical.pdf"),
         bilingual_url: "/bilingual/Neoplasia_Practical_Bilingual.pdf",
         summary_url: "/summary/neoplasia-practical"
+      },
+      {
+        id: 347,
+        title: "Anticancer Drugs.pdf",
+        cleanTitle: "Anticancer Drugs",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Anticancer Drugs",
+        summary: "Classification, mechanisms, uses and toxicities of alkylating agents, antimetabolites, antitumor antibiotics, topoisomerase inhibitors, vinca alkaloids and taxanes, platinum compounds, hormonal therapy and immunomodulators.",
+        file_url: storageUrl("Anticancer Drugs.pdf"),
+        bilingual_url: "/bilingual/Anticancer_Drugs_Bilingual.pdf",
+        summary_url: "/summary/anticancer-drugs"
       },
       {
         id: 338,
@@ -1990,6 +2014,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Sympathomimetics_Practical6.pdf"),
         bilingual_url: "/bilingual/Sympathomimetics_Practical6_Bilingual.pdf",
         summary_url: "/summary/s3-pharm-practical-6-sympathomimetics"
+      },
+      {
+        id: 349,
+        title: "Parasympathetic_Drugs_Practical7.pdf",
+        cleanTitle: "Pharmacology Practical 7 - Parasympathetic Drugs (Glaucoma Case)",
+        type: "lab",
+        discipline: "Pharmacology",
+        topic: "Pharmacology - Parasympathetic Drugs Practical 7 (Glaucoma)",
+        summary: "Glaucoma case on latanoprost, acetazolamide and pilocarpine: aqueous humor, antimuscarinics that raise IOP, miotics, AChE inhibitors and organophosphate poisoning, and the eye-drop patient guide.",
+        file_url: storageUrl("Parasympathetic_Drugs_Practical7.pdf"),
+        bilingual_url: "/bilingual/Parasympathetic_Drugs_Practical7_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-practical-7-parasympathetic"
       },
       {
         id: 279,
