@@ -810,6 +810,30 @@ export const subjects: Subject[] = [
         summary_url: "/summary/pbl7-complementary-cases"
       },
       {
+        id: 355,
+        title: "PBL8_Painful_Knee.pdf",
+        cleanTitle: "PBL 8 - Painful Knee (Osteoarthritis)",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "Orthopedics - PBL 8 Painful Knee (Osteoarthritis)",
+        summary: "A 55-year-old nurse with mechanical knee pain: osteoarthritis, loss of joint space and osteophytes, conservative management, then knee replacement.",
+        file_url: storageUrl("PBL8_Painful_Knee.pdf"),
+        bilingual_url: "/bilingual/PBL8_Painful_Knee_Bilingual.pdf",
+        summary_url: "/summary/pbl8-painful-knee"
+      },
+      {
+        id: 356,
+        title: "PBL8_Complementary_Cases.pdf",
+        cleanTitle: "PBL 8 Complementary Cases - ACL Tear and Common Peroneal Nerve Palsy",
+        type: "lecture",
+        discipline: "Clinical Cases",
+        topic: "Orthopedics - PBL 8 Complementary Cases - ACL Tear and Common Peroneal Nerve Palsy",
+        summary: "A footballer's knee injury with a positive anterior drawer (ACL tear), and postpartum foot drop after prolonged stirrups (common peroneal nerve palsy).",
+        file_url: storageUrl("PBL8_Complementary_Cases.pdf"),
+        bilingual_url: "/bilingual/PBL8_Complementary_Cases_Bilingual.pdf",
+        summary_url: "/summary/pbl8-complementary-cases"
+      },
+      {
         id: 58,
         title: "Applied Anatomy of the Intervertebral Disc.pdf",
         cleanTitle: "Applied Anatomy of the Intervertebral Disc",
@@ -990,6 +1014,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/hip-joint-exam"
       },
       {
+        id: 354,
+        title: "Physical Examination of the Knee Joint.pdf",
+        cleanTitle: "Physical Examination of the Knee Joint",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "Physical Examination of the Knee Joint",
+        summary: "Surface anatomy, approach to knee pain, Look-Feel-Move, ligament, meniscal and patellar special tests, common peroneal nerve, OSCE checklist and an osteoarthritis case.",
+        file_url: storageUrl("Physical Examination of the Knee Joint.pdf"),
+        bilingual_url: "/bilingual/Physical_Examination_of_the_Knee_Joint_Bilingual.pdf",
+        summary_url: "/summary/knee-joint-exam"
+      },
+      {
         id: 330,
         title: "Focused History Taking in Groin Pain.pdf",
         cleanTitle: "Focused History Taking in a Patient with Groin Pain",
@@ -1062,6 +1098,54 @@ export const subjects: Subject[] = [
         summary_url: "/summary/anatomy-lab7-thigh"
       },
       {
+        id: 350,
+        title: "Bones_of_the_Leg_and_Knee_Joint.pdf",
+        cleanTitle: "Bones of the Leg and Knee Joint",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Bones of the Leg and Knee Joint",
+        summary: "Distal femur, patella, tibia and fibula, then the knee joint: capsule, ligaments, menisci, locking and unlocking, movements, bursae and relations.",
+        file_url: storageUrl("Bones_of_the_Leg_and_Knee_Joint.pdf"),
+        bilingual_url: "/bilingual/Bones_of_the_Leg_and_Knee_Joint_Bilingual.pdf",
+        summary_url: "/summary/knee-joint-bones-leg"
+      },
+      {
+        id: 351,
+        title: "Muscles_of_the_Leg.pdf",
+        cleanTitle: "Muscles of the Leg",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Muscles of the Leg",
+        summary: "The anterior, posterior and lateral compartments of the leg: muscles, retinacula, Achilles tendon, and the arteries and nerves of each compartment.",
+        file_url: storageUrl("Muscles_of_the_Leg.pdf"),
+        bilingual_url: "/bilingual/Muscles_of_the_Leg_Bilingual.pdf",
+        summary_url: "/summary/leg-muscles"
+      },
+      {
+        id: 352,
+        title: "Clinical_Considerations_of_the_Knee_and_Leg.pdf",
+        cleanTitle: "Clinical Considerations of the Knee and Leg",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Clinical Considerations of the Knee and Leg",
+        summary: "Meniscus and cruciate injuries, the unhappy triad, cartilage types, knee bursitis, common peroneal and tibial nerve injuries, tarsal tunnel syndrome, tibial fractures and Achilles rupture.",
+        file_url: storageUrl("Clinical_Considerations_of_the_Knee_and_Leg.pdf"),
+        bilingual_url: "/bilingual/Clinical_Considerations_of_the_Knee_and_Leg_Bilingual.pdf",
+        summary_url: "/summary/knee-leg-clinical"
+      },
+      {
+        id: 353,
+        title: "Lab8_Knee_Joint_and_Leg.pdf",
+        cleanTitle: "Anatomy Lab 8 - Knee Joint and Leg",
+        type: "lab",
+        discipline: "Anatomy",
+        topic: "Anatomy Lab 8 - Knee Joint and Leg",
+        summary: "Knee X-ray labels, sagittal MRI of the menisci and cruciates, labelled cadaveric knee and leg dissections, and cadaveric identification review.",
+        file_url: storageUrl("Lab8_Knee_Joint_and_Leg.pdf"),
+        bilingual_url: "/bilingual/Lab8_Knee_Joint_and_Leg_Bilingual.pdf",
+        summary_url: "/summary/anatomy-lab8-knee-leg"
+      },
+      {
         id: 297,
         title: "Calcium_Homeostasis.pdf",
         cleanTitle: "Calcium Homeostasis",
@@ -1132,6 +1216,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Anticancer Drugs.pdf"),
         bilingual_url: "/bilingual/Anticancer_Drugs_Bilingual.pdf",
         summary_url: "/summary/anticancer-drugs"
+      },
+      {
+        id: 357,
+        title: "Week 07 TBL Review.pdf",
+        cleanTitle: "Week 07 TBL Review",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Week 07 TBL Review (Medicine)",
+        summary: "Gluteal region nerves, lateral femoral cutaneous nerve, femoral fracture displacement, neoplasia concepts and anaplasia, tamoxifen and alkylating agents.",
+        file_url: storageUrl("Week 07 TBL Review.pdf"),
+        bilingual_url: "/bilingual/Week07_TBL_Review_Bilingual.pdf",
+        summary_url: "/summary/week7-tbl-review"
       },
       {
         id: 338,
@@ -1261,6 +1357,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Root_of_the_Neck.pdf"),
         bilingual_url: "/bilingual/Root_of_the_Neck_Bilingual.pdf",
         summary_url: "/summary/root-of-the-neck"
+      },
+      {
+        id: 358,
+        title: "Back of the Neck.pdf",
+        cleanTitle: "Back of the Neck, Lymphatics and Pharynx",
+        type: "lecture",
+        discipline: "Anatomy",
+        topic: "Back of the Neck, Lymphatics and Pharynx",
+        summary: "Suboccipital triangle and prevertebral spaces, lymphatics of the head and neck, and the pharynx with its muscles, vessels and nerves.",
+        file_url: storageUrl("Back of the Neck.pdf"),
+        bilingual_url: "/bilingual/Back_of_the_Neck_Bilingual.pdf",
+        summary_url: "/summary/back-of-the-neck"
       },
       {
         id: 104,
@@ -1467,6 +1575,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/nerve-muscle-lec3-impulse-conduction"
       },
       {
+        id: 361,
+        title: "Nerve_Muscle_Lec4_Synaptic_Transmission.pdf",
+        cleanTitle: "Nerve and Muscle Lecture 4 - Synaptic and Junctional Transmission",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Nerve and Muscle Lecture 4 - Synaptic and Junctional Transmission",
+        summary: "Electrical versus chemical synapses, the steps of neurotransmitter release, EPSP and IPSP, factors affecting transmission, and neurotransmitter classes with acetylcholine.",
+        file_url: storageUrl("Nerve_Muscle_Lec4_Synaptic_Transmission.pdf"),
+        bilingual_url: "/bilingual/Nerve_Muscle_Lec4_Synaptic_Transmission_Bilingual.pdf",
+        summary_url: "/summary/nerve-muscle-lec4-synaptic-transmission"
+      },
+      {
         id: 138,
         title: "Medical Biochemistry - Introduction.pdf",
         cleanTitle: "Medical Biochemistry - Introduction",
@@ -1539,6 +1659,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/citric-acid-cycle"
       },
       {
+        id: 360,
+        title: "Electron Transport Chain and Pentose Phosphate Pathway.pdf",
+        cleanTitle: "Electron Transport Chain and Pentose Phosphate Pathway",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Electron Transport Chain and Pentose Phosphate Pathway",
+        summary: "Electron transport chain complexes, ATP synthase and chemiosmosis, uncouplers and inhibitors, and the pentose phosphate pathway with NADPH and glutathione.",
+        file_url: storageUrl("Electron Transport Chain and Pentose Phosphate Pathway.pdf"),
+        bilingual_url: "/bilingual/Electron_Transport_Chain_and_Pentose_Phosphate_Pathway_Bilingual.pdf",
+        summary_url: "/summary/etc-pentose-phosphate-pathway"
+      },
+      {
         id: 142,
         title: "Glycogen Metabolism.pdf",
         cleanTitle: "Glycogen Metabolism",
@@ -1597,6 +1729,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Embryology L4 - Pre-embryonic Period.pdf"),
         bilingual_url: "/bilingual/Embryology_L4_Pre_embryonic_Period_Bilingual.pdf",
         summary_url: "/summary/embryology-pre-embryonic-period"
+      },
+      {
+        id: 362,
+        title: "Embryology L5 - Third Week of Development.pdf",
+        cleanTitle: "Embryology L5 - Third Week of Development",
+        type: "lecture",
+        discipline: "Embryology",
+        topic: "Embryology L5 - Third Week of Development (Gastrulation and Trilaminar Germ Disc)",
+        summary: "Gastrulation and the trilaminar germ disc, the oropharyngeal and cloacal membranes, notochord formation, the fate map of the primitive streak, and clinical correlates.",
+        file_url: storageUrl("Embryology L5 - Third Week of Development.pdf"),
+        bilingual_url: "/bilingual/Embryology_L5_Third_Week_of_Development_Bilingual.pdf",
+        summary_url: "/summary/embryology-third-week-gastrulation"
       },
       {
         id: 115,
@@ -1755,6 +1899,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/spectrophotometry"
       },
       {
+        id: 359,
+        title: "Enzyme Kinetics 1.pdf",
+        cleanTitle: "Enzyme Kinetics 1 - Michaelis-Menten",
+        type: "lecture",
+        discipline: "Biochemistry",
+        topic: "Enzyme Kinetics 1 - Michaelis-Menten",
+        summary: "Michaelis-Menten model, equation and curve, Lineweaver-Burk plot, meaning of Km, and hexokinase I versus glucokinase.",
+        file_url: storageUrl("Enzyme Kinetics 1.pdf"),
+        bilingual_url: "/bilingual/Enzyme_Kinetics_1_Bilingual.pdf",
+        summary_url: "/summary/enzyme-kinetics-1"
+      },
+      {
         id: 308,
         title: "Hemoglobin_Lab3.pdf",
         cleanTitle: "Biochemistry Lab 3 - Hemoglobin Determination",
@@ -1837,6 +1993,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("CBD-TBL - Anemia Secondary to CKD.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Anemia_Secondary_to_CKD_Bilingual.pdf",
         summary_url: "/summary/cbd-anemia-ckd"
+      },
+      {
+        id: 363,
+        title: "CBD-TBL - Meningitis.pdf",
+        cleanTitle: "CBD-TBL - Meningitis",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "CBD-TBL - Meningitis",
+        summary: "A 7-year-old with fever, headache and neck stiffness (Kernig and Brudzinski signs, turbid CSF), linked to the meninges, leukocyte defence, spleen macrophages and vitamin A.",
+        file_url: storageUrl("CBD-TBL - Meningitis.pdf"),
+        bilingual_url: "/bilingual/CBD_TBL_Meningitis_Bilingual.pdf",
+        summary_url: "/summary/cbd-meningitis"
       },
     ],
   },
@@ -2088,6 +2256,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-cns-pharmacology-intro"
       },
       {
+        id: 366,
+        title: "Anxiolytic and Hypnotic Drugs I.pdf",
+        cleanTitle: "Anxiolytic and Hypnotic Drugs I",
+        type: "lecture",
+        discipline: "Pharmacology",
+        topic: "Pharmacology - Anxiolytic and Hypnotic Drugs I",
+        summary: "Anxiety overview, the anxiolytic and hypnotic drug list, benzodiazepines (GABA-A mechanism, effects, uses, kinetics, dependence, adverse effects) and flumazenil.",
+        file_url: storageUrl("Anxiolytic and Hypnotic Drugs I.pdf"),
+        bilingual_url: "/bilingual/Anxiolytic_and_Hypnotic_Drugs_I_Bilingual.pdf",
+        summary_url: "/summary/s3-pharm-anxiolytics-hypnotics-1"
+      },
+      {
         id: 208,
         title: "Pharmacology Practical 1 and 2.pdf",
         cleanTitle: "Pharmacology Practical 1 and 2 - Formulations and Routes",
@@ -2220,6 +2400,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-environmental-nutritional"
       },
       {
+        id: 369,
+        title: "Environmental Factors in Disease.pdf",
+        cleanTitle: "Environmental Factors in Disease",
+        type: "lecture",
+        discipline: "Medicine",
+        topic: "Medicine - Environmental Factors in Disease",
+        summary: "Climate change, poverty and affluence, smoking and cessation, ionizing and non-ionizing radiation, and temperature extremes: hypothermia, frostbite, trench foot and chilblains.",
+        file_url: storageUrl("Environmental Factors in Disease.pdf"),
+        bilingual_url: "/bilingual/Environmental_Factors_in_Disease_Bilingual.pdf",
+        summary_url: "/summary/s3-environmental-factors-disease"
+      },
+      {
         id: 263,
         title: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis.pdf",
         cleanTitle: "Hemodynamic Disorders I - Hyperemia, Edema, Hemorrhage and Thrombosis",
@@ -2302,6 +2494,30 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Genetic Diseases and Cytogenetic Abnormalities.pdf"),
         bilingual_url: "/bilingual/Genetic_Diseases_and_Cytogenetics_Bilingual.pdf",
         summary_url: "/summary/s3-genetic-diseases"
+      },
+      {
+        id: 367,
+        title: "Cytogenetic Abnormalities and Chromosomal Disorders.pdf",
+        cleanTitle: "Cytogenetic Abnormalities and Chromosomal Disorders",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Cytogenetic Abnormalities and Chromosomal Disorders",
+        summary: "Sex differentiation disorders, ploidy and aneuploidy, structural chromosome abnormalities, Lyon hypothesis and Barr body, and Down, Edwards, Patau, cri du chat, Klinefelter and Turner syndromes.",
+        file_url: storageUrl("Cytogenetic Abnormalities and Chromosomal Disorders.pdf"),
+        bilingual_url: "/bilingual/Cytogenetic_Abnormalities_and_Chromosomal_Disorders_Bilingual.pdf",
+        summary_url: "/summary/s3-cytogenetic-abnormalities"
+      },
+      {
+        id: 368,
+        title: "Tumors Classification and Terminology.pdf",
+        cleanTitle: "Tumors - Classification and Terminology",
+        type: "lecture",
+        discipline: "Pathology",
+        topic: "Pathology - Tumors: Classification, Nomenclature and Behavior",
+        summary: "Nomenclature of benign, malignant, mixed and germ cell tumors, hamartoma and choristoma, differentiation and anaplasia, dysplasia, local invasion and metastasis.",
+        file_url: storageUrl("Tumors Classification and Terminology.pdf"),
+        bilingual_url: "/bilingual/Tumors_Classification_and_Terminology_Bilingual.pdf",
+        summary_url: "/summary/s3-path-tumors-classification"
       },
       {
         id: 213,
@@ -2604,6 +2820,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-nutrition-fluid-therapy"
       },
       {
+        id: 365,
+        title: "Early Assessment and Management of Severe Trauma.pdf",
+        cleanTitle: "Early Assessment and Management of Severe Trauma",
+        type: "lecture",
+        discipline: "Surgery",
+        topic: "Surgery - Early Assessment and Management of Severe Trauma",
+        summary: "Primary survey (cABCDE), haemorrhage control, massive transfusion and tranexamic acid, FAST and whole-body CT, GCS, and damage control surgery versus early total care.",
+        file_url: storageUrl("Early Assessment and Management of Severe Trauma.pdf"),
+        bilingual_url: "/bilingual/Early_Assessment_and_Management_of_Severe_Trauma_Bilingual.pdf",
+        summary_url: "/summary/s3-surgery-severe-trauma"
+      },
+      {
         id: 328,
         title: "Fluid and Nutritional Consequences of Intestinal Resection.pdf",
         cleanTitle: "Fluid and Nutritional Consequences of Intestinal Resection",
@@ -2710,6 +2938,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Pulmonary Function Tests - Spirometry in Clinical Practice.pdf"),
         bilingual_url: "/bilingual/Pulmonary_Function_Tests_Spirometry_Bilingual.pdf",
         summary_url: "/summary/s3-pulmonary-function-spirometry"
+      },
+      {
+        id: 370,
+        title: "Lung Volumes and Pulmonary Function Tests.pdf",
+        cleanTitle: "Lung Volumes and Pulmonary Function Tests",
+        type: "lecture",
+        discipline: "Physiology",
+        topic: "Physiology - Lung Volumes and Pulmonary Function Tests",
+        summary: "PFT indications, the lung volumes and capacities with normal values, FVC, FEV1, FEV1/FVC, PEFR, the spirometer, and obstruction versus restriction.",
+        file_url: storageUrl("Lung Volumes and Pulmonary Function Tests.pdf"),
+        bilingual_url: "/bilingual/Lung_Volumes_and_Pulmonary_Function_Tests_Bilingual.pdf",
+        summary_url: "/summary/s3-lung-volumes-pft"
       },
       {
         id: 324,
@@ -3046,6 +3286,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Streptococcus.pdf"),
         bilingual_url: "/bilingual/Streptococcus_Bilingual.pdf",
         summary_url: "/summary/s3-micro-strep"
+      },
+      {
+        id: 364,
+        title: "The Neisseria.pdf",
+        cleanTitle: "The Neisseria",
+        type: "lecture",
+        discipline: "Microbiology",
+        topic: "The Neisseria",
+        summary: "Neisseria gonorrhoeae and N. meningitidis: virulence factors, diseases, diagnosis, treatment, vaccines and prevention.",
+        file_url: storageUrl("The Neisseria.pdf"),
+        bilingual_url: "/bilingual/The_Neisseria_Bilingual.pdf",
+        summary_url: "/summary/s3-micro-neisseria"
       },
       {
         id: 272,
