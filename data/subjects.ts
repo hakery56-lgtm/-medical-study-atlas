@@ -2892,6 +2892,18 @@ export const subjects: Subject[] = [
         summary_url: "/summary/s3-ecg-placement"
       },
       {
+        id: 371,
+        title: "3rd-Mastery-ECG-Recording.pdf",
+        cleanTitle: "12-Lead ECG Recording (3rd Stage Mastery Skills)",
+        type: "lecture",
+        discipline: "Clinical Skills",
+        topic: "12-Lead ECG Recording (3rd Stage Mastery Skills)",
+        summary: "Patient preparation, limb and chest electrode placement, artefacts, labelling and escalation, ECG paper, heart rate, rhythm and axis, plus monitoring, Holter and exercise ECG.",
+        file_url: storageUrl("3rd-Mastery-ECG-Recording.pdf"),
+        bilingual_url: "/bilingual/12-Lead_ECG_Recording_3rd_Stage_Mastery_Skills_Bilingual.pdf",
+        summary_url: "/summary/s3-ecg-recording-mastery"
+      },
+      {
         id: 225,
         title: "General Examination.pdf",
         cleanTitle: "General Examination",
@@ -2986,6 +2998,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("Lecture 2 (9).pdf"),
         bilingual_url: "/bilingual/Energy_Requirements_Bilingual.pdf",
         summary_url: "/summary/s3-energy-requirements"
+      },
+      {
+        id: 373,
+        title: "Macronutrient Requirements.pdf",
+        cleanTitle: "Macronutrient Requirements and Their Impact on Human Health",
+        type: "lecture",
+        discipline: "Community Medicine",
+        topic: "Macronutrient Requirements and Their Impact on Human Health",
+        summary: "Carbohydrates, dietary fibre, glycemic index, FODMAPs, lactose intolerance, proteins and amino acids, and lipids: digestion, requirements and health effects.",
+        file_url: storageUrl("Macronutrient Requirements.pdf"),
+        bilingual_url: "/bilingual/Macronutrient_Requirements_Bilingual.pdf",
+        summary_url: "/summary/s3-macronutrient-requirements"
       },
       {
         id: 282,
@@ -3334,6 +3358,18 @@ export const subjects: Subject[] = [
         file_url: storageUrl("CBD 2.pdf"),
         bilingual_url: "/bilingual/CBD_TBL_Acute_Decompensated_Heart_Failure_Bilingual.pdf",
         summary_url: "/summary/s3-cbd-hf"
+      },
+      {
+        id: 372,
+        title: "CBD-TBL Hyperthyroidism.pdf",
+        cleanTitle: "CBD-TBL - Hyperthyroidism (The Overactive Engine)",
+        type: "lecture",
+        discipline: "CBD-TBL",
+        topic: "CBD-TBL - Hyperthyroidism (The Overactive Engine)",
+        summary: "A 34-year-old woman with weight loss, palpitations and tremor: Graves' disease, causes of thyrotoxicosis, antithyroid drugs and thyroid storm.",
+        file_url: storageUrl("CBD-TBL Hyperthyroidism.pdf"),
+        bilingual_url: "/bilingual/CBD_TBL_Hyperthyroidism_Bilingual.pdf",
+        summary_url: "/summary/s3-cbd-hyperthyroidism"
       },
       {
         id: 296,
